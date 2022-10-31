@@ -1,0 +1,104 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[slovene]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\pagestyle{empty}
+
+\newcommand{\pojem}[1]{\textsc{#1}}
+
+\newcounter{definicija}
+\newenvironment{definicija}
+{
+   \stepcounter{definicija}
+   \begin{flushleft}
+   \textbf{Definicija \arabic{definicija}: }
+}
+{
+   \hfill $\square$
+   \end{flushleft}
+}
+
+\begin{document}
+
+\title{Bayes and the Law}
+\maketitle
+
+\begin{abstract}
+    Čeprav se je v zadnjih štiridesetih letih uporaba statističnih podatkov v sodnih postopkih precej povečala, so se uporabljale predvsem 
+    klasične statistične metode in ne Bayesove. Vendar naj bi se Bayesovi pristopi izognili številnim težavam klasične statistike. \\
+    Članek opisuje potencialno in dejansko rabo Bayesa v pravu in pojasnjuje glavne razloge za njegov pomankljiv vpliv na pravno prakso.  Ti 
+    vključujejo napačne predstave prave o Bayesovem izreku, pretirano zanašanje na uporabo razmerja verjetnosti in pomankanje sodobnih 
+    računskih metod. 
+\end{abstract}
+
+\section{Uvod}
+Uporaba statistike v pravnih postopkih ima dolgo, ampak ne ugledne, zgodovine. Prvi prijavljeni primer podrobne statistične analize, ki je bila 
+uporabljena kot dokaz, je bilo leta 1867 v pravnem primeru Howland. Sodišče je sicer našlo izgovore, da teh dokazov niso uporabili. \\
+Zgodovinska zadržanost pri uporabi statistične analize kot primeren in veljaven dokaz, ni brezpomenska. Leta 1894 so v pravnem primeru Dreyfus sicer 
+uporabili statistično analizo, ampak se je izkazala za napačno. Šele leta 1968 je bil dobro dokumentira pravni primer, v katerem je statistična analiza 
+odigrala glavno vlogo. V tem primeru je še en napačen statistični argument dodatno zavrnil statistiko na sodišču. V primeru sta se pojavili dve napaki, ki 
+ju lahko zasledimo še v kar nekaj primerih kasneje. \\
+\\
+Čeprav je v zadnjih 40 letih prišlo do precejšnega porasta uporabe statistike v sodnih postopkih, je bila njena uporaba omejena na malo primerov, kjer je bilo
+za verjetnostno sklepanje uporabljeno testiranje hipotez z uporabo $p$ - vrednosti in intervalov zaupanja. Tudi ta vrsta statistične analize ima omejitve. Slabe 
+izkušnje in težave pri interpretaciji s klasično statistiko pomenijo tudi močan odpor do kakršnih koli alternativnih pristopov. Zlasti se ta odpor razširi na Bayesov 
+pristop, kljub dejstvu, da je primeren za širok spekter pravnega sklepanja. Obstaja mnogo razlogov o družbenih in logičnih ovirah za uporabo Bayesa v sodnih postopkih 
+ali splošnem političnem odločanju, a prevladujoči razlog je najbrž ta, da je večina primerov Bayesovega pristopa preveč poenostavila temelje prava, ki so bili modelirani,
+da so se izrčuni lahko izvajali ročno.
+
+\section{Osnove Bayesa za pravno sklepanje}
+\begin{definicija}
+\pojem{Hipoteza} je izjava (običajno logična), katere resnično vrednost želimo določiti, vendar je na splošno neznana - in je morda nikoli ne bomo vedeli z gotovostjo.
+\end{definicija}
+
+\begin{definicija}
+\pojem{Alternativna hipoteza} je izjava, ki je negacija hipoteze.
+\end{definicija}
+
+\begin{definicija}
+\pojem{Dokaz} je izjava, ki, če je resnićna, podpira eno ali več hipotez.
+\end{definicija}
+
+\section{Kontekst in pregled Bayesove metode v sodnih postopkih}
+Da lahko definiramo Bayesovo sklepanje v sodnih postopkih, klasificirajmo primere, kjer se je uporabilo Bayesovo sklepanje na sodušču, ki vključujejo:
+\begin{itemize}
+    \item Preverjanje hipotez o določenem "dvomljivem" vedenju.
+    \item Ugotavljanje, v kolikšni meri dokaz o "lastnosti" pomaga pri identifikaciji.
+    \item Uporaba forenzičnih dokazov za sklepanje o vzroku posledic.
+    \item Združevanje več statističnih dokazov.
+    \item Združevanje več različnih dokazov.
+\end{itemize}
+
+\subsection{Prevrejanje hipotez o določenem "dvomljivem" vedenju}
+Večina poročanih primerov izrecne uporabe statističnih podatkov v sodnih postopkih spada v to klasifikacijo, ki jo nadalje delimo na:
+\begin{itemize}
+    \item Vse oblike diskriminacije in pristranskosti.
+    \item Kakršne koli oblike goljufije/izigravanja.
+    \item Posedovanje nezakonitih materialov/snovi.
+\end{itemize}
+
+Običajno se je, kadar je na voljo dovolj ustreznih podatkov, namesto Bayesovega testiranja hipotez uporabilo klasično statistično testiranje hipotez, da se ugotovi, ali 
+ali je mogoče hičelno hipotezo "ni dvomljivega vedenja" zavrniti na ustrezni ravni pomembnosti, kljub težavam pri razlagi $p$ - vrednosti in intervalov zaupanja, ki se jim 
+sicer z uporabo Bayesovega pristopa lahko izognemo. Možnost napačne razlage je ogromna in statistiki se premalo zavedajo, da sodobna orodja omogočajo enostavno izvedbo 
+potrebnih analiz za Bayesovo testiranje hipotez.
+
+\subsection{Ugotavljanje, v kolikšni meri dokaz o "lastnosti" pomaga pri identifikaciji}
+Ta klasifikacija se nanaša na vse primere, v katerih se uporabljajo statistični dokazi o 'lastnostih' v najširšem pomenu. lastnosti segajo od forenzičnih fizičnih lasnosti, 
+kot je DNK, prstnih odtisov, do bolj osnovnih lastnosti, kot so barva kože, višina, barva las\dots. Lahko se nanašajo tudi na nečloveške značilnosti, povezane z zločinom ali 
+prizoriščem zločina, kot so oblačila in druga lastnina, avtomovil, orožje, steklo\dots. \\
+\\
+Vsaka statistična uporaba dokazov o lastnostih zahteva določeno oceno (na podlagi vzorčenja ali kako drugače) pojavnosti lastnosti v ustrezni populaciji. Velik del odpora proti 
+uporabi takšnih dokazov je posledica pomislkeov glede starosti in veljavbosti teh ocen. Kljub temu je hitra rast forenzične statistike v zadnjih 25 letih povzročila ustrezno povečanje 
+uporabe statističnih dokazov o lastnostih. Zato ni presenetljivo, da se skoraj vsa objavljena uporaba Bayesa v sodnih postopkih nanaša na to vrsto.
+
+\subsection{Združevanje večih statističnih dokazov}
+Kadar je v primer vključenih več delov statističnih dokazov, je potrebna natančna analiza ob upoštevanju morebitnih odvisnosti med različnimi dokazi. Bazyesova teorija je idelana za 
+takšno analizo, a na žalost se odvisnoti med dokazi niso dobro zavedali pri številnih primerih. 
+
+\subsection{Združevanje večih različnih dokazov}
+
+\end{document}
