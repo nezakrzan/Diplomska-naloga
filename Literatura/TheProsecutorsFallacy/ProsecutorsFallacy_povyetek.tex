@@ -35,7 +35,7 @@ o tem, kaj zmota sploh pomeni. \\
 Tožilčeva zmota je dobro znana statistična zmota, ki izhaja iz napačnega razumevanja pogojnih verjetnosti in vprašanj večkratnega testiranja. 
 Tu se osredotočamo na vidik pogojne verjetnosti tožilčeve zmote, pri katerei se domneva, da je verjetnost $A$ glede na $B$ enaka verjetnosti 
 $B$ glede na $A$:
-$$ P(A \mid B) = P(B \mid A). $$
+$$ \mathbb{P}(A \mid B) = \mathbb{P}(B \mid A). $$
 Je posledica napačnega razumevanja Bayesovega izreka. \\
 \\
 Klasičen primer tožilčeve zmote se pojavi, ko tožilec trid, da
@@ -52,9 +52,9 @@ domnevamo, da je večina žensk, ki rodi otroka z Downovim sindromom, starejših
 otrok z Downovim sindromom rodi ženskam mlajšim od 30 let, predvsem zato, ker te rojevajo več. \\
 Zmota se tudi pogosto pojavi pri razlagi analitičnih rezultatov v epidemiologiji. Na primer, spletna stran Slate.com je objavil izjavo, da je imel eden od 
 sedmih otrok s fetanlnim alkoholnim sindromom(FAS) mamo, ki je v prvem tromesečju nosečnosti spila eno do osem pijač na teden; to pomeni: \\
-\[ P(\text{mama je spila 1-8 pijač na teden} \mid FAS) = \frac{1}{7}.\] \\
+\[ \mathbb{P}(\text{mama je spila 1-8 pijač na teden} \mid FAS) = \frac{1}{7}.\] \\
 Toda ta količina nam malo pove o tveganju za FAS glede na določeno raven pitja matere ali \\
-\[P(FAS \mid \text{mama je spila 1-8 pijač na teden}).\]
+\[\mathbb{P}(FAS \mid \text{mama je spila 1-8 pijač na teden}).\]
 \\
 Zmota se pojavi tudi v epidemiološki literaturi pri zamenjavi občitljivosti (verjetnost pozitivnega testa glede na resnični status bolezni) in pozitivne 
 napovedne vrednosti (verjetnost resničnega statusa bolezni glede na pozitiven test).
@@ -65,29 +65,32 @@ se, da bo 9\% teh moških (predstavljeno z devetimi črtastimi kvadrati) čez 10
 sivimi kvadrati); približno 16\% naj bi bilemo MI v 10 letih; zato bo $\frac{4}{25}$ kadilcev imelo MI (predstavljeno s črtastimi in sivimi kvadrati). \\
 Število kadilcev, ki imajo MI, je očitno enako številu ljudi, ki imajo MI in so kadilci. Toda ali je delež kadilcev, ki imajo MI, enak deležu ljudi z MI, ki so kadilci? Iz 
 slike 1 je odogovor očitno ne; verjetnost, da ste kadilec glede na to, da ste imeli MI, torej:
-\[ P(\text{MI} \mid \text{kadilec}) \ne P(\text{kadilec} \mid \text{MI}), \quad \text{ker}\]
-\[ P(\text{MI} \mid \text{kadilec}) = P(\text{črtasto} \mid \text{sivo}) = \frac{4}{25} = 0,16 \quad \text{in}\]
-\[P(\text{kadilec} \mid \text{MI}) = P(\text{sivo} \mid \text{črtasto}) = \frac{4}{9} = 0,44.\]
+\[ \mathbb{P}(\text{MI} \mid \text{kadilec}) \ne \mathbb{P}(\text{kadilec} \mid \text{MI}), \quad \text{ker}\]
+\[ \mathbb{P}(\text{MI} \mid \text{kadilec}) = \mathbb{P}(\text{črtasto} \mid \text{sivo}) = \frac{4}{25} = 0,16 \quad \text{in}\]
+\[\mathbb{P}(\text{kadilec} \mid \text{MI}) = \mathbb{P}(\text{sivo} \mid \text{črtasto}) = \frac{4}{9} = 0,44.\]
 Vizualno opazimo, da delež sivih kvadratov, ki se prekrivajo s črtastimi kvadrati, ni enak deležu črtastih kvadratov, ki se prekrivajo s sivimi kvadrati. 
 
 \begin{figure}[!ht]
     \centering
     \label{fig:slika1}
-    \includegraphics[scale=0.60]{slika1.png}
+    \includegraphics[scale=0.45]{slika1.png}
     \caption{Populacija, predstavljena s 100 kvadrati, z 9 črtastimi, 25 sivimi in 4 črtastimi in sivimi}\vspace{2mm}
  \end{figure}
 
  Slika 2 prikazuje izjeme pri tožilčevi zmoti, predstavljeni na sliki 1. Sedaj imamo 16 črtastih kvadratov, 16 sivih in 4 pikčaste in sive kvadrate, ker je splošna 
  razširjenost črtastih in sivih kvadratov enaka, je
- \[ P(\text{črtasto} \mid \text{sivo}) = P(\text{sivo} \mid \text{črtasto}).\]
+ \[ \mathbb{P}(\text{črtasto} \mid \text{sivo}) = \mathbb{P}(\text{sivo} \mid \text{črtasto}).\]
 Tudi 
-\[P(\text{črtasto} \mid \text{pikčasto}) = P(\text{pikčasto} \mid \text{črtasto}),\]
-saj sta obe verjetnosti enaki $0$. Oboje je izjema zmote. 
+\[\mathbb{P}(\text{črtasto} \mid \text{pikčasto}) = \mathbb{P}(\text{pikčasto} \mid \text{črtasto}),\]
+saj sta obe verjetnosti enaki $0$. Oboje(podobno velike populacija in populacije brez prekrivanja) je ozka izjema zmote. \\
+Po drugi strani pa so črtkani kvadrati na sliki 2 v celoti zajeti v sivih kvadratih; tako je 
+\[\mathbb{P}(\text{sivo} \mid \text{črtkano}) = 1, \quad \text{medtem ko je} \quad \mathbb{P}(\text{črtkano} \mid \text{sivo}) = 0,25. \]
+Tožilčeva zmota velja, kadar je ena skupina podmnožica druge.
 
 \begin{figure}[!ht]
     \centering
     \label{fig:slika1}
-    \includegraphics[scale=0.60]{slika2.png}
+    \includegraphics[scale=0.45]{slika2.png}
     \caption{Populacija, predstavljena s 100 kvadrati, z 16 črtastimi, 16 sivimi in 4 pikčastimi in sivimi}\vspace{2mm}
  \end{figure}
 

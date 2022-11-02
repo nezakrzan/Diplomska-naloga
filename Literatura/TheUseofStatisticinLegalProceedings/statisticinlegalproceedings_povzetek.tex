@@ -1,0 +1,110 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[slovene]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+
+\setlength{\parindent}{0mm}
+\pagestyle{empty}
+
+\newcommand{\pojem}[1]{\textsc{#1}}
+
+\newcounter{definicija}
+\newenvironment{definicija}
+{
+   \stepcounter{definicija}
+   \begin{flushleft}
+   \textbf{Definicija \arabic{definicija}: }
+}
+{
+   \hfill $\square$
+   \end{flushleft}
+}
+
+\begin{document}
+\title{Uporaba statistike v pravnih postopkih}
+\maketitle
+
+\section{Kaj je statistična znanost?}
+Za obravnavo različnih vprašanj v zvezi s kontekstom posameznih primerov, predloženih sodiščem, je mogoče uporabiti različna statistična in 
+verjetnostna orodja. Izbira teh je odvisna od vprašanj, ki jih je potrebno obravnavati. Vprašanja, na katere lahko odgovori statistična 
+znanost, lahko razvrstimo v naslednje kateogrije:
+
+\begin{itemize}
+   \item opisna statistika,
+   \item sklepanje iz opzovanih podatkov na večjo populacijo,
+   \item sklepanje iz opazovanih podatkov do znanstvenega zaključka,
+   \item napovedovanje in
+   \item vrednotenje.
+\end{itemize}
+
+Za vse te situacije je značilna negotovost, verjetnost pa zagotavlja orodja in jezik za obravnavanje in sporočanje teh negotovosti.
+
+\subsection{Uporaba statistike in vrste dokazov}
+Statistika je lahko v podporo strokovnemu znanju pri obravnavi dokazov in postopkov, ki vključujejo:
+\begin{itemize}
+   \item vrednotenje DNK dokazov;
+   \item vrednotenje dokazov sledi;
+   \item vrednotenje dokazov, ki se ujemajo z vzorci;
+   \item vzorčnost bolezni ali poškodbe, kjer se uporablja epidemiološke raziskave za posamezne primere;
+\end{itemize}
+
+Postopek, v katerem se lahko uporablja statistiko v sodnih primerih in v katerem se ustrezni pretekli podatki uporabijo za 
+sklepanje v trenutnem primeru.
+
+\begin{enumerate}
+   \item Identifikacija opazovanja določenega dokaza, ki je pomemben za nekatere dele trenutnega primera.
+   \item Zagotovitev seznama ustreznih možnih predlogov glede dokazov, ki lahko vključujejo obtožbe tožilstva in morebitne 
+         alternativne trditve obrambe.
+   \item Prepoznavanje virov, ki vsebujejo ustrezne pretekle podatke ali ustvarjanje novih baz podatkov.
+   \item Metode za uporabo zbranih informacij v podatkovni zbirki za izpeljavo števičnge a ali besednega izraza dokazne 
+         vrednosti opažanja, povezanega z dokaznim elemntom, glede na konkurenčne predloge.
+   \item Sporočanje dokazne vrednosti dokazov.
+\end{enumerate}
+
+\subsection{Obveščanje o dokazni vrednosti pri uporabi statistike}
+Kadar se na podlagi podatkov oblikujejo zaključki, ki temeljijo na sttističnih izračunih, je ključnega pomena, da so te podatki 
+pregledani. Namreč statistični zaključki so zanesljivi le toliko, kolikor je zanesljiv model in podatki, iz katerega so 
+izpeljani. Verjetnost pa je konceptualni pripomoček, ki nam pomaga logično razmišljati in sklepati, kadar se soočamo z negotovostjo 
+glede nastanka dogodka v preteklosti, sedanjosti ali preteklosti. Pomaga nam, da o negotovih dogodkih razmišljamo jasno in dosledno.
+
+\section{Zbirke podatkov z ustreznimi preteklimi opazovanji}
+Vrednotenje dokazov z uporabo razmerja verjetnosti(LR) pogosto vključuje rabo zbirk podtkov in statističnih predpostavk. Izvesti je 
+potrebno validacijske teste, da se ocenijo statistične predpostavke in zagotovi, da so vrednosti LR, predstavljene na sodišču, 
+zanesljive.
+
+\subsection{Verjetnostna vrednost, izražena kor razmerje verjetnosti}
+Razmerje verjetnosti je:
+\[ LR = \frac{\mathbb{P}(A)}{\mathbb{P}(B)},\]
+ob predpostavki, da verjetnosti dogodka $A$ in $B$ obstajata. \\ \\
+
+Razmerje verjetnosti se največkrat uporablja pri dokazih, ki vključujejo DNK - kadar je ugotovljeno določeno ujemanje med 
+osumljenčevim DNK in DNK, najdenim na kraju zločina. \\ \\
+
+Razmerje verjetnosti ponavadi prikazujejo z besednimi ekvivalenti številkam. V večini 
+primerov bo razmerje verjetnosti temeljil na polkvantitativni oceni, sodišču pa se lahko 
+predloži besedni ekvivalent. Besedne zveze so številčno opredeljene, da se zagotovi doslednost pri njihovi uporabi. \\ \\
+
+Z dobro kakovostjo in ustreznimi podatki je mogoče pripraviti oceno z uporabo verjetnostnega razmerja, ki se nanaša na dokaz. Vendar 
+so razpoložljivi podatki pogosto pomankljivi ali pa jih sploh ni, v takih primerih strokovnjak oblikuje osebno mnenje na podlagi 
+poznavanja procesov in osebnih izkušenj. V teh primerih so v pomoč besedni izrazi ali velikostni redi verjetnostnega razmerja, pri 
+čemer morajo jasno navesti podlago za vsako tako oblikovano strokovno mnenje. \\ \\
+
+\section{Tožilčeva zmota}
+Tožilčeva zmota se pojavi, ko se verjetnost dokazov (skladen DNK, \dots) glede na nedolžnost ( verjetnost naključnega ujemanja) napačno 
+razlaga kot verjetnost nedolžnosti glede na dokaz. 
+
+\section{Zmota zagovornika}
+Zmota zagovornika oziroma zmota obrambnega odvetnika se pojavi, ko se poroča o tem, koliko ljudi z določeno značilnostjo, se pojavi v 
+določeni populaciji. Predpostavlja se, da je storilec del neke poljubno velike populacije in da ni na voljo drugin informacij, torej 
+je za vse enako verjetno, da so storilci. Na podlagi teh predpostavk lahko sklepamo, da obstaja majhna verjetnost, da je osumljenec 
+storilec kaznivega dejanja. 
+
+\section{Združevanje dokazov}
+Standardni statistični pristop je vključitev vseh dokazov v en sam izračun, pri čemer je vsaka predpostavka utežena s svojo relativno 
+močjo, izraženo z razmerjem verjetnosti. Tak pristop se uporablja pri združevanju več vidikov ugotovitev forenzikov. 
+
+\end{document}
