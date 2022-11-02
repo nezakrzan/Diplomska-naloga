@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.12.1)  31 OCT 2022 16:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.12.1)  2 NOV 2022 18:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/Literatura/byl_povzetek.tex
-(/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/Literatura/byl_povzetek.tex
+**/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/Literatura/BayesInTheLaw/byl_povzetek.tex
+(/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/Literatura/BayesInTheLaw/byl_povzetek.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18> (/usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
@@ -146,7 +146,7 @@ File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count268
 \l__pdf_internal_box=\box49
-) (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/Literatura/byl_povzetek.aux)
+) (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/Literatura/BayesInTheLaw/byl_povzetek.aux)
 \openout1 = `byl_povzetek.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
@@ -210,35 +210,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--52
 [1
 
 {/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 69.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 71.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Overfull \hbox (27.57237pt too wide) in paragraph at lines 76--76
+Overfull \hbox (27.57237pt too wide) in paragraph at lines 78--78
 []\T1/lmr/bx/n/14.4 Prevrejanje hi-po-tez o do-lo-£e-nem "dvo-mlji-vem"vedenju 
  []
 
 [2]
-Overfull \hbox (33.55016pt too wide) in paragraph at lines 89--89
+Overfull \hbox (33.55016pt too wide) in paragraph at lines 91--91
 []\T1/lmr/bx/n/14.4 Ugotavljanje, v ko-li-k²ni meri do-kaz o "la-stno-sti"pomaga
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--97
+Underfull \hbox (badness 10000) in paragraph at lines 92--99
 
  []
 
-[3] [4] (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/Literatura/byl_povzetek.aux) ) 
+[3] [4] (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/Literatura/BayesInTheLaw/byl_povzetek.aux) ) 
 Here is how much of TeX's memory you used:
  2350 strings out of 478994
- 33815 string characters out of 5858184
+ 33941 string characters out of 5858184
  339115 words of memory out of 5000000
  19816 multiletter control sequences out of 15000+600000
  458978 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 67i,6n,74p,291b,216s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 67i,6n,74p,305b,216s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/Literatura/byl_povzetek.pdf (4 pages, 168595 bytes).
+Output written on /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/Literatura/BayesInTheLaw/byl_povzetek.pdf (4 pages, 168299 bytes).
 PDF statistics:
  54 PDF objects out of 1000 (max. 8388607)
  39 compressed objects within 1 object stream
