@@ -24,9 +24,11 @@
 
 \begin{document}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{Bayes and the Law}
 \maketitle
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{abstract}
     Čeprav se je v zadnjih štiridesetih letih uporaba statističnih podatkov v sodnih postopkih precej povečala, so se uporabljale predvsem 
     klasične statistične metode in ne Bayesove. Vendar naj bi se Bayesovi pristopi izognili številnim težavam klasične statistike. \\
@@ -35,24 +37,27 @@
     računskih metod. 
 \end{abstract}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Uvod}
 Uporaba statistike v pravnih postopkih ima dolgo, ampak ne ugledne, zgodovine. Prvi prijavljeni primer podrobne statistične analize, ki je bila 
 uporabljena kot dokaz, je bilo leta 1867 v pravnem primeru Howland. Sodišče je sicer našlo izgovore, da teh dokazov niso uporabili. \\
-Zgodovinska zadržanost pri uporabi statistične analize kot primeren in veljaven dokaz, ni brezpomenska. Leta 1894 so v pravnem primeru Dreyfus sicer 
-uporabili statistično analizo, ampak se je izkazala za napačno. Šele leta 1968 je bil dobro dokumentira pravni primer, v katerem je statistična analiza 
-odigrala glavno vlogo. V tem primeru je še en napačen statistični argument dodatno zavrnil statistiko na sodišču. V primeru sta se pojavili dve napaki, ki 
-ju lahko zasledimo še v kar nekaj primerih kasneje. \\
-\\
-Čeprav je v zadnjih 40 letih prišlo do precejšnega porasta uporabe statistike v sodnih postopkih, je bila njena uporaba omejena na malo primerov, kjer je bilo
-za verjetnostno sklepanje uporabljeno testiranje hipotez z uporabo $p$ - vrednosti in intervalov zaupanja. Tudi ta vrsta statistične analize ima omejitve. Slabe 
-izkušnje in težave pri interpretaciji s klasično statistiko pomenijo tudi močan odpor do kakršnih koli alternativnih pristopov. Zlasti se ta odpor razširi na Bayesov 
-pristop, kljub dejstvu, da je primeren za širok spekter pravnega sklepanja. Obstaja mnogo razlogov o družbenih in logičnih ovirah za uporabo Bayesa v sodnih postopkih 
-ali splošnem političnem odločanju, a prevladujoči razlog je najbrž ta, da je večina primerov Bayesovega pristopa preveč poenostavila temelje prava, ki so bili modelirani,
-da so se izrčuni lahko izvajali ročno.
+Zgodovinska zadržanost pri uporabi statistične analize kot primeren in veljaven dokaz, ni brezpomenska. Leta 1894 so v pravnem primeru Dreyfus 
+sicer uporabili statistično analizo, ampak se je izkazala za napačno. Šele leta 1968 je bil dobro dokumentira pravni primer, v katerem je 
+statistična analiza odigrala glavno vlogo. V tem primeru je še en napačen statistični argument dodatno zavrnil statistiko na sodišču. 
+V primeru sta se pojavili dve napaki, ki ju lahko zasledimo še v kar nekaj primerih kasneje. \\ \\
 
+Čeprav je v zadnjih 40 letih prišlo do precejšnega porasta uporabe statistike v sodnih postopkih, je bila njena uporaba omejena na malo primerov, 
+kjer je bilo za verjetnostno sklepanje uporabljeno testiranje hipotez z uporabo $p$ - vrednosti in intervalov zaupanja. Tudi ta vrsta statistične 
+analize ima omejitve. Slabe izkušnje in težave pri interpretaciji s klasično statistiko pomenijo tudi močan odpor do kakršnih koli alternativnih 
+pristopov. Zlasti se ta odpor razširi na Bayesov pristop, kljub dejstvu, da je primeren za širok spekter pravnega sklepanja. Obstaja mnogo razlogov 
+o družbenih in logičnih ovirah za uporabo Bayesa v sodnih postopkih ali splošnem političnem odločanju, a prevladujoči razlog je najbrž ta, da je 
+večina primerov Bayesovega pristopa preveč poenostavila temelje prava, ki so bili modelirani, da so se izrčuni lahko izvajali ročno.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Osnove Bayesa za pravno sklepanje}
 \begin{definicija}
-\pojem{Hipoteza} je izjava (običajno logična), katere resnično vrednost želimo določiti, vendar je na splošno neznana - in je morda nikoli ne bomo vedeli z gotovostjo.
+\pojem{Hipoteza} je izjava (običajno logična), katere resnično vrednost želimo določiti, vendar je na splošno neznana - in je morda nikoli ne 
+bomo vedeli z gotovostjo.
 \end{definicija}
 
 \begin{definicija}
@@ -63,10 +68,80 @@ da so se izrčuni lahko izvajali ročno.
 \pojem{Dokaz} je izjava, ki, če je resnićna, podpira eno ali več hipotez.
 \end{definicija}
 
+Predpostavimo, da je:
+\begin{itemize}
+    \item dokaz $E$ sled DNK, najdena na kraju kaznivega dejanja (zaradi poenostavitve predpostavimo, da je bilo 
+    kaznivo dejanje storjeno na otoku z $10000$ ljudmi, in te predstavljajo celoten nabor možnih osumljencev);
+    \item bil obtoženec aretiran in odvzet ter analiziran je bil njegov DNK.
+\end{itemize}
+
+Smer vzročno - posledične strukture je tu smiselna, saj $H$, ki je resničen(oz. neresničen), povzroči, da je $E$ resničen(oz. neresničen), 
+medtem ko $E$ ne more povzročiti $H$. Sklepanje je lahko v obeh smereh. Če opazimo, da je $E$ resničen(oz. neresničen), se naše prepričanje, 
+da je $H$ resničen(oz. neresničen), poveča. Prav ta zadnja vrsta sklepanja je osrednjega pomena za celotno pravno sklepanje, saj odvetniki in 
+porotniki običajno neformalno uporabljajo naslednji splošno sprejeti postopek za sklepanje o dokazih:
+\begin{itemize}
+    \item z neko (brezpogojno) predhodno predpostavko o končni hipozei $H$ (npr. "`predpostavka nedolžen, dokler se mu ne dokaže krivda"' je enaka 
+    prepričanju, da "`verjetnost, da je obtoženec kriv, ni večja kot pri katerem koli drugem človeku v populaciji"');
+    \item posodobitev našega predhodnega prepričanja o hipotezi $H$, ko opazimo dokaz $E$. Pri tem posodabljanju se upošteva verjetnost dokazov.
+\end{itemize}
+
+To neformalno razmišljanje se popolnoma ujema z Bayesovim sklepanjem, kjer sta predhodna predpostavka o $H$ in verjetnost dokaza $E$ zajeti z 
+verjetnostnimi tabelami(tabela 1 in tabela 2).
+
+\begin{table}[h!]
+\begin{center}
+    \begin{tabular}{|c|c|} 
+     \hline
+     Napačno & 0,999 \\ \hline
+     Pravilno & 0,001 \\ \hline
+    \end{tabular}
+    \caption{Tabela verjenosti za hipotezo $H$.}
+    \label{table:stevila}
+\end{center}
+\end{table}
+
+\begin{table}[h!]
+\begin{center}
+    \begin{tabular}{|c|c|c|} 
+     \hline
+     $H$: obtoženčev DNK je DNK iz kraja kaznivega dejanja & Napačno & Pravilno \\ \hline
+     Napačno & 0,999 & 0.0 \\ \hline
+     Pravilno & 0,001 & 1.0 \\ \hline
+    \end{tabular}
+    \caption{Verjetnostna tabela za $E \mid H$.}
+    \label{table:stevila}
+\end{center}
+\end{table}
+
+To so tabele za predhodno verjetnost hipoteze $H$, zapisano kot $\mathbb{P}(H)$ in pogojno verjetnost dokaza $E$ glede na hipotezo $H$, ki 
+jo zapišemo kot $\mathbb{P}(E \mid H)$. Bayesova teorija doloža formulo za posodobitev našega predhodnega prepričanja o hipotezi $H$ glede na 
+dokaz $E$, da dobimo naknadno prepričanje o $H$, kar zapišemo kot $\mathbb{P}(H \mid E)$:
+\[\mathbb{P}(H \mid E) = \frac{\mathbb{P}(E \mid H)*\mathbb{P}(H)}{\mathbb{P}(E)} = \frac{\mathbb{P}(E \mid H)*\mathbb{P}(H)}{\mathbb{P}(E \mid H)*\mathbb{P}(H) + \mathbb{P}(E \mid \text{not}\quad H)*\mathbb{P}(\text{not}\quad H)}.\]
+
+Tabela 1(tabela verjenosti za $H$) zajema, da je obtoženec eden od $10000$ ljudi, ki bi lahko bili vir DNK-ja iz kraja zločina. Tabela 2 
+(verjetnostna tabela za $E \mid H$) vsebuje predpostavke, da: 
+\begin{itemize}
+    \item verjetnost pravilnega ujemanja sledi DNK je ena (torej ni možnosti lažno negativnega ujemanja DNK). Ta verjetnost $\mathbb{P}(E \mid H)$ 
+          se imenuje verjetnost obtožbe za dokaz $E$;
+    \item verjetnost ujemanja pri osebi, ki ni pustila svojega DNK-ja na kraju dogodka (torej "`verjetnost naključnega ujemanja DNK"'), je $1$ 
+          proti $1000$. Ta verjetnost $\mathbb{P}(E \mid \text{not}\quad H)$ se imenuje verjetnost obrambe dokaza $E$.
+\end{itemize}
+
+S temi predpostavkami iz Bayeseve teorije sledi, da je v našem primeru posteriorno prepričanje v hipotezo $H$ po gotovitvi, da je dokaz $E$ 
+resničen, približno 9\%, tj. naše prepričanje, da je otoženec vir DBK s kraja zločina, se iz verjetnosti 1 proti 10000 premakne na vrednost 9\%. 
+Druga možnost je, da se naše prepričanje, da je obtoženec vir DNK s kraja zločina, premakne z vrednosti 99\% na 91\%. \\ \\
+
+Upoštevati je potrebno, da se posterirona verjetnost, da obtoženec ni vir DNK, zelo razlikuje od verjetnosti naključnga ujemanja. Napačna 
+predpostavka, da sta verjetnosti $\mathbb{P}(\text{not}\quad H \mid E)$ in $\mathbb{P}(E \mid \text{not}\quad H)$ enaki, je značilna za 
+tožilčevo zmoto (imenovano tudi napako prenesenega pogoja). Tožilec lahko na primer izjavi, da je "`verjetnost, da obtoženec ni bil vir DNK dokaza, 1 proti 1000'", čeprav je dejansko 91-odstotna. Ta preprosta napaka verjetnostnega sklepanja
 
 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Kontekst in pregled Bayesove metode v sodnih postopkih}
-Da lahko definiramo Bayesovo sklepanje v sodnih postopkih, klasificirajmo primere, kjer se je uporabilo Bayesovo sklepanje na sodušču, ki vključujejo:
+Da lahko definiramo Bayesovo sklepanje v sodnih postopkih, klasificirajmo primere, kjer se je uporabilo Bayesovo sklepanje na sodušču, 
+ki vključujejo:
 \begin{itemize}
     \item Preverjanje hipotez o določenem "dvomljivem" vedenju.
     \item Ugotavljanje, v kolikšni meri dokaz o "lastnosti" pomaga pri identifikaciji.
@@ -83,23 +158,27 @@ Večina poročanih primerov izrecne uporabe statističnih podatkov v sodnih post
     \item Posedovanje nezakonitih materialov/snovi.
 \end{itemize}
 
-Običajno se je, kadar je na voljo dovolj ustreznih podatkov, namesto Bayesovega testiranja hipotez uporabilo klasično statistično testiranje hipotez, da se ugotovi, ali 
-ali je mogoče hičelno hipotezo "ni dvomljivega vedenja" zavrniti na ustrezni ravni pomembnosti, kljub težavam pri razlagi $p$ - vrednosti in intervalov zaupanja, ki se jim 
-sicer z uporabo Bayesovega pristopa lahko izognemo. Možnost napačne razlage je ogromna in statistiki se premalo zavedajo, da sodobna orodja omogočajo enostavno izvedbo 
-potrebnih analiz za Bayesovo testiranje hipotez.
+Običajno se je, kadar je na voljo dovolj ustreznih podatkov, namesto Bayesovega testiranja hipotez uporabilo klasično statistično testiranje 
+hipotez, da se ugotovi, ali ali je mogoče hičelno hipotezo "ni dvomljivega vedenja" zavrniti na ustrezni ravni pomembnosti, kljub težavam 
+pri razlagi $p$ - vrednosti in intervalov zaupanja, ki se jim sicer z uporabo Bayesovega pristopa lahko izognemo. Možnost napačne 
+razlage je ogromna in statistiki se premalo zavedajo, da sodobna orodja omogočajo enostavno izvedbo potrebnih analiz za Bayesovo 
+testiranje hipotez.
 
 \subsection{Ugotavljanje, v kolikšni meri dokaz o "lastnosti" pomaga pri identifikaciji}
-Ta klasifikacija se nanaša na vse primere, v katerih se uporabljajo statistični dokazi o 'lastnostih' v najširšem pomenu. lastnosti segajo od forenzičnih fizičnih lasnosti, 
-kot je DNK, prstnih odtisov, do bolj osnovnih lastnosti, kot so barva kože, višina, barva las\dots. Lahko se nanašajo tudi na nečloveške značilnosti, povezane z zločinom ali 
-prizoriščem zločina, kot so oblačila in druga lastnina, avtomovil, orožje, steklo\dots. \\
-\\
-Vsaka statistična uporaba dokazov o lastnostih zahteva določeno oceno (na podlagi vzorčenja ali kako drugače) pojavnosti lastnosti v ustrezni populaciji. Velik del odpora proti 
-uporabi takšnih dokazov je posledica pomislkeov glede starosti in veljavbosti teh ocen. Kljub temu je hitra rast forenzične statistike v zadnjih 25 letih povzročila ustrezno povečanje 
-uporabe statističnih dokazov o lastnostih. Zato ni presenetljivo, da se skoraj vsa objavljena uporaba Bayesa v sodnih postopkih nanaša na to vrsto.
+Ta klasifikacija se nanaša na vse primere, v katerih se uporabljajo statistični dokazi o 'lastnostih' v najširšem pomenu. lastnosti segajo 
+od forenzičnih fizičnih lasnosti, kot je DNK, prstnih odtisov, do bolj osnovnih lastnosti, kot so barva kože, višina, barva las\dots. 
+Lahko se nanašajo tudi na nečloveške značilnosti, povezane z zločinom ali prizoriščem zločina, kot so oblačila in druga lastnina, 
+avtomovil, orožje, steklo\dots. \\ \\
+
+Vsaka statistična uporaba dokazov o lastnostih zahteva določeno oceno (na podlagi vzorčenja ali kako drugače) pojavnosti lastnosti v 
+ustrezni populaciji. Velik del odpora proti uporabi takšnih dokazov je posledica pomislkeov glede starosti in veljavbosti teh ocen. Kljub 
+temu je hitra rast forenzične statistike v zadnjih 25 letih povzročila ustrezno povečanje uporabe statističnih dokazov o lastnostih. Zato 
+ni presenetljivo, da se skoraj vsa objavljena uporaba Bayesa v sodnih postopkih nanaša na to vrsto.
 
 \subsection{Združevanje večih statističnih dokazov}
-Kadar je v primer vključenih več delov statističnih dokazov, je potrebna natančna analiza ob upoštevanju morebitnih odvisnosti med različnimi dokazi. Bazyesova teorija je idelana za 
-takšno analizo, a na žalost se odvisnoti med dokazi niso dobro zavedali pri številnih primerih. 
+Kadar je v primer vključenih več delov statističnih dokazov, je potrebna natančna analiza ob upoštevanju morebitnih odvisnosti med 
+različnimi dokazi. Bazyesova teorija je idelana za takšno analizo, a na žalost se odvisnoti med dokazi niso dobro zavedali pri 
+številnih primerih. 
 
 \subsection{Združevanje večih različnih dokazov}
 
