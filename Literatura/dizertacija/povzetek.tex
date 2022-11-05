@@ -1,0 +1,83 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[slovene]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\pagestyle{empty}
+
+\newcommand{\pojem}[1]{\textsc{#1}}
+
+\newcounter{definicija}
+\newenvironment{definicija}
+{
+   \stepcounter{definicija}
+   \begin{flushleft}
+   \textbf{Definicija \arabic{definicija}: }
+}
+{
+   \hfill $\square$
+   \end{flushleft}
+}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Statistika in verjetnost v kazenskih postopkih}
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Kako se statistika uporablja v kazenskem pravu}
+Težko je podati jasno opredelitev, kaj mislimo s statističnimi dokazi, vendar lahko ugotovimo skupni vzorec. Izhodišče so nekateri statistični 
+podatki, npr. kolikokrat se profil DNK pojavi v podatkovni zbirki. Nato se iz podatkov na podlagi statističnega modela izpelje statistična ali 
+verjetnostna ocena, npr. ocena pogostosti profila DNK v populaciji se izpelje na podlagi populacijskega modela ali pa se na podlagi določenih 
+predpostavk izpelje verjetnost nekega dogodka. Nazadnje se verjetnostne in statistične ocene uporabijo za sklepanje o krivdi ali nedolžnosti. \\ \\
+
+Osrednotočimo se na tri vrste pravnih argumentov, ki se v veliki meri opirajo na statistične dokaze. Imenujemo jih argument identifikacije, 
+argument nenaključnosti in argument skupne količine. Na statistične dokaze se zanašajo za tri različne namene: identifikacijo storilca 
+kaznivega dejanja, oceno, ali je do dogodka prišlo po naklučju ali ne, in končno oceno skupne količine(npr. skupne količine nezakonito 
+uvožene droge), kadar ni na voljo neposrednega merila skupne količine.
+
+\subsection{Statistična identifikacija}
+Argumenti statistične identfikacije:
+\textbf{Prepoznavni znak.} Obstajajo dokazi, da ima storilec aznivega dejanja ali kdor koli, ki je obiskal kraj kaznivega dejanja, lastnost $F$. \\
+\textbf{Ujemanje.} Obtoženec ima lastnost $F$. \\
+\textbf{Statistična pogostost.} V določeni populaciji osumljenecev se lastnost $F$ pojavlja z nizko frekvenco, npr. 1 na milijardo. \\
+\textbf{Verjetnostna identifikacija.} Storilec ali kdorkoli, ki je obiskal kraj kaznivega dejanja, je ista oseba kot obtoženec, ali še natančneje, 
+zelo verjetno gre za isto osebo.
+
+To je vzorec sklepanja tožilca. Obstaja tudi način za formalizacijo argumenta statistične identifikacije z Bayesovim teoremom. \\\\
+
+\subsection{Naključje ali ni naključje?}
+Kazensko pravo pogosto vsebuje argumente, ki jih lahko imenujemo argumenti, ki niso naključni. Argumente lahko shematično predstavimo 
+na naslednji način:
+\textbf{Dogodek.} Dogodek $E$ se je zgodil ob navzočnosti obtoženca $D$.\\
+\textbf{Podobnost.} Drugi dogodki $E^{*}$, ki so podobni dogodku $E$, so se zgodili v prisotnosti obtoženca $D$.\\
+\textbf{Statistična pogostost.} Ob hipotezi, da se je vse zgodilo po naključju, je niz podobnosti dogodkov, ki ga sestavljata dogodek $E$ in 
+dogodki $E^{*}$ in se vsi zgodijo ob prisotnosti obtoženca $D$, statistično zelo redek.\\
+\textbf{Ni naključje.} Do dogodka $E$ ni moglo priti po naključju, temveč je bil najverjetneje posledica obtoženčevega($D$) namernega ravnanja.\\\\
+
+Obstoj podobnih dogodkov, ki so se zgodili ob navzočnosti obtoženca $D$, ima ključno vlogo v argumentaciji, vsaj retorično. Zdaj si oglejmo isto 
+aragument brez koraka podobnosti:
+\textbf{Dogodek.} Zgodil se je dogodek $E$.
+\textbf{Statistična pogostost.} Ob hipotezi, da se je vse zgodilo po naključju, so dogoski, kot je $E$ ob prisotnosti obtoženca $D$, statistično zelo 
+redki.\\
+\textbf{Ni naključje.} Do dogodka $E$ ni moglo priti po naključju, temveč je bil najverjetneje posledica obtoženčevega($D$) namernega ravnanja.\\
+Argument se sedaj zdi očitno napačen. V najboljšem primeru gre za statistični ali verjetnostni modus tollens: če je hipoteza o naključju resnična, potem 
+je malo verjetno, da je dogodek $E$ rsničen; toda dogodek $E$ je resničen, zato je malo verjetno, da je hipoteza o naključju resnična. 
+%tuki sledi tur primer Lucie de Berg, ker so bili takšni argumenti oblikovani brez posebne previdnosti in so sledile hude sodne napake, str. 125
+
+\subsection{Ocenjevanje količin oz. argument statistične skupne količine}
+Ko gre v kazenskem primeru za neko količina, zaradi katere sodiju obtožencu, in je potrebno to količino oceniti za izrek kazni ali odšodnine, uporabljajo 
+statistične podatke. Sklepi, ki izhajajo iz statističnega modela, se ne uporabljajo za kazensko sodbo; ne uporabljajo se neposredno na sojenju za dokazovanje krivde 
+brez utemeljenga dvoma. Uporabljajo se po obsodbi, bodisi po izreku kazni bodisi na obravnavi o povrnitvi škode.
+
+\subsection{Povzetek}
+Pregled sodne prakse je pokazal, da se odnos sodišč do statističnih dokazov razlikuje od primera do primera. Sodišča lahko izrazujo močan odpor in so zelo 
+kritična, lahko pa na statistične dokaze gledajo pozitivno, tudi če so pomankljivi(primer de Berk).
+
+
+
+\end{document}
