@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1667462237 "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/Literatura/BayesInTheLaw/byl_povzetek.tex" "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/Literatura/BayesInTheLaw/byl_povzetek.pdf" "byl_povzetek" 1667462237
-  "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/Literatura/BayesInTheLaw/byl_povzetek.aux" 1667462237 1405 94cdea9988d66e5fa352438d3259b5ea ""
-  "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/Literatura/BayesInTheLaw/byl_povzetek.tex" 1667462237 11488 ca5a2a0cecf0ce4f68588b6488aec467 ""
+["pdflatex"] 1667494318 "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/Literatura/BayesInTheLaw/byl_povzetek.tex" "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/Literatura/BayesInTheLaw/byl_povzetek.pdf" "byl_povzetek" 1667630272
+  "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/Literatura/BayesInTheLaw/byl_povzetek.aux" 1667494318 1405 fed372c6dbe7e6c5062407dc2bce0fd8 ""
+  "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/Literatura/BayesInTheLaw/byl_povzetek.tex" 1667630271 12493 aa043eee8548b190b2447ae58b80fe94 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1254269338 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1202520719 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc" 1202520719 2840 216e6e45ad352e2456e1149f28885bee ""
@@ -76,11 +76,11 @@
   "/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1616695603 5169178 a2ce6e2d73f603b690db6777d06dbccb ""
   "/usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1638351185 2724738 99ced56f488d4dbb028a5474dfd1162f ""
   "/usr/local/texlive/2021/texmf.cnf" 1616695596 577 4c1911a7228e554c6032256d3cf5567d ""
-  "byl_povzetek.aux" 1667462237 1405 94cdea9988d66e5fa352438d3259b5ea "pdflatex"
-  "byl_povzetek.tex" 1667462237 11488 ca5a2a0cecf0ce4f68588b6488aec467 ""
+  "byl_povzetek.aux" 1667494318 1405 fed372c6dbe7e6c5062407dc2bce0fd8 "pdflatex"
+  "byl_povzetek.tex" 1667630271 12493 aa043eee8548b190b2447ae58b80fe94 ""
   (generated)
   "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/Literatura/BayesInTheLaw/byl_povzetek.pdf"
+  "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/Literatura/BayesInTheLaw/byl_povzetek.log"
   "byl_povzetek.aux"
   "byl_povzetek.pdf"
-  "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/Literatura/BayesInTheLaw/byl_povzetek.log"
   "byl_povzetek.log"
