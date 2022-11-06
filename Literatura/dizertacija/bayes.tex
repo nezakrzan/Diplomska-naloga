@@ -1,0 +1,101 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[slovene]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{enumitem}
+
+\pagestyle{empty}
+\setlength{\parindent}{0mm}
+
+
+
+\newcommand{\pojem}[1]{\textsc{#1}}
+\newcounter{definicija}
+\newenvironment{definicija}
+{
+   \stepcounter{definicija}
+   \begin{flushleft}
+   \textbf{Definicija \arabic{definicija}: }
+}
+{
+   \hfill $\square$
+   \end{flushleft}
+}
+\newcounter{trditev}
+\newenvironment{trditev}
+{
+   \stepcounter{trditev}
+   \begin{flushleft}
+   \textbf{Trditev \arabic{trditev}: }
+}
+{
+   \end{flushleft}
+}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Bayeseva teorija v kazenskem pravu}
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Statistične dokaze v kazenskih postopkih se uporablja za vsaj tri namene:
+\begin{itemize}
+    \item s statističnimi podatki je mogoče odgovoriti na vprašnja o 
+    identifikaciji, npr. ali je obtoženec vir sledi kaznivega dejanja ali je imles stik s krejm kaznivega dejanja;
+    \item statistične podatke je mogoče uporabiti tudi za oceno, ali so določeni dogodki ali več dogodkov posledica nesreče ali namernega ravnanja;
+    \item statistične podatke je mogoče uporabiti za posredno oceno skupnih količin, kadar ni na voljo neposrednega merila teh količin. 
+\end{itemize}  
+V tem poglavju bo opisano kako nam lahko Bayeseva teorija pomaga pri ocenjevanju dokazne vrednosti statističnih dokazov v teh treh vrstah primerov.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Matematična verjetnost}
+\begin{definicija}
+Predpostavimo, da je $\mathbb{P}$ funkcija iz množice dogodkov $\Omega$ v realna števila; potej je $\mathbb{P}$ verjetnostna funkcija, če izpolnjuje spodnje aksiome Kolmogorova:\\
+\begin{itemize}
+    \item $0 \le \mathbb{P}(A) \le 1$ za vsak dogodek A iz množice dogodkov $\Omega$;
+    \item $\mathbb{P}(\top)=1$, pri čemer je $\top$ katerakoli logična tavtologija;
+    \item $\mathbb{P}(A \vee B) = \mathbb{P}(A) + \mathbb{P}(B)$, pri čemer sta $A$ in $B$ dogodka iz množice dogodkov in sta med seboj neodvisna.
+\end{itemize}
+\end{definicija}
+
+\begin{definicija}
+Sedaj lahko definiramo pogojno verjetnost dogodkov $A$ in $B$ iz množice dogodkov $\Omega$, kot:
+\[\mathbb{P}(A \mid B) = \frac{\mathbb{P}(A \wedge B)}{\mathbb{P}(B)}.\]
+\end{definicija}
+
+Dokažemo lahko tudi nekatere trditve:
+\begin{trditev}
+$\mathbb{P}(A \mid B) = [\mathbb{P}(A) + \mathbb{P}(B)] - \mathbb{P}(A \wedge B)$, če sta $A$ in $B$ neodvisna.
+\end{trditev}
+
+\begin{trditev}
+Če je $A \subseteq B$, potem je $\mathbb{P}(A) \le \mathbb{P}(B)$.
+\end{trditev}
+
+\begin{trditev}
+$\mathbb{P}(A) = 1 - \mathbb{P}(\neg A)$.
+\end{trditev}
+
+\begin{trditev}
+$\mathbb{P}(A) = \mathbb{P}(A \mid B) \mathbb{P}(B) + \mathbb{P}(A \mid \neg B)\mathbb{P}(\neg B)$.
+\end{trditev}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Bayesova teorija}
+Recimo, da imamo hipotezo $H$ in zanjo imamo nekaj dokazov $E$, sedaj pa želimo izvedeti verjetnost hipoteze $H$ glede na dokaze $E$. Bayesova 
+teorija nam daje formulo:
+\[\mathbb{P}(H \mid E) = \frac{\mathbb{P}(E \mid H)\mathbb{P}(H)}{\mathbb{P}(E)} = \frac{\mathbb{P}(E \mid H)\mathbb{P}(H)}{\mathbb{P}(E \mid H)\mathbb{P}(H) + \mathbb{P}(E \mid  \neg H)\mathbb{P}(\neg H)} .\]
+
+Bayesova teorija omogoča izračun verjetnosti hipoteze $H$ glede na dogodke $E$ iz treh drugih predpostavk:
+\begin{enumerate}[label=(\roman*)]
+    \item verjetnost hipitetze $H$ ne glede na dogodke $E$;
+    \item verjetnost dokazov $E$, ki je enaka $\mathbb{P}(E \mid H)\mathbb{P}(H) + \mathbb{P}(E \mid  \neg H)\mathbb{P}(\neg H)$;
+    \item verjetnost $\mathbb{P}(E \mid H)$, tj. verjetnost dogodkov $E$ glede na hipotezo $H$.
+\end{enumerate}
+
+
+\end{document}
