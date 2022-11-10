@@ -123,7 +123,7 @@ verjetnosti. Pogojna verjetnost predstavlja verjetnost dogodka, glede na drug do
 \begin{definicija}
 Pogojna verjetnost dogodka H, glede na dogodek E, je
 \begin{equation}\label{eq:pogojna}
-P(H \mid E) = \frac{P(H \cap E)}{P(E)},
+P(H \lvert E) = \frac{P(H \cap E)}{P(E)},
 \end{equation}
 ob predpostavki, da je $P(E) > 0$.
 \end{definicija}
@@ -133,17 +133,17 @@ zgodita oba dogodka in verjetnosti, da se je zgodil dogodek E.\\
 
 Potem pogojno verjetnost uporabimo še v števcu formule \eqref{eq:pogojna} in dobimo Bayesovo pravilo:
 \begin{equation}\label{eq:bpravilo}
-    P(H \mid E) = \frac{P(E \mid H) \times P(H)}{P(E)},
+    P(H \lvert E) = \frac{P(E \lvert H) \times P(H)}{P(E)},
 \end{equation}
 
 Verjetnost dogodka E lahko še razpišemo in dobimo:
 \begin{equation}\label{eq:b_pravilo}
-    P(H \mid E) = \frac{P(E \mid H) \times P(H)}{P(E \mid H)P(H) + P(E \mid \neg H)P(\neg H)}.
+    P(H \lvert E) = \frac{P(E \lvert H) \times P(H)}{P(E \lvert H)P(H) + P(E \lvert \neg H)P(\neg H)}.
 \end{equation} \\
 
 Obstaja še ena formulacija Bayesovega pravila, ki olajša izračune in je pogosto uporabljena pri Bayesovi analizi DNK dokazov:
 \begin{equation}\label{eq:b_pravilo_DNK}
-    \frac{P(H \mid E)}{P(\neg H \mid E)} = \frac{P(E \mid H)}{P(E \mid \neg H)} \times \frac{P(H)}{P(\neg H)}.
+    \frac{P(H \lvert E)}{P(\neg H \lvert E)} = \frac{P(E \lvert H)}{P(E \lvert \neg H)} \times \frac{P(H)}{P(\neg H)}.
 \end{equation}\\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -153,7 +153,7 @@ apriorne verjetnosti dokazov glede na novo zbrane dokaze oziroma prepričanja. \
 
 Bayesovo posodabljanje pravi:
 \begin{trditev}
-Če se dogodek E zgodi ob času $t_1 > t_0$, potem je $P_1(H) = P_0(H \mid E)$.
+Če se dogodek E zgodi ob času $t_1 > t_0$, potem je $P_1(H) = P_0(H \lvert E)$.
 \end{trditev}
 
 Ob času $t_0$ dogodku H dodelimo verjetnost $P_0(H)$; to se imenuje predhodna verjetnost oziroma apriorna verjetnost. Ko se zgodi dogodek E 
@@ -162,12 +162,58 @@ enačiti z pogojno verjetnostjo dogodka H glede na dogodek E v času $t_0$. \\
 
 Recimo, da je dogodek H neka hipoteza oziroma prepričanje o zločinu in dogodek E dokazi, zbrani za ta zložin. Pri Bayesovem posodabljanju je videti, 
 kot da je dokaz E nesporno resničen. Z drugimi besedami, predpostavka je, da moramo imeti po zbiranju dokazov E stopnjo zaupanja v E enako 1, 
-torej če so dokazi zbarni v času $t_1$, je $P_1(E)=1$.
+torej če so dokazi zbarni v času $t_1$, je $P_1(E)=1$. \\\\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{}
+\section{Primer - Taksi podjetja}
+Za lažje razumevanje Bayesovega pravila si poglejmo primer. \\
 
+Obstajata dve taksi podjetji, Zeleni Taksi in Modri taksi, katerih vozila so pobarvana zeleno oziroma modro. Podjetje Zeleni taksi pokriva 
+85 odstotokov trga, podjetje Modri taksi pa preostanek. Predpostavimo še, da v okolici ni drugih taksi podjetij. V meglenem dnevu taksi trči 
+v mimoidočega pešca in ga poškoduje, vendar odpelje s kraja nesreče. Priča nesreče poroča, da je bilo vozilo modre barve. Priča ima prav le 
+v 80 odstotokih primerov, kar pomeni, da je njegova zanesljivost enaka $0,8$. Kolikšna je verjetnost, da je bil taksi, ki je povzročil nesrečo, 
+modre barve glede na poročilo priče? \\
+
+Vpeljimo oznake:\\
+$Z$ \dots hipoteza, da je bil taksi zelen, \\
+$M$ \dots hipoteza, da je bil taksi moder, \\
+$W_m$ \dots dokaz, t.j. poročanje priče, da je bil taksi moder. \\ \\
+Problem je določiti pogojno verjetnost hipoteze $M$, ob pogoju, da je dokaz $W_m$ resničen, torej $P(M \lvert W_m)$. \\
+
+Za uporabo Bayesovega pravila potrebujemo tri elemente: verjetnost dokazov glede na hipotezo, verjetnost dokazov in verjetnost hipoteze. Podjetje 
+Zeleni taksi pokriva 85 odstotkov trga, zato je verjetnost $P(Z)=0,85$. Po definiciji verjetnosti, je potem $P(M)=1-P(Z)=0,15$. Vemo tudi, da ima 
+priča v 80 odstotkih primerov prav, torej $P(W_m \lvert M) = 0,8$ in $P(W_m \lvert Z) = 0,2$. Izračunajmo še verjetnost dokaza $P(W_m)$:
+\[P(W_m) = P(W_m \lvert B)P(M) + P(W_m \lvert Z)P(Z)= 0,8 \times 0,15 + 0,2 \times 0,85 = 0,29.\]
+
+Sedaj lahko uporabimo Bayesovo pravilo:
+\[P(M \lvert W_m)= \frac{P(W_m \lvert M)P(M)}{P(W_m \lvert M)P(M) + P(W_m \lvert Z)P(Z)} = \frac{0,8 \times 0,15}{0,29} = \frac{12}{29} \approx 0,41.\]
+
+verjetnost, da je bil taksi glede na pričanje dejansko modre barve, je precej majhna, tudi če ima priča v 80 odstotokih primerov prav. Razlog za to je, 
+da je verjetnost $M$, ne glede na dokaze, majhna ($P(M)=0,15$). Spodnja tabela kaže, da lahko s spreminjanjem verjetnosti $M$ dobimo različne pogojne 
+verjetnosti $P(M \lvert W_m)$, pri čemer je zanesljivost priče nespremenjena:
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{c c c c} 
+\hline
+$P(M)$ & $P(Z)$ & $P(W_m \lvert M)$ & $P(M \lvert W_m)$ \\ 
+\hline
+0,15 & 0,85 & 0,8 & 0,41 \\
+0,25 & 0,75 & 0,8 & 0,57 \\
+0,35 & 0,65 & 0,8 & 0,68 \\
+0,45 & 0,55 & 0,8 & 0,76 \\
+0,50 & 0,50 & 0,8 & 0,80 \\
+0,55 & 0,45 & 0,8 & 0,83 \\
+0,65 & 0,35 & 0,8 & 0,88 \\
+0,75 & 0,25 & 0,8 & 0,92 \\
+0,85 & 0,15 & 0,8 & 0,95 \\
+\hline
+\end{tabular}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -2,4 +2,4 @@
 \contentsline {section}{\tocsection {}{1}{Bayesova statistika}}{3}{}%
 \contentsline {subsection}{\tocsubsection {}{1.1}{Bayesovo pravilo}}{3}{}%
 \contentsline {subsection}{\tocsubsection {}{1.2}{Bayesovo posodabljanje}}{3}{}%
-\contentsline {section}{\tocsection {}{2}{}}{4}{}%
+\contentsline {section}{\tocsection {}{2}{Primer - Taksi podjetja}}{4}{}%
