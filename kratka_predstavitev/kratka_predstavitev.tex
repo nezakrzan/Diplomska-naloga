@@ -1,0 +1,176 @@
+\documentclass[12pt,a4paper]{amsart}
+\usepackage[slovene]{babel}
+%\usepackage[cp1250]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{url}
+\usepackage[normalem]{ulem}
+\usepackage[dvipsnames,usenames]{color}
+
+% Oblika strani
+\textwidth 15cm
+\textheight 24cm
+\oddsidemargin.5cm
+\evensidemargin.5cm
+\topmargin-5mm
+\addtolength{\footskip}{10pt}
+\pagestyle{plain}
+\overfullrule=15pt % oznaci predlogo vrstico
+
+
+% Ukazi za matematična okolja
+\theoremstyle{definition} % tekst napisan pokončno
+\newtheorem{definicija}{Definicija}[section]
+\newtheorem{primer}[definicija]{Primer}
+\newtheorem{opomba}[definicija]{Opomba}
+
+\renewcommand\endprimer{\hfill$\diamondsuit$}
+
+
+\theoremstyle{plain} % tekst napisan poševno
+\newtheorem{lema}[definicija]{Lema}
+\newtheorem{izrek}[definicija]{Izrek}
+\newtheorem{trditev}[definicija]{Trditev}
+\newtheorem{posledica}[definicija]{Posledica}
+
+
+% Za številske mnozice uporabi naslednje simbole
+\newcommand{\R}{\mathbb R}
+\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\C}{\mathbb C}
+\newcommand{\Q}{\mathbb Q}
+
+% Ukaz za slovarsko geslo
+\newlength{\odstavek}
+\setlength{\odstavek}{\parindent}
+\newcommand{\geslo}[2]{\noindent\textbf{#1}\hspace*{3mm}\hangindent=\parindent\hangafter=1 #2}
+
+
+\newcommand{\program}{Finančna matematika} 
+\newcommand{\imeavtorja}{Neža Kržan} 
+\newcommand{\imementorja}{izr. prof. Jaka Smrekar} 
+\newcommand{\naslovdela}{Statistika v kazenskem pravu}
+\newcommand{\letnica}{2022} %letnica diplome
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\thispagestyle{empty}
+\noindent{\large
+UNIVERZA V LJUBLJANI\\[1mm]
+FAKULTETA ZA MATEMATIKO IN FIZIKO\\[5mm]
+\program\ -- 1.~stopnja}
+\vfill
+
+\begin{center}{\large
+\imeavtorja\\[2mm]
+{\bf \naslovdela}\\[10mm]
+Delo diplomskega seminarja\\[1cm]
+Mentor: \imementorja}
+\end{center}
+\vfill
+
+\noindent{\large
+Ljubljana, \letnica}
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\thispagestyle{empty}
+\tableofcontents
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\thispagestyle{empty}
+%\begin{center}
+%{\bf \naslovdela}\\[3mm]
+%{\sc Povzetek}
+%\end{center}
+% tekst povzetka v slovenscini
+%V povzetku na kratko opišite vsebinske rezultate dela. Sem ne sodi razlaga organizacije dela -- v katerem poglavju/razdelku je kaj, pač pa le opis vsebine.
+%\vfill
+%\begin{center}
+%{\bf Angle"ski naslov dela}\\[3mm] % prevod slovenskega naslova dela 
+%{\sc Abstract}
+%\end{center}
+% tekst povzetka v anglescini
+%Prevod zgornjega povzetka v angleščino.
+
+%\vfill\noindent
+%{\bf Math. Subj. Class. (2010):} navedite vsaj eno klasifikacijsko oznako -- dostopne so na \url{www.ams.org/mathscinet/msc/msc2010.html}  \\[1mm]  
+%{\bf Ključne besede:} navedite nekaj ključnih pojmov, ki nastopajo v delu  \\[1mm]  
+%{\bf Keywords:} angleški prevod ključnih besed
+%\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Bayesova statistika}
+Bayesova statistika je statistična veja, ki nam s pomočjo matematičnih pristopov omogoča uporabo verjetnosti pri reševanju statističnih 
+problemov. V svoje modele vključuje pogojno verjetnost, katero izračunamo z uporabo Bayesovega pravila. \\
+
+Zlasti Bayesovo sklepanje razlaga verjetnost kot merilo verjetnosti ali zaupanja, ki ga lahko ima posameznik glede nastanka določenega dogodka. 
+O nekem dogodku lahko že imamo predhodno prepričanje oziroma apriorno prepričanje, ki pa se lahko spremeni, ko se pojavijo novi dokazi. Bayesova 
+statistika nam daje matematične modele za vključevanje naših apriornih prepričanj in dokazov za ustvarjenje novih prepričanj oziroma za 
+pridobitev aposteriornega prepričanja, ki se lahko uporabi za kasnejše odločitve.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Bayesovo pravilo} 
+Bayesovo sklepanje temelji na Bayesovim pravilom, ki izraža verjetnost nekega dogodka z verjetnostjo dveh dogodkov in obrnejnje pogojne 
+verjetnosti. Pogojna verjetnost predstavlja verjetnost dogodka, glede na drug dogodek. 
+
+\begin{definicija}
+Pogojna verjetnost dogodka H, glede na dogodek E, je
+\begin{equation}\label{eq:pogojna}
+P(H \mid E) = \frac{P(H \cap E)}{P(E)},
+\end{equation}
+ob predpostavki, da je $P(E) > 0$.
+\end{definicija}
+
+Formula \eqref{eq:pogojna} pove, da je verjetnost dogodka H ob pogoju, da se je zgodil dogodek E, enaka razmerju verjetnosti, da se 
+zgodita oba dogodka in verjetnosti, da se je zgodil dogodek E.\\
+
+Potem pogojno verjetnost uporabimo še v števcu formule \eqref{eq:pogojna} in dobimo Bayesovo pravilo:
+\begin{equation}\label{eq:bpravilo}
+    P(H \mid E) = \frac{P(E \mid H) \times P(H)}{P(E)},
+\end{equation}
+
+Verjetnost dogodka E lahko še razpišemo in dobimo:
+\begin{equation}\label{eq:b_pravilo}
+    P(H \mid E) = \frac{P(E \mid H) \times P(H)}{P(E \mid H)P(H) + P(E \mid \neg H)P(\neg H)}.
+\end{equation} \\
+
+Obstaja še ena formulacija Bayesovega pravila, ki olajša izračune in je pogosto uporabljena pri Bayesovi analizi DNK dokazov:
+\begin{equation}\label{eq:b_pravilo_DNK}
+    \frac{P(H \mid E)}{P(\neg H \mid E)} = \frac{P(E \mid H)}{P(E \mid \neg H)} \times \frac{P(H)}{P(\neg H)}.
+\end{equation}\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Bayesovo posodabljanje}
+Bayesovo pravilo se razlikuje od Bayesovega posodabljanja. Prvo je matematični izrek, drugo pa logična trditev, kako se sčasoma posodabljajo 
+apriorne verjetnosti dokazov glede na novo zbrane dokaze oziroma prepričanja. \\
+
+Bayesovo posodabljanje pravi:
+\begin{trditev}
+Če se dogodek E zgodi ob času $t_1 > t_0$, potem je $P_1(H) = P_0(H \mid E)$.
+\end{trditev}
+
+Ob času $t_0$ dogodku H dodelimo verjetnost $P_0(H)$; to se imenuje predhodna verjetnost oziroma apriorna verjetnost. Ko se zgodi dogodek E 
+ob času $t_1$, ki vpliva na naša prepričanja o dogodku H, Bayesovo posodabljanje pravi, da je potrebno apriorno verjetnost dogodka H v času $t_1$ 
+enačiti z pogojno verjetnostjo dogodka H glede na dogodek E v času $t_0$. \\
+
+Recimo, da je dogodek H neka hipoteza oziroma prepričanje o zločinu in dogodek E dokazi, zbrani za ta zložin. Pri Bayesovem posodabljanju je videti, 
+kot da je dokaz E nesporno resničen. Z drugimi besedami, predpostavka je, da moramo imeti po zbiranju dokazov E stopnjo zaupanja v E enako 1, 
+torej če so dokazi zbarni v času $t_1$, je $P_1(E)=1$.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Seznam uporabljene literature
+%https://www.quantstart.com/articles/Bayesian-Statistics-A-Beginners-Guide/
+\end{document}
