@@ -183,13 +183,13 @@ Problem je določiti pogojno verjetnost hipoteze $M$, ob pogoju, da je dokaz $W_
 
 Za uporabo Bayesovega pravila potrebujemo tri elemente: verjetnost dokazov glede na hipotezo, verjetnost dokazov in verjetnost hipoteze. Podjetje 
 Zeleni taksi pokriva 85 odstotkov trga, zato je verjetnost $P(Z)=0,85$. Po definiciji verjetnosti, je potem $P(M)=1-P(Z)=0,15$. Vemo tudi, da ima 
-priča v 80 odstotkih primerov prav, torej $P(W_m \lvert M) = 0,8$ in $P(W_m \lvert Z) = 0,2$. Izračunajmo še verjetnost dokaza $P(W_m)$:
-\[P(W_m) = P(W_m \lvert B)P(M) + P(W_m \lvert Z)P(Z)= 0,8 \times 0,15 + 0,2 \times 0,85 = 0,29.\]
+priča v 80 odstotkih primerov prav, torej $P(W_m \lvert M) = 0,8$ in $P(W_m \lvert Z) = 0,2$. Izračunajmo še verjetnost dokaza $P(W_m)$:\\
+\[P(W_m) = P(W_m \lvert B)P(M) + P(W_m \lvert Z)P(Z)= 0,8 \times 0,15 + 0,2 \times 0,85 = 0,29.\]\\
 
 Sedaj lahko uporabimo Bayesovo pravilo:
-\[P(M \lvert W_m)= \frac{P(W_m \lvert M)P(M)}{P(W_m \lvert M)P(M) + P(W_m \lvert Z)P(Z)} = \frac{0,8 \times 0,15}{0,29} = \frac{12}{29} \approx 0,41.\]
+\[P(M \lvert W_m)= \frac{P(W_m \lvert M)P(M)}{P(W_m \lvert M)P(M) + P(W_m \lvert Z)P(Z)} = \frac{0,8 \times 0,15}{0,29} = \frac{12}{29} \approx 0,41.\] \\
 
-verjetnost, da je bil taksi glede na pričanje dejansko modre barve, je precej majhna, tudi če ima priča v 80 odstotokih primerov prav. Razlog za to je, 
+Verjetnost, da je bil taksi glede na pričanje dejansko modre barve, je precej majhna, tudi če ima priča v 80 odstotokih primerov prav. Razlog za to je, 
 da je verjetnost $M$, ne glede na dokaze, majhna ($P(M)=0,15$). Spodnja tabela kaže, da lahko s spreminjanjem verjetnosti $M$ dobimo različne pogojne 
 verjetnosti $P(M \lvert W_m)$, pri čemer je zanesljivost priče nespremenjena:
 
@@ -214,6 +214,133 @@ $P(M)$ & $P(Z)$ & $P(W_m \lvert M)$ & $P(M \lvert W_m)$ \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Identifikacijski dokazi}
+V kazenskih zadevah želimo vedeti, ali je obtoženec kriv ali ne. Če imamo torej na voljo dokaze $E$, nas zanima pogojna verjetnost 
+$P(kriv \lvert E)$, pri čemer nam je lahko v pomoč Bayesovo pravilo. To v teoriji drži, čeprav je v praksi izračun verjetnostne krivde lahko 
+preveč zapleten. Ampak z Bayesovim pravilom lahko ocenimo verjetnosti vmesnih trditev oziroma dokzaov, ki so ključnega pomena za ugotavljanje 
+obtoženčeve krivde. Najbolj pogosta uporaba Bayesovega pravila je pri ugotavljanju, ali je obtoženec vir sledi DNK-ja s kraja zločina. \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Poenostavljena Bayesova analiza}
+Naj bo:\\
+$S$ \dots trditev, da je obtoženec vir sledi DNK s kraja zločina; \\
+$M$ \dots trditev, da se obtoženčev DNK ujema z DNK-jem s kraja zločina; \\
+$f$ \dots funkcija pogostosti ujemanja DNK z DNK-jem s kraja zločina. \\
+Želimo vedeti, kakšna je verjetnost S glede na M, tj. $P(S \lvert M)$. \\
+
+Bayesovo pravilo lahko uporabimo na naslednji način:
+\[\frac{P(S \lvert M)}{P(\neg S \lvert M)} = \frac{P(M \lvert S)}{P(M \lvert \neg S)} \times \frac{P(S)}{P(\neg S)}.\] \\
+Verjetnosti $P(S)$ in $P(\neg S)$ je težko oceniti, ker ne vemo kakšna je množica osumljencev. Smiselno bi bilo, da zanju upoštevamo interval 
+predhodnih verjetnosti in ocenimo njihov vpliv na ne verjetnost trditve $S$ in njene negacije. Nato moramo določiti vrednost $P(M \lvert S)$, ki 
+je običajno enaka ena - če bi obtoženec dejansko pustil sledove, bi laboratorijske analize pokazale ujemanje(to imenujemo lažno 
+negativni rezultat); to je sicer poenostavitev, saj se lahko zgodi, da analize ne pokažejo ujemanja, čeprav je obtoženec pustil sledi. 
+Potrebujemo še verjetnost $P(M \lvert \neg S)$ (verjetnost, da se bo našlo ujemanje, če obtoženec ni vir sledi na kraju zločina). To je 
+običajno enakovredno pogostosti ujemnja DNK-ja z DNK-jem s kraja zložina (tj. $f$);tudi to je poenostavitev, saj se lahko zgodi, da 
+obtoženec nima enakega DNK profila, vendar so laboratorijske analize pokazale, da ga ima(to imenujemo lažno 
+pozitivni rezultat).
+Sledi:
+\[\frac{P(S \lvert M)}{P(\neg S \lvert M)} = \frac{1}{f} \times \frac{P(S)}{P(\neg S)}.\] \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Izpopolnjena Bayesova analiza}
+Poenostavljena Bayesova analiza ne upošteva možnosti lažno pozitivne laboratorijske analize. Za upoštevanje te možnosti, bomo namesto $M$ 
+uvedli spremenljivko $M_p$.\\
+$M_p$ \dots poročano ujemanje laboratorijske analize; \\
+$M_t$ \dots trditev, da obstaja dejansko ujemanje v DNK-ju;\\
+$\neg M_t$ \dots teditev, da obstaja neujemanje v DNK-ju.  \\ 
+
+Sledi: 
+\[P(M_p \lvert \neg S) = P(M_p \lvert M_t)P(M_t \lvert \neg S) + P(M_p \lvert \neg M_t)P(\neg M_t \lvert \neg S). \vspace{3mm}\] 
+Sedaj je $P(M_t \lvert \neg S)$ enako $f$ in zato $P(\neg M_t \lvert \neg S)$ enako $1-f$. $P(M_p \lvert \neg M_t)$ opisuje verjetnost lažno 
+pozitivnih rezultatov laboratorija(oznaka $FP$) in $P(M_p \lvert M_t)$ verjetnost resničnih pozitivnih rezultatov laboratorija(oznaka $FN$). 
+Sledi: \vspace{2mm}
+\[P(M \lvert \neg S) = [(1 - FN) \times f] + [FP \times (1 - f)]. \vspace{3mm}\]
+
+Formula pokaže, da za parvilno oceno verjetnosti $P(M_p \lvert \neg S)$ potrebujemo statistično oceno pogostosti profila DNK in stopnje napak 
+laboratorijskih analiz, ki pa so redko na voljo. \vspace{3mm}
+
+Druga poenostavitev je, da predpostavimo, da je $P(M_p \lvert S) = 1$, pri čemer ni upoštevana možnost lažnega negativnega rezultata. Kot zgoraj, imamo: \vspace{3mm}
+\[P(M_p \lvert S) = P(M_p \lvert M_t)P(M_t \lvert S) + P(M_p \lvert \neg M_t)P(\neg M_t \lvert S). \vspace{3mm}\] 
+Če je $P(M_p \lvert S) = 1$, je $P(\neg M_p \lvert S) = 0$ in $P(M_p \lvert S) = 1 - FN$. Potem sledi, da je: \vspace{3mm}
+\[\frac{P(M_p \lvert S)}{P(M_p \lvert \neg S)} = \frac{1 - FN}{[(1 - FN) \times f] + [FN \times (1 - f)]}. \vspace{3mm}\]
+
+Za predstavo, kako stopnje napak vplivajo na razmerje verjetnosti, predpostavim, da je pogostost profila DNK 1 proti milijardi. Predpostavim 
+tudi, da sta stopnji lažno poztivnih in negativnih laboratorijskih rezuktatov(tj. FP in FN) enako $0,01$. Če je razmerje verjetnosti enako 
+$\frac{1}{f}$, je milijarda. S formulo pa dobimo: \vspace{3mm}
+\[\frac{P(M_p \lvert S)}{P(M_p \lvert \neg S)} = \frac{1 - 0,01}{[(1 - 0,01) \times 0,000000001] + [0,01 \times (1 - 0,000000001)]} \approx 99. \vspace{3mm}\]
+
+Relativno majhne stopnje napak lahko bistveno zmanjšajo dokazno vrednost DNK dokazov, saj močno zmanjšajo rzmerje verjetnosti; v našem primeru 
+smo iz milijarde prišli na pribljižno 100. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Drugi pristopi}
+Da bi ocenili moč Bayesove analize dokazov DNK, jo je koristno primerjati z nekaterimi drugimi pristopi. \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Frekvence in edinstvenost}
+Predlagano je bilo s strani mnogih avtorjev, da je bolj naraven način za obravnavo verjetnosti uporaba naravnih frekvenc(angl. natural 
+frequencies). Recimo, da je pogostost profila DNK $f$ 1 proti 10 milijonov, predpostavimo tudi, da ima obtoženec enak DNK in da je začetna 
+populacija osumljencev 100 milijonov ljudi. Zanima nas kakšna je verjetnost, da je obtoženec vir DNK-ja s kraja zločina. \\
+
+Naj bo: \\
+$f$ \dots pogostost profila DNK;\\
+$m$ \dots velikost populacije osumljencev; \\
+$n$ \dots število ljudi, ki imajo ustrezen DNK profil. \\
+Po metodah, ki temeljijo na naravnih frekvencah, je potrebno izračunati, koliko ljudi z zadevnim profilom DNK je v populaciji osumljencem, tako 
+da se $f$ pomnoži z $m$.  \\
+Če je posameznikov s takim profilom $n > 1$, je verjetnost, da je obtoženi vir, $\frac{1}{n}$. V primeru, ko je $n < 1$ in so frekvence še 
+posebaj majhne, je bolje raziskovati ali je profil DNK edinstven ali ne - ali poleg obtoženca obstajajo še drugi posamezniki z enakim 
+profilom DNK. Temu pravimo metoda edinstvenosti(angl. uniqueness method). \\
+
+S formulo binomske porazdelitve lahko izračunamo verjetnost, da se bo dogodek $X$, na primer profil DNK, pojavil $k$ - krat v $s$ - kratnem 
+številu ponovitev, pri čemer ima dogodek $X$ frekvenco 4$f$. Želimo vedeti, kolikšna je verjetnost, da ima točno en posameznik ustrezen DNK 
+profil, ob pogoju da ga ima vsaj en posameznik, torej: \vspace{3mm}
+\[P(n = 1 \lvert n \ge 1) = \frac{P(n=1 \cap n \ge 1)}{P(n \ge 1)} = \frac{m \times f \times (1 - f)^{m-1}}{1 - (1-f)^m}. \vspace{3mm}\]
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{c c c c} 
+    \hline
+    $m$ & $f$ & $P(n = 1 \lvert n \ge 1)$ & $P(S \lvert M)$[Bayes]\\ 
+    \hline
+    10 milijonov & 1 v 100 milojonov & 0,9 & 0,9 \\
+    100 milijonov & 1 v 100 milojonov & 0,62 & 0,5 \\
+    1 milijarda & 1 v 100 milojonov & 0 & 0,09 \\ \hline
+    10 milijonov & 1 v 1 milijardi & 1 & 0,99 \\
+    100 milijonov & 1 v 1 milijardi & 0,9 & 0,9 \\
+    1 milijarda & 1 v 1 milijardi & 0,62 & 0,5 \\ \hline
+    10 milijonov & 1 v 10 milijardah & 1 & 0,999 \\
+    100 milijonov & 1 v 10 milijardah & 1 & 0,99 \\
+    1 milijarda & 1 v 10 milijardah & 0,9 & 0,9 \\ \hline
+\end{tabular}
+\end{table}
+
+Tabela vsebuje primerjavo rezultatov, ki jih daje Bayesovo pravilo. Obe metodi se dokaj ujemata, vendar se tudi razlikujeta, saj v nasprotju 
+z Bayesovim pravilom pri metodi edinstvenosti ni mogoče enostavno upoštevati številnih zapletov, kot je bil naprimer vpliv stopnje laboratorijskih napak. \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Naključno ujemanje in razmerja verjetnosti}
+Metoda verjetnost naključnega ujemanja(angl. random match probability) izraža možnost, da bi imel naključni posameznik, ki ni povezan z obdolžencem, 
+ustrezni DNK profil. Ta verjetnost je enaka pogostosti profila DNK. Težava tega pristopa je, da verjetnost naključnega ujemanja lahko predstavljena 
+oziroma razumevana narobe. \\
+
+Pogosto se to verjetnost interpretira na slednji način:
+\begin{enumerate}
+    \item če je verjetnost naključnega ujemanja na primer 1 proti 100 milijonom, potem je verjetnost, da ima profil DNK drug posameznik in ne 
+    obdolženec 1 proti 100 milijonom;
+    \item ker je to zelo majhna verjetnost, mora biti tudi verjetnost, da je sled DNK pustil nekdo drug na kraju zločina in ne obdolženec, zelo majhna;
+    \item zato mora biti verjetnost, da je vir sledi DNK s kraja zločina obtoženec zelo velika, ampak znaša 1 proti 100 milijonov.
+\end{enumerate}
+Takšno sklepanje je napašno in je znano kot tožilčeva zmota(angl. Prosecutor’s fallacy). Sestavlja jo enačba
+\begin{equation}\label{eq:tozilcevazmota}
+    1 - f = P(S \lvert M).
+\end{equation}
+
+Zmota se pojavi v koraku (2), ko je zamenjano $P(M \lvert \neg S)$ s $P(\neg S \lvert M)$ in predpostavljeno, da sta obe verjetnosti enaki $f$. \\
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
