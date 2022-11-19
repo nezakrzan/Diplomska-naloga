@@ -9,3 +9,6 @@
 \contentsline {section}{\tocsection {}{4}{Drugi pristopi}}{7}{}%
 \contentsline {subsection}{\tocsubsection {}{4.1}{Frekvence in edinstvenost}}{7}{}%
 \contentsline {subsection}{\tocsubsection {}{4.2}{Naključno ujemanje in razmerja verjetnosti}}{8}{}%
+\contentsline {section}{\tocsection {}{5}{Tožilčeva zmota}}{8}{}%
+\contentsline {subsection}{\tocsubsection {}{5.1}{Primer - Tožilčeva zmota}}{9}{}%
+\contentsline {section}{\tocsection {}{6}{Zmota obrambnega odvetnika}}{11}{}%

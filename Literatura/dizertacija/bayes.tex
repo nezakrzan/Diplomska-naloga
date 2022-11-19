@@ -54,54 +54,54 @@ V tem poglavju bo opisano kako nam lahko Bayeseva teorija pomaga pri ocenjevanju
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Matematična verjetnost}
 \begin{definicija}
-Predpostavimo, da je $\mathbb{P}$ funkcija iz množice dogodkov $\Omega$ v realna števila; potej je $\mathbb{P}$ verjetnostna funkcija, če izpolnjuje spodnje aksiome Kolmogorova:\\
+Predpostavimo, da je $P$ funkcija iz množice dogodkov $\Omega$ v realna števila; potej je $P$ verjetnostna funkcija, če izpolnjuje spodnje aksiome Kolmogorova:\\
 \begin{itemize}
-    \item $0 \le \mathbb{P}(A) \le 1$ za vsak dogodek A iz množice dogodkov $\Omega$;
-    \item $\mathbb{P}(\top)=1$, pri čemer je $\top$ katerakoli logična tavtologija;
-    \item $\mathbb{P}(A \vee B) = \mathbb{P}(A) + \mathbb{P}(B)$, pri čemer sta $A$ in $B$ dogodka iz množice dogodkov in sta med seboj neodvisna.
+    \item $0 \le P(A) \le 1$ za vsak dogodek A iz množice dogodkov $\Omega$;
+    \item $P(\top)=1$, pri čemer je $\top$ katerakoli logična tavtologija;
+    \item $P(A \vee B) = P(A) + P(B)$, pri čemer sta $A$ in $B$ dogodka iz množice dogodkov in sta med seboj neodvisna.
 \end{itemize}
 \end{definicija}
 
 \begin{definicija}
 Sedaj lahko definiramo pogojno verjetnost dogodkov $A$ in $B$ iz množice dogodkov $\Omega$, kot:
-\[\mathbb{P}(A \lvert B) = \frac{\mathbb{P}(A \wedge B)}{\mathbb{P}(B)}.\]
+\[P(A \lvert B) = \frac{P(A \wedge B)}{P(B)}.\]
 \end{definicija}
 
 Dokažemo lahko tudi nekatere trditve:
 \begin{trditev}
-$\mathbb{P}(A \lvert B) = [\mathbb{P}(A) + \mathbb{P}(B)] - \mathbb{P}(A \wedge B)$, če sta $A$ in $B$ neodvisna.
+$P(A \lvert B) = [P(A) + P(B)] - P(A \wedge B)$, če sta $A$ in $B$ neodvisna.
 \end{trditev}
 
 \begin{trditev}
-Če je $A \subseteq B$, potem je $\mathbb{P}(A) \le \mathbb{P}(B)$.
+Če je $A \subseteq B$, potem je $P(A) \le P(B)$.
 \end{trditev}
 
 \begin{trditev}
-$\mathbb{P}(A) = 1 - \mathbb{P}(\neg A)$.
+$P(A) = 1 - P(\neg A)$.
 \end{trditev}
 
 \begin{trditev}
-$\mathbb{P}(A) = \mathbb{P}(A \lvert B) \mathbb{P}(B) + \mathbb{P}(A \lvert \neg B)\mathbb{P}(\neg B)$.
+$P(A) = P(A \lvert B) P(B) + P(A \lvert \neg B)P(\neg B)$.
 \end{trditev}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Bayesova teorija}
 Recimo, da imamo hipotezo $H$ in zanjo imamo nekaj dokazov $E$, sedaj pa želimo izvedeti verjetnost hipoteze $H$ glede na dokaze $E$. Bayesova 
 teorija nam daje formulo:
-\[\mathbb{P}(H \lvert E) = \frac{\mathbb{P}(E \lvert H)\mathbb{P}(H)}{\mathbb{P}(E)} = \frac{\mathbb{P}(E \lvert H)\mathbb{P}(H)}{\mathbb{P}(E \lvert H)\mathbb{P}(H) + \mathbb{P}(E \lvert  \neg H)\mathbb{P}(\neg H)} .\]
+\[P(H \lvert E) = \frac{P(E \lvert H)P(H)}{P(E)} = \frac{P(E \lvert H)P(H)}{P(E \lvert H)P(H) + P(E \lvert  \neg H)P(\neg H)} .\]
 
 Bayesova teorija omogoča izračun verjetnosti hipoteze $H$ glede na dogodke $E$ iz treh drugih predpostavk:
 \begin{enumerate}[label=(\roman*)]
     \item verjetnost hipitetze $H$ ne glede na dogodke $E$;
-    \item verjetnost dokazov $E$, ki je enaka $\mathbb{P}(E \lvert H)\mathbb{P}(H) + \mathbb{P}(E \lvert  \neg H)\mathbb{P}(\neg H)$;
-    \item verjetnost $\mathbb{P}(E \lvert H)$, tj. verjetnost dogodkov $E$ glede na hipotezo $H$.
+    \item verjetnost dokazov $E$, ki je enaka $P(E \lvert H)P(H) + P(E \lvert  \neg H)P(\neg H)$;
+    \item verjetnost $P(E \lvert H)$, tj. verjetnost dogodkov $E$ glede na hipotezo $H$.
 \end{enumerate}
 
 Obstaja še ena formulacija Bayesovega pravila, ki olajša izračune, še posebaj pri analizi dokazov z DNK:
-\[\frac{\mathbb{P}(H \lvert E)}{\mathbb{P}(\neg H \lvert E)} = \frac{\mathbb{P}(E \lvert H)}{\mathbb{P}(E \lvert \neg H)} * \frac{\mathbb{P}(H)}{\mathbb{P}(\neg H)}.\]
+\[\frac{P(H \lvert E)}{P(\neg H \lvert E)} = \frac{P(E \lvert H)}{P(E \lvert \neg H)} * \frac{P(H)}{P(\neg H)}.\]
 Z drugimi besedami:
 \[ \text{pogojna verjetnost} = \text{razmerje verjetnosti} * \text{predhodna verjetnost}.\]
-Pogojna verjetnost $\mathbb{P}(H \lvert E)$ je običajno podata z $\frac{PO}{1+PO}$, kjer je $PO$ pogojne verjetnosti.
+Pogojna verjetnost $P(H \lvert E)$ je običajno podata z $\frac{PO}{1+PO}$, kjer je $PO$ pogojne verjetnosti.
 
 
 \end{document}

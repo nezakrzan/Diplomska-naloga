@@ -113,18 +113,18 @@ verjetnostnimi tabelami(tabela 1 in tabela 2).
 \end{center}
 \end{table}
 
-To so tabele za predhodno verjetnost hipoteze $H$, zapisano kot $\mathbb{P}(H)$ in pogojno verjetnost dokaza $E$ glede na hipotezo $H$, ki 
-jo zapišemo kot $\mathbb{P}(E \lvert H)$. Bayesova teorija doloža formulo za posodobitev našega predhodnega prepričanja o hipotezi $H$ glede na 
-dokaz $E$, da dobimo naknadno prepričanje o $H$, kar zapišemo kot $\mathbb{P}(H \lvert E)$:
-\[\mathbb{P}(H \lvert E) = \frac{\mathbb{P}(E \lvert H)*\mathbb{P}(H)}{\mathbb{P}(E)} = \frac{\mathbb{P}(E \lvert H)*\mathbb{P}(H)}{\mathbb{P}(E \lvert H)*\mathbb{P}(H) + \mathbb{P}(E \lvert \text{not}\quad H)*\mathbb{P}(\text{not}\quad H)}.\]
+To so tabele za predhodno verjetnost hipoteze $H$, zapisano kot $P(H)$ in pogojno verjetnost dokaza $E$ glede na hipotezo $H$, ki 
+jo zapišemo kot $P(E \lvert H)$. Bayesova teorija doloža formulo za posodobitev našega predhodnega prepričanja o hipotezi $H$ glede na 
+dokaz $E$, da dobimo naknadno prepričanje o $H$, kar zapišemo kot $P(H \lvert E)$:
+\[P(H \lvert E) = \frac{P(E \lvert H)*P(H)}{P(E)} = \frac{P(E \lvert H)*P(H)}{P(E \lvert H)*P(H) + P(E \lvert \text{not}\quad H)*P(\text{not}\quad H)}.\]
 
 Tabela 1(tabela verjenosti za $H$) zajema, da je obtoženec eden od $10000$ ljudi, ki bi lahko bili vir DNK-ja iz kraja zločina. Tabela 2 
 (verjetnostna tabela za $E \lvert H$) vsebuje predpostavke, da: 
 \begin{itemize}
-    \item verjetnost pravilnega ujemanja sledi DNK je ena (torej ni možnosti lažno negativnega ujemanja DNK). Ta verjetnost $\mathbb{P}(E \lvert H)$ 
+    \item verjetnost pravilnega ujemanja sledi DNK je ena (torej ni možnosti lažno negativnega ujemanja DNK). Ta verjetnost $P(E \lvert H)$ 
           se imenuje verjetnost obtožbe za dokaz $E$;
     \item verjetnost ujemanja pri osebi, ki ni pustila svojega DNK-ja na kraju dogodka (torej "`verjetnost naključnega ujemanja DNK"'), je $1$ 
-          proti $1000$. Ta verjetnost $\mathbb{P}(E \lvert \text{not}\quad H)$ se imenuje verjetnost obrambe dokaza $E$.
+          proti $1000$. Ta verjetnost $P(E \lvert \text{not}\quad H)$ se imenuje verjetnost obrambe dokaza $E$.
 \end{itemize}
 
 S temi predpostavkami iz Bayeseve teorije sledi, da je v našem primeru posteriorno prepričanje v hipotezo $H$ po gotovitvi, da je dokaz $E$ 
@@ -132,11 +132,11 @@ resničen, približno 9\%, tj. naše prepričanje, da je otoženec vir DBK s kra
 Druga možnost je, da se naše prepričanje, da je obtoženec vir DNK s kraja zločina, premakne z vrednosti 99\% na 91\%. \\ \\
 
 Upoštevati je potrebno, da se posterirona verjetnost, da obtoženec ni vir DNK, zelo razlikuje od verjetnosti naključnga ujemanja. Napačna 
-predpostavka, da sta verjetnosti $\mathbb{P}(\text{not}\quad H \lvert E)$ in $\mathbb{P}(E \lvert \text{not}\quad H)$ enaki, je značilna za 
+predpostavka, da sta verjetnosti $P(\text{not}\quad H \lvert E)$ in $P(E \lvert \text{not}\quad H)$ enaki, je značilna za 
 tožilčevo zmoto (imenovano tudi napako prenesenega pogoja). Tožilec lahko na primer izjavi, da je "`verjetnost, da obtoženec ni bil vir DNK 
 dokaza, 1 proti 1000'", čeprav je dejansko 91-odstotna. Ta preprosta napaka verjetnostnega sklepanja je vplivala na številne primere, vendar 
 se ji je vedno mogoče izogniti z osnovnim razumevanje Bayeseve teorije. Tesno povezana, vendar manj poosta napka verjetnostnega sklepanja je 
-napaka obtoženca, pri kateri obramba trdi, da ker je $\mathbb{P}(\text{not}\quad H \lvert E)$ po upoštevanu predhodnik in dokazanih dejstev 
+napaka obtoženca, pri kateri obramba trdi, da ker je $P(\text{not}\quad H \lvert E)$ po upoštevanu predhodnik in dokazanih dejstev 
 še vedno nizka, je treb dokaze zanemariti. \\ \\
 
 Ker je Bayeseva teorija težko razumljiva, nam enakovredna formulacija Bayeseve teorije, imenovana različica Bayesove teorije "`kvot'", 
@@ -146,7 +146,7 @@ posteriorna verjetnost $H$ je predhodna verjetnost $H$, pomnožena z razmerjem v
 \vspace{5mm}
 
 pri čemer je razmerje verjetnosti(LR) preprosto verjetnost obtožbe dokaza $E$, deljena z verjetnostjo obrambe dokaza $E$, tj.
-\[\frac{\mathbb{P}(H \lvert E)}{\mathbb{P}(E \lvert \text{not} \quad H)}.\]
+\[\frac{P(H \lvert E)}{P(E \lvert \text{not} \quad H)}.\]
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Kontekst in pregled Bayesove metode v sodnih postopkih}
