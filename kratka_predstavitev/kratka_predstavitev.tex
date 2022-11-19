@@ -182,7 +182,19 @@ tehtanje dokazov. \\\\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Tožilčeva zmota}
+\section{Zmote}
+Ker večina ljudi pri razmišljanju o vejretnosti dela osnovne napake, obstaja mnogo zmot, ki izhajajo iz osnovnega razumevanja pravil 
+teorije verjetnosti. Številne od teh zmot so zlasti posledica napačnega razumevanja pogojne verjetnosti. Bolj znana primera takih zmot sta 
+Tožilčeva zmota(angl. Prosecutor’s fallacy) in Zmota obrambnega odvetnika(angl. Defense attorney's fallacy).
+Na kratko je Tožilčeva zmota domneva, da je $P(H \lvert E)$ enaka $P(E \lvert H)$, kjer je $H$ predpostavka, da se najdejo dokazi o obtožencu,
+$E$ pa predpostavka, da je obtoženec nedolžen. Zmota obrambnega odvetnika pa je, da ne upoštevamo velike spremebne verjetnosti v korist 
+obtoženčeve krivde. \\
+
+Manj znana zmota je tudi Zasliševalčeva zmota(angl. Interrogator’s fallacy), ki razloži zakaj priznanja, pridobljena med zaslišanjem, ponujajo 
+dvomljive dokaze v prid krivdi oziroma dokazi med sodbo ne morejo zmanjšati verjetnosti krivde.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Tožilčeva zmota}
 Tožilčeva zmota(angl. Prosecutor’s fallacy) se pogosto pojavlja v kazenskem pravu, vendar jo pogosto neprepoznajo, deloma zato, ker preiskovalci 
 nimajo močne intuicije o tem, kaj zmota sploh pomeni. Tožilčeva zmota je dobro znana statistična zmota, ki izhaja iz napačnega razumevanja 
 pogojnih verjetnosti in vprašanj večkratnega testiranja. Napaka temelji na predpostavki, da je $P(H \lvert E) = P(E \lvert H)$, pri čemer $H$ 
@@ -197,22 +209,6 @@ gre za naključno nedolžno osebo. Denimo, da v mestu, kjer se je zgodil zločin
 krvno skupino storilca, zato je verjetnost, da je obtoženec kriv - na podlagi dejstva, da se njegova krvna skupina ujema s krvno skupino 
 morilca - le 1\%, kar je veliko manj kot 90\%. \\
 
-Če je $E$ dokaz in $H$ trditev,da je obtoženi nedolžen, upoštevamo pogojne verjetnosti: \\
-$P(E \lvert H)$ \dots verjetnost resničnosti dokaz $E$, kljub temu da je obtoženi nedolžen; \\
-$P(H \lvert E)$ \dots verjetnodt, da je obtoženi nedolžen kljub dokazu $E$. \\
-Pri forenzičnih dokazih je ponavadi verjetnost $P(E \lvert H)$ majhna. Tožilec pa potem velikokrat sklepa, da je tudi verjetnost 
-$P(H \lvert E)$ majhna.
-%(tožilstvo Lucie de Berk je na primer obtoženo ravno te napake)
-Zgoraj napisani pogojni verjetnosti pa sta precej različni; uporabimo Bayesovo pravilo: \vspace{3mm}
-\[P(H \lvert E) = P(E \lvert H) \times \frac{P(H)}{P(E)}, \vspace{3mm}\]
-kjer je $P(H)$ verjetnost nedolžnosti in $P(E)$ verjetnost dokaza. Enačba kaže, da majhna pogojna verjetnost $P(E \lvert H)$ ne pomeni majhne 
-pogojne verjetnosti $P(H \lvert E)$ v primeru velike verjetnosti nedolžnosti in majhne verjetnosti dokaza. \\
-
-Po Bayesovem pravilu je \vspace{3mm}
-\[P(E)=P(E \lvert H)P(H) + P(E \lvert \neg H)\times[1 - P(H)], \vspace{3mm}\]
-kjer je $P(E \lvert \neg H)$ verjetnost, da bodo dokazi identificirali krivega osumljenca; bičajno je ta verjetnost blizu 1. \\\\
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Zmota obrambnega odvetnika}
 Zmota zagovornika oziroma zmota obrambnega odvetnika(angl. Defense attorney's fallacy ) se pojavi, ko se poroča o tem, koliko ljudi z 
