@@ -1,48 +1,245 @@
 \documentclass{beamer}
 \mode<presentation>
-{\usetheme{Warsaw}}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[slovene]{babel}
 \usepackage{lmodern}
-\usepackage{array}     % določili <{...} in >{...} pri tabelah
+\usepackage{array} 
 \usepackage{tikz}
-%\usepackage[pdftex]{graphicx}
-%\usepackage{color}
-%\usepackage{float}
-%\usepackage{eurosym}
+
+\usetheme{Berlin}
+\usecolortheme{default}
+\useinnertheme[shadows]{rounded}
+\useoutertheme{infolines}
 \beamertemplatenavigationsymbolsempty
 
-\usepackage{amsfonts}
-\usepackage{amsmath,amsthm}
 \usepackage{times}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\ts}{\textstyle}
+\newcommand{\presledek}{\vspace{3mm}}
+\newcommand{\ph}{\phantom{1}} 
+\newcommand{\tr}{{\rm tr \,}}
+
+\newtheorem{definicija}{Definicija}
+\newtheorem{izrek}{Izrek}
 
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\title[Statistika v kazenskem pravu] {Statistika v kazenskem pravu}
-\subtitle{Kratka predstavitev diplomske naloge} 
-\author[Neža Kržan] 
-\institute[FMF]{Fakulteta za matematiko in fiziko, Univerza v Ljubljani}
-\date[28. november 2022]
+\title{Statistika v kazenskem pravu}
+\subtitle{Kratka predstavitev diplomske naloge}
+\author[Neža Kržan]{Neža Kržan}
+ 
+\institute[FMF]{Mentor: izr. prof. Jaka Smrekar \\ Fakulteta za matematiko in fiziko \\ \vspace{10mm} Ljubljana, 28.november 2022}
+\date[28. november 2022] {}
+
+\subject{Talks}
 
 \begin{frame}
-  \titlepage
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-  \frametitle{Vsebina}
-  \tableofcontents[pausesections]
+   \titlepage
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+   \frametitle{Kratek pregled}
+   \tableofcontents[pausesections]
+\end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Bayesova statistika}
+
+\begin{frame}
+  \frametitle{Bayesova statistika}
+  Bayesovo sklepanje razlaga verjetnost kot merilo verjetnosti ali zaupanja, ki ga lahko ima posameznik glede nastanka določenega dogodka.
+  \begin{itemize}
+    \item O dogodku lahko že imamo predhodno prepričanje oziroma apriorno prepričanje.
+    \item Ta se lahko spremeni, ko se pojavijo novi dokazi.
+  \end{itemize} \vspace{3mm}
+  Bayesova statistika nam daje matematične modele za vključevanje naših apriornih prepričanj in dokazov za ustvarjanje novih prepričanj.
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+  \frametitle{Bayesovo pravilo}
+Bayesovo sklepanje temelji na Bayesovem pravilu, ki izraža verjetnost nekega dogodka z verjetnostjo dveh dogodkov in obrnejnje pogojne
+verjetnosti. Pogojna verjetnost predstavlja verjetnost dogodka, glede na drug dogodek. \vspace{3mm}
+S pomočjo formule za pogojno verjetnost dobimo Bayesovo pravilo:
+\begin{equation}\label{eq:bpravilo}
+    P(H \lvert E) = \frac{P(E \lvert H) \times P(H)}{P(E)},
+\end{equation}
+verjetnost dogodka E lahko še razpišemo in dobimo:
+\begin{equation}\label{eq:b_pravilo}
+  P(H \lvert E) = \frac{P(E \lvert H) \times P(H)}{P(E \lvert H)P(H) + P(E \lvert \neg H)P(\neg H)}.
+\end{equation} \\
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Bayesova analiza}
+
+\begin{frame}
+  \frametitle{Bayesova analiza}
+Na voljo imamo dokaz $E$, nas pa zanima pogojna verjetnost
+\begin{equation}
+  P(kriv \lvert E),
+\end{equation}
+pri čemer nam je lahko v pomoč Bayesovo pravilo. To v teoriji drži, čeprav je v praksi izračun verjetnostne krivde lahko
+preveč zapleten. \vspace{3mm}
+
+Z Bayesovim pravilom lahko ocenimo verjetnosti vmesnih trditev oziroma dokazov, ki so ključnega pomena za ugotavljanje
+obtoženčeve krivde.
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+  \frametitle{Poenostavljena Bayesova analiza}
+Naj bo:\\
+$S$ \dots trditev, da je obtoženec vir sledi DNK s kraja zločina; \\
+$M$ \dots trditev, da se obtoženčev DNK ujema z DNK-jem s kraja zločina; \\
+$f$ \dots funkcija pogostosti ujemanja DNK z DNK-jem s kraja zločina. \\
+Želimo vedeti, kakšna je verjetnost S glede na M, tj. $P(S \lvert M)$. \\ \vspace{3mm}
+Bayesovo pravilo lahko uporabimo na naslednji način:
+\[\frac{P(S \lvert M)}{P(\neg S \lvert M)} = \frac{P(M \lvert S)}{P(M \lvert \neg S)} \times \frac{P(S)}{P(\neg S)}.\] \\
+\end{frame}
+
+\begin{frame}
+  \frametitle{Poenostavljena Bayesova analiza}
+\[\frac{P(S \lvert M)}{P(\neg S \lvert M)} = \frac{P(M \lvert S)}{P(M \lvert \neg S)} \times \frac{P(S)}{P(\neg S)}.\] \\
+\begin{itemize}
+  \item Verjetnosti $P(S)$ in $P(\neg S)$ je težko oceniti, ker ne vemo kakšna je množica osumljencev;
+  \item $P(M \lvert S) = 1$ - \textbf{lažno negativni rezultat};
+  \item $P(M \lvert \neg S) = f$ - \textbf{lažno pozitivni rezultat}; \vspace{3mm}
+\end{itemize}
+Ob upoštevanju lažno negativnega in pozitivnega rezultata sledi:
+  \[\frac{P(S \lvert M)}{P(\neg S \lvert M)} = \frac{1}{f} \times \frac{P(S)}{P(\neg S)}.\] \\  
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+  \frametitle{Izpopolnjena Bayesova analiza}
+Za upoštevanje možnosti laboratorijskih napak, bomo namesto $M$ uvedli spremenljivko $M_p$.\\
+$M_p$ \dots poročano ujemanje laboratorijske analize; \\
+$M_t$ \dots trditev, da obstaja dejansko ujemanje v DNK-ju;\\
+$\neg M_t$ \dots trditev, da obstaja neujemanje v DNK-ju.  \\ \vspace{3mm}
+
+Sledi:
+\[P(M_p \lvert \neg S) = P(M_p \lvert M_t)P(M_t \lvert \neg S) + P(M_p \lvert \neg M_t)P(\neg M_t \lvert \neg S). \vspace{3mm}\]
+\end{frame}
+
+\begin{frame}
+  \frametitle{Izpopolnjena Bayesova analiza}
+\[P(M_p \lvert \neg S) = P(M_p \lvert M_t)P(M_t \lvert \neg S) + P(M_p \lvert \neg M_t)P(\neg M_t \lvert \neg S). \vspace{3mm}\]
+  
+Sedaj je:
+\begin{itemize}
+  \item $P(M_t \lvert \neg S) = f$ in zato
+  \item $P(\neg M_t \lvert \neg S) = 1-f$; \vspace{2mm}
+\end{itemize}  
+$P(M_p \lvert \neg M_t) = FP$ \dots verjetnost lažno pozitivnih rezultatov laboratorija\\
+$P(M_p \lvert M_t) =  FN$  \dots verjetnost lažno negativnih rezultatov laboratorija. \vspace{3mm}
+
+Sledi: \vspace{2mm}
+  \[P(M \lvert \neg S) = [(1 - FN) \times f] + [FP \times (1 - f)]. \vspace{3mm}\]
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Drugi pristopi}
+
+\begin{frame}
+  \frametitle{Frekvence in edinstvenost}
+\textbf{Naravne frekvence (angl. natural frequencies)}:
+\begin{itemize}
+  \item bolj naraven način za obravnavo verjetnosti;
+  \item potrebno je izračunati, koliko ljudi z zadevnim profilom DNK je v populaciji osumljencem, tako da pogostost profila DNK pomnožimo z 
+  velikostjo populacije osumljencev.  \\ \vspace{3mm}
+\end{itemize}
+
+\textbf{Edinstvenost (angl. uniqueness method)} \\
+V primeru ko je na primer pogostost profila DNK oz. frekvenca še posebaj majhna, je bolje raziskovati ali je profil DNK edinstven ali ne. 
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+  \frametitle{Naključno ujemanje in razmerja verjetnosti}
+\textbf{Metoda verjetnost naključnega ujemanja (angl. random match probability)}:
+\begin{itemize}
+  \item izraža možnost, da bi imel naključni posameznik, ki ni povezan z obdolžencem, ustrezni DNK profil;
+  \item težava tega pristopa je, da verjetnost naključnega ujemanja lahko predstavljena oziroma razumevana narobe. \vspace{3mm}
+\end{itemize}
+
+Bayesovo pravilo vključuje razmerje verjetnosti in predhodno oziroma apriorno verjetnost. \vspace{3mm}
+
+\textbf{Metoda razmerja verjetnosti}:
+\begin{itemize}
+  \item koristna v Veliki Britaniji in ZDA;
+  \item Bayesovo pravilo se lahko šteje kot poseg v pravice porote;
+  \item poroti naj ne bi bilo potrebno govoriti, kako naj presoja in razmišlja.
+\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Zmote}
+
+\begin{frame}
+  \frametitle{Zmote v kazenskem pravu}
+Številne zmote so zlasti posledica napačnega razumevanja pogojne verjetnosti.
+\begin{itemize}
+  \item \textbf{Tožilčeva zmota (angl. Prosecutor’s fallacy)},
+  \item \textbf{Zmota obrambnega odvetnika (angl. Defense attorney's fallacy)} in 
+  \item \textbf{Zasliševalčeva zmota (angl. Interrogator’s fallacy)}. \vspace{3mm}
+\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+  \frametitle{Tožilčeva zmota}
+\begin{itemize}
+  \item Pogosto se pojavlja v kazenskem pravu;
+  \item izhaja iz napačnega razumevanja pogojnih verjetnosti in vprašanj večkratnega testiranja; \vspace{3mm}
+\end{itemize}
+temelji na predpostavki, da je 
+\begin{equation}
+  P(H \lvert E) = P(E \lvert H)
+\end{equation}
+$H$ \dots primer, da se najdejo dokazi o obtožencu, \\
+$E$ \dots primer, da je obtoženec nedolžen. \vspace{3mm}
+
+Ta enakost ne drži: čeprav je $P(H \lvert E)$ običajno zelo majhna, je lahko $P(E \lvert H)$ še vedno veliko večja. \\ 
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+  \frametitle{Zmota obrambnega odvetnika}
+\begin{itemize}
+  \item pojavi se, ko se poroča o tem, koliko ljudi z določeno značilnostjo, se pojavi v določeni populaciji;
+  \item predpostavlja se, da je storilec del neke poljubno velike populacije in da ni na voljo drugih informacij, torej je za vse enako verjetno, 
+  da so storilci. \vspace{3mm}
+\end{itemize}
+Na podlagi teh predpostavk lahko sklepamo, da obstaja majhna verjetnost, da je osumljenec storilec kaznivega dejanja. \\
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Primer - Lucia De Berk}
+
+\begin{frame}
+  \frametitle{Lucia De Berk}
+\begin{itemize}
+  \item Medicinska sestra Lucia De Berk obsojena na dosmrtno kazen, zaradi domnevnega ubija več bolnikov v dveh bolnišnicah;
+  \item postavilo se je vprašanje: \textbf{Ali je Luciina prisotnost pri toliko smrtih bolnikov naključna?}
+  \item postavili so dve hipotezi;
+  \item izračuni so bili pomankljivi na večih področjih;
+  \item verjetnostni model je bil preveč poenostavljen;
+  \item verjetnost, da je osumljenka doživela toliko smrti bolnikov, je bila napačno interpretirana. \vspace{4mm}
+\end{itemize}
+
+Zgodila se je tako imenovana \textbf{Tožilčeva zmota}.
+\end{frame}
 
 \end{document}
-

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.12.1)  25 NOV 2022 17:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.12.1)  27 NOV 2022 17:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -589,32 +589,11 @@ Package: amsthm 2020/05/29 v2.20.6
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamerbasethemes.sty)) (/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamerthemedefault.sty (/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamerfontthemedefault.sty) (/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamercolorthemedefault.sty) (/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamerinnerthemedefault.sty
 \beamer@dima=\dimen282
 \beamer@dimb=\dimen283
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamerouterthemedefault.sty))) (/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamerthemeWarsaw.sty (/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty) (/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamerouterthemeshadow.sty (/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamerouterthemesplit.sty)) (/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamercolorthemeorchid.sty) (/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamercolorthemewhale.sty)) (/usr/local/texlive/2021/texmf-dist/tex/latex/base/inputenc.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamerouterthemedefault.sty))) (/usr/local/texlive/2021/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2020/08/01 v1.3d Input encoding file
 \inpenc@prehook=\toks44
 \inpenc@posthook=\toks45
- (/usr/local/texlive/2021/texmf-dist/tex/latex/base/cp1250.def
-File: cp1250.def 2020/08/01 v1.3d Input encoding file
-))
-
-/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/kratka_predstavitev/beamer/predstavitev.tex:7: LaTeX Error: Option clash for package inputenc.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.7 \usepackage
-               [T1]{fontenc}
-The package inputenc has already been loaded with options:
-  [cp1250]
-There has now been an attempt to load it with options
-  [utf8]
-Adding the global options:
-  cp1250,utf8
-to your \documentclass declaration may fix this.
-Try typing  <return>  to proceed.
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/base/fontenc.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
 ) (/usr/local/texlive/2021/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2021/03/24 3.56 The Babel package
@@ -726,158 +705,39 @@ File: pgfmodulematrix.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \tikz@expandcount=\count332
  (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-))) (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/times.sty
+))) (/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamerthemeBerlin.sty (/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamerouterthememiniframes.sty) (/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamercolorthemewhale.sty) (/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamercolorthemeorchid.sty) (/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamerinnerthemerectangles.sty)) (/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty) (/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamerouterthemeinfolines.sty) (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/times.sty
 Package: times 2020/03/25 PSNFSS-v9.3 (SPQR) 
 )
-Runaway argument?
-/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/kratka_predstavitev/beamer/predstavitev.tex:32: Paragraph ended before \beamer@stripands was complete.
-<to be read again> 
-                   \par 
-l.32 
-     
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/kratka_predstavitev/beamer/predstavitev.tex:32: Misplaced \crcr.
-\endarray ->\crcr 
-                  \egroup \egroup \@arrayright \gdef \@preamble {}
-l.32 
-     
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/kratka_predstavitev/beamer/predstavitev.tex:32: Too many }'s.
-\endarray ->\crcr \egroup 
-                          \egroup \@arrayright \gdef \@preamble {}
-l.32 
-     
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
-
-/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/kratka_predstavitev/beamer/predstavitev.tex:32: Too many }'s.
-\endarray ->\crcr \egroup \egroup 
-                                  \@arrayright \gdef \@preamble {}
-l.32 
-     
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
-
-
-/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/kratka_predstavitev/beamer/predstavitev.tex:32: LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.32 
-     
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 32.
-(/usr/local/texlive/2021/texmf-dist/tex/latex/lm/ot1lmr.fd
-File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 32.
- (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/omllmm.fd
-File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 32.
- (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/omslmsy.fd
-File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 32.
- (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/omxlmex.fd
-File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 32.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 32.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 32.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 32.
- (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 32.
- (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/kratka_predstavitev/beamer/predstavitev.tex:32: Extra }, or forgotten $.
-<recently read> \egroup 
-                        
-l.32 
-     
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-
-/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/kratka_predstavitev/beamer/predstavitev.tex:32: LaTeX Error: \begin{document} ended by \end{tabular}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.32 
-     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/kratka_predstavitev/beamer/predstavitev.tex:32: Missing $ inserted.
-<inserted text> 
-                $
-l.32 
-     
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/kratka_predstavitev/beamer/predstavitev.tex:32: Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.32 
-     
-Things are pretty mixed up, but I think the worst is over.
-
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 38.
-(/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/t1phv.fd
+\c@definicija=\count333
+\c@izrek=\count334
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 27.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count333
+\l__color_backend_stack_int=\count335
 \l__pdf_internal_box=\box79
 ) (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/kratka_predstavitev/beamer/predstavitev.aux)
 \openout1 = `predstavitev.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -887,14 +747,14 @@ LaTeX Font Info:    ... okay on input line 38.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: includehead includefoot 
-* h-part:(L,W,R)=(28.45274pt, 307.28987pt, 28.45274pt)
+* h-part:(L,W,R)=(10.88002pt, 342.43532pt, 10.88002pt)
 * v-part:(T,H,B)=(0.0pt, 273.14662pt, 0.0pt)
 * \paperwidth=364.19536pt
 * \paperheight=273.14662pt
-* \textwidth=307.28987pt
+* \textwidth=342.43532pt
 * \textheight=244.6939pt
-* \oddsidemargin=-43.81725pt
-* \evensidemargin=-43.81725pt
+* \oddsidemargin=-61.38997pt
+* \evensidemargin=-61.38997pt
 * \topmargin=-72.26999pt
 * \headheight=14.22636pt
 * \headsep=0.0pt
@@ -915,16 +775,16 @@ LaTeX Font Info:    ... okay on input line 38.
 
 (/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count334
+\scratchcounter=\count336
 \scratchdimen=\dimen300
 \scratchbox=\box80
-\nofMPsegments=\count335
-\nofMParguments=\count336
+\nofMPsegments=\count337
+\nofMParguments=\count338
 \everyMPshowfont=\toks49
-\MPscratchCnt=\count337
+\MPscratchCnt=\count339
 \MPscratchDim=\dimen301
-\MPnumerator=\count338
-\makeMPintoPDFobject=\count339
+\MPnumerator=\count340
+\makeMPintoPDFobject=\count341
 \everyMPtoPDFconversion=\toks50
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -932,7 +792,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/local/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 38.
+Package hyperref Info: Link coloring OFF on input line 27.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/local/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty
@@ -940,20 +800,184 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/local/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count340
+\c@section@level=\count342
 )
-LaTeX Info: Redefining \ref on input line 38.
-LaTeX Info: Redefining \pageref on input line 38.
-LaTeX Info: Redefining \nameref on input line 38.
+LaTeX Info: Redefining \ref on input line 27.
+LaTeX Info: Redefining \pageref on input line 27.
+LaTeX Info: Redefining \nameref on input line 27.
  (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/kratka_predstavitev/beamer/predstavitev.out) (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/kratka_predstavitev/beamer/predstavitev.out)
 \@outlinefile=\write5
 \openout5 = `predstavitev.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 38.
+(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 27.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> OT1/cmss/b/n on input line 38.
+(Font)                  OT1/lmr/bx/n --> OT1/cmss/b/n on input line 27.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/phv/m/n on input line 38.
+(Font)                  OT1/cmss/m/n --> OT1/phv/m/n on input line 27.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/ph
+(Font)                  OT1/cmss/b/n --> OT1/phv/b/n on input line 27.
+\symnumbers=\mathgroup6
+\sympureletters=\mathgroup7
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  OT1/phv/m/n --> T1/ptm/m/n on input line 27.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 27.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/lmr/bx/n --> T1/phv/b/n on input line 27.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/lmr/bx/n --> T1/phv/b/n on input line 27.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 27.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/lmss/m/n --> T1/phv/m/n on input line 27.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/lmss/bx/n --> T1/phv/m/n on input line 27.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 27.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/lmr/m/it --> T1/phv/m/it on input line 27.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/lmr/bx/it --> T1/phv/m/it on input line 27.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 27.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/lmtt/m/n --> T1/pcr/m/n on input line 27.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/lmtt/m/n --> T1/pcr/m/n on input line 27.
+LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
+(Font)                  T1/phv/m/n --> T1/phv/b/n on input line 27.
+LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
+(Font)                  T1/phv/m/it --> T1/phv/b/it on input line 27.
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
+(Font)                  OT1/phv/b/n --> T1/ptm/b/n on input line 27.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  T1/phv/b/n --> T1/phv/b/n on input line 27.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  T1/phv/m/n --> T1/phv/b/n on input line 27.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  T1/phv/m/it --> T1/phv/b/it on input line 27.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  T1/pcr/m/n --> T1/pcr/b/n on input line 27.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
+Dictionary: translator-basic-dictionary, Language: English 
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
+Dictionary: translator-bibliography-dictionary, Language: English 
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/translator/translator-environment-dictionary-English.dict
+Dictionary: translator-environment-dictionary, Language: English 
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/translator/translator-months-dictionary-English.dict
+Dictionary: translator-months-dictionary, Language: English 
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/translator/translator-numbers-dictionary-English.dict
+Dictionary: translator-numbers-dictionary, Language: English 
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/translator/translator-theorem-dictionary-English.dict
+Dictionary: translator-theorem-dictionary, Language: English 
+) (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/kratka_predstavitev/beamer/predstavitev.nav)
+
+Package hyperref Warning: Option `pdfauthor' has already been used,
+(hyperref)                setting the option has no effect on input line 33.
+
+
+Package hyperref Warning: Option `pdfsubject' has already been used,
+(hyperref)                setting the option has no effect on input line 38.
+
+[1
+
+{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/kratka_predstavitev/beamer/predstavitev.toc) [2
+
+] (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/kratka_predstavitev/beamer/predstavitev.toc) [3
+
+] (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/kratka_predstavitev/beamer/predstavitev.toc) [4
+
+] (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/kratka_predstavitev/beamer/predstavitev.toc) [5
+
+] (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/kratka_predstavitev/beamer/predstavitev.toc) [6
+
+] [7
+
+]
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 78.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ot1phv.fd
+File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 78.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 78.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 78.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 78.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 78.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 78.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 78.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 78.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 78.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 78.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <6> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 78.
+ [8
+
+] [9
+
+] [10
+
+] [11
+
+] [12
+
+] [13
+
+] [14
+
+] [15
+
+] [16
+
+] [17
+
+] [18
+
+] [19
+
+]
+\tf@nav=\write6
+\openout6 = `predstavitev.nav'.
+
+\tf@toc=\write7
+\openout7 = `predstavitev.toc'.
+
+\tf@snm=\write8
+\openout8 = `predstavitev.snm'.
+
+ (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/kratka_predstavitev/beamer/predstavitev.aux)
+Package rerunfilecheck Info: File `predstavitev.out' has not changed.
+(rerunfilecheck)             Checksum: 496904EAFC875297890D200C9D551968;616.
+ ) 
+Here is how much of TeX's memory you used:
+ 24894 strings out of 478994
+ 474745 string characters out of 5858184
+ 774281 words of memory out of 5000000
+ 41765 multiletter control sequences out of 15000+600000
+ 433919 words of font info for 62 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 131i,15n,132p,513b,665s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/kratka_predstavitev/beamer/predstavitev.pdf (19 pages, 56224 bytes).
+PDF statistics:
+ 236 PDF objects out of 1000 (max. 8388607)
+ 199 compressed objects within 2 object streams
+ 46 named destinations out of 1000 (max. 500000)
+ 95 words of extra memory for PDF output out of 10000 (max. 10000000)
+

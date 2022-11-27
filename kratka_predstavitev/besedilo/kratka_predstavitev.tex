@@ -69,19 +69,14 @@ S pomočjo formule za pogojno verjetnost dobimo Bayesovo pravilo:
 \end{equation}
 verjetnost dogodka E lahko še razpišemo in dobimo:
 \begin{equation}\label{eq:b_pravilo}
-    P(H \lvert E) = \frac{P(E \lvert H) \times P(H)}{P(E \lvert H)P(H) + P(E \lvert \neg H)P(\neg H)}.
-\end{equation} \\
-
-Obstaja še ena formulacija Bayesovega pravila, ki olajša izračune in je pogosto uporabljena pri Bayesovi analizi DNK dokazov:
-\begin{equation}\label{eq:b_pravilo_DNK}
-    \frac{P(H \lvert E)}{P(\neg H \lvert E)} = \frac{P(E \lvert H)}{P(E \lvert \neg H)} \times \frac{P(H)}{P(\neg H)\vspace{3mm}}.
+    P(H \lvert E) = \frac{P(E \lvert H) \times P(H)}{P(E \lvert H)P(H) + P(E \lvert \neg H)P(\neg H)\vspace{3mm}}.
 \end{equation}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Bayesova analiza}
-V kazenskih zadevah želimo vedeti, ali je obtoženec kriv ali ne. Če imamo torej na voljo dokaz $E$, nas zanima pogojna verjetnost
-$P(kriv \lvert E)$, pri čemer nam je lahko v pomoč Bayesovo pravilo. To v teoriji drži, čeprav je v praksi izračun verjetnostne krivde lahko
+V kazenskih zadevah želimo vedeti, ali je obtoženec kriv ali ne. Če imamo torej na voljo dokaz $E$, nas zanima pogojna verjetnost \vspace{3mm}
+\[P(kriv \lvert E)\], pri čemer nam je lahko v pomoč Bayesovo pravilo. To v teoriji drži, čeprav je v praksi izračun verjetnostne krivde lahko
 preveč zapleten. Ampak z Bayesovim pravilom lahko ocenimo verjetnosti vmesnih trditev oziroma dokazov, ki so ključnega pomena za ugotavljanje
 obtoženčeve krivde. Najbolj pogosta uporaba Bayesovega pravila je pri ugotavljanju, ali je obtoženec vir sledi DNK-ja s kraja zločina. \\
 
@@ -135,22 +130,15 @@ ujemanje in razmerja verjetnosti.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Frekvence in edinstvenost}
 Predlagano je bilo s strani mnogih avtorjev, da je bolj naraven način za obravnavo verjetnosti uporaba naravnih frekvenc(angl. natural
-frequencies). Recimo, da je pogostost profila DNK $f$ 1 proti 10 milijonov, predpostavimo tudi, da ima obtoženec enak DNK in da je začetna
-populacija osumljencev 100 milijonov ljudi. Zanima nas kakšna je verjetnost, da je obtoženec vir DNK-ja s kraja zločina. \\
+frequencies). \\
  
 Po metodah, ki temeljijo na naravnih frekvencah, je potrebno izračunati, koliko ljudi z zadevnim profilom DNK je v populaciji osumljencem, tako
 da pogostost profila DNK pomnožimo z velikostjo populacije osumljencev.  \\
 V primeru ko ne na primer pogostost profila DNK oz. frekvenca še posebaj majhne, je bolje raziskovati ali je profil DNK edinstven ali ne - ali 
 poleg obtoženca obstajajo še drugi posamezniki z enakim profilom DNK. Temu pravimo metoda edinstvenosti(angl. uniqueness method). \\
- 
-S formulo binomske porazdelitve lahko izračunamo verjetnost, da se bo dogodek $X$, na primer profil DNK, pojavil $k$ - krat v $s$ - kratnem
-številu ponovitev, pri čemer ima dogodek $X$ neko frekvenco, na primer pogsostost profila DNK. Želimo vedeti, kolikšna je verjetnost, da ima 
-točno en posameznik ustrezen DNK profil, ob pogoju da ga ima vsaj en posameznik, torej: \vspace{3mm}
-\[P(n = 1 \lvert n \ge 1) = \frac{P(n=1 \cap n \ge 1)}{P(n \ge 1)} = \frac{m \times f \times (1 - f)^{m-1}}{1 - (1-f)^m}. \vspace{3mm}\]
 
-Videli bomo, da se obe metodi dokaj ujemata, vendar se tudi razlikujeta, saj v nasprotju 
-z Bayesovim pravilom pri metodi edinstvenosti ni mogoče enostavno upoštevati številnih zapletov, kot je bil naprimer vpliv stopnje 
-laboratorijskih napak. \\
+Videli bomo, da se obe metodi dokaj ujemata, vendar se tudi razlikujeta, saj v nasprotju z Bayesovim pravilom pri metodi edinstvenosti 
+ni mogoče enostavno upoštevati številnih zapletov, kot je bil naprimer vpliv stopnje laboratorijskih napak. \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Naključno ujemanje in razmerja verjetnosti}
@@ -169,11 +157,8 @@ tehtanje dokazov. \vspace{3mm}
 \section{Zmote}
 Ker večina ljudi pri razmišljanju o verjetnosti dela osnovne napake, obstaja mnogo zmot, ki izhajajo iz osnovnega razumevanja pravil
 teorije verjetnosti. Številne od teh zmot so zlasti posledica napačnega razumevanja pogojne verjetnosti. Bolj znana primera takih zmot sta
-Tožilčeva zmota(angl. Prosecutor’s fallacy) in Zmota obrambnega odvetnika(angl. Defense attorney's fallacy).
-Na kratko je Tožilčeva zmota domneva, da je $P(H \lvert E)$ enaka $P(E \lvert H)$, kjer je $H$ predpostavka, da se najdejo dokazi o obtožencu,
-$E$ pa predpostavka, da je obtoženec nedolžen. Zmota obrambnega odvetnika pa je, da ne upoštevamo velike spremembe verjetnosti v korist
-obtoženčeve krivde. Čeprav so posledice tožilčeve zmote lahko hujše kot posledice zmote obrambnega odvetnika, so porote morda bolj
-dovzetne za slednjo kot za prvo. \\
+Tožilčeva zmota(angl. Prosecutor’s fallacy) in Zmota obrambnega odvetnika(angl. Defense attorney's fallacy). Čeprav so posledice tožilčeve zmote 
+lahko hujše kot posledice zmote obrambnega odvetnika, so porote morda bolj dovzetne za slednjo kot za prvo. \\
  
 Manj znana zmota je tudi Zasliševalčeva zmota(angl. Interrogator’s fallacy), ki razloži zakaj priznanja, pridobljena med zaslišanjem, ponujajo
 dvomljive dokaze v prid krivdi oziroma dokazi med sodbo ne morejo zmanjšati verjetnosti krivde.
