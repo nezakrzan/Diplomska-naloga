@@ -1,33 +1,100 @@
-\documentclass[a4paper,12pt]{article}
+\documentclass[12pt,a4paper]{amsart}
 \usepackage[slovene]{babel}
-\usepackage[utf8]{inputenc}
+%\usepackage[cp1250]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{lmodern}
-\usepackage{amsmath}
-\usepackage{amsfonts}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{url}
+\usepackage[normalem]{ulem}
+\usepackage[dvipsnames,usenames]{color}
 \usepackage{graphicx}
 
-\setlength{\parindent}{0mm}
-\pagestyle{empty}
+% Oblika strani
+\textwidth 15cm
+\textheight 24cm
+\oddsidemargin.5cm
+\evensidemargin.5cm
+\topmargin-5mm
+\addtolength{\footskip}{10pt}
+\pagestyle{plain}
+\overfullrule=15pt % oznaci predlogo vrstico
 
-\newcommand{\pojem}[1]{\textsc{#1}}
+% Ukazi za matematična okolja
+\theoremstyle{definition} % tekst napisan pokončno
+\newtheorem{definicija}{Definicija}[section]
+\newtheorem{primer}[definicija]{Primer}
+\newtheorem{opomba}[definicija]{Opomba}
 
-\newcounter{definicija}
-\newenvironment{definicija}
-{
-   \stepcounter{definicija}
-   \begin{flushleft}
-   \textbf{Definicija \arabic{definicija}: }
-}
-{
-   \hfill $\square$
-   \end{flushleft}
-}
+\renewcommand\endprimer{\hfill$\diamondsuit$}
+
+\theoremstyle{plain} % tekst napisan poševno
+\newtheorem{lema}[definicija]{Lema}
+\newtheorem{izrek}[definicija]{Izrek}
+\newtheorem{trditev}[definicija]{Trditev}
+\newtheorem{posledica}[definicija]{Posledica}
+
 \begin{document}
 
-\title{Interpretacija statističnih dokazov v kazenskih postopkih - tožilčeva zmota in zmota zagovornik}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{}
+\author{Neža Kržan}
 \maketitle
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+V kazenskih postopkih pri katerih dokazi kažejo, da se obtoženec in storilec ujemata po nekih lastnostih, porota pogosto prejme statistične 
+podatke o pogostosti pojavljanja ujemajoče se lastnosti. V dveh poskusih so študentje preverjali, ali lahko takše dokaze uporabijo pri presoji 
+verjetne krivde osumljenca kaznivega dejanja na podlagi pisnih opisov dokazov. V poskusu 1 so bili statistični podatki o stopnji incidence 
+predstavljeni kot pogojne verjetnosti ali kot odstotki; izkazalo se je, da so prvi povzročili napake v korist tožilstva, drugi pa povzročili več 
+napak v korist obrambe. V poskusu 2 so bili udeleženci izpostavljeni dvema napačnima argumentoma o tem, kako razlagati statistične dokaze. Večina 
+udeležencev ni zaznala napake v enem ali obeh argumentih in je izrekla sodbe, ki so bile skladne z napačno presojo. V obeh poskusih je primerjava 
+sodb preiskovancev z Bayesovimi normami razkrila splošno težnjo po premajhni uporabi statističnih dokazov. Obravnavane so teoretične in pravne 
+posledice teh rezultatov.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Uvod}
+Kriminalistični laboratoriji imajo pogosto pomembno vlogo pri identifikaciji osumljencev kaznivih dejanj. Nekateri trdijo, da imajo statistični 
+dokazi lahko pretiran vpliv na poroto, nekateri pa, da se premalo uporabljajo. Ta napaka je bila označena kot zmota osnovne stopnje. \\
+Ker so statistični potaki osnovne stopnje podbni statističnim podatkom o stopnji incidence, je mogoče domnevati, da bodo tudi stopnje incidence 
+premalo uporabljene. Med obema vrstama statističnih podatko obstajajo pomembne razlike, zaradi katerih je to posploševanje problematično. Statistika 
+osnovne stopnje kaže pogostost ciljnega izida v ustrezni populaciji, medtem ko statistika pogostosti kaže pogostos lastnosti ali značilnosti, ki je zgolj 
+diagnostična za ciljni izid.  \\
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Eksperiment 1}
+\subsection{Metoda}
+\subsubsection{Udeleženci}
+Vsi udeleženci v tem in naslednjem eksperimentu so bili prostovoljci iz univerze, ki so kot spodbudo za sodelovanje dobili dodatne kreditne točke 
+pri predmetu. Udeleženci($N = 144$) so bili vodeni v skupinah po približno deset oseb na sejah, ki so trajale pol ure. Vsak udeleženec je bil 
+naključno razporejen v enega od dveh eksperimentalnih pogojev.
+
+\subsubsection{Postopek}
+Ob začetku eksperimenta so udeleženci dobili pet strani dolg dokument. Na prvi strani z navodili je bilo navedeno,
+\begin{enumerate}
+   \item da je bil poskus zasnovan za preverjanje sposobnosti ljudi, da na podlagi dokazov, ki vključujejo verjetnost, sprejmejo razumne sklepe;
+   \item da morajo udeleženci prebrati opis kazenskega primera in navesti svojo oceno verjetnosti osumljenčeve krivde z apisom odstotka med 0 in 100;
+   \item da pri teh ocenah udeleženci ne smejo upoštevati koncepta razumnega dvoma in morajo navesti verjetnost, da je osumljenec res to storil, 
+   namesto verjetnosti, da bi porota osumljenca obsodila.
+\end{enumerate}
+Vodja eksperimenta je z udeleženci pregledal ta navodila in odgovoril na morebitna vprašanja, nato pa so udeleženci prebrali opis kazenskega primera.\\
+Primer je vključeval rop trgovine z alkoholnimi pijačami, ki ga je izvedel moški s smučarsko masko. Prodajalec je opisal višino, težo in oblačila roparja, 
+ni pa videl njegovega obraza ali las. Policija je v bližini trgovine prijela osumljenca, ki je ustrezal prodajalčevemu opisu, vendar osumljenec ni imel 
+smučarske maske in ukradenega denarja, so pa to našli v košu za smeti v bližni kraja. \\
+Udeleženci so tedaj na podlagi informacij, ki so jih prejeli, ocenili verjetnost osumljenčeve krivde. Nato pa so prebrali povzetek pričanja sodnega izvedenca, 
+ki je potrdil, da se vzorci osumljenčevih las mikroskopsko ne razlikujejo od las, ki so bili najdeni v smučarski maski. Strokovnjak je opisal tudi empirično 
+študijo, ki je dala podatke o verjetnosti, da se dva naključno izbrana lasa različnih posameznikov ne bosta razlikovala. \\
+Eksperimentalna manipulacija je bila način na podlagi katerega je strokovnjak opisal stopnjo pojavnosti ujemajočih se las. Pri pogoju pogojne verjetnosti je 
+izvedenec poročal o stopnji incidence kot o pogojni verjetnosti in navedel, da je študija pokazala, da obstajata le dva odstota možnosti, da bi se obtoženčevi 
+lasje ne razlikovali od las storilca, če bi bil nedolžen. Pri pogoju odstotkov in števila je izvedenec poročal, da je študija pokazala, da ima le 2 \% ljudi 
+lase, ki se ne razlikujejo od las obdolženca, in navedel, da je v mestu z 1 000 000 prebivalci približno 20 000 takih posameznikov. V vsako stanje je bila 
+razporejena polovica udeležencev. \\
+Ko so prebrali vse dokaze, so dokončno presodili o verjetnosti osumljenčeve krivde.
+
+\subsection{Rezultati}
+\subsubsection{Napačne sodbe}
+19 oseb je bilo žrtev tožolčeve zmote, saj so ocenili, da je verjetnost krivde nataonko $0,98$, kar pa je verjetnost, ki bi jo dobili, če bi od ena 
+odštevli stopnjo pojavnosti ujemajoče se lastnosti. 18 oseb je bilo žrtev zmote odvetnika, ker je bila njihova končna sodba o krivdi enaka njihovi začetni sodbi 
+o krvdi, kar pomeni, da vmesnim dokazom, ki bi lahko vplivali na končenga, niso pripisovali nobene teže. Preostali niso bili žrtve nobenih od teh zmot, ker so bile 
+njihove končne ocene krivde višje od začetnih ocen, torej so pripisali nekaj teže vmesnim dokazom, vendar so bile nižje od $0,98$.
 
 \end{document}
+
+
