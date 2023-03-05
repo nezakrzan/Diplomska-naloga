@@ -1,0 +1,178 @@
+\documentclass[12pt,a4paper]{amsart}
+\usepackage[slovene]{babel}
+%\usepackage[cp1250]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{url}
+\usepackage[normalem]{ulem}
+\usepackage[dvipsnames,usenames]{color}
+\usepackage{graphicx}
+
+% Oblika strani
+\textwidth 15cm
+\textheight 24cm
+\oddsidemargin.5cm
+\evensidemargin.5cm
+\topmargin-5mm
+\addtolength{\footskip}{10pt}
+\pagestyle{plain}
+\overfullrule=15pt % oznaci predlogo vrstico
+
+% Ukazi za matematična okolja
+\theoremstyle{definition} % tekst napisan pokončno
+\newtheorem{definicija}{Definicija}[section]
+\newtheorem{primer}[definicija]{Primer}
+\newtheorem{opomba}[definicija]{Opomba}
+
+\renewcommand\endprimer{\hfill$\diamondsuit$}
+
+
+\theoremstyle{plain} % tekst napisan poševno
+\newtheorem{lema}[definicija]{Lema}
+\newtheorem{izrek}[definicija]{Izrek}
+\newtheorem{trditev}[definicija]{Trditev}
+\newtheorem{posledica}[definicija]{Posledica}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Drugi pristopi}
+\author{Neža Kržan}
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Drugi pristopi}
+Da bi ocenili moč Bayesove analize dokazov DNK, jo je koristno primerjati z nekaterimi drugimi pristopi.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Frekvence}
+Predlagano je bilo s strani mnogih avtorjev, da je bolj naraven način za obravnavo verjetnosti uporaba naravnih frekvenc(angl. natural 
+frequencies). 
+\begin{definicija}
+    Frekvenca $f$ je posamezno število diskretnih statističnih enot iste vrednosti. Če je diskretnih podatkov zelo veliko ali če so 
+    podatki zvezni, jih združujemo v frekvenčne razrede.
+\end{definicija}
+
+\begin{definicija}
+    Absolutna frekvenca (oznaka $f_k$ za k-ti razred) je število vrednosti statistične spremenljivke v k-tem razredu.
+\end{definicija}
+
+\begin{definicija}
+    Relativna frekvenca (oznaka $f_k'$) pa je delež absolutne frekvence $f_k$ glede na celoto. Če je $N$ število enot v populaciji 
+    ali morda vzorcu, je 
+    \[
+        f_k' = \frac{f_k}{N}.
+    \]
+\end{definicija}
+V forenzičnem kontekstu se navedene frekvence običajno nanašajo na pojavljanje dokazov za posamezen primer, medtem ko se frekvence za 
+pojavljanje vprašanj običajno opisujejo kot osnovne stopnje(angl. base rates). Sklepanje o krivdi je lahko podprto s statistično analizo 
+ustreznih podatkov in verjetnostnim sklepanjem z uporabo absolutnih ali relativnih frekvenc, pri čemer je verjetnost, da bi določene 
+podatke (dokaze) pridobili zgolj po naključju, izjemno majhna . Relativne frekvence vedno navajajo ali predpostavljajo, da obstaja nek 
+referenčni vzorec, na podlagi katerega se lahko oceni pogostost zadevnega dogodka. Nadaljnja predpostavka je, da je ta primerjava poučna 
+in pomembna za obravnavano nalogo. V okviru kazenskega postopka bi na primer pričakovali, da bo relativna pogostost lahko podprla 
+vmesno sklepanje o moči dokazov, ki se nanašajo na sporna dejstva, kar vodi do končnega sklepa, da je obtoženec nedolžen ali kriv. Relativne 
+frekvence so rutinsko vključene v znanstvene dokaze, ki se predložijo v kazenskih postopkih.\\\\
+Recimo, da je pogostost profila DNK $f$ 1 proti 10 milijonov, predpostavimo tudi, da ima obtoženec enak DNK in da je začetna populacija osumljencev 
+100 milijonov ljudi. Zanima nas kakšna je verjetnost, da je obtoženec vir DNK-ja s kraja zločina. \\
+Naj bo: \\
+$f$ \dots pogostost profila DNK;\\
+$m$ \dots velikost populacije osumljencev; \\
+$n$ \dots število ljudi, ki imajo ustrezen DNK profil. \\
+Po metodah, ki temeljijo na naravnih frekvencah, je potrebno izračunati, koliko ljudi z zadevnim profilom DNK je v populaciji osumljencem, tako 
+da se $f$ pomnoži z $m$.  \\
+Če je posameznikov s takim profilom $n > 1$, je verjetnost, da je obtoženi vir, $\frac{1}{n}$. V primeru, ko je $n < 1$ in so frekvence še 
+posebaj majhne, je bolje raziskovati ali je profil DNK edinstven ali ne - ali poleg obtoženca obstajajo še drugi posamezniki z enakim 
+profilom DNK. Temu pravimo metoda edinstvenosti(angl. uniqueness method). \\
+S formulo binomske porazdelitve lahko izračunamo verjetnost, da se bo dogodek $X$, na primer profil DNK, pojavil $k$ - krat v $s$ - kratnem 
+številu ponovitev, pri čemer ima dogodek $X$ frekvenco 4$f$. Želimo vedeti, kolikšna je verjetnost, da ima točno en posameznik ustrezen DNK 
+profil, ob pogoju da ga ima vsaj en posameznik, torej:
+\[
+    P(n = 1 \lvert n \ge 1) = \frac{P(n=1 \cap n \ge 1)}{P(n \ge 1)} = \frac{m \times f \times (1 - f)^{m-1}}{1 - (1 - f)^m}.
+\]
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{c c c c} 
+        \hline
+        $m$ & $f$ & $P(n = 1 \lvert n \ge 1)$ & $P(S \lvert M)$[Bayes]\\ 
+        \hline
+        10 milijonov & 1 v 100 milojonov & 0,9 & 0,9 \\
+        100 milijonov & 1 v 100 milojonov & 0,62 & 0,5 \\
+        1 milijarda & 1 v 100 milojonov & 0 & 0,09 \\ \hline
+        10 milijonov & 1 v 1 milijardi & 1 & 0,99 \\
+        100 milijonov & 1 v 1 milijardi & 0,9 & 0,9 \\
+        1 milijarda & 1 v 1 milijardi & 0,62 & 0,5 \\ \hline
+        10 milijonov & 1 v 10 milijardah & 1 & 0,999 \\
+        100 milijonov & 1 v 10 milijardah & 1 & 0,99 \\
+        1 milijarda & 1 v 10 milijardah & 0,9 & 0,9 \\ \hline
+    \end{tabular}
+\end{table}
+Tabela vsebuje primerjavo rezultatov, ki jih daje Bayesovo pravilo. Obe metodi se dokaj ujemata, vendar se tudi razlikujeta, saj v nasprotju 
+z Bayesovim pravilom pri metodi edinstvenosti ni mogoče enostavno upoštevati številnih zapletov, kot je bil naprimer vpliv stopnje 
+laboratorijskih napak. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Naključno ujemanje}
+Metoda verjetnost naključnega ujemanja(angl. random match probability) izraža možnost, da bi imel naključni posameznik, ki ni povezan z obdolžencem, 
+ustrezni DNK profil. Ta verjetnost je enaka pogostosti profila DNK. Težava tega pristopa je, da verjetnost naključnega ujemanja lahko predstavljena 
+oziroma razumevana narobe. \\
+Pogosto se to verjetnost interpretira na slednji način:
+\begin{enumerate}
+    \item če je verjetnost naključnega ujemanja na primer 1 proti 100 milijonom, potem je verjetnost, da ima profil DNK drug posameznik in ne 
+    obdolženec 1 proti 100 milijonom;
+    \item ker je to zelo majhna verjetnost, mora biti tudi verjetnost, da je sled DNK pustil nekdo drug na kraju zločina in ne obdolženec, zelo majhna;
+    \item zato mora biti verjetnost, da je vir sledi DNK s kraja zločina obtoženec zelo velika, ampak znaša 1 proti 100 milijonov.
+\end{enumerate}
+Takšno sklepanje je napačno in je znano kot tožilčeva zmota(angl. Prosecutor’s fallacy). Sestavlja jo enačba
+\begin{equation}\label{eq:tozilcevazmota}
+    1 - f = P(S \lvert M).
+\end{equation}
+Zmota se pojavi v koraku (2), ko je zamenjano $P(M \lvert \neg S)$ s $P(\neg S \lvert M)$ in predpostavljeno, da sta obe verjetnosti enaki $f$. \\
+Namesto verjetnosti naključnega ujemanja forenzični strokovnjaki pogosto pričajo o razmerju verjetnosti(angl. likelihood ratio) dokazov DNK, in 
+sicer kot:
+\[
+    P(M \lvert S) = P(M \lvert \neg S).
+\]
+Bayesovo pravilo vključuje razmerje verjetnosti in predhodno oziroma pariorno verjetnost, torej je celovitejši način predstavitve dokazov DNK. 
+Težavo ocenjevanja apriorne verjetnosti pri Bayesovem pravilu, bi lahko odpravili z osredotočanjem le na verjetnost. Metoda razmerja verjetnosi je 
+koristna v državah kot sta naprimer Velika Britanija in Združene države Amerike, kjer se lahko Bayesovo pravilo šteje kot poseg v pravico porote 
+do previdnosti: poroti naj ne bi bilo potrebno govoriti, kako naj razmišlja in presoja dokaze; Bayesovo pravilo pa je natanko metoda za 
+tehtanje dokazov.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Predhodna verjetnost(angl. Prior Probability)}
+Sodni izvedenec je naprošen, da opravi analizo profila DNK krvi, najdene na kraju kaznivega dejanja, in rezultat primerja s profilom DNK 
+obdolženca. O krivdi ali nedolžnosti obtoženca bo odločala porota. Odločitev porotnikov bo delno odvisna od njihove ocene dveh interesnih 
+možnosti\\
+$H_1 \dots$ vir krvi je obtoženec,\\
+$H_2 \dots$ vir krvi je druga oseba.\\
+Porotniki bodo morda želeli, da jim izvedenec dokončno pove, katera hipoteza je resnična, ali da jim navede posebne vrednosti tako imenovanih 
+verjetnosti vira. Za oceno verjetnosti vira mora forenzični znanstvenik upoštevati tudi druge dokaze v kazenskem primeru.\\\\
+Recimo, da je izvedenec ugotovil, da imata obtoženec in kri s kraja zločina skupen niz genetskih označevalcev, ki jih najdemo pri eni osebi 
+na 1 milijon prebivalcev v zadevni populaciji. Ne da bi upošteval druge dokaze v zadevi, lahko izvedenec poda izjavo o pogojni verjetnosti 
+ugotovitve teh rezultatov pri dveh hipotezah o medsebojni povezanosti. Izvedenec lahko na primer izjavi, da so skupni genetski označevalci 
+skoraj zagotovo najdeni v primeru H1 (vir je bil obtoženec), vendar imajo le 1 možnost na milijon, da bodo najdeni v primeru $H_2$ (vir je bil 
+nekdo drug). Na podlagi te ocene lahko izvedenec poroti predloži razmerje verjetnosti - na primer, da so rezultati profiliranja DNK 1 milijonkrat 
+bolj verjetni, če je bil vir krvi obtoženec in ne neka druga oseba. Vendar razmerje verjetnosti ni isto kot verjetnost vira. \\
+Edini skladen način, kako na podlagi forenzičnih dokazov sklepati o verjetnosti virov, je uporaba Bayesovega pravila, ki zahteva, da začnemo s 
+pripisom predhodnih verjetnosti za trditve, ki nas zanimajo. Bayesov pristop bo deloval le, če bo izvedenec lahko začel s predhodno verjetnostjo.\\\\
+To nas pripelje do bistva vprašanja: ali naj forenziki sploh poskušajo določiti predhodne verjetnosti, in če da, kako. Občasno se predlaga, da 
+bi morali forenziki predpostavljati enake predhodne verjetnosti, kar se včasih opisuje kot stališče nevtralnosti. Torej analitiki predpostavljajo, 
+da sta predhodni verjetnosti $H_1$ in $H_2$ enaki, nato pa ju v skladu z Bayesovim pravilom pomnožijo z razmerjem verjetnosti, da določijo posteriorno 
+verjetnost. \\\\
+Ampak kakršnakoli privzeta predpostavka o predhodni verjetnosti je obravnavana kot kršitev obveznosti pravnega sistema, da zagotovi individualizirano 
+pravico na podlagi dejstev vsakega primera, zato je drugi predlagani pristop, da forenzični znanstveniki prevzamejo odgovornost za oceno predhodne 
+verjetnosti ustreznih hipotez, preden jih posodobijo na podlagi znanstvenih ugotovitev v skladu z Bayesovim pravilom. Glavni očitek temu pristopu v 
+okviru kazenskega postopka je, da lahko forenzični znanstveniki presežejo svoje znanstveno znanje in si prisvojijo vlogo tistega, ki ugotavlja 
+dejstva. Da bi izvedenec določil predhodne kontekstualno smiselne verjetnosti, bi moral upoštevati vse dokaze v zadevi. Zato je bilo predlagano, 
+da sodni izvedenci nimajo nobene vloge pri ocenjevanju predhodnih verjetnosti. \\\\
+Vprašanje, ali naj forenzični znanstveniki upoštevajo predhodno verjetnost hipotez, ki naj bi jih pomagali ovrednotiti, je zapleteno. Odgovor je odvisen od 
+vloge, ki jo bo forenzični znanstvenik imel v pravnem sistemu. Če bodo forenzični znanstveniki za pravne namene sprejemali ultimativne ugotovitve v zvezi z 
+določenim predlogom, ki jih zanima, potem bi morali in dejansko morajo upoštevati predhodne verjetnosti, da so hipoteze resnične. Če pa bo o 
+resničnosti hipotez odločal nekdo drug, npr. sodnik ali porota, in je vloga forenzičnih znanstvenikov omejena na zagotavljanje strokovne pomoči, se 
+morajo forenzični znanstveniki na splošno omejiti na določanje pogojne verjetnosti znanstvenih ugotovitev pri danih hipotezah, ki jih zanimajo, nalogo 
+ocenjevanja predhodnih in poznejših verjetnosti pa morajo prepustiti nosilcu pravne odločitve.
+
+\end{document}

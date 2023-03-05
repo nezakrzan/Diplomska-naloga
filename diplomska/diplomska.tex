@@ -280,7 +280,25 @@ Da bi ocenili moč Bayesove analize dokazov DNK, jo je koristno primerjati z nek
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Frekvence in edinstvenost}
 Predlagano je bilo s strani mnogih avtorjev, da je bolj naraven način za obravnavo verjetnosti uporaba naravnih frekvenc(angl. natural 
-frequencies). Recimo, da je pogostost profila DNK $f$ 1 proti 10 milijonov, predpostavimo tudi, da ima obtoženec enak DNK in da je začetna 
+frequencies). 
+\begin{definicija}
+    Frekvenca $f$ je posamezno število diskretnih statističnih enot iste vrednosti. Če je diskretnih podatkov zelo veliko ali če so podatki zvezni, jih združujemo v frekvenčne razrede.
+\end{definicija}
+
+\begin{definicija}
+    Absolutna frekvenca (oznaka $f_k$ za k-ti razred) je število vrednosti statistične spremenljivke v k-tem razredu.
+\end{definicija}
+
+\begin{definicija}
+    Relativna frekvenca (oznaka $f_k'$) pa je delež absolutne frekvence $f_k$ glede na celoto. Če je $N$ število enot v populaciji ali morda vzorcu, je \[f_k' = \frac{f_k}{N}\].
+\end{definicija}
+
+V forenzičnem kontekstu se navedene frekvence običajno nanašajo na pojavljanje dokazov za posamezen primer, medtem ko se frekvence za pojavljanje vprašanj običajno opisujejo kot osnovne stopnje(angl. base rates). Sklepanje o krivdi je lahko podprto 
+s statistično analizo ustreznih podatkov in verjetnostnim sklepanjem z uporabo absolutnih ali relativnih frekvenc, pri čemer je verjetnost, da bi določene podatke (dokaze) pridobili zgolj po naključju, izjemno majhna . Relativne frekvence vedno 
+navajajo ali predpostavljajo, da obstaja nek referenčni vzorec, na podlagi katerega se lahko oceni pogostost zadevnega dogodka. Nadaljnja predpostavka je, da je ta primerjava poučna in pomembna za obravnavano nalogo. V okviru kazenskega postopka 
+bi na primer pričakovali, da bo relativna pogostost lahko podprla vmesno sklepanje o moči dokazov, ki se nanašajo na sporna dejstva, kar vodi do končnega sklepa, da je obtoženec nedolžen ali kriv. Relativne frekvence so rutinsko vključene v znanstvene 
+dokaze, ki se predložijo v kazenskih postopkih.\\\\
+Recimo, da je pogostost profila DNK $f$ 1 proti 10 milijonov, predpostavimo tudi, da ima obtoženec enak DNK in da je začetna 
 populacija osumljencev 100 milijonov ljudi. Zanima nas kakšna je verjetnost, da je obtoženec vir DNK-ja s kraja zločina. \\
 
 Naj bo: \\
@@ -351,7 +369,7 @@ tehtanje dokazov. \\\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Tožilčeva zmota}
-Tožilčeva zmota(angl. Prosecutor’s fallacy) se pogosto pojavlja v kazenskem pravu, vendar jo pogosto neprepoznajo, deloma zato, ker preiskovalci 
+%Tožilčeva zmota(angl. Prosecutor’s fallacy) se pogosto pojavlja v kazenskem pravu, vendar jo pogosto neprepoznajo, deloma zato, ker preiskovalci 
 nimajo močne intuicije o tem, kaj zmota sploh pomeni. Tožilčeva zmota je dobro znana statistična zmota, ki izhaja iz napačnega razumevanja 
 pogojnih verjetnosti in vprašanj večkratnega testiranja. Napaka temelji na predpostavki, da je $P(H \lvert E) = P(E \lvert H)$, pri čemer $H$ 
 predstavlja primer, da se najdejo dokazi o obtožencu, $E$ pa primer, da je obtoženec nedolžen. Vendar ta enakost ne drži: čeprav je $P(H \lvert E)$ 
@@ -425,7 +443,7 @@ določeno značilnostjo, se pojavi v določeni populaciji. Predpostavlja se, da 
 drugih informacij, torej je za vse enako verjetno, da so storilci. Na podlagi teh predpostavk lahko sklepamo, da obstaja majhna verjetnost, 
 da je osumljenec storilec kaznivega dejanja. \\ 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Seznam uporabljene literature
 %https://www.quantstart.com/articles/Bayesian-Statistics-A-Beginners-Guide/

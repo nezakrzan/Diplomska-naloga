@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.12.1)  2 MAR 2023 10:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.12.1)  2 MAR 2023 10:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska/diplomska.tex
-(/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska/diplomska.tex
+**/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/Literatura/podatki_uporaba_statistike/uporaba_statistike.tex
+(/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/Literatura/podatki_uporaba_statistike/uporaba_statistike.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18> (/usr/local/texlive/2021/texmf-dist/tex/latex/amscls/amsart.cls
 Document Class: amsart 2020/05/29 v2.20.6
@@ -164,33 +164,32 @@ Package graphics Info: Driver file: pdftex.def on input line 105.
 \Gin@req@width=\dimen155
 )
 \c@definicija=\count269
-\odstavek=\skip58
  (/usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count270
 \l__pdf_internal_box=\box53
-) (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska/diplomska.aux)
-\openout1 = `diplomska.aux'.
+) (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/Literatura/podatki_uporaba_statistike/uporaba_statistike.aux)
+\openout1 = `uporaba_statistike.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 59.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 36.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 59.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 36.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -211,213 +210,95 @@ Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
-)) [1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska/diplomska.toc)
-\tf@toc=\write3
-\openout3 = `diplomska.toc'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [2]
-Underfull \hbox (badness 10000) in paragraph at lines 111--113
+))
+Underfull \hbox (badness 10000) in paragraph at lines 73--81
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--134
+Underfull \hbox (badness 10000) in paragraph at lines 73--81
+
+ []
+
+[1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (24.4017pt too wide) in paragraph at lines 83--86
+\T1/cmr/m/n/12 ko so-je-nje po-teka). Za-nima nas vpliv do-ka-zov na ver-je-tnost krivde($\OML/cmm/m/it/12 H[]$\T1/cmr/m/n/12 ) in nedolºnosti($\OML/cmm/m/it/12 H[]$\T1/cmr/m/n/12 )|
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--96
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 143--144
+Underfull \hbox (badness 10000) in paragraph at lines 98--104
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 148--149
+Underfull \hbox (badness 10000) in paragraph at lines 116--119
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 125--132
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--154
+Underfull \hbox (badness 10000) in paragraph at lines 142--148
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 160--163
+Underfull \hbox (badness 10000) in paragraph at lines 154--160
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--167
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 164--167
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 171--172
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 173--178
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 179--184
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 179--184
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 185--188
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 188--189
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 191--192
+Underfull \hbox (badness 10000) in paragraph at lines 166--170
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 218--222
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 225--230
+Underfull \hbox (badness 10000) in paragraph at lines 197--212
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 242--243
+Underfull \hbox (badness 10000) in paragraph at lines 224--236
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--251
+Underfull \hbox (badness 10000) in paragraph at lines 224--236
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 272--274
+Underfull \hbox (badness 10000) in paragraph at lines 224--236
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 272--274
+Underfull \hbox (badness 10000) in paragraph at lines 224--236
 
  []
 
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 278--279
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 296--303
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 296--303
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 304--313
-
- []
-
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 337--339
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 342--345
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 358--359
-
- []
-
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 362--368
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 362--368
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 372--377
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 378--385
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 386--388
-
- []
-
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 396--399
-
- []
-
-<slika1.png, id=44, 256.96pt x 252.945pt>
-File: slika1.png Graphic file (type png)
-<use slika1.png>
-Package pdftex.def Info: slika1.png  used on input line 418.
-(pdftex.def)             Requested size: 115.63092pt x 113.82419pt.
-[10 </Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska/slika1.png>]
-<slika2.png, id=50, 262.9825pt x 260.975pt>
-File: slika2.png Graphic file (type png)
-<use slika2.png>
-Package pdftex.def Info: slika2.png  used on input line 434.
-(pdftex.def)             Requested size: 118.34102pt x 117.43767pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 441--445
-
- []
-
-[11 </Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska/slika2.png>] (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska/diplomska.aux) ) 
+[6] [7] (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/Literatura/podatki_uporaba_statistike/uporaba_statistike.aux) ) 
 Here is how much of TeX's memory you used:
- 4217 strings out of 478994
- 54754 string characters out of 5858184
- 370118 words of memory out of 5000000
- 21488 multiletter control sequences out of 15000+600000
- 417380 words of font info for 64 fonts, out of 8000000 for 9000
+ 4181 strings out of 478994
+ 54568 string characters out of 5858184
+ 371939 words of memory out of 5000000
+ 21462 multiletter control sequences out of 15000+600000
+ 414307 words of font info for 60 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 82i,9n,88p,343b,255s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska/diplomska.pdf (11 pages, 428758 bytes).
+ 82i,10n,88p,404b,229s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
+Output written on /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/Literatura/podatki_uporaba_statistike/uporaba_statistike.pdf (7 pages, 190528 bytes).
 PDF statistics:
- 98 PDF objects out of 1000 (max. 8388607)
- 67 compressed objects within 1 object stream
+ 85 PDF objects out of 1000 (max. 8388607)
+ 61 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
