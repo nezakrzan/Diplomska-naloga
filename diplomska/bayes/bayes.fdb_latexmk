@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1678038235 "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska/bayes/bayes.tex" "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska/bayes/bayes.pdf" "bayes" 1678038236
-  "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska/bayes/bayes.aux" 1678038236 1251 5f2cdae6835dfb45b8f0e8e9de7a05ce ""
-  "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska/bayes/bayes.tex" 1677952345 14630 8fb9cd56827a34ec567c80159381886d ""
+["pdflatex"] 1678528755 "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska/bayes/bayes.tex" "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska/bayes/bayes.pdf" "bayes" 1678528756
+  "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska/bayes/bayes.aux" 1678528756 1991 7c6780374bd30d2f70172b58fe72d96a ""
+  "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska/bayes/bayes.tex" 1678528755 21970 7b06084f687cc87e288eaf8424af98ee ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm" 1136768653 3584 402da0b29eafbad07963b1224b222f18 ""
@@ -75,11 +75,12 @@
   "/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1616695603 5169178 a2ce6e2d73f603b690db6777d06dbccb ""
   "/usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1638351185 2724738 99ced56f488d4dbb028a5474dfd1162f ""
   "/usr/local/texlive/2021/texmf.cnf" 1616695596 577 4c1911a7228e554c6032256d3cf5567d ""
-  "bayes.aux" 1678038236 1251 5f2cdae6835dfb45b8f0e8e9de7a05ce "pdflatex"
-  "bayes.tex" 1677952345 14630 8fb9cd56827a34ec567c80159381886d ""
+  "bayes.aux" 1678528756 1991 7c6780374bd30d2f70172b58fe72d96a "pdflatex"
+  "bayes.tex" 1678528755 21970 7b06084f687cc87e288eaf8424af98ee ""
+  "slika5.png" 1678524867 37688 b3030bcd9efa9f3b3cdee4ce649fc9ef ""
   (generated)
-  "bayes.log"
-  "bayes.pdf"
-  "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska/bayes/bayes.pdf"
   "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska/bayes/bayes.log"
+  "bayes.pdf"
   "bayes.aux"
+  "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska/bayes/bayes.pdf"
+  "bayes.log"

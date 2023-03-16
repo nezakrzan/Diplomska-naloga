@@ -317,6 +317,11 @@ INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/jknappen/ec/ecrm0900.tfm
 OUTPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska/bayes/bayes.pdf
 INPUT /usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/jknappen/ec/ecti1200.tfm
+INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska/bayes/slika5.png
+INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska/bayes/slika5.png
+INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska/bayes/slika5.png
+INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska/bayes/slika5.png
+INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska/bayes/slika5.png
 INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska/bayes/bayes.aux
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb

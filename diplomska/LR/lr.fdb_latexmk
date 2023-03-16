@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1677999074 "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska/LR/lr.tex" "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska/LR/lr.pdf" "lr" 1677999074
-  "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska/LR/lr.aux" 1677999074 1320 b34a81615896f9e157e643fc014f62cc ""
-  "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska/LR/lr.tex" 1677999074 15112 f709a9ed209860b35cd43fccc847cdd1 ""
+["pdflatex"] 1678082647 "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska/LR/lr.tex" "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska/LR/lr.pdf" "lr" 1678082648
+  "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska/LR/lr.aux" 1678082648 1320 b34a81615896f9e157e643fc014f62cc ""
+  "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska/LR/lr.tex" 1678082647 15600 bfab23c3994c5a2ce17df2c19b8f422d ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -75,11 +75,11 @@
   "/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1616695603 5169178 a2ce6e2d73f603b690db6777d06dbccb ""
   "/usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1638351185 2724738 99ced56f488d4dbb028a5474dfd1162f ""
   "/usr/local/texlive/2021/texmf.cnf" 1616695596 577 4c1911a7228e554c6032256d3cf5567d ""
-  "lr.aux" 1677999074 1320 b34a81615896f9e157e643fc014f62cc "pdflatex"
-  "lr.tex" 1677999074 15112 f709a9ed209860b35cd43fccc847cdd1 ""
+  "lr.aux" 1678082648 1320 b34a81615896f9e157e643fc014f62cc "pdflatex"
+  "lr.tex" 1678082647 15600 bfab23c3994c5a2ce17df2c19b8f422d ""
   (generated)
   "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska/LR/lr.log"
-  "lr.log"
   "lr.pdf"
-  "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska/LR/lr.pdf"
   "lr.aux"
+  "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska/LR/lr.pdf"
+  "lr.log"
