@@ -1,0 +1,339 @@
+\documentclass{beamer}
+\mode<presentation>
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[slovene]{babel}
+\usepackage{lmodern}
+\usepackage{array} 
+\usepackage{tikz}
+
+\usetheme{Berlin}
+\usecolortheme{default}
+\useinnertheme[shadows]{rounded}
+\useoutertheme{infolines}
+\beamertemplatenavigationsymbolsempty
+
+\usepackage{times}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\ts}{\textstyle}
+\newcommand{\presledek}{\vspace{3mm}}
+\newcommand{\ph}{\phantom{1}} 
+\newcommand{\tr}{{\rm tr \,}}
+
+\newtheorem{definicija}{Definicija}
+\newtheorem{izrek}{Izrek}
+\newtheorem{trditev}{Trditev}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Statistika v kazenskem pravu}
+\subtitle{Dolga predstavitev diplomske naloge}
+\author[Neža Kržan]{Neža Kržan}
+ 
+\institute[FMF]{Mentor: izr. prof. Jaka Smrekar \\ Fakulteta za matematiko in fiziko \\ \vspace{10mm} Ljubljana, 28.november 2022}
+\date[28. november 2022] {}
+
+\subject{Talks}
+
+\begin{frame}
+   \titlepage
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+   \frametitle{Kratek pregled}
+   \tableofcontents[pausesections]
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Koncept verjetnosti}
+
+\begin{frame}
+    \frametitle{Koncept verjetnosti}
+    \begin{definicija}
+        Naj bo $H$ nek dogodek in $\bar{H}$ negacija oziroma komplement dogodka $H$. Dogodka $H$ in $\bar{H}$ sta znana kot komplementarna dogodka.
+    \end{definicija}
+    Opravlja se primerjava verjetnosti dokazov na podlagi dveh konkurenčnih predlogov:\\
+    $H_p \dots$ trditev, ki jo predlaga tožilstvo;\\
+    $H_d \dots$ trditev, ki jo predlaga obramba.\\ \vspace{5mm}
+    Koncept verjetnosti je
+    \begin{itemize}
+        \item ključen pri ocenjevanju dokazov;
+        \item omogoča objektivno oceno vpliva dokaza na verjetnost določene domneve o interesni osebi ali obdolžencu.
+    \end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+    \frametitle{Presoja dokazov}
+    \begin{itemize}
+        \item Za presojo se uporablja različne metode in tehnike, ki temeljijo na statistični verjetnosti,
+        \item metode omogočajo oceno, kako verjetno je, da so dokazi resnični in zanesljivi. 
+    \end{itemize}
+    \begin{beamerboxesrounded}[]{KONTEKST DOKAZA}
+        \begin{itemize}
+            \item Upoštevamo druge dokaze in okoliščine primera.
+            \item Izvedemo bolj objektivno presojo dokazov.
+            \item Vpliv na določeno domnevo oziroma hipotezo o interesni osebi ali obdolžencu.
+            \item Upoštevamo verjetnost napake - verjetnost, da so dokazi napačni ali zavajajoči.
+        \end{itemize} 
+    \end{beamerboxesrounded}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+    \frametitle{Koncept verjetnosti}
+    \begin{beamerboxesrounded}[]{Verjetnost proti nedolžnosti ali verjetnost za krivdo}
+        \[
+            \frac{P(H_p)}{P(H_d)}
+        \]    
+    \end{beamerboxesrounded} \vspace{3mm}
+    \begin{beamerboxesrounded}[]{Verjetnost v prid krivdi ob upoštevanju informacij $E$}
+        \[
+            \frac{P(H_p \lvert E)}{P(H_d \lvert E)} 
+        \]    
+    \end{beamerboxesrounded} \vspace{5mm}
+    Če imamo na voljo dokaz $E$, nas zanima pogojna verjetnost
+    \[
+        P(kriv \lvert E), \vspace{2mm}
+    \]
+    pri čemer nam je lahko v pomoč Bayesovo pravilo.
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Bayesova statistika}
+
+\begin{frame}
+    \frametitle{Opredelitev}
+    Bayesovo sklepanje razlaga verjetnost kot merilo verjetnosti ali zaupanja, ki ga lahko ima posameznik glede nastanka določenega dogodka.
+    \begin{itemize}
+      \item O dogodku lahko že imamo predhodno prepričanje oziroma apriorno prepričanje.
+      \item Ta se lahko spremeni, ko se pojavijo novi dokazi.
+    \end{itemize} \vspace{3mm}
+    Bayesova statistika nam daje matematične modele za vključevanje naših apriornih prepričanj in dokazov za ustvarjanje novih prepričanj.
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+    \begin{beamerboxesrounded}[]{Bayesova analiza}
+        standardna metoda za posodabljanje verjetnosti po opazovanju več \\ dokazov, zato je zelo primerna za sintezo dokazov.
+    \end{beamerboxesrounded}\vspace{3mm}
+    \begin{itemize}
+        \item Začnemo z nekim predhodnim prepričanjem o hipotezi,
+        \item posodabljamo to prepričanje, ko se dokazi ponovno pojavijo.
+    \end{itemize}\vspace{3mm}
+    Pri uporabi Bayesovega sklepanja moramo utemeljiti predhodne predpostavke, kadar je to mogoče.  \\
+    V nasprotnem primeru morajo uporabiti razpon vrednosti predpostavk in analizo občutljivosti, da preverijo zanesljivost rezultata.
+glede na te vrednosti.
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+    \frametitle{Bayesovo pravilo}
+    Bayesovo sklepanje temelji na Bayesovem pravilu, ki izraža verjetnost nekega dogodka z verjetnostjo dveh dogodkov in obrnejnje pogojne
+    verjetnosti. \vspace{3mm}
+    \begin{definicija}
+        Pogojna verjetnost dogodka H, glede na dogodek E, je
+        \begin{equation}\label{eq:pogojna}
+             P(H \lvert E) = \frac{P(H \cap E)}{P(E)}, \vspace{2mm}
+        \end{equation}
+        ob predpostavki, da je $P(E) > 0$.
+    \end{definicija}
+  \end{frame}
+
+\begin{frame}
+    \frametitle{Bayesovo pravilo}
+    Potem pogojno verjetnost uporabimo še v števcu formule \eqref{eq:pogojna} in dobimo Bayesovo pravilo
+    \[
+        P(H \lvert E) = \frac{P(E \lvert H) \times P(H)}{P(E)}, \vspace{2mm}
+    \]  
+    verjetnost dogodka E lahko še razpišemo
+    \[
+        P(H \lvert E) = \frac{P(E \lvert H) \times P(H)}{P(E \lvert H)P(H) + P(E \lvert \neg H)P(\neg H)}. \vspace{2mm}
+    \] 
+    Obstaja še ena formulacija Bayesovega pravila, ki olajša izračune in je pogosto uporabljena pri Bayesovi analizi DNK dokazov
+    \[
+        \frac{P(H \lvert E)}{P(\neg H \lvert E)} = \frac{P(E \lvert H)}{P(E \lvert \neg H)} \times \frac{P(H)}{P(\neg H)}. \vspace{2mm}
+    \]
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+    \frametitle{Bayesovo posodabljenje}
+    Logična trditev, kako se sčasoma posodabljajo apriorne oziroma predhodne verjetnosti dokazov glede na novo zbrane dokaze oziroma prepričanja. \vspace{3mm}
+    \begin{trditev}[Bayesovo posodabljanje]
+        Če se dogodek E zgodi ob času $t_1 > t_0$, potem je $P_1(H) = P_0(H \lvert E)$.
+    \end{trditev}
+    \begin{itemize}
+        \item Predhodna oz. apriorna verjetnost = $P_0(H)$ (ob času $t_0$ dogodku H dodelimo verjetnost);
+        \item Ko se zgodi dogodek E ob času $t_1$, ki vpliva na naša prepričanja o dogodku H, Bayesovo posodabljanje pravi, da je potrebno apriorno 
+        verjetnost dogodka H v času $t_1$ enačiti z pogojno verjetnostjo dogodka H glede na dogodek E v času $t_0$. 
+    \end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Bayesova analiza}
+
+\begin{frame}
+    \frametitle{Predhodna verjetnost in določitev posteriorne verjetnosti}
+    Recimo, da je sodni izvedenec je naprošen, da opravi analizo profila DNK krvi, najdene na kraju kaznivega dejanja, in rezultat primerja s profilom DNK 
+    obdolženca.\\ \vspace{3mm}
+   Odločitev porotnikov bo delno odvisna od njihove ocene dveh interesnih
+    hipotez\\
+    $H_1 \dots$ vir krvi je obtoženec,\\
+    $H_2 \dots$ vir krvi je druga oseba.\\ \vspace{3mm}
+    Porotniki bodo morda želeli, da jim dokončno povemo, katera hipoteza je resnična, ali da jim navedemo verjetnosti vira. Za oceno verjetnosti 
+    vira mora forenzični znanstvenik upoštevati tudi druge dokaze v kazenskem primeru.
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+    \frametitle{Predhodna verjetnost in določitev posteriorne verjetnosti}
+    Obtoženec in kri s kraja zločina imata skupen niz t.i. genetskih označevalcev - najdemo pri eni osebi na 1 milijon prebivalcev.\\ \vspace{3mm}
+    \centering
+    $\rightarrow$ \textbf{pogojna verjetnost ugotovitve rezultatov pri dveh hipotezah o medsebojni povezanosti}
+    \begin{itemize}
+        \item skupni genetski označevalci skoraj zagotovo najdeni v primeru $H_1$ (vir je bil obtoženec);
+        \item 1 možnost na milijon, da bodo najdeni v primeru $H_2$ (vir je bil nekdo drug);
+    \end{itemize}
+    \centering 
+    $\rightarrow$ \textbf{predložimo razmerje verjetnosti}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Predhodna verjetnost in določitev posteriorne verjetnosti}
+    \begin{beamerboxesrounded}{}
+        Edini skladen način, kako na podlagi forenzičnih dokazov sklepati o \\ verjetnosti virov, je uporaba Bayesovega pravila, ki zahteva, da \\ začnemo s
+        pripisom predhodnih verjetnosti za hipoteze, ki nas zanimajo.
+    \end{beamerboxesrounded} \vspace{4mm}
+    \begin{beamerboxesrounded}{Bayesov pristop}
+        Deluje le, če bomo lahko začeli s predhodno oziroma apriorno \\ verjetnostjo.
+    \end{beamerboxesrounded}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Predhodna verjetnost in določitev posteriorne verjetnosti}
+    \begin{beamerboxesrounded}{Ali naj analitiki poskušajo določiti predhodne verjetnosti in če ja, kako naj jih določijo?}
+    \end{beamerboxesrounded}\vspace{2mm}
+    \begin{itemize}
+        \item \textbf{Nevtralno stanje} - analitiki predpostavijo enake predhodne verjetnosti za vse hipoteze v primeru; \\ \vspace{2mm}
+        \begin{block}{}
+            \centering
+            PRAKTIČNA IN OBJEKTIVNA ANALIZA
+        \end{block} \vspace{3mm}
+        \item uporabimo Bayesovo pravilo za izračun posteriorne verjetnosti; \vspace{2mm}
+    \end{itemize}
+    Predpostavljanje enake verjetnosti za vse možnosti je problematično, kajti v realnosti se različne hipoteze razlikujejo po svoji verjetnosti.
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+    \frametitle{Poenostavljena Bayesova analiza}
+    Naj bo:\\
+    $S$ \dots trditev, da je obtoženec vir sledi DNK s kraja zločina; \\
+    $M$ \dots trditev, da se obtoženčev DNK ujema z DNK-jem s kraja zločina; \\
+    $f$ \dots funkcija pogostosti ujemanja DNK z DNK-jem s kraja zločina. \\
+    Želimo vedeti, kakšna je verjetnost S glede na M, tj. $P(S \lvert M)$. \\ \vspace{3mm}
+    Bayesovo pravilo lahko uporabimo na naslednji način:
+    \[
+        \frac{P(S \lvert M)}{P(\neg S \lvert M)} = \frac{P(M \lvert S)}{P(M \lvert \neg S)} \times \frac{P(S)}{P(\neg S)}.
+    \] 
+\end{frame} 
+
+\begin{frame}
+    \frametitle{Poenostavljena Bayesova analiza}
+    \[
+        \frac{P(S \lvert M)}{P(\neg S \lvert M)} = \frac{P(M \lvert S)}{P(M \lvert \neg S)} \times \frac{P(S)}{P(\neg S)}. \vspace{3mm}
+    \] 
+    Verjetnosti $P(S)$ in $P(\neg S)$ je težko oceniti, ker ne vemo kakšna je množica osumljencev;
+    \begin{block}{}
+        \centering
+        $P(M \lvert S) = 1$ - \textbf{lažno negativni rezultat};\\ \vspace{2mm}
+        $P(M \lvert \neg S) = f$ - \textbf{lažno pozitivni rezultat}; 
+    \end{block}
+  Ob upoštevanju lažno negativnega in pozitivnega rezultata sledi:
+    \[
+        \frac{P(S \lvert M)}{P(\neg S \lvert M)} = \frac{1}{f} \times \frac{P(S)}{P(\neg S)}.
+    \]
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+    \frametitle{Izpopolnjena Bayesova analiza l}
+    Za upoštevanje možnosti laboratorijskih napak, bomo namesto $M$ uvedli spremenljivko $M_p$.\\ \vspace{3mm}
+    $M_p$ \dots poročano ujemanje laboratorijske analize; \\ 
+    $M_t$ \dots trditev, da obstaja dejansko ujemanje v DNK-ju;\\
+    $\neg M_t$ \dots trditev, da obstaja neujemanje v DNK-ju.  \\ \vspace{3mm}
+    Sledi:
+    \[
+        P(M_p \lvert \neg S) = P(M_p \lvert M_t)P(M_t \lvert \neg S) + P(M_p \lvert \neg M_t)P(\neg M_t \lvert \neg S). 
+    \]
+\end{frame}
+
+\begin{frame}
+    \frametitle{Izpopolnjena Bayesova analiza l}
+    \[
+        P(M_p \lvert \neg S) = P(M_p \lvert M_t)P(M_t \lvert \neg S) + P(M_p \lvert \neg M_t)P(\neg M_t \lvert \neg S). \vspace{3mm}
+    \]
+    Sedaj je:
+    \begin{itemize}
+        \item $P(M_t \lvert \neg S) = f$ in zato
+        \item $P(\neg M_t \lvert \neg S) = 1-f$; \vspace{2mm}
+    \end{itemize}  
+    \begin{block}{}
+        $P(M_p \lvert \neg M_t) = FP$ \dots verjetnost lažno pozitivnih rezultatov laboratorija;\\ \vspace{2mm} 
+        $P(M_p \lvert M_t) =  FN$  \dots verjetnost lažno negativnih rezultatov laboratorija;     
+    \end{block}
+  Sledi: \vspace{2mm}
+    \[
+        P(M \lvert \neg S) = [(1 - FN) \times f] + [FP \times (1 - f)]. \vspace{3mm}
+    \]
+\end{frame}
+ 
+\begin{frame}
+    \frametitle{Izpopolnjena Bayesova analiza ll}
+    Predpostavimo, da je 
+    \[
+        P(M_p \lvert S) = 1, \vspace{2mm}
+    \]
+    pri čemer ni upoštevana možnost lažnega negativnega rezultata.  \\ \vspace{2mm} 
+    \begin{block}{}
+        \centering
+        $P(M_p \lvert S) = P(M_p \lvert M_t)P(M_t \lvert S) + P(M_p \lvert \neg M_t)P(\neg M_t \lvert S)$
+    \end{block}  \vspace{3mm}
+    $P(M_p \lvert S) = 1$ $\rightarrow$ $P(\neg M_p \lvert S) = 0$ in $P(M_p \lvert S) = 1 - FN$
+    \begin{block}{}
+        \centering
+        \[ \frac{P(M_p \lvert S)}{P(M_p \lvert \neg S)} = \frac{1 - FN}{[(1 - FN) \times f] + [FN \times (1 - f)]} \]
+    \end{block}
+\end{frame}
+
+ 
+\begin{frame}
+    \frametitle{Izpopolnjena Bayesova analiza}
+    \begin{itemize}
+        \item Relativno majhne stopnje napak lahko bistveno zmanjšajo dokazno vrednost DNK dokazov, saj močno zmanjšajo razmerje verjetnosti.
+        \item Vpliv stopnje laboratorijskih napak kaže, da ne glede na to, kako nizka se izkaže pogostost profila, bo ta relativno nepomembna, če pogostosti ne spremlja ocena stopnje laboratorijskih napak.
+    \end{itemize} \vspace{3mm}
+    Spremenljivost pogostosti profila lahko v Bayesovem okviru upoštevamo na dva načina: 
+    \begin{enumerate}
+        \item s spremembo predhodne verjetnosti;
+        \item s spremembo pogostosti profila.
+    \end{enumerate}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+    \frametitle{}
+\end{frame}
+
+\end{document}

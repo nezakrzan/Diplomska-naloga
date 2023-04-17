@@ -1,0 +1,6 @@
+\babel@toc {slovene}{}
+\beamer@sectionintoc {1}{Bayesova statistika}{7}{0}{1}
+\beamer@sectionintoc {2}{Bayesova analiza}{9}{0}{2}
+\beamer@sectionintoc {3}{Drugi pristopi}{14}{0}{3}
+\beamer@sectionintoc {4}{Zmote}{16}{0}{4}
+\beamer@sectionintoc {5}{Primer - Lucia De Berk}{19}{0}{5}

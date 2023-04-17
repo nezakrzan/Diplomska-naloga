@@ -1,0 +1,4 @@
+\babel@toc {slovene}{}
+\beamer@sectionintoc {1}{Koncept verjetnosti}{5}{0}{1}
+\beamer@sectionintoc {2}{Bayesova statistika}{8}{0}{2}
+\beamer@sectionintoc {3}{Bayesova analiza}{13}{0}{3}
