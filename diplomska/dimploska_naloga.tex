@@ -178,7 +178,11 @@ Potrebujemo osnovne informacije odvetnika in drugih strokovnjakov, da lahko obli
 določitev ustrezne populacije (populacij), ki jo (jih) je treba preučiti, parametrov, ki nas zanimajo, in statističnega postopka, ki ga je treba uporabiti. 
 Statistiki ne morejo določiti, katere vrednosti parametra so pravno pomembne, ker je parameter pravno določen.\\\\
 Statistične informacije, ki jih dobi sodnik, so filtrirane prek odvetnikov. Odvenik avtorju statistične analize postavlja vprašanja z namenom razlage 
-statistične analize poroti, sodniku in drugim v sodni dvorani.\\
+statistične analize poroti, sodniku in drugim v sodni dvorani. Vprašanja so s strani odvetnikov seveda premišljeno postavljena, zato se lahko zgodi, da do 
+temeljite razlage analize ne pride, ker analitik ne dobi primernih vprašanj. Kasneje bom obrazložila zmote, ki nastanejo zaradi pomankanja znanja verjetnosti 
+pri sodnikih, poroti in odvetnikih, mogoče pa nekatere izmed njih nastanejo tudi zaradi nepopolne razlage statistične analize. Do neke točke analitik sicer sam 
+predstavi analizo, potem pa mora biti tudi on previden z razlago, zaradi porote, kajti poroti se predvidoma ne govori kako naj si razlaga dokaze, kar pa ponavadi preučujemo 
+s statistično analizo. Mogoče bi moralo biti določeno kaj vse mora analitik predstaviti in razložiti, da bi se lahko izognili zmotam.\\
 %Med prebiranjem več poročil sodb, sem prišla do ugotovitve, da so ta vprašanja velikokrat pravilno postavljena oziroma postavljena v dobro strani, ki 
 %jo odvetnik zagovarja, torej razlaga ponavadi ni primerna oziroma jasna. Torej se zmote lahko pojavijo že zaradi odvetnikov. 
 Uporaba statističnih analiz na sodiščih prinaša tudi nove težave za statistiko. Temelj dobre statistične analize je dober pregled predpostavk, na 
@@ -294,10 +298,6 @@ z Bayesovim pravilom lahko ocenimo verjetnosti vmesnih trditev oziroma dokazov, 
 \subsection{Opredelitev}
 Bayesova statistika je statistična veja, ki nam s pomočjo matematičnih pristopov omogoča uporabo verjetnosti pri reševanju statističnih
 problemov. V svoje modele vključuje pogojno verjetnost, katero izračunamo z uporabo Bayesovega pravila. \\\\
-Bayesovo sklepanje razlaga verjetnost kot merilo verjetnosti ali zaupanja, ki ga lahko ima posameznik glede nastanka določenega dogodka.
-O nekem dogodku lahko že imamo predhodno prepričanje oziroma apriorno prepričanje, ki pa se lahko spremeni, ko se pojavijo novi dokazi. Daje nam 
-matematične modele za vključevanje naših apriornih prepričanj in dokazov za ustvarjanje novih prepričanj oziroma za pridobitev aposteriornega 
-prepričanja, ki se lahko uporabi za kasnejše odločitve.\\\\
 Bayesova analiza je standardna metoda za posodabljanje verjetnosti po opazovanju več dokazov, zato je zelo primerna za sintezo dokazov.
 Vsakdo, ki mora presoditi o hipotezi, kot je »krivda« (vključno s preiskovalci pred sojenjem, sodniki, porotami), neformalno začne z nekim
 predhodnim prepričanjem o hipotezi in ga posodablja, ko se dokazi ponovno pojavijo. Včasih lahko obstajajo celo objektivni podatki, na katerih temelji
@@ -333,6 +333,7 @@ Obstaja še ena formulacija Bayesovega pravila, ki olajša izračune in je pogos
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Bayesovo posodabljanje}
+%V nizu Bayesovih posodobitev je predhodna verjetnost, uporabljena v vsaki posodobitvi, verjetnost hipoteze ob upoštevanju vseh dokazov, ki so bili že upoštevani v prejšnjih posodobitvah.
 Bayesovo pravilo se razlikuje od Bayesovega posodabljanja. Prvo je matematični izrek, drugo pa logična trditev, kako se sčasoma posodabljajo
 apriorne oziroma predhodne verjetnosti dokazov glede na novo zbrane dokaze oziroma prepričanja.
 \begin{trditev}[Bayesovo posodabljanje]
@@ -391,20 +392,33 @@ verjetnosti $P(M \lvert W_m)$, pri čemer je zanesljivost priče nespremenjena:
 \end{table}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Bayesova analiza}
-Najbolj pogosta uporaba Bayesovega pravila je pri ugotavljanju, ali je obtoženec vir sledi DNK-ja s kraja zločina. V ta namen sem opisala poenostavljeno 
-in izpopolnjeno Bayeosvo analizo, v primeru, ko je dokaz DNK sled.
+\subsection{Bayesova teorija v kazenskem pravu}
+Bayesova teorija razlaga verjetnost kot merilo verjetnosti ali zaupanja, ki ga lahko ima posameznik glede nastanka določenega dogodka.
+O nekem dogodku lahko že imamo predhodno prepričanje oziroma apriorno prepričanje, ki pa se lahko spremeni, ko se pojavijo novi dokazi. Daje nam
+matematične modele za vključevanje naših apriornih prepričanj in dokazov za ustvarjanje novih prepričanj oziroma za pridobitev a posteriori
+prepričanja, ki se lahko uporabi za kasnejše odločitve.\\\\
+Sodniki ali porotniki, ki ugotavljajo sklep sodbe, imajo na voljo vrsto dokazov. Njihova naloga je ocena, kako te informacije vplivajo na tožilčevo
+domnevo o obdolžencu oziroma storilcu kaznivega dejanja. Pri Bayesovi teoriji moramo upoštevati vsak dokaz posebej, kar je še posebej pomembno pri
+začetku sodbe. Gre za postopek posodabljanja verjetnosti tožilčeve hipoteze na podlagi predhodnih oziroma apriornih verjetnosti. Pretvorimo predhodno
+verjetnost, tj. verjetnost hipoteze pred upoštevanjem določenega dokaza (dokazov), v posteriorno verjetnost, tj. verjetnost hipoteze po upoštevanju
+določenega dokaza (dokazov). Pomembno je tudi, da razlikujemo med dokazi pri Bayesovi teoriji in dokazi na sodišču. V Bayesovi teoriji je vsaka informacija
+dokaz, če je pomembna za verjetnost hipoteze. V kazenskem postopku pa je dokaz informacija, ki je bila predložena sodišču za podporo določeni
+izjavi na sodišču in je sprejeta kot pravno dopustna, kar pomeni, da je ta informacija znana sodniku, ki presoja tožilčevo domnevo o obdolžencu in je
+pomembna za verjetnost hipoteze.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Predhodna verjetnost in določitev posteriorne verjetnosti}
-Recimo, da je sodni izvedenec je naprošen, da opravi analizo profila DNK krvi, najdene na kraju kaznivega dejanja, in rezultat primerja s profilom DNK
+Predhodna verjetnost, ki je uporabljena v vsaki posodobitvi verjetnosti s pomočjo Bayesove teorije, je začetna verjetnost hipoteze oziroma tožilčeve domneve 
+o obdolžencu oziroma storilcu kaznivega dejanja. Razjasniti je potrebno tudi to, da ko odvetniki govorijo o predhodni verjetnosti, pogosto mislijo na verjetnost 
+začetne hipoteze oziroma tožilčeve domneve o obdolžencu, preden so bili predloženi dokazi, kar je v skladu z opredelitvijo predhodne verjetnosti v Bayesovi 
+teoriji. Po končni posodobitvi dobimo verjetnost hipoteze glede na vse dokaze, predložene na sojenju.\\\\
+Recimo, da je statistični znanstvenik naprošen, da opravi analizo profila DNK krvi, najdene na kraju kaznivega dejanja, in rezultat primerja s profilom DNK
 obdolženca. O krivdi ali nedolžnosti obtoženca bo odločala porota. Odločitev porotnikov bo delno odvisna od njihove ocene dveh interesnih
 hipotez\\
 $H_1 \dots$ vir krvi je obtoženec,\\
 $H_2 \dots$ vir krvi je druga oseba.\\
 Porotniki bodo morda želeli, da jim dokončno povemo, katera hipoteza je resnična, ali da jim navedemo verjetnosti vira. Za oceno verjetnosti 
-vira mora forenzični znanstvenik upoštevati tudi druge dokaze v kazenskem primeru.\\\\
+vira mora statistični znanstvenik upoštevati tudi druge dokaze v kazenskem primeru.\\\\
 Recimo, da je izvedenec ugotovil, da imata obtoženec in kri s kraja zločina skupen niz t.i. genetskih označevalcev, ki jih najdemo pri eni osebi
 na 1 milijon prebivalcev v zadevni populaciji. Ne da bi upošteval druge dokaze, lahko izvedenec poda izjavo o pogojni verjetnosti
 ugotovitve teh rezultatov pri dveh hipotezah o medsebojni povezanosti. Izvedenec lahko na primer izjavi, da so skupni genetski označevalci
@@ -412,17 +426,40 @@ skoraj zagotovo najdeni v primeru $H_1$ (vir je bil obtoženec), vendar imajo le
 nekdo drug). Na podlagi te ocene lahko izvedenec poroti predloži razmerje verjetnosti - na primer, da so rezultati profila DNK 1 milijonkrat
 bolj verjetni, če je bil vir krvi obtoženec in ne neka druga oseba. Vendar razmerje verjetnosti ni isto kot verjetnost vira. \\
 Edini skladen način, kako na podlagi forenzičnih dokazov sklepati o verjetnosti virov, je uporaba Bayesovega pravila, ki zahteva, da začnemo s
-pripisom predhodnih verjetnosti za hipoteze, ki nas zanimajo. Bayesov pristop bo deloval le, če bo izvedenec lahko začel s predhodno verjetnostjo.\\\\
-Bistveno vprašanje, ki se postavlja, je, ali naj analitiki sploh poskušajo določiti predhodne verjetnosti in če ja, kako naj jih določijo. Nekateri 
-strokovnjaki predlagajo, da bi analitiki morali predpostaviti enake predhodne verjetnosti za vse hipoteze v primeru, kar se včasih imenuje nevtralno 
+pripisom predhodnih verjetnosti za hipoteze, ki nas zanimajo. Bayesov pristop bo deloval le, če bo izvedenec lahko začel s predhodno oziroma apriorno verjetnostjo.\\\\
+Določitev predhodnih oziroma apriornih verjetnosti je resen problem pri Bayesovemu pristopu v kazenskih postopkih. Različne metode za določitev in izračun teh 
+verjetnosti lahko dajejo rezultate, ki se med seboj precej razlikujejo, kar pa je problematično, ker celotna Bayesova teorija temelji ravno na teh začetnih 
+izračunih. Bistveno vprašanje, ki se postavlja, je, ali naj analitiki sploh poskušajo določiti predhodne verjetnosti in če ja, kako naj jih določijo. Nekateri 
+strokovnjaki predlagajo, da bi analitiki morali predpostaviti enake predhodne verjetnosti za vse hipoteze v primeru, kar se imenuje nevtralno 
 stanje. To pomeni, da se analitik ne opredeli za nobeno od hipotez, preden zbere kakršne koli dokaze ali informacije, ampak predpostavlja enako 
-verjetnost za vse hipoteze. To bi se lahko izkazalo za praktičen pristop, saj se lahko analitik s tem izogne vplivu lastnih in odvetnikovih predsodkov ter mnenj, 
-ki bi lahko vplivali na predpostavke o verjetnostih. Na ta način se lahko zagotovi objektivnost analize, saj analitik ne bo 
-poskušal prikazati ene hipoteze kot bolj verjetne od druge. Ko je predpostavljena enaka verjetnost za vse možnosti, se lahko nato uporabi 
-Bayesovo pravilo za izračun posteriorne verjetnosti. Torej analitiki predpostavljajo, da sta predhodni verjetnosti $H_1$ in $H_2$ enaki, nato pa 
-ju v skladu z Bayesovim pravilom pomnožijo z razmerjem verjetnosti, da določijo posteriorno verjetnost.  Kljub temu pa mislim, da moramo biti do tega 
-pristopa nekoliko kritični, saj je predpostavljanje enake verjetnosti za vse možnosti problematično, kajti v realnosti se različne hipoteze 
-razlikujejo po svoji verjetnosti.
+verjetnost za vse hipoteze. Torej analitiki predpostavljajo, da sta predhodni verjetnosti $H_1$ in $H_2$ enaki, nato pa 
+ju v skladu z Bayesovim pravilom pomnožijo z razmerjem verjetnosti, da določijo posteriorno verjetnost. To bi se lahko izkazalo za praktičen pristop, 
+saj se lahko analitik s tem izogne vplivu lastnih in odvetnikovih predsodkov ter mnenj, ki bi lahko vplivali na predpostavke o verjetnostih. Na ta način se 
+lahko zagotovi objektivnost analize, saj ne poskušamo prikazati ene hipoteze bolj verjetne od druge. Kljub temu pa mislim, da moramo biti do tega 
+pristopa nekoliko kritični, saj je predpostavljanje enake verjetnosti za vse možnosti problematično - v realnosti se različne hipoteze razlikujejo po svoji 
+verjetnosti.\\
+Mnenje in poročila statističnih znanstvenikov oziroma analitikov naj bi bila ključni vir informacij, ki lahko prispevajo k objektivnemu in strokovnemu 
+vrednotenju dokazov in verjetnosti v sodnih postopkih. Zato sem mnenja, da je potrebno zagotoviti neodvisnost in strokovnost analitikov ter jih 
+zaščititi pred morebitnim poseganjem odvetnikov ali drugih udeležencev sodnega postopka v njihov proces dela, tako kot morajo to zagotoviti oni. Po mojem mnenju 
+je pri določanju apriorne verjetnosti hipotez in dokazov zelo pomembno, da smo natančni in korektni, kajti vsi naslednji verjetnostni računi in statistične analize 
+temeljijo ravno na tem. Analitik naj uporabi svoje strokovno znanje za izračun apriorne verjetnosti na podlagi razpoložljivih podatkov in brez nepotrebnega 
+vplivanja odvetnikov ali drugih udeležencev postopka. Poleg tega sem ugotovila, da za statistiko v kazenskem pravu obstajajo pravila in smernice kako upoštevati zakonodajo, pravila 
+in postopke sodbe, ki jih po mojem mnenju analitiki dosledno upoštevajo. Torej analitiki bi zagotovili ustrezne predhodne verjetnosti, ki bi potem lahko bile posodobljene sproti, skladno z 
+Bayesovo teorijo, glede na nove dokaze, predstavljene med sodnim postopkom. Tako bi dobili dovolj objektivno oceno verjetnosti krivde ali nedolžnosti 
+obdolženca in zagotovili pravično sodno odločitev. Glavni očitek temu pristopu v okviru kazenskega postopka bi lahko bil, da lahko analitiki presežejo svoje znanstveno 
+znanje in si prisvojijo vlogo tistega, ki ugotavlja dejstva, ampak vseeno predlagam, da odveniki nimajo nobene vloge pri ocenjevanju predhodnih verjetnosti.\\\\
+Ko na nek način le določimo predhodne oziroma apriorne verjetnosti tožilčeve hipoteze in dokazov torej sledi posodabljanje le teh. Tekom sodbe se v realnosti vedno 
+pojavljajo nove domneve o obtožencu in skoraj vedno najdejo nove dokaze s kraja zločina. Smiselno je, da vse to v postopku izračuniv tudi upoštevamo. Zasledila sem, da 
+se tekom sodbe marsikateri dokaz najprej prizna in je znan sodniku, ki presoja tožilčevo domnevo o obdolžencu, torej ga analitik upošteva v svojih izračunih za posodobitve 
+predhodnih verjetnosti hipotez. Potem pa dokaz iz sodbe umaknejo, ampak presnetilo me je, da dokaz največkrat ni umaknjen iz verjetnostnih računov. Mnenja sem, da bi 
+morali anlitiki, ko se določen dokaz iz sodbe, zaradi tehtnega razloga, umakne, posodobiti vse račune za nazaj in nato nadaljevati posodabljanje verjetnosti. Tako bi 
+dobili primeren izračun posteriornih verjetnosti, na katerih bi potem lahko temeljil zaključek sodbe. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Bayesova analiza}
+Najbolj pogosta uporaba Bayesovega pravila je pri ugotavljanju, ali je obtoženec vir sledi DNK-ja s kraja zločina. V ta namen sem opisala poenostavljeno 
+in izpopolnjeno Bayeosvo analizo, v primeru, ko je dokaz DNK sled.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Poenostavljena Bayesova analiza}
@@ -498,8 +535,7 @@ Da lahko ocenilm moč Bayesove analize dokazov DNK, jo v nadaljevanju primerjam 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Frekvence}
-Predlagano je bilo s strani mnogih avtorjev, da je bolj naraven način za obravnavo verjetnosti uporaba naravnih frekvenc(angl. natural
-frequencies).
+Predlagano je bilo s strani mnogih avtorjev, da je bolj naraven način za obravnavo verjetnosti uporaba naravnih frekvenc.
 \begin{definicija}
    Frekvenca $f$ je posamezno število diskretnih statističnih enot iste vrednosti. Če je diskretnih podatkov zelo veliko ali če so
    podatki zvezni, jih združujemo v frekvenčne razrede.
@@ -515,7 +551,7 @@ frequencies).
     \]
 \end{definicija}
 V forenzičnem kontekstu se navedene frekvence običajno nanašajo na pojavljanje dokazov za posamezen primer, medtem ko se frekvence za
-pojavljanje vprašanj običajno opisujejo kot osnovne stopnje(angl. base rates). Sklepanje o krivdi je lahko podprto s statistično analizo
+pojavljanje vprašanj običajno opisujejo kot osnovne stopnje. Sklepanje o krivdi je lahko podprto s statistično analizo
 ustreznih podatkov in verjetnostnim sklepanjem z uporabo absolutnih ali relativnih frekvenc, pri čemer je verjetnost, da bi določene
 podatke (dokaze) pridobili zgolj po naključju, izjemno majhna. Relativne frekvence vedno navajajo ali predpostavljajo, da obstaja nek
 referenčni vzorec, na podlagi katerega se lahko oceni pogostost zadevnega dogodka. Nadaljnja predpostavka je, da je ta primerjava poučna
@@ -530,9 +566,9 @@ $m$ \dots velikost populacije osumljencev; \\
 $n$ \dots število ljudi, ki imajo ustrezen DNK profil. \\
 Po metodah, ki temeljijo na naravnih frekvencah, je potrebno izračunati, koliko ljudi z zadevnim profilom DNK je v populaciji osumljencem, tako
 da se $f$ pomnoži z $m$.  \\
-Če je posameznikov s takim profilom $n > 1$, je verjetnost, da je obtoženi vir, $\frac{1}{n}$. V primeru, ko je $n < 1$ in so frekvence še
+Če je posameznikov s takim profilom $n \ge 1$, je verjetnost, da je obtoženi vir, $\frac{1}{n}$. V primeru, ko je $n < 1$ in so frekvence še
 posebaj majhne, je bolje raziskovati ali je profil DNK edinstven ali ne - ali poleg obtoženca obstajajo še drugi posamezniki z enakim
-profilom DNK. Temu pravimo metoda edinstvenosti(angl. uniqueness method). \\
+profilom DNK. Temu pravimo metoda edinstvenosti. \\
 S formulo binomske porazdelitve lahko izračunamo verjetnost, da se bo dogodek $X$, na primer profil DNK, pojavil $k$ - krat v $s$ - kratnem
 številu ponovitev, pri čemer ima dogodek $X$ frekvenco 4$f$. Želimo vedeti, kolikšna je verjetnost, da ima točno en posameznik ustrezen DNK
 profil, ob pogoju da ga ima vsaj en posameznik, torej:
@@ -561,7 +597,7 @@ profil, ob pogoju da ga ima vsaj en posameznik, torej:
 
 Tabela vsebuje primerjavo rezultatov z rezultati, ki jih daje Bayesovo pravilo. Vidimo lahko, da so razlike zelo majhne, nekje pa jih celo ni.  Obe metodi, 
 se lahko uporabljajo za reševanje določenih problemov, vendar se razlikujeta v načinu delovanja. Tako pri metodi edinstvenosti ni mogoče enostavno 
-upoštevati številnih zapletov, kot je vpliv stopnje laboratoratorijskih napak. Bayesovo pravilo pa namreč omogoča upoštevanje različnih dejavnikov in 
+upoštevati številnih zapletov, kot je vpliv stopnje laboratorijskih napak. Bayesovo pravilo pa namreč omogoča upoštevanje različnih dejavnikov in 
 zapletov, ki vplivajo na verjetnost določenega dogodka, s tem pa omogoča tudi bolj natančne izračune in posledično bolj zanesljive rezultate. Kljub 
 temu pa ima tudi Bayesovo pravilo svoje omejitve, saj je odvisno od predpostavk in podatkov, ki jih uporabimo za izračun verjetnosti. V vsakem primeru je 
 izbira metode odvisna od specifičnih zahtev problema in od tega, katera metoda bo najbolj primerna za njegovo reševanje.\\\\
@@ -579,7 +615,7 @@ izračunom verjetnosti ni mogoče upoštevati posameznih primerov.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Metoda verjetnosti naključnega ujemanja}
-Metoda verjetnost naključnega ujemanja(angl. random match probability) izraža možnost, da bi imel naključni posameznik, ki ni povezan z obdolžencem,
+Metoda verjetnost naključnega ujemanja izraža možnost, da bi imel naključni posameznik, ki ni povezan z obdolžencem,
 ustrezni DNK profil. Ta verjetnost je enaka pogostosti profila DNK. Težava tega pristopa je, da verjetnost naključnega ujemanja lahko predstavljena
 oziroma razumevana narobe. \\
 Pogosto se to verjetnost interpretira na slednji način:
@@ -589,41 +625,22 @@ Pogosto se to verjetnost interpretira na slednji način:
    \item ker je to zelo majhna verjetnost, mora biti tudi verjetnost, da je sled DNK pustil nekdo drug na kraju zločina in ne obdolženec, zelo majhna;
    \item zato mora biti verjetnost, da je vir sledi DNK s kraja zločina obtoženec zelo velika, ampak znaša 1 proti 100 milijonov.
 \end{enumerate}
-Takšno sklepanje je napačno in je znano kot tožilčeva zmota(angl. Prosecutor’s fallacy). Sestavlja jo enačba
+Takšno sklepanje je napačno in je znano kot tožilčeva zmota. Sestavlja jo enačba
 \begin{equation}\label{eq:tozilcevazmota}
    1 - f = P(S \lvert M). \vspace{2mm}
 \end{equation}
 Zmota se pojavi v koraku (2), ko je zamenjano $P(M \lvert \neg S)$ s $P(\neg S \lvert M)$ in predpostavljeno, da sta obe verjetnosti enaki $f$. \\
-Namesto verjetnosti naključnega ujemanja forenzični strokovnjaki pogosto pričajo o razmerju verjetnosti(angl. likelihood ratio) dokazov DNK, in
+Namesto verjetnosti naključnega ujemanja forenzični strokovnjaki pogosto pričajo o razmerju verjetnosti dokazov DNK, in
 sicer kot:
 \[
    P(M \lvert S) = P(M \lvert \neg S). \vspace{2mm}
 \]
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Ugotovitve}
-Na podlagi zgoraj omenjenih teorij, prebranih sodnih poročil in pravnih pravil, sem prišla do nekaterih ugotovitev glede vključevanja verjetnosti 
-v sodne postopke.\\\\
-Bayesovo pravilo torej vključuje razmerje verjetnosti in predhodno oziroma apariorno verjetnost, torej je celovitejši način predstavitve dokazov DNK.
-Težavo ocenjevanja apriorne verjetnosti pri Bayesovem pravilu, bi lahko odpravili z osredotočanjem le na verjetnost. Ampak kakršnakoli privzeta 
-predpostavka o predhodni verjetnosti je obravnavana kot kršitev obveznosti pravnega sistema, zato je drugi predlagani pristop, ki se mi zdi smiselen, 
-da forenzični znanstveniki prevzamejo odgovornost za oceno predhodne verjetnosti ustreznih hipotez, preden jih posodobijo, v skladu z Bayesovim 
-pravilom, na podlagi znanstvenih ugotovitev. Glavni očitek temu pristopu v okviru kazenskega postopka bi lahko bil, da lahko forenzični znanstveniki 
-presežejo svoje znanstveno znanje in si prisvojijo vlogo tistega, ki ugotavlja dejstva. Da bi izvedenec določil predhodne smiselne verjetnosti, 
-bi moral upoštevati vse dokaze v zadevi. Zato, na podlagi različnih virov, predlagam, da sodni izvedenci nimajo nobene vloge pri ocenjevanju 
-predhodnih verjetnosti. \\\\
-Vprašanje, ali naj forenzični znanstveniki upoštevajo predhodno verjetnost hipotez, ki naj bi jih pomagali ovrednotiti, je zapleteno. Odgovor je 
-odvisen od vloge, ki jo bo forenzični znanstvenik imel v pravnem sistemu. Če bodo forenzični znanstveniki za pravne namene sprejemali ugotovitve 
-v zvezi z določenim predlogom, ki jih zanima, potem bi morali in dejansko morajo upoštevati predhodne verjetnosti, da so hipoteze resnične. Če pa bo o
-resničnosti hipotez odločal nekdo drug, npr. sodnik ali porota, in je vloga forenzičnih znanstvenikov omejena na zagotavljanje strokovne pomoči, se
-morajo forenzični znanstveniki na splošno omejiti na določanje pogojne verjetnosti znanstvenih ugotovitev pri danih hipotezah, ki jih zanimajo, nalogo
-ocenjevanja predhodnih in poznejših verjetnosti pa morajo prepustiti nosilcu pravne odločitve.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Razmerje verjetnosti}
 Občasno se zgodi, da predloga tožilstva in obrambe nista komplementarna in v takih primerih ni mogoče določiti $P(H_p)$ ali $P(H_d)$(poglavje 1), 
-ampak samo vpliv statistike, znane kot razmerje verjetnosti(angl. Likelihood Ratio).
+ampak samo vpliv statistike, znane kot razmerje verjetnosti.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Opredelitev}
@@ -644,7 +661,7 @@ korist dogodka $H$ brez kakršnihkoli informacij o $E$.\\
    \begin{equation}
        \frac{P(E \lvert H)}{P(E \lvert \bar{H})} \vspace{2mm}
    \end{equation}
-    se imenuje razmerje verjetnosti(angl. Likelihood Ratio). \\
+    se imenuje razmerje verjetnosti. \\
 \end{definicija}
 Oglejmo si dogodka $E$ in $H$, ter njuni dopolnitvi. Razmerje verjetnosti je tu razmerje verjetnosti $E$, ko je $H$ resničen in verjetnosti $E$,
 ko je $H$ neresničen. Da bi upoštevali učinek $E$ na verjetnost $H$, tj. da bi
@@ -689,7 +706,7 @@ Ob upoštevanju informacij o ozadju $I$, dobimo zapis
 Pri vrednotenju dokazov $Ev$ sta potrebni dve verjetnosti - verjetnost dokazov, če je PoI kriv in glede na informacije o ozadju, ter
 verjetnost dokazov, če je PoI nedolžen in glede na informacije o ozadju. Informacije o ozadju so včasih znane kot okvir okoliščin
 ali pogojne informacije. \\\\
-Da lahko ocenimo oziroma določimo vrednost dokaza potrebujemo razmerje verjetnosti(angl. Likelihood ratio).
+Da lahko ocenimo oziroma določimo vrednost dokaza potrebujemo razmerje verjetnosti.
 \begin{definicija}
    Naj bosta  $H_p$ in $H_d$ dve konkurenčni hipotezi ter $I$ informacije o ozadju. Vrednost $V$ dokaza $Ev$ je podana z
    \[
@@ -736,7 +753,7 @@ Vzemimo še en dokaz $T$, ki je neodvisen od dokazov $E$ in $H_p$ (in s tem $H_d
    & = P(E \lvert H_p)P(T)\\
    & = \theta x, \vspace{2mm}
 \end{align}
-pri čemer iz (11) v (12) upoštevamo neodvisnost dokaza $E$ in $T$ ter iz (12) v (13) vrstico neodvisnost dokaza $T$ in $H_p$. podobno
+pri čemer iz (11) v (12) upoštevamo neodvisnost dokaza $E$ in $T$ ter iz (12) v (13) vrstico neodvisnost dokaza $T$ in $H_p$. Podobno
 \[
    P(E,T \lvert H_d)  = \theta y. \vspace{2mm}
 \]
@@ -768,7 +785,7 @@ opravijo forenzični znanstveniki, izbiro kontrolnega vzorca in najdenih predmet
 analitiki ali laboratoriji. Ocena znanstvenih dokazov na sodišču pogosto zahteva kombinacijo podatkov o pojavu ciljnih značilnosti skupaj z osebnim poznavanjem
 okoliščin iz določenega primera. Jasno je, da ima vsaka ocena verjetnosti, ki se nanaša na določen primer, tudi če jo obravnavamo v obliki frekvence, sestavino,
 ki temelji na osebnem znanju. Drugi viri negotovosti vključujejo pridobivanje predhodnih verjetnosti, pogojenih z razpoložljivim znanjem, ali celo
-izvajanje numeričnih postopkov za razreševanje računskih težav. Poročilo o vrednosti razmerja verjetnosti vključuje merilo njegove natančnosti, na primer z
+izvajanje numeričnih postopkov za razreševanje računskih težav. Zato poročilo o vrednosti razmerja verjetnosti vključuje merilo njegove natančnosti, na primer z
 navedbo številčnega razpona vrednosti za verjetnost dokazov na podlagi konkurenčnih predlogov in s tem številčnega razpona vrednosti za razmerje verjetnosti.
 Vendar sta vrednost dokaza in moč posameznikovega prepričanja o vrednosti različna pojma in se ne smeta združevati v intervalu ali povzročiti spremembe
 vrednosti dokaza, kot se to na primer zgodi z navedbo spodnje meje neke poljubno izbrane ravni. V praksi je za kriminalistično preiskavo na voljo en niz
@@ -794,7 +811,7 @@ kako naj razmišlja in presoja dokaze; Bayesovo pravilo pa je natanko metoda za 
 \section{Zmote v kazenskem pravu}
 Ker večina ljudi pri razmišljanju o verjetnosti dela osnovne napake, obstaja mnogo zmot, ki izhajajo iz osnovnega razumevanja pravil
 teorije verjetnosti. Številne od teh zmot so zlasti posledica napačnega razumevanja pogojne verjetnosti. Bolj znana primera takih zmot sta
-Tožilčeva zmota(angl. Prosecutor’s fallacy) in Zmota obrambnega odvetnika(angl. Defense attorney's fallacy). Čeprav so posledice tožilčeve zmote
+Tožilčeva zmota in Zmota obrambnega odvetnika. Čeprav so posledice tožilčeve zmote
 lahko hujše kot posledice zmote obrambnega odvetnika, so porote morda bolj dovzetne za slednjo kot za prvo. \\\\
 Če upoštevamo vzročno verigo dokazov, predstavljeno na sliki 1, lahko razvrstitev zmot posplošimo na večino vrst dokazov. Ta shema
 nam omogoča klasifikacijo napak v sklepanju.
@@ -808,11 +825,10 @@ Ta analiza je močno odvisna od pojma »pogostost ujemajočih se lastnosti«, oz
 tudi »verjetnost naključnega ujemanja«. V našem vzročno-posledičnem okviru je $F$(lastnosti) enakovreden bolj formalno opredeljeni verjetnosti
 $P(C \lvert \neg B)$, t.j. verjetnost, da oseba, ki ni vpletena v kaznivo dejanje, po naključju zagotovi dokaze, ki se ujemajo.\\\\
 S tem vzročno-posledičnim okvirom lahko opišemo vrsto različnih pogostih zmot, ki so posledica napačnega razumevanja pogojne verjetnosti:\\
-\textit{Napaka glavne težave}: pri tem enačimo $P(C \lvert \neg B)$ s $P(\neg A \lvert C)$. To je bilo
-imenovano tožilska zmota - presega napako predhodne verjetnosti, saj si jo lahko predstavljamo kot dopolnitev te napake z dodatno napačno
-predpostavko $P(A) = P(B)$.\\\\
+\textit{Tožilčeva zmota}: pri tem enačimo $P(C \lvert \neg B)$ s $P(\neg A \lvert C)$. Presega napako predhodne verjetnosti, saj si jo lahko 
+predstavljamo kot dopolnitev te napake z dodatno napačno predpostavko $P(A) = P(B)$.\\\\
 \textit{Napaka verjetnosti $P(\text{drugo ujemanje})$}: gre za zmoto, ko verjetnost $P(C \lvert \neg B)$ enačimo z verjetnostjo
-(imenujmo jo $q$), da ima vsaj en nedolžen član populacije ustrezne dokaze. Posledica te napake je običajno močno pretiravanje z vrednostjo
+(imenujmo jo $q$), da ima vsaj en nedolžen član populacije ustreza dokazom. Posledica te napake je običajno močno pretiravanje z vrednostjo
 dokaza $C$.\\\\
 \textit{Zanemarjanje predhodnih verjetnosti}: to pomeni preprosto neupoštevanje predhodnih vrednosti, kot sta $P(A)$ in $P(B)$. Na splošno
 se za zmoto zanemarjanja osnovne stopnje šteje, kadar je verjetnost dogodka podcenjena, ker dogodek ni tako nenavaden, kot se zdi,
@@ -844,7 +860,7 @@ napak v sklepanju izhaja iz osnovnega nerazumevanja pogojne verjetnosti. Še pos
 hipotezo $H$ z verjetnost hipoteze $H$ glede na dokaze $E$ oziroma $P(E \lvert H)$ z $P(H \lvert E)$, torej ko napačno verjamemo, da je verjetnost 
 naključnega znanstvenega ujemanja enaka verjetnosti, da je obtoženec nedolžen. To se pogosto imenuje napaka prenesenega pogojnika oziroma tudi 
 tožilčeva zmota.\\\\
-Tožilčeva zmota(angl. Prosecutor’s fallacy) se pogosto pojavlja v kazenskem pravu, vendar jo pogosto neprepoznajo, deloma zato, ker preiskovalci
+Tožilčeva zmota se pogosto pojavlja v kazenskem pravu, vendar jo pogosto neprepoznajo, deloma zato, ker preiskovalci
 nimajo močne intuicije o tem, kaj zmota sploh pomeni. Tožilčeva zmota je dobro znana statistična zmota, ki izhaja iz napačnega razumevanja
 pogojnih verjetnosti in vprašanj večkratnega testiranja. Napaka temelji na predpostavki, da je $P(H \lvert E) = P(E \lvert H)$, pri čemer $H$
 predstavlja primer, da se najdejo dokazi o obtožencu, $E$ pa primer, da je obtoženec nedolžen. Vendar ta enakost ne drži: čeprav je $P(H \lvert E)$
@@ -1043,7 +1059,7 @@ zdijo Bayeosova omrežja dober predlog za predstavitev verjetnostnih izračunov.
 Bayesova omrežja pomagajo določiti ustrezne verjetnostne formule, ne da bi prikazali njihovo polno algebrsko obliko, in omogočajo
 skoraj popolno avtomatizacijo potrebnih verjetnostnih izračunov.
 \begin{definicija}
-   Bayesovo omrežje(BN) je verjetnostni grafični model, ki predstavlja množico spremenljivk in njihovih pogojnih odvisnosti prek usmerjenega
+   Bayesovo omrežje je verjetnostni grafični model, ki predstavlja množico spremenljivk in njihovih pogojnih odvisnosti prek usmerjenega
    acikličnega grafa.
 \end{definicija}
 Vozlišča teh usmerjenih acikličnih grafov predstavljajo spremenljivke (lahko so opazovane količine, latentne spremenljivke, neznani parametri
@@ -1066,13 +1082,13 @@ znanih vzrokov. Prednosti Bayesovih mrež se najbolj izrazito pokažejo na zaple
 Bayesovih omrežij segajo od prepoznavanja storilcev, posameznih in kompleksnih konfiguracij različnih vrst sledi ter problemov sklepanja, ki
 vključujejo rezultate analiz DNK.\\
 Ti grafični modeli verjetnosti bistveno izboljšajo vrednotenje verjetnostnih razmerij, ki se uporabljajo za ocenjevanje znanstvenih dokazov.
-Omogočajo, da se lotimo kompleksnejših verjetnostnih analiz, kot bi bilo to mogoče s tradicionalnimi pristopi. \\\\
-Struktura BN v pravnem kontekstu je dovzetna za napačne predpostavke in napake v procesu ustvarjanja. Izbira vozlišč za dokaze je lahko
+Omogočajo, da se lotimo kompleksnejših verjetnostnih analiz, kot bi bilo to mogoče s tradicionalnimi pristopi, kar še posebaj pride prav pri primerih z ogromno doazi. \\\\
+Struktura Bayesovega omrežja v pravnem kontekstu je dovzetna za napačne predpostavke in napake v procesu ustvarjanja. Izbira vozlišč za dokaze je lahko
 pristranska glede na to, kakšna vrsta argumenta je predstavljena. Argumenti obrambe ali tožilstva lahko na primer poudarjajo nasprotne sklepe
-in zato vključujejo le podskupino dokazov. Če se za izdelavo ne uporablja dosleden okvir, lahko BN, ki jih oblikujejo različne stranke za en
-primer, kažejo različne rezultate. Pri oblikovanju BN za pravno sklepanje je ključnega pomena, da se oblikuje omrežje, ki je razumljivo poroti
+in zato vključujejo le podskupino dokazov. Če se za izdelavo ne uporablja dosleden okvir, lahko Bayesovo omrežje, ki jih oblikujejo različne stranke za en
+primer, kažejo različne rezultate. Pri oblikovanju Bayesovega omrežja za pravno sklepanje ključnega pomena, da se oblikuje omrežje, ki je razumljivo poroti
 in sodniku.\\\\
-Prikaz BN se mora ujemati z intuitivnim pripisovanjem vzročno-posledičnih povezav med končno hipotezo, kot je »Obtoženec je kriv.«, podhipotezo
+Prikaz Bayesovega omrežja se mora ujemati z intuitivnim pripisovanjem vzročno-posledičnih povezav med končno hipotezo, kot je »Obtoženec je kriv.«, podhipotezo
 »Obtoženec je bil na kraju zločina.« in dokazi primera. Poleg težav, ki se pojavijo med postopkom strukturiranja, je problematično tudi sklepanje
 iz omrežja, če se izvaja ob napačnih predpostavkah. Verjetnosti, tudi če temeljijo na strokovni presoji, so lahko pristranske zaradi dejavnikov
 motenj v postopku pridobivanja podatkov. Metode za sklepanje morajo zato zagotoviti, da se verjetnosti omrežij ne razlagajo napačno kot dejstva in
@@ -1156,4 +1172,5 @@ tri bolnišnice.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Literatura}
+%https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3809556/
 \end{document}

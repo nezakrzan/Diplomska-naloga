@@ -1,4 +1,12 @@
 \babel@toc {slovene}{}
-\beamer@sectionintoc {1}{Koncept verjetnosti}{5}{0}{1}
-\beamer@sectionintoc {2}{Bayesova statistika}{8}{0}{2}
-\beamer@sectionintoc {3}{Bayesova analiza}{13}{0}{3}
+\beamer@sectionintoc {1}{Statistika v kazenskem pravu}{13}{0}{1}
+\beamer@sectionintoc {2}{Uporaba statistike pri pravnem postopku}{15}{0}{2}
+\beamer@sectionintoc {3}{Raziskovalni proces}{16}{0}{3}
+\beamer@sectionintoc {4}{Vrednotenje dokazov}{17}{0}{4}
+\beamer@sectionintoc {5}{Koncept verjetnosti}{18}{0}{5}
+\beamer@sectionintoc {6}{Bayesova statistika}{21}{0}{6}
+\beamer@sectionintoc {7}{Bayesova analiza}{29}{0}{7}
+\beamer@sectionintoc {8}{Drugi pristopi}{33}{0}{8}
+\beamer@sectionintoc {9}{Razmerje verjetnosti}{39}{0}{9}
+\beamer@sectionintoc {10}{Zmote v kazenskem pravu}{44}{0}{10}
+\beamer@sectionintoc {11}{Načini za izogib zmotam}{55}{0}{11}
