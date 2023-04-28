@@ -292,6 +292,76 @@ z Bayesovim pravilom lahko ocenimo verjetnosti vmesnih trditev oziroma dokazov, 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{ Predstavitev primera sodbe medicinski sestri Lucii De Berk}
+Marca 2003 je bila medicinska sestra Lucia de Berk (v nadaljevanju osumljenka) v Haagu na Nizozemskem obsojena na dosmrtni zapor zaradi obtožb 
+uboja in domnevnega uboja več bolnikov v dveh bolnišnicah, v katerih je delala v bližnji preteklosti (bolnišnici JZK in RKZ). V bolnišnici JKZ 
+se je med Lucijinimi izmenami pojavilo nenavadno veliko incidentov, kar je sprožilo vprašanja glede njene morebitne vpletenosti v te dogodke. 
+Razmišljalo se je, ali bi lahko bila Lucijina prisotnost pri toliko incidentih zgolj naključje.\\
+Na zahtevo državnega tožilca, je statistično analizo podal statistik Henk Elffers. V grobem je bila njegova ugotovitev naslednja: ob predpostavkah, da
+\begin{enumerate}
+    \item je verjetnost, da osumljenka doživi incident med izmeno, enaka verjetnosti za katero koli drugo medicinsko sestro in
+    \item da so pojavi incidentov neodvisni za različne delovne izmene,
+\end{enumerate}
+potem je verjetnost, da je osumljenka doživela toliko incidentov, kot jih je dejansko doživela, manjša od 1 proti 342 milijonom. Henk Elffers je mnenja, 
+da je verjetnost naključja tako majhna, da standardna statistična metodologija zavrne ničelno hipotezo o naključju. Vendar je poudaril, da 
+to ne pomeni nujno, da je osumljenka kriva. Prvi problem, ki sem ga zasledila je, da Henk Elffers in sodišče nista upoštevala subjektivnega 
+elementa pri izbiri verjetnostnega modela in s tem možnosti za obstoj več modelov z različnimi napovedmi ali celo različnimi odgovori 
+na različna vprašanja. V tem primeru bi lahko uporabili večina zgoraj opisanih metod in teorij - Bayesov pristop, klasični frekvenčni pristop ali 
+verjetnostni pristop, ki zagovarja uporabo razmerja verjetnosti.  Vaka metoda ima lahko več rešitev za isti problem, pri čemer pa lahko nastane 
+tudi vprašanje o obsegu modela.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Podatki in uporabljena metoda}
+Henk Elffers je temeljil na podatkih o izmenah osmuljenke in drugih medicinskih sester ter incidentih, ki so se zgodili v teh izmenah, da bi 
+utemeljil svoj model v celoti.
+
+\begin{table}[htb]
+    \caption{Podatki o izmenah in incidentih, ki jih je uporabil Henk Elffers (za določeno obdobje).}
+    \label{table:1}
+     \begin{tabular}{l c c c}
+        \hline
+        Ime bolnišnice (in številka izmene) & JKZ  & RKZ-41 & RKZ-42 \\ 
+        \hline
+        Število vseh izmen & 1029 & 336 & 339 \\
+        Število izmen osumljenke & 142 & 1 & 58 \\
+        Število vseh incidentov & 8 & 5 & 14 \\
+        Število incidentov v času izmene osumljenke & 8 & 1 & 5 \\ [1ex]
+        \hline
+     \end{tabular}
+ \end{table}
+
+Tekom sodbe je bilo ugotovljeno, da je osumljenka v RKZ-41 dejansko opravila tri izmene in ne le ene, zato bom v kasnejših izračunih uporabili to 
+pravilno število.\\\\
+Najprej bi se najprej lahko odločili za izdelavo modela na podlagi epidemioloških podatkov o verjetnosti incidentov med različnimi vrstami izmen; 
+tako bi lahko izračunali verjetnost, da bi bila osumljenka naključno prisotna pri toliko incidentih, kolikor jim je bila dejansko priča. Težava 
+tega pristopa pa je, da nimamo potrebnih podatkov. Zato je Henk Elffers poskušal sestaviti model, kjer uporabimo samo zgoraj navedene podatke. Predpostavil 
+je, da
+\begin{enumerate}
+    \item obstaja verjetnost $p$ za nastanek incidenta med določeno izmeno (torej $p$ ni odvisen od tega, ali gre za dnevno ali nočno izmeno),
+    \item incidenti se pojavljajo neodvisno drug od drugega.
+\end{enumerate}
+Izračunajmo pogojno verjetnost dogodka, da se (recimo v JKZ) vsi incidenti zgodijo med izmenami osumljenke, ob upoštevanju skupnega števila 
+incidentov in skupnega števila izmen v preučevanem obdobju. Naj bo\\
+$n \dots$ skupno število izmen,\\
+$r \dots$ število izmen osumljenke, \\
+potem je pogojna verjetnost, da je bila osumljenka priča $x$ incidentom, če se je zgodilo $k$ incidentov, naslednja
+\begin{equation}\label{eq:l_pogojna}
+    \frac{\binom{r}{x}p^x(1-p)^{r-x}\binom{n-r}{k-x}p^{k-x}(1-p)^{n-r-k+x}}{\binom{n}{k}p^k(1-p)^{n-k}} = \frac{\binom{r}{x}\binom{n-r}{k-x}}{\binom{n}{k}}.\vspace{2mm}
+\end{equation}
+Ta porazdelitev je znana kot hipergeometrijska porazdelitev. S to formulo lahko enostavno izračunamo (pogojno) verjetnost, da je bila osumljenka 
+priča vsaj takšnemu številu incidentov, kot jih je dejansko doživela.\\
+Po Elffersovem mnenju naj izračun ne bi bil povsem pošten do osumljenke. Bolj smislno naj bi bilo, da se ne bi izračunavala verjetnost, da je 
+bila osumljenka priča toliko incidentom, temveč verjetnost, da je bila neka medicinska sestra priča toliko incidentom. V JKZ je za izmene skrbelo 
+27 medicinskih sester, zato je Henk Elffers domnevno, da bi dobil zgornjo mejo te verjetnosti, svoj rezultat pomnoži s 27, kar je imenovano 
+naknadni popravek. Popraveknaj bi bil poteben le za bolnišnico JKZ; v RKZ to ni potrebno, saj je bila osumljenka že opredeljen kot osumljenka 
+na podlagi podatkov za bolnišnico JKZ. Prej omenjeni končni podatek, 1 proti 342 milijonom, je izračunal tako, da je pomnožil rezultate za vse 
+tri bolnišnice.\\\\
+Najbolj izpostavljena težava pri metodi, ki jo je uporabil Elfferson, je dvojna uporaba podatkov o JZK - uporabi jih za identifikacijo osumljenca 
+in sum, da je prišlo do kaznivega dejanja, nato pa še pri izračuni verjetnosti. Gre za problem, ko se na podlagi določenih podatkov določi hipotezo, nato 
+pa ta isti podatek uporabimo za preverjanje te hipoteze. Menim, da se je Henk Elfferson zavedal problema, saj je uvedel naknadni popravek glede tega. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Bayesova statistika}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -454,6 +524,38 @@ se tekom sodbe marsikateri dokaz najprej prizna in je znan sodniku, ki presoja t
 predhodnih verjetnosti hipotez. Potem pa dokaz iz sodbe umaknejo, ampak presnetilo me je, da dokaz največkrat ni umaknjen iz verjetnostnih računov. Mnenja sem, da bi 
 morali anlitiki, ko se določen dokaz iz sodbe, zaradi tehtnega razloga, umakne, posodobiti vse račune za nazaj in nato nadaljevati posodabljanje verjetnosti. Tako bi 
 dobili primeren izračun posteriornih verjetnosti, na katerih bi potem lahko temeljil zaključek sodbe. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Nadaljevanje primera sodbe medicinski sestri Lucii de Berg: Pristop z Bayesovo teorijo}
+Bayesov pristop bi rešil težave ponovne uporabe podatkov.\\\\
+Naj bo:\\
+$H_d$ \dots Lucia de Berk je nedolžna;\\
+$H_p$ \dots Lucia de Berk je kriva;\\
+$E$ \dots razpoložljivi dokazi.\\\\
+Z uporabo Bayeosovega pravila dobimo
+\[
+    \frac{P(H_p \lvert E)}{P(H_d \lvert E)} = \frac{P(E \lvert H_p)}{P(E \lvert H_d)} \times \frac{P(H_p)}{P(H_d)} \vspace{2mm}
+\]
+oziroma\\
+\begin{center}
+    \textit{posteriorna verjetnost $=$ razmerje verjetnosti $\times$ predhodna verjetnost}  
+\end{center}
+Verjetnost $P(H_d \lvert E)$ je verjetnost hipoteze $H_d$ po ovrednotenju dokazov $E$. Ob vsakih na novo pridobljenih dokazih lahko posodobimo 
+verjetnosti na naslednji način.\\
+Naj bodo $E'$ novi dokazi in 
+\[
+    \textit{stare posteriorne verjetnosti}  = \frac{P(E \lvert H_p)}{P(E \lvert H_d)} \times \frac{P(H_p)}{P(H_d)},
+\]
+potem, po pridobitvi novih dokazov, izračunamo nove posteriorne verjetnosti
+\begin{align*}
+    \frac{P(H_p \lvert E, E')}{P(H_d \lvert E, E')} & = \frac{P(E' \cap E \lvert H_p)}{P(E' \cap E \lvert H_d)} \times \frac{P(H_p)}{P(H_d)} \\ \vspace{2mm}
+    & = \frac{P(E' \lvert H_p, E)}{P(E' \lvert H_d, E)} \times \textit{stare posteriorne verjetnosti}. \vspace{2mm}
+\end{align*}
+Menim, da imamo tudi tukaj podobne težave kot sem jih že opisala zgoraj - določitev verjetnosti hipotez $P(H_p)$ in $P(H_d)$, za katere dokaze je mogoče 
+izračunati razmerje verjetnosti ter kako izračunamo verjetnost $\frac{P(E' \lvert H_p, E)}{P(E' \lvert H_d, E)}$, saj ne vemo kako so različni dokazi med seboj 
+povezani. Z določitvijo predhodnih verjetnosti lahko pridemo do zelo različnih rezultatov, ampak nimamo pa več težav z ponovno uporabo podatkov in 
+naknadnimi popravki. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -737,7 +839,8 @@ Da lahko ocenimo oziroma določimo vrednost dokaza potrebujemo razmerje verjetno
         1000000 & $< V $ & & izjemno močna podpora prvi hipotezi \\ [1ex]
         \hline
      \end{tabular}
- \end{table}
+ \end{table} \vspace{2mm}
+Pri uporabi takšnih tabel moramo biti previdni, če so hipoteze prelagane na podlagi podatkov; v tem primeru postanejo smiselne le če podamo predhodne verjetnosti za obravnavane hipoteze.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Utemeljitev uporabe razmerja verjetnosti}
@@ -805,6 +908,54 @@ hipotezah in se zdi, da ni več odvisen samo od podatkov. Metoda razmerja verjet
 Združene države Amerike, kjer se lahko Bayesovo pravilo šteje kot poseg v pravico porote do previdnosti: poroti naj ne bi bilo potrebno govoriti, 
 kako naj razmišlja in presoja dokaze; Bayesovo pravilo pa je natanko metoda za tehtanje dokazov.
 %Če je razmerje verjetnosti enako ali blizu 1, potem E nima nobene prave vrednosti, saj ne povečuje niti ne zmanjšuje verjetnosti krivde.(bayesovo razmerje verjetnosti)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Nadaljevanje primera sodbe medicinski sestri Lucii de Berg: Pristop z razmerjem verjetnosti}
+Primeren pristop bi bil tudi, da je verjetnostna porazdelitev slučajne spremenljivke $X$, ki predstavlja število incidentov, ki jim je bila priča 
+določena medicinska sestra, podana s Poissonovo porazdelitvijo
+\[
+    P(X=k) = \frac{(\mu r)^{k}}{k!}e^{-\mu r}, \vspace{2mm}
+\]
+kjer je $r$ število izmen medicinske sestre, $\mu > 0$ pa je parameter, ki predstavlja pogostost incidentov.\\
+Ponovno bi lahko temu pristopu ugovarjali z vprašanjema ali je stopnja incidentov lahko konstantna in če so incidenti ob različnih časih med seboj neodvisni, ker 
+je binomska porazdelitev z majhno verjetnostjo $p$ zelo blizu Poissonovi. Hipoteze lahko formuliramo na malo drugačen način, in sicer vsaka medicinska sestra naj bi imela 
+enak parameter pogostosti, da so priče incidentu, $\mu$. Tudi tožilčevo hipotezo $H_p$ lahko zapišemo na več načinov. Ena oblika je, da je število incidentov v Luciini izmeni 
+porazdeljeno Poissonovo s parametrom $\mu _L$ in potem je tožilčeva hipoteza $H_p$: $\mu _L > \mu$.\\\\
+Izračunamo lahko razmerje verjetnosti za $H_p$ glede na $H_d$. Naj bo:\\
+$I$ \dots število vseh medicinskih sester;\\
+$k_i$ \dots število incidentov, katerim je bila priča $i$-ta medicinska sestra, $i = 1, \dots , I$;\\
+$r_i$ \dots število izmen medicinske sestre $i$;\\
+$E$ \dots dogodek, da je bila medicinska sestra $i$ priča $k_i$ incidentom, $i = 1, \dots , I$.\\\\
+Potem je
+\[
+    P(E \lvert H_d) = \prod_{i=1}^{I} \frac{(\mu r_i)^{k_i}}{k_i!}e^{-\mu r_i},\vspace{2mm}
+\]
+in če upoštevamo, da je osumljenec medicinska sestra $l$
+\[
+    \vspace{2mm}
+    P(E \lvert H_p) = \frac{(\mu _L r_l)^{k_l}}{k_l!}e^{-\mu _L r_l}\prod_{i \neq l, i=1}^{I} \frac{(\mu r_i)^{k_i}}{k_i!}e^{-\mu r_i}.\vspace{2mm}
+\]
+Potem je razmerje verjetnosti
+\begin{equation}\label{eq:rv}
+    V = \frac{P(E \lvert H_p)}{P(E \lvert H_d)} = e^{\mu r_l-\mu _L r_l}\biggl(\frac{\mu _L r_l}{\mu r_l}\biggr)^{k_l}.\vspace{2mm}
+\end{equation}
+
+Za oceno izida katerega koli izračuna s tem razmerjem, lahko iz tabele 3 izpeljemo naslednjo lestvico za opis višine razmerja verjetnosti.
+\begin{table}[h!]
+    \centering
+    \caption{Kvalitativna lestvica za poročanje o vrednosti $V$ iz enačbe \eqref{eq:rv} podpore dokazov za $H_p$ proti $H_d$.}
+    \label{table:1}
+     \begin{tabular}{l l}
+        \hline
+        V $= 1$ & Dokazi enako podpirajo $H_p$ kot $H_d$. \\
+        1  $< V \le$  100 & Dokazi nekoliko bolj podpirajo $H_p$ kot $H_d$. \\
+        100  $\le V <$  1000 & Dokazi bolj podpirajo $H_p$ kot $H_d$. \\
+        1000  $\le V <$  10000 & Dokazi veliko bolj podpirajo $H_p$ kot $H_d$. \\
+        $V >$ 10000 & Dokazi v večini podpirajo $H_p$. \\ [1ex]
+        \hline
+     \end{tabular}
+ \end{table} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -913,7 +1064,7 @@ Vizualno opazimo, da delež sivih kvadratov, ki se prekrivajo s črtastimi kvadr
    \centering
    \includegraphics[scale=0.45]{slika1.png}
    \caption{Populacija, predstavljena s 100 kvadrati, z 9 črtastimi, 25 sivimi in 4 črtastimi in sivimi}\vspace{2mm}
-\end{figure}
+\end{figure}\\
 Slika 3 prikazuje izjeme pri tožilčevi zmoti, predstavljeni na sliki 1. Sedaj imamo 16 črtastih kvadratov, 16 sivih in 4 pikčaste in sive kvadrate, ker je splošna
 razširjenost črtastih in sivih kvadratov enaka, je
 \[
@@ -928,14 +1079,14 @@ Po drugi strani pa so črtkani kvadrati na sliki 2 v celoti zajeti v sivih kvadr
 \[
    P(\text{sivo} \lvert \text{črtkano}) = 1, \quad \text{medtem ko je} \quad P(\text{črtkano} \lvert \text{sivo}) = 0,25. \vspace{2mm}
 \]
-Tožilčeva zmota velja, kadar je ena skupina podmnožica druge.
+Tožilčeva zmota velja, kadar je ena skupina podmnožica druge. 
 
 \begin{figure}[!ht]\label{fig:slika2}
    \centering
    \includegraphics[scale=0.45]{slika2.png}
    \caption{Populacija, predstavljena s 100 kvadrati, z 16 črtastimi, 16 sivimi in 4 pikčastimi in sivimi}\vspace{2mm}
 \end{figure}
-
+\pagebreak
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Načini za izogib zmotam}
@@ -1050,6 +1201,23 @@ S tem je dokaz, da je priznanje lahko dokaz krivde le, če je verjetnost priznan
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Nadaljevanje primera sodbe medicinski sestri Lucii de Berg: Interpretacija verjetnosti na sodišču}
+Sodišče je bilo mnenja, da verjetnostni izračun, ki ga je podal Henk Elfferson, pomeni, da je osumljenka vse dogodke, navedene v obtožnici, doživela naključno. Ti 
+izračuni naj bi poseldično prikazovali, da je velika verjetnost, da obstaja povezava med izmeno osumljenke in pojavom incidenta. Te sklepi sodišča bi morali statistikom 
+vzbujati dvome, saj se sodba dvoumna in lahko bi rekla, da je sodišče storilo znano tožilčevo zmoto. Po sklepu sodišča bi lahko rekli, da govorijo o verjetnosti, da se je nekaj zgodilo 
+ob predpostavki, da je vse popolnoma naključno ali pa si sodbo sodišča razlagamo kot verjetnost, da se je nekaj naključno zgodilo. Te dve trditvi pa sta različni, kar lahko 
+pokažem z naslednjimi formulami. Naj bo\\
+$F$ \dots opazovani dogodek;\\
+$H_0$ \dots trditev, da se dogodek zgodi naključno.\\
+Henk Elffers je izračunal verjetnost $P(F \lvert H_0) < 342 \times 10^{-6}$, medtem ko je sodišče mislilo, da je Elffersonova izračunana verjetnost v bistvu $P(H_0 \lvert F)$, 
+kar pa je definicija tožilčeve zmote.\\\\
+Torej poleg tega, da je bila uporabljena metoda za izračun verjetnosti nekoliko sporna, kljub kasnejšim popravkom, je na koncu prišlo še do napake na sodišču, zaradi 
+nerazumevanja pogojnih verjetnosti. Če bi hoteli pravično sodbo, bi, po mojem mnenju, seveda morali najprej izbrati ustrezne metode za izračun vseh verjetnosti, predstavitev 
+statistične analize na sodišču pa bi morala biti bolj temeljita in prilagojena razumevanju sodnikom, odvetnikom in poroti. Sodba se je kasneje ponovno odprla, 
+zaradi ugovorov na uporabljene metode Henka Elffersona.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Izogibanje zmotam z uporabo Bayesovih omrežij}
 Ker je največkrat težava v tem, da se večina odvetnikov in sodnikov ob pogledu na verjetnostne izračune in statistično analizo dokazov, ustraši, se mi 
 zdijo Bayeosova omrežja dober predlog za predstavitev verjetnostnih izračunov.
@@ -1095,88 +1263,13 @@ motenj v postopku pridobivanja podatkov. Metode za sklepanje morajo zato zagotov
 da se izpostavi dejavnik negotovosti. Primerjati morajo verjetnosti za nasprotujoče si hipoteze in morajo zagotoviti okvir za pravnike, da iz
 mreže sklepajo na argumente.
 
-\subsection{Primer uporabe Bayesovega omrežja}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Primer - Lucia De Berk}
-\subsection{Predstavitev primera}
-Marca 2003 je bila medicinska sestra Lucia de Berk (v nadaljevanju osumljenka) v Haagu na Nizozemskem obsojena na dosmrtni zapor zaradi obtožb 
-uboja in domnevnega uboja več bolnikov v dveh bolnišnicah, v katerih je delala v bližnji preteklosti (bolnišnici JZK in RKZ). V bolnišnici JKZ 
-se je med Lucijinimi izmenami pojavilo nenavadno veliko incidentov, kar je sprožilo vprašanja glede njene morebitne vpletenosti v te dogodke. 
-Razmišljalo se je, ali bi lahko bila Lucijina prisotnost pri toliko incidentih zgolj naključje.\\
-Na zahtevo državnega tožilca, je statistično analizo podal statistik Henk Elffers. V grobem je bila njegova ugotovitev naslednja: ob predpostavkah, da
-\begin{enumerate}
-    \item je verjetnost, da osumljenka doživi incident med izmeno, enaka verjetnosti za katero koli drugo medicinsko sestro in
-    \item da so pojavi incidentov neodvisni za različne delovne izmene,
-\end{enumerate}
-potem je verjetnost, da je osumljenka doživela toliko incidentov, kot jih je dejansko doživela, manjša od 1 proti 342 milijonom. Henk Elffers je mnenja, 
-da je verjetnost naključja tako majhna, da standardna statistična metodologija zavrne ničelno hipotezo o naključju. Vendar je poudaril, da 
-to ne pomeni nujno, da je osumljenka kriva. Prvi problem, ki sem ga zasledila je, da Henk Elffers in sodišče nista upoštevala subjektivnega 
-elementa pri izbiri verjetnostnega modela in s tem možnosti za obstoj več modelov z različnimi napovedmi ali celo različnimi odgovori 
-na različna vprašanja. V tem primeru bi lahko uporabili večina zgoraj opisanih metod in teorij - Bayesov pristop, klasični frekvenčni pristop ali 
-verjetnostni pristop, ki zagovarja uporabo razmerja verjetnosti.  Vaka metoda ima lahko več rešitev za isti problem, pri čemer pa lahko nastane 
-tudi vprašanje o obsegu modela.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Podatki in uporabljena metoda}
-Henk Elffers je temeljil na podatkih o izmenah osmuljenke in drugih medicinskih sester ter incidentih, ki so se zgodili v teh izmenah, da bi 
-utemeljil svoj model v celoti.
-
-\begin{table}[htb]
-    \caption{Podatki o izmenah in incidentih, ki jih je uporabil Henk Elffers (za določeno obdobje).}
-    \label{table:1}
-     \begin{tabular}{l c c c}
-        \hline
-        Ime bolnišnice (in številka izmene) & JKZ  & RKZ-41 & RKZ-42 \\ 
-        \hline
-        Število vseh izmen & 1029 & 336 & 339 \\
-        Število izmen osumljenke & 142 & 1 & 58 \\
-        Število vseh incidentov & 8 & 5 & 14 \\
-        Število incidentov v času izmene osumljenke & 8 & 1 & 5 \\ [1ex]
-        \hline
-     \end{tabular}
- \end{table}
-
-Tekom sodbe je bilo ugotovljeno, da je osumljenka v RKZ-41 dejansko opravila tri izmene in ne le ene, zato bom v kasnejših izračunih uporabili to 
-pravilno število.\\\\
-Najprej bi se najprej lahko odločili za izdelavo modela na podlagi epidemioloških podatkov o verjetnosti incidentov med različnimi vrstami izmen; 
-tako bi lahko izračunali verjetnost, da bi bila osumljenka naključno prisotna pri toliko incidentih, kolikor jim je bila dejansko priča. Težava 
-tega pristopa pa je, da nimamo potrebnih podatkov. Zato je Henk Elffers poskušal sestaviti model, kjer uporabimo samo zgoraj navedene podatke. Predpostavil 
-je, da
-\begin{enumerate}
-    \item obstaja verjetnost $p$ za nastanek incidenta med določeno izmeno (torej $p$ ni odvisen od tega, ali gre za dnevno ali nočno izmeno),
-    \item incidenti se pojavljajo neodvisno drug od drugega.
-\end{enumerate}
-Izračunajmo pogojno verjetnost dogodka, da se (recimo v JKZ) vsi incidenti zgodijo med izmenami osumljenke, ob upoštevanju skupnega števila 
-incidentov in skupnega števila izmen v preučevanem obdobju. Naj bo\\
-$n \dots$ skupno število izmen,\\
-$r \dots$ število izmen osumljenke, \\
-potem je pogojna verjetnost, da je bila osumljenka priča $x$ incidentom, če se je zgodilo $k$ incidentov, naslednja
-\begin{equation}\label{eq:l_pogojna}
-    \frac{\binom{r}{x}p^x(1-p)^{r-x}\binom{n-r}{k-x}p^{k-x}(1-p)^{n-r-k+x}}{\binom{n}{k}p^k(1-p)^{n-k}} = \frac{\binom{r}{x}\binom{n-r}{k-x}}{\binom{n}{k}}.\vspace{2mm}
-\end{equation}
-Ta porazdelitev je znana kot hipergeometrijska porazdelitev. S to formulo lahko enostavno izračunamo (pogojno) verjetnost, da je bila osumljenka 
-priča vsaj takšnemu številu incidentov, kot jih je dejansko doživela.\\
-Po Elffersovem mnenju naj izračun ne bi bil povsem pošten do osumljenke. Bolj smislno naj bi bilo, da se ne bi izračunavala verjetnost, da je 
-bila osumljenka priča toliko incidentom, temveč verjetnost, da je bila neka medicinska sestra priča toliko incidentom. V JKZ je za izmene skrbelo 
-27 medicinskih sester, zato je Henk Elffers domnevno, da bi dobil zgornjo mejo te verjetnosti, svoj rezultat pomnoži s 27, kar je imenovano 
-naknadni popravek. Popraveknaj bi bil poteben le za bolnišnico JKZ; v RKZ to ni potrebno, saj je bila osumljenka že opredeljen kot osumljenka 
-na podlagi podatkov za bolnišnico JKZ. Prej omenjeni končni podatek, 1 proti 342 milijonom, je izračunal tako, da je pomnožil rezultate za vse 
-tri bolnišnice.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Razprava na uporabljeno metodo}
-Pri metodi, ki jo je uporabil Henk Elffers obstajajo številne težave in pomisleki.
-
-\subsubsection{}
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Zaključek}
-
+napiš Še
+\pagebreak
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{thebibliography}{99}
     \bibitem{referenca-clanek}
