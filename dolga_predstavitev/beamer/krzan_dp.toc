@@ -5,8 +5,8 @@
 \beamer@sectionintoc {4}{Vrednotenje dokazov}{6}{0}{4}
 \beamer@sectionintoc {5}{Koncept verjetnosti}{7}{0}{5}
 \beamer@sectionintoc {6}{Bayesova statistika}{10}{0}{6}
-\beamer@sectionintoc {7}{Bayesova analiza}{18}{0}{7}
-\beamer@sectionintoc {8}{Drugi pristopi}{22}{0}{8}
-\beamer@sectionintoc {9}{Razmerje verjetnosti}{28}{0}{9}
-\beamer@sectionintoc {10}{Zmote v kazenskem pravu}{33}{0}{10}
-\beamer@sectionintoc {11}{Načini za izogib zmotam}{44}{0}{11}
+\beamer@sectionintoc {7}{Drugi pristopi}{14}{0}{7}
+\beamer@sectionintoc {8}{Razmerje verjetnosti}{17}{0}{8}
+\beamer@sectionintoc {9}{Zmote v kazenskem pravu}{20}{0}{9}
+\beamer@sectionintoc {10}{Načini za izogib zmotam}{29}{0}{10}
+\beamer@sectionintoc {11}{Literatura}{31}{0}{11}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.12.1)  24 APR 2023 07:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.12.1)  3 MAY 2023 21:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -743,6 +743,21 @@ LaTeX Warning: Label `fig:slika_3' multiply defined.
 
 LaTeX Warning: Label `fig:slika_3' multiply defined.
 
+
+LaTeX Warning: Label `referenca-clanek' multiply defined.
+
+
+LaTeX Warning: Label `referenca-clanek' multiply defined.
+
+
+LaTeX Warning: Label `referenca-clanek' multiply defined.
+
+
+LaTeX Warning: Label `referenca-knjiga' multiply defined.
+
+
+LaTeX Warning: Label `referenca-spletni-vir' multiply defined.
+
 )
 \openout1 = `krzan_dp.aux'.
 
@@ -978,28 +993,139 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <6> not available
 ] [19
 
 ]
-Overfull \vbox (1.62119pt too high) detected at line 338
+<slika_3.png, id=207, 701.62125pt x 179.67125pt>
+File: slika_3.png Graphic file (type png)
+<use slika_3.png>
+Package pdftex.def Info: slika_3.png  used on input line 356.
+(pdftex.def)             Requested size: 350.80975pt x 89.83539pt.
+
+Overfull \hbox (8.37444pt too wide) in paragraph at lines 356--356
+ [] 
  []
 
 [20
 
-] [21
+ </Users/nezakrzan/Documents/GitHub/Diplomska-naloga/dolga_predstavitev/beamer/slika_3.png>]pdfTeX warning (ext4): destination with the same identifier (name{fig:slika_3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.368 \end{frame}
+                 
+File: slika_3.png Graphic file (type png)
+<use slika_3.png>
+Package pdftex.def Info: slika_3.png  used on input line 368.
+(pdftex.def)             Requested size: 350.80975pt x 89.83539pt.
 
-] [22
+Overfull \hbox (8.37444pt too wide) in paragraph at lines 368--368
+ [] 
+ []
 
-] [23
+[21
 
-] [24
+]pdfTeX warning (ext4): destination with the same identifier (name{fig:slika_3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.380 \end{frame}
+                 
+File: slika_3.png Graphic file (type png)
+<use slika_3.png>
+Package pdftex.def Info: slika_3.png  used on input line 380.
+(pdftex.def)             Requested size: 350.80975pt x 89.83539pt.
 
-] [25
+Overfull \hbox (8.37444pt too wide) in paragraph at lines 380--380
+ [] 
+ []
 
-] [26
+[22
 
-] [27
+]pdfTeX warning (ext4): destination with the same identifier (name{fig:slika_3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.392 \end{frame}
+                 
+File: slika_3.png Graphic file (type png)
+<use slika_3.png>
+Package pdftex.def Info: slika_3.png  used on input line 392.
+(pdftex.def)             Requested size: 350.80975pt x 89.83539pt.
 
-]
-LaTeX Font Info:    Font shape `T1/phv/b/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 466.
+Overfull \hbox (8.37444pt too wide) in paragraph at lines 392--392
+ [] 
+ []
+
+[23
+
+]pdfTeX warning (ext4): destination with the same identifier (name{fig:slika_3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.404 \end{frame}
+                 
+File: slika_3.png Graphic file (type png)
+<use slika_3.png>
+Package pdftex.def Info: slika_3.png  used on input line 404.
+(pdftex.def)             Requested size: 350.80975pt x 89.83539pt.
+
+Overfull \hbox (8.37444pt too wide) in paragraph at lines 404--404
+ [] 
+ []
+
+[24
+
+]pdfTeX warning (ext4): destination with the same identifier (name{fig:slika_3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.417 \end{frame}
+                 
+File: slika_3.png Graphic file (type png)
+<use slika_3.png>
+Package pdftex.def Info: slika_3.png  used on input line 417.
+(pdftex.def)             Requested size: 350.80975pt x 89.83539pt.
+
+Overfull \hbox (8.37444pt too wide) in paragraph at lines 417--417
+ [] 
+ []
+
+[25
+
+]pdfTeX warning (ext4): destination with the same identifier (name{fig:slika_3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.429 \end{frame}
+                 
+File: slika_3.png Graphic file (type png)
+<use slika_3.png>
+Package pdftex.def Info: slika_3.png  used on input line 429.
+(pdftex.def)             Requested size: 350.80975pt x 89.83539pt.
+
+Overfull \hbox (8.37444pt too wide) in paragraph at lines 429--429
+ [] 
+ []
+
+[26
+
+]pdfTeX warning (ext4): destination with the same identifier (name{fig:slika_3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.441 \end{frame}
+                 
+File: slika_3.png Graphic file (type png)
+<use slika_3.png>
+Package pdftex.def Info: slika_3.png  used on input line 441.
+(pdftex.def)             Requested size: 350.80975pt x 89.83539pt.
+
+Overfull \hbox (8.37444pt too wide) in paragraph at lines 441--441
+ [] 
+ []
+
+[27
+
+]pdfTeX warning (ext4): destination with the same identifier (name{fig:slika_3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.455 \end{frame}
+                 
+File: slika_3.png Graphic file (type png)
+<use slika_3.png>
+Package pdftex.def Info: slika_3.png  used on input line 455.
+(pdftex.def)             Requested size: 280.64352pt x 71.86722pt.
  [28
 
 ] [29
@@ -1008,157 +1134,46 @@ LaTeX Font Info:    Font shape `T1/phv/b/it' in size <10.95> not available
 
 ] [31
 
-] [32
-
-] [33
-
-]
-<slika_3.png, id=310, 701.62125pt x 179.67125pt>
-File: slika_3.png Graphic file (type png)
-<use slika_3.png>
-Package pdftex.def Info: slika_3.png  used on input line 558.
-(pdftex.def)             Requested size: 350.80975pt x 89.83539pt.
-
-Overfull \hbox (8.37444pt too wide) in paragraph at lines 558--558
- [] 
- []
-
-[34
-
- </Users/nezakrzan/Documents/GitHub/Diplomska-naloga/dolga_predstavitev/beamer/slika_3.png>]pdfTeX warning (ext4): destination with the same identifier (name{fig:slika_3}) has been already used, duplicate ignored
+ </usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>]pdfTeX warning (ext4): destination with the same identifier (name{beamerbibreferenca-clanek}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.570 \end{frame}
-                 
-File: slika_3.png Graphic file (type png)
-<use slika_3.png>
-Package pdftex.def Info: slika_3.png  used on input line 570.
-(pdftex.def)             Requested size: 350.80975pt x 89.83539pt.
+l.527 \end{frame}
+                  [32
 
-Overfull \hbox (8.37444pt too wide) in paragraph at lines 570--570
- [] 
- []
-
-[35
-
-]pdfTeX warning (ext4): destination with the same identifier (name{fig:slika_3}) has been already used, duplicate ignored
+]pdfTeX warning (ext4): destination with the same identifier (name{beamerbibreferenca-clanek}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.582 \end{frame}
-                 
-File: slika_3.png Graphic file (type png)
-<use slika_3.png>
-Package pdftex.def Info: slika_3.png  used on input line 582.
-(pdftex.def)             Requested size: 350.80975pt x 89.83539pt.
+l.546 \end{frame}
+                  [33
 
-Overfull \hbox (8.37444pt too wide) in paragraph at lines 582--582
- [] 
- []
-
-[36
-
-]pdfTeX warning (ext4): destination with the same identifier (name{fig:slika_3}) has been already used, duplicate ignored
+]pdfTeX warning (ext4): destination with the same identifier (name{beamerbibreferenca-clanek}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.594 \end{frame}
-                 
-File: slika_3.png Graphic file (type png)
-<use slika_3.png>
-Package pdftex.def Info: slika_3.png  used on input line 594.
-(pdftex.def)             Requested size: 350.80975pt x 89.83539pt.
+l.568 \end{frame}
+                  [34
 
-Overfull \hbox (8.37444pt too wide) in paragraph at lines 594--594
- [] 
- []
+] [35
 
-[37
-
-]pdfTeX warning (ext4): destination with the same identifier (name{fig:slika_3}) has been already used, duplicate ignored
+]pdfTeX warning (ext4): destination with the same identifier (name{beamerbibreferenca-knjiga}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.606 \end{frame}
                  
-File: slika_3.png Graphic file (type png)
-<use slika_3.png>
-Package pdftex.def Info: slika_3.png  used on input line 606.
-(pdftex.def)             Requested size: 350.80975pt x 89.83539pt.
-
-Overfull \hbox (8.37444pt too wide) in paragraph at lines 606--606
- [] 
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 606.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+Overfull \hbox (127.79915pt too wide) in paragraph at lines 606--606
+\T1/pcr/m/n/10.95 statistical-[]analysis-[]in-[]criminal-[]justice-[]research-[]2169-[]0170-[]1000203 . 
  []
 
-[38
+[36
 
-]pdfTeX warning (ext4): destination with the same identifier (name{fig:slika_3}) has been already used, duplicate ignored
+]pdfTeX warning (ext4): destination with the same identifier (name{beamerbibreferenca-spletni-vir}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.620 \end{frame}
-                 
-File: slika_3.png Graphic file (type png)
-<use slika_3.png>
-Package pdftex.def Info: slika_3.png  used on input line 620.
-(pdftex.def)             Requested size: 350.80975pt x 89.83539pt.
-
-Overfull \hbox (8.37444pt too wide) in paragraph at lines 620--620
- [] 
- []
-
-
-Overfull \vbox (6.39375pt too high) detected at line 620
- []
-
-[39
-
-]pdfTeX warning (ext4): destination with the same identifier (name{fig:slika_3}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.632 \end{frame}
-                 
-File: slika_3.png Graphic file (type png)
-<use slika_3.png>
-Package pdftex.def Info: slika_3.png  used on input line 632.
-(pdftex.def)             Requested size: 350.80975pt x 89.83539pt.
-
-Overfull \hbox (8.37444pt too wide) in paragraph at lines 632--632
- [] 
- []
-
-[40
-
-]pdfTeX warning (ext4): destination with the same identifier (name{fig:slika_3}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.644 \end{frame}
-                 
-File: slika_3.png Graphic file (type png)
-<use slika_3.png>
-Package pdftex.def Info: slika_3.png  used on input line 644.
-(pdftex.def)             Requested size: 350.80975pt x 89.83539pt.
-
-Overfull \hbox (8.37444pt too wide) in paragraph at lines 644--644
- [] 
- []
-
-[41
-
-]pdfTeX warning (ext4): destination with the same identifier (name{fig:slika_3}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.658 \end{frame}
-                 
-File: slika_3.png Graphic file (type png)
-<use slika_3.png>
-Package pdftex.def Info: slika_3.png  used on input line 658.
-(pdftex.def)             Requested size: 280.64352pt x 71.86722pt.
- [42
-
-] [43
-
-] [44
-
-] [45
-
-] [46
+l.616 \end{frame}
+                  [37
 
 ]
 \tf@nav=\write6
@@ -1175,21 +1190,21 @@ Package pdftex.def Info: slika_3.png  used on input line 658.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `krzan_dp.out' has not changed.
-(rerunfilecheck)             Checksum: FDD40A6987AAAEA2578AF017E98D8BA9;1735.
+(rerunfilecheck)             Checksum: DF60D652C0C7944D10E554FB577C6986;1702.
  ) 
 Here is how much of TeX's memory you used:
- 25103 strings out of 478994
- 476871 string characters out of 5858184
- 777290 words of memory out of 5000000
- 41920 multiletter control sequences out of 15000+600000
- 439665 words of font info for 66 fonts, out of 8000000 for 9000
+ 25126 strings out of 478994
+ 477940 string characters out of 5858184
+ 777434 words of memory out of 5000000
+ 41954 multiletter control sequences out of 15000+600000
+ 437430 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 131i,15n,132p,508b,769s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/dolga_predstavitev/beamer/krzan_dp.pdf (46 pages, 156780 bytes).
+ 131i,15n,132p,508b,660s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/dolga_predstavitev/beamer/krzan_dp.pdf (37 pages, 149864 bytes).
 PDF statistics:
- 460 PDF objects out of 1000 (max. 8388607)
- 389 compressed objects within 4 object streams
- 105 named destinations out of 1000 (max. 500000)
+ 409 PDF objects out of 1000 (max. 8388607)
+ 345 compressed objects within 4 object streams
+ 91 named destinations out of 1000 (max. 500000)
  154 words of extra memory for PDF output out of 10000 (max. 10000000)
 

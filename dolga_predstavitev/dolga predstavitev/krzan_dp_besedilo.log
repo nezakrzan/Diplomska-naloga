@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.12.1)  24 APR 2023 07:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.12.1)  2 MAY 2023 09:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -211,266 +211,216 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/local/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Underfull \hbox (badness 10000) in paragraph at lines 47--69
+Underfull \hbox (badness 10000) in paragraph at lines 47--62
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--69
+Underfull \hbox (badness 10000) in paragraph at lines 47--62
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--69
+Underfull \hbox (badness 10000) in paragraph at lines 47--62
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--69
+Underfull \hbox (badness 10000) in paragraph at lines 47--62
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--78
 
  []
 
 [1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 73--89
+Underfull \hbox (badness 10000) in paragraph at lines 82--86
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--97
+Underfull \hbox (badness 10000) in paragraph at lines 90--100
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--119
+Underfull \hbox (badness 10000) in paragraph at lines 90--100
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--119
+Underfull \hbox (badness 10000) in paragraph at lines 104--110
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--119
+Underfull \hbox (badness 10000) in paragraph at lines 104--110
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 123--138
+Underfull \hbox (badness 10000) in paragraph at lines 116--119
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 123--138
+Underfull \hbox (badness 10000) in paragraph at lines 131--141
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 123--138
+Underfull \hbox (badness 10000) in paragraph at lines 144--184
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--184
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--184
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--184
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 144--148
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4]
+Underfull \hbox (badness 10000) in paragraph at lines 191--212
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--168
-
- []
-
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 171--173
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 200--212
+Underfull \hbox (badness 10000) in paragraph at lines 191--212
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 215--261
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 215--261
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 215--261
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 215--261
+Underfull \hbox (badness 10000) in paragraph at lines 244--250
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 267--275
+Underfull \hbox (badness 10000) in paragraph at lines 256--261
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 267--275
+Underfull \hbox (badness 10000) in paragraph at lines 278--300
 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 278--300
 
- [7]
-Underfull \hbox (badness 10000) in paragraph at lines 289--299
+ []
+
+[7]
+<slika_3.png, id=36, 701.62125pt x 179.67125pt>
+File: slika_3.png Graphic file (type png)
+<use slika_3.png>
+Package pdftex.def Info: slika_3.png  used on input line 310.
+(pdftex.def)             Requested size: 420.97598pt x 107.80356pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--338
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 301--307
+Underfull \hbox (badness 10000) in paragraph at lines 304--338
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--338
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--338
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--338
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--338
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--338
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--338
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--338
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--338
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--338
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 315--338
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9 </Users/nezakrzan/Documents/GitHub/Diplomska-naloga/dolga_predstavitev/dolga predstavitev/slika_3.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 353--376
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 340--358
-
- []
-
-[9] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 395--397
+Underfull \hbox (badness 10000) in paragraph at lines 353--376
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 425--431
-
- []
-
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 437--442
+Underfull \hbox (badness 10000) in paragraph at lines 353--376
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 459--482
+Underfull \hbox (badness 10000) in paragraph at lines 353--376
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 459--482
-
- []
-
-[12]
-<slika_3.png, id=52, 701.62125pt x 179.67125pt>
-File: slika_3.png Graphic file (type png)
-<use slika_3.png>
-Package pdftex.def Info: slika_3.png  used on input line 505.
-(pdftex.def)             Requested size: 420.97598pt x 107.80356pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 497--539
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 497--539
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 497--539
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 497--539
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 497--539
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 497--539
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 497--539
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 497--539
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 497--539
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 497--539
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 497--539
-
- []
-
-
-Underfull \vbox (badness 1107) has occurred while \output is active []
-
- [13] [14 </Users/nezakrzan/Documents/GitHub/Diplomska-naloga/dolga_predstavitev/dolga predstavitev/slika_3.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 551--558
-
- []
-
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 561--584
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 561--584
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 561--584
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 561--584
-
- []
-
-[16] (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/dolga_predstavitev/dolga predstavitev/krzan_dp_besedilo.aux) ) 
+[10] [11] (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/dolga_predstavitev/dolga predstavitev/krzan_dp_besedilo.aux) ) 
 Here is how much of TeX's memory you used:
- 4186 strings out of 478994
- 54621 string characters out of 5858184
- 375950 words of memory out of 5000000
- 21463 multiletter control sequences out of 15000+600000
+ 4185 strings out of 478994
+ 54606 string characters out of 5858184
+ 375947 words of memory out of 5000000
+ 21462 multiletter control sequences out of 15000+600000
  415680 words of font info for 62 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 82i,8n,88p,372b,200s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/dolga_predstavitev/dolga predstavitev/krzan_dp_besedilo.pdf" (16 pages, 253403 bytes).
+ 82i,8n,88p,404b,200s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
+Output written on "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/dolga_predstavitev/dolga predstavitev/krzan_dp_besedilo.pdf" (11 pages, 223288 bytes).
 PDF statistics:
- 108 PDF objects out of 1000 (max. 8388607)
- 75 compressed objects within 1 object stream
+ 88 PDF objects out of 1000 (max. 8388607)
+ 61 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

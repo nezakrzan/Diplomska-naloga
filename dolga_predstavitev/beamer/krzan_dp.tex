@@ -186,49 +186,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Bayesova statistika}
 
-\begin{frame}
-    \frametitle{Opredelitev}
-    Bayesova statistika je statistična veja, ki nam s pomočjo matematičnih pristopov omogoča uporabo verjetnosti pri reševanju statističnih 
-    problemov. V svoje modele vključuje pogojno verjetnost, katero izračunamo z uporabo Bayesovega pravila. \\ \vspace{3mm}
-    Hipoteza: Oseba je »kriva«.
-    \begin{enumerate}
-        \item začnemo z nekim predhodnim prepričanjem o hipotezi;
-        \item ga posodabljamo, ko se dokazi ponovno pojavijo.
-    \end{enumerate}
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-    \frametitle{Bayesovo pravilo}
-    Bayesovo sklepanje temelji na Bayesovem pravilu, ki izraža verjetnost nekega dogodka z verjetnostjo dveh dogodkov in obrnejnje pogojne
-    verjetnosti. \vspace{3mm}
-    \begin{definicija}
-        Bayesovo pravilo:
-        \[
-            P(H \lvert E) = \frac{P(E \lvert H) \times P(H)}{P(E)}, \vspace{2mm}
-        \] 
-    \end{definicija} \vspace{3mm}
-    Obstaja še ena formulacija Bayesovega pravila, ki olajša izračune in je pogosto uporabljena pri Bayesovi analizi DNK dokazov
-    \[
-        \frac{P(H \lvert E)}{P(\neg H \lvert E)} = \frac{P(E \lvert H)}{P(E \lvert \neg H)} \times \frac{P(H)}{P(\neg H)}. \vspace{2mm}
-    \]
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-    \frametitle{Bayesovo posodabljenje}
-    Logična trditev, kako se sčasoma posodabljajo apriorne oziroma predhodne verjetnosti dokazov glede na novo zbrane dokaze oziroma prepričanja. \vspace{3mm}
-    \begin{trditev}[Bayesovo posodabljanje]
-        Če se dogodek E zgodi ob času $t_1 > t_0$, potem je $P_1(H) = P_0(H \lvert E)$.
-    \end{trditev}
-    \begin{itemize}
-        \item Predhodna oz. apriorna verjetnost = $P_0(H)$ (ob času $t_0$ dogodku H dodelimo verjetnost);
-        \item Ko se zgodi dogodek E ob času $t_1$, ki vpliva na naša prepričanja o dogodku H, Bayesovo posodabljanje pravi, da je potrebno apriorno 
-        verjetnost dogodka H v času $t_1$ enačiti z pogojno verjetnostjo dogodka H glede na dogodek E v času $t_0$. 
-    \end{itemize}
-\end{frame}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
     \frametitle{Bayesova teorija v kazenskem pravu}
@@ -255,27 +212,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
     \frametitle{Predhodna verjetnost in določitev posteriorne verjetnosti}
-    Recimo, da je statistični znanstvenik naprošen, da opravi analizo profila DNK krvi, najdene na kraju kaznivega dejanja, in rezultat primerja s profilom DNK 
-    obdolženca.\\ \vspace{3mm}
-    Odločitev porotnikov bo delno odvisna od njihove ocene dveh interesnih
-    hipotez\\
-    $H_1 \dots$ vir krvi je obtoženec,\\
-    $H_2 \dots$ vir krvi je druga oseba.\\ \vspace{3mm}
-    Porotniki bodo morda želeli, da jim dokončno povemo, katera hipoteza je resnična, ali da jim navedemo verjetnosti vira. Za oceno verjetnosti 
-    vira mora statistični znanstvenik upoštevati tudi druge dokaze v kazenskem primeru.
-\end{frame}
-
-\begin{frame}
-    \frametitle{Predhodna verjetnost in določitev posteriorne verjetnosti}
-    Obtoženec in kri s kraja zločina imata skupen niz t.i. genetskih označevalcev - najdemo pri eni osebi na 1 milijon prebivalcev.\\ \vspace{3mm}
-    \centering
-    $\rightarrow$ \textbf{pogojna verjetnost ugotovitve rezultatov pri dveh hipotezah o medsebojni povezanosti}
-    \begin{itemize}
-        \item skupni genetski označevalci skoraj zagotovo najdeni v primeru $H_1$ (vir je bil obtoženec);
-        \item 1 možnost na milijon, da bodo najdeni v primeru $H_2$ (vir je bil nekdo drug);
-    \end{itemize}
-    \centering 
-    $\rightarrow$ \textbf{predložimo razmerje verjetnosti}
+    \begin{block}{Predhodna verjetnost}
+        začetna verjetnost hipoteze oziroma tožilčeve domneve o obdolžencu oziroma storilcu kaznivega dejanja.
+    \end{block} \vspace{3mm}
+    \begin{block}{Predhodna verjetnost}
+        verjetnost začetne hipoteze oziroma tožilčeve domneve o obdolžencu, preden so bili predloženi dokazi.
+    \end{block}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -288,66 +230,6 @@
             \item Analitik naj uporabi svoje strokovno znanje za izračun apriorne verjetnosti na podlagi razpoložljivih podatkov in brez nepotrebnega vplivanja odvetnikov ali drugih udeležencev postopka;
         \end{itemize}
     \end{block}
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Bayesova analiza}
-
-\begin{frame}
-    \frametitle{Poenostavljena Bayesova analiza}
-    Naj bo:\\
-    $S$ \dots trditev, da je obtoženec vir sledi DNK s kraja zločina; \\
-    $M$ \dots trditev, da se obtoženčev DNK ujema z DNK-jem s kraja zločina; \\
-    $f$ \dots funkcija pogostosti ujemanja DNK z DNK-jem s kraja zločina. \\
-    Želimo vedeti, kakšna je verjetnost S glede na M, tj. $P(S \lvert M)$. \\ \vspace{3mm}
-    Bayesovo pravilo lahko uporabimo na naslednji način:
-    \[
-        \frac{P(S \lvert M)}{P(\neg S \lvert M)} = \frac{P(M \lvert S)}{P(M \lvert \neg S)} \times \frac{P(S)}{P(\neg S)}.
-    \] 
-\end{frame} 
-
-\begin{frame}
-    \frametitle{Poenostavljena Bayesova analiza}
-    \[
-        \frac{P(S \lvert M)}{P(\neg S \lvert M)} = \frac{P(M \lvert S)}{P(M \lvert \neg S)} \times \frac{P(S)}{P(\neg S)}. \vspace{3mm}
-    \] 
-    \begin{block}{}
-        \centering
-        $P(M \lvert S) = 1$ - \textbf{lažno negativni rezultat};\\ \vspace{2mm}
-        $P(M \lvert \neg S) = f$ - \textbf{lažno pozitivni rezultat}; 
-    \end{block}
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-    \frametitle{Izpopolnjena Bayesova analiza l}
-    Za upoštevanje možnosti laboratorijskih napak, bomo namesto $M$ uvedli spremenljivko $M_p$.\\ \vspace{3mm}
-    $M_p$ \dots poročano ujemanje laboratorijske analize; \\ 
-    $M_t$ \dots trditev, da obstaja dejansko ujemanje v DNK-ju;\\
-    $\neg M_t$ \dots trditev, da obstaja neujemanje v DNK-ju.  \\ 
-    $f$ \dots pogostost ujemnja DNK-ja z DNK-jem s kraja zložina;\\
-    $P(M_t \lvert \neg S) = f$; \\
-    $P(\neg M_t \lvert \neg S) = 1-f$;\\
-    $P(M_p \lvert \neg M_t)$ \dots opisuje verjetnost lažno pozitivnih rezultatov laboratorija(oznaka $FP$);\\
-    $P(M_p \lvert M_t)$ \dots opisuje verjetnost resničnih pozitivnih rezultatov laboratorija(oznaka $FN$).\\\vspace{3mm}
-    Sledi:
-    \[
-        P(M \lvert \neg S) = [(1 - FN) \times f] + [FP \times (1 - f)]. \vspace{2mm}
-    \]
-\end{frame}
- 
-\begin{frame}
-    \frametitle{Izpopolnjena Bayesova analiza}
-    \begin{itemize}
-        \item Relativno majhne stopnje napak lahko bistveno zmanjšajo dokazno vrednost DNK dokazov, saj močno zmanjšajo razmerje verjetnosti.
-        \item Vpliv stopnje laboratorijskih napak kaže, da ne glede na to, kako nizka se izkaže pogostost profila, bo ta relativno nepomembna, če pogostosti ne spremlja ocena stopnje laboratorijskih napak.
-    \end{itemize} \vspace{3mm}
-    Spremenljivost pogostosti profila lahko v Bayesovem okviru upoštevamo na dva načina: 
-    \begin{enumerate}
-        \item s spremembo predhodne verjetnosti;
-        \item s spremembo pogostosti profila.
-    \end{enumerate}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -369,45 +251,14 @@
     \end{block}
 \end{frame}
 
-\begin{frame}
-    \frametitle{Frekvence - obtoženec vir DNK-ja s kraja zločina}
-    Recimo, da je pogostost profila DNK $f$ 1 proti 10 milijonov, predpostavimo tudi, da ima obtoženec enak DNK in da je začetna populacija osumljencev 100 milijonov ljudi.
-    \begin{block}{}
-        \textbf{Kakšna je verjetnost, da je obtoženec vir DNK-ja s kraja zločina?}
-    \end{block} \vspace{3mm}
-    $f$ \dots pogostost profila DNK;\\
-    $m$ \dots velikost populacije osumljencev; \\
-    $n$ \dots število ljudi, ki imajo ustrezen DNK profil. \\
-    \begin{block}{}
-        Potrebno je izračunati, koliko ljudi z zadevnim profilom DNK je v populaciji osumljencem, tako da se $f$ pomnoži z $m$.
-    \end{block} 
-\end{frame}
-
-\begin{frame}
-    \frametitle{Frekvence - obtoženec vir DNK-ja s kraja zločina}
-    \begin{enumerate}
-        \item $n \ge 1$ $\Rightarrow$ $P(\text{obtoženi je vir})=\frac{1}{n}$
-        \item $n < 1$ $\Rightarrow$ frekvence še posebaj majhne
-    \end{enumerate} \vspace{3mm}
-    \begin{block}{Verjetnost, da ima točno en posameznik ustrezen DNK profil, ob pogoju da ga ima vsaj en posameznik}
-        \[
-            P(n = 1 \lvert n \ge 1) = \frac{P(n=1 \cap n \ge 1)}{P(n \ge 1)} = \frac{m \times f \times (1 - f)^{m-1}}{1 - (1 - f)^m}
-        \]
-    \end{block}
-\end{frame}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-    \frametitle{Primerjava z Bayesovo metodo}
+    \frametitle{Frekvence}
     \begin{itemize}
-        \item \textbf{metoda edinstvenosti} - ni mogoče enostavno upoštevati številnih zapletov (npr. vpliv stopnje laboratorijskih napak);
-        \item Bayesovo pravilo pa omogoča upoštevanje različnih dejavnikov\\ $\rightarrow$ natančni izračuni in bolj zanesljivi rezultati;
-        \item \textbf{frekvenčni modeli} - za dokaze, ki jih je mogoče uporabiti za prikaz, kako verjetno je, da bi se naključno izbrana oseba ujemala z vzorcem;
+        \item \textbf{teoretična pomanjkljivost} - zahtevajo statistične dokaze, ki sodišču niso na voljo;
+        \item frekvenčni modeli temeljijo na predpostavki, a visoka vrednost verjetnosti, ki opisuje razmerje med obstoječimi dokazi in primerom, pomeni, da je vrednost tega dokaza visoka;
+        \item uporaba frekvenčnih modelov je lahko zelo omejena;
     \end{itemize} \vspace{3mm}
-    \begin{block}{}
-        \centering
-        Izbira metode je odvisna od specifičnih zahtev problema.
-    \end{block}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -422,54 +273,22 @@
         obdolženec 1 proti 100 milijonom;
         \item ker je to zelo majhna verjetnost, mora biti tudi verjetnost, da je sled DNK pustil nekdo drug na kraju zločina in ne obdolženec, zelo majhna;
         \item zato mora biti verjetnost, da je vir sledi DNK s kraja zločina obtoženec zelo velika, ampak znaša 1 proti 100 milijonov.
-    \end{enumerate}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Metoda verjetnosti naključnega ujemanja}
+    \end{enumerate} \vspace{2mm}
     \begin{block}{}
         \centering
         $\Rightarrow$ \textbf{TOŽILČEVA ZMOTA}
-    \end{block} \vspace{2mm}
-    \[
-        1 - f = P(S \lvert M). \vspace{2mm}
-    \]
-     Zmota se pojavi v koraku (2), ko je zamenjano $P(M \lvert \neg S)$ s $P(\neg S \lvert M)$ in predpostavljeno, da sta obe verjetnosti enaki $f$. \\\vspace{2mm}
-     Namesto verjetnosti naključnega ujemanja forenzični strokovnjaki pogosto pričajo o razmerju verjetnosti dokazov DNK:
-     \[
-        P(M \lvert S) = P(M \lvert \neg S). \vspace{2mm}
-     \] 
+    \end{block} 
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Razmerje verjetnosti}
 
-\begin{frame}
-    \frametitle{Opredelitev}
-    \begin{definicija}
-        Razmerje
-        \[
-            \frac{P(E \lvert H)}{P(E \lvert \bar{H})} \vspace{2mm}
-        \] 
-         se imenuje \textbf{razmerje verjetnosti}.
-     \end{definicija} \vspace{2mm}
-    $\frac{P(H)}{P(\bar{H})}$ \dots predhodna verjetnost v korist H;\\ \vspace{2mm}
-    $\frac{P(H \lvert E)}{P(\bar{H} \lvert E)}$ \dots posteriorna verjetnost v korist $H$;
-     \begin{block}{}
-        Torej iz Bayesovega izreka neposredno izhaja, da če je razmerje verjetnosti 
-        \begin{enumerate}
-            \item večje od 1, potem dokaz povečuje verjetnost krivde,
-            \item če pa je manjše od 1, zmanjšuje verjetnost krivde.
-        \end{enumerate}
-     \end{block}
-\end{frame}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
     \frametitle{Razmerje verjetnosti v kazenskem pravu}
-    $H_p \dots$ interesna oseba(PoI) oz. obtoženec je resnično kriv - nadomestimo $H$;\\
-    $H_d \dots$ interesna oseba(PoI) je resnično nedolžen - nadomestimo $\bar{H}$;\\
+    $H_p \dots$ interesna oseba oz. obtoženec je resnično kriv - nadomestimo $H$;\\
+    $H_d \dots$ interesna oseba je resnično nedolžen - nadomestimo $\bar{H}$;\\
     $Ev \dots$ obravnavani dokaz - nadomestimo dogodek $E$;\\
     \begin{block}{Bayesovov izreka omogoča, da se predhodne verjetnosti v korist krivde posodobijo v posteriorne verjetnosti}
         \[
@@ -523,29 +342,8 @@
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-    \frametitle{Bayesov faktor in razmerje verjetnosti}
-    \begin{block}{Bayesov faktor je glavni element Bayesove metodologije za primerjavo konkurenčnih predlogov.}
-        \begin{itemize}
-            \item sprememba, ki jo povzročijo novi dokazi (podatki) v verjetnosti pri prehodu od predhodne k posteriorni porazdelitvi v korist enega predloga k drugemu;
-            \item razmerje verjetnosti poseben primer Bayesovega faktorja;
-            \item razmerje dveh mejnih verjetnosti pri konkurenčnih hipotezah;
-        \end{itemize}
-    \end{block}
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Zmote v kazenskem pravu}
-\begin{frame}
-    \frametitle{Zmote v kazenskem pravu}
-  Številne zmote so zlasti posledica napačnega razumevanja pogojne verjetnosti.
-  \begin{itemize}
-    \item \textbf{Tožilčeva zmota (angl. Prosecutor’s fallacy)},
-    \item \textbf{Zmota obrambnega odvetnika (angl. Defense attorney's fallacy)} in 
-    \item \textbf{Zasliševalčeva zmota (angl. Interrogator’s fallacy)}. \vspace{3mm}
-  \end{itemize}
-\end{frame}
 
 \begin{frame}
     \frametitle{Zmote v kazenskem pravu}
@@ -609,8 +407,7 @@
     \frametitle{Zmote v kazenskem pravu}
     \begin{block}{Pričakovane vrednosti, ki pomenijo edinstvenost}
         če je velikost populacije približno enaka $1/P(\neg B \lvert C)$, potem mora biti
-        obdolženec edini primerek. Binomski izrek pokaže, da obstaja več kot 25\% verjetnost, da bosta v populaciji, katere velikost je $1/P(\neg B \lvert C)$,
-        vsaj dva ujemanja.   
+        obdolženec edini primerek.
     \end{block}
     \begin{figure}[!ht]\label{fig:slika_3}
         \centering
@@ -657,29 +454,9 @@
     \end{figure}
 \end{frame}
 
-\begin{frame}
-    \frametitle{Zmote v kazenskem pravu}
-    \begin{block}{Zmota odvisnih dokazov}
-        dva ali več dokazov, ki so odvisni, obravnavamo, kot da bi bili neodvisni. \\
-        Poseben primer te zmote je \textit{logično odvisna dokazna zmota}.\\ 
-    \end{block} \vspace{2mm}
-    \begin{block}{Napaka konjunkcije}
-        preiskovalec ne upošteva dejstva, da je dokaz sestavljen iz več kot enega negotovega dogodka, in mu posledično pripiše večjo verjetnost, kot bi jo moral.
-    \end{block}
-\end{frame}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Načini za izogib zmotam}
-
-\begin{frame}
-    \frametitle{Izogib zmotam z uporabo razmerja verjetnosti}
-    \begin{block}{Prednost uporabe razmerja verjetnosti}
-        odpravlja ugovor Bayesovemu izreku, in sicer upoštevanje predhodne verjetnosti za hipotezo, kot je »kriv«.
-    \end{block}\vspace{3mm}
-    \centering
-    $\Rightarrow$ težave pri razumevanju razmerja verjetnosti kot pri razumevanju Bayesove teorije
-\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
@@ -712,5 +489,130 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Literatura}
+
+\begin{frame}
+    \begin{thebibliography}{99}
+        \bibitem{referenca-clanek}
+            C. Aitken, G. Jackson in P. Roberts, \emph{1. Fundamentals of Probability and Statistical Evidence in Criminal Proceedings}, Guidance for Judges, Lawyers, Forensic Scientists and Expert Witnesses, Communicating and Interpreting Statistical Evidence in the Administration of Criminal Justice, 2010.
+    
+        \bibitem{referenca-clanek}
+            C. Aitken in Y. McDermott, \emph{Analysis of evidence in international criminal trials using Bayesian Belief Networks}, Law, Probability and Risk, \textbf{16} (2017) 111-129.
+    
+        \bibitem{referenca-clanek}
+            C. Aitken, W. C. Thompson in F. Taroni, \emph{How the Probability of a False Positive Affects the Value of DNA Evidence}, J. Forensic Sci., \textbf{48} (2003) 47-54.
+    
+        \bibitem{referenca-clanek}
+            D. Balding, N. Fenton, R. Gill, D. Lagnado in L. Schneps \emph{Twelve Guiding Principles and Recommendations for Dealing with Quantitative Evidence in Criminal Law}, Probability and Statistics in Forensic Science,Isaac Newton Institute for Mathematical Sciences, 2017.
+    \end{thebibliography}
+\end{frame}
+
+\begin{frame}
+    \begin{thebibliography}{99}
+    \bibitem{referenca-clanek}
+        D. Berger, N. Fenton in M. Neil, \emph{Bayes and the Law}, Annu Rev Stat Appl. Author manuscript., \textbf{3} (2016) 51-77.
+
+    \bibitem{referenca-clanek}
+        M. Conklin, \emph{The Effectiveness of Bayesian Jury Instructions in Mitigating the Defense Attorney's Fallacy}, Hous. L. Rev., \textbf{73} (2019) 21-30.
+
+    \bibitem{referenca-clanek}
+        M. Collins, R. Gill, M. Van Lambalgen in R. Meester, \emph{On the (ab)use of statistics in the legal case against the nurse Lucia de B.}, Law, Probability and Risk, \textbf{5} (2007) 233-250.
+
+    \bibitem{referenca-clanek}
+        C. Dahlman in E. Kolflaath, \emph{The Problem of the Prior in Criminal Trials}, Lund University in University of Bergen, 2021.
+
+    \bibitem{referenca-clanek}
+        N. Fenton in M. Neil, \emph{Avoiding Probabilistic Reasoning Fallacies in Legal Practice using Bayesian Networks}, RADAR, School of Electronic Engineering and Computer Science, Queen Mary (University of London), 2008.
+    \end{thebibliography}
+\end{frame}
+
+\begin{frame}
+    \begin{thebibliography}{99}
+        \bibitem{referenca-clanek}
+        N. Fenton in M. Neil, \emph{The “Jury Observation Fallacy” and the use of Bayesian Networks to present Probabilistic Legal Arguments}, Oddelek za računalništvo in informatiko, Faculty of Informatics and Mathematical Sciences, Queen Mary and Westfield College, 2000.
+
+    \bibitem{referenca-clanek}
+        J. L. Gastwirth, \emph{Statistical Reasoning in the Legal Setting}, The American Statistician, \textbf{46} (1992) 55–69.
+
+    \bibitem{referenca-clanek}
+        A. Giannini, \emph{Theories of Evaluation of Evidence and the International Criminal Court Practice}, Maastricht University - Department of Criminal Law and Criminology, 2017.
+
+    \bibitem{referenca-clanek}
+        N. Iliinsky in D. Westreich, \emph{Epidemiology Visualized: The Prosecutor’s Fallacy}, American Journal of Epidemiology, \textbf{179} (2014) 1125-1127.
+
+    \bibitem{referenca-clanek}
+        C. de Macedo, \emph{Guilt by statistical association: revisiting the prosecutor’s fallacy and the interrogator’s fallacy}, The Journal of Philosophy, \textbf{105} (2008) 320-332.
+    \end{thebibliography}
+\end{frame}
+
+\begin{frame}
+    \begin{thebibliography}{99}
+    \bibitem{referenca-clanek}
+        R. A. Matthews, \emph{The interrogator’s fallacy}, Aston University, 1995.
+
+    \bibitem{referenca-clanek}
+        J. Orbán, \emph{Bayesian Networks in Law Enforcement}, Budapest University of Technology and Economics, 2022.
+
+    \bibitem{referenca-clanek}
+        E. L. Schumann in W. C. Thompson, \emph{Interpretation of Statistical Evidence in Criminal Trials}, Law and Human Behavior, \textbf{11} (1987) 167–187.
+
+    \bibitem{referenca-clanek}
+        E. L. Schumann in W. C. Thompson, \emph{Interpretation of statistical evidence in criminal trials - The Prosecutor's Fallacy and the Defense Attorney's Fallacy}, Law and Human Behavior, \textbf{11} (1987) 167-187.
+
+    \bibitem{referenca-clanek}
+        N. Scurich, \emph{Interpretative Arguments of Forensic Match Evidence: An Evidentiary Analysis}, University of Southern California, 2010.
+
+    \bibitem{referenca-clanek}
+        R. Tarling, \emph{Statistical applications in criminology}, The Statisticia. \textbf{35} (1986) 369-388.
+    \end{thebibliography}
+\end{frame}
+
+\begin{frame}
+    \begin{thebibliography}{99}
+    \bibitem{referenca-knjiga}
+        C. Aitken, S. Bozza in F. Taroni, \emph{Evidence for Forensic Scientists}, \textbf{3}, Wiley, West Sussex, 2021.
+
+    \bibitem{referenca-knjiga}
+        M. B. Blankenship in G. F. Vito, \emph{Statistical analysis in criminal justice and criminology: a user's guide}, \textbf{1}, Prentice Hall, Upper Saddle River, 2002.
+
+    \bibitem{referenca-knjiga}
+        B. Byers in J. McKean, \emph{Data analysis for criminal justice and criminology: practice and applications}, \textbf{1}, Allyn and Bacon, Boston, 2000.
+
+    \bibitem{referenca-knjiga}
+        M. O. Finkelstein in B. Levin, \emph{Statistics for Lawyers - Statistics for Social and Behavioral Sciences}, \textbf{3}, Springer, New York, 2015.
+
+    \bibitem{referenca-knjiga}
+        P. D. Hoff, \emph{A First Course in Bayesian Statistical Methods}, \textbf{1}, Springer, New York, 2009.
+
+    \bibitem{referenca-knjiga}
+        S. Maddan in J. T. Walker, \emph{Statistics in criminology and criminal justice: analysis and interpretation}, \textbf{3}, Jones and Bartlett Publishers, Sudbury, 2009.
+    \end{thebibliography}
+\end{frame}
+
+\begin{frame}
+    \begin{thebibliography}{99}
+    \bibitem{referenca-knjiga}
+        B. Marcot, P. Naim in O. Pourret, \emph{Bayesian Networks, A Practical Guide to Applications}, \textbf{1}, John Wiley \& Sons, West Sussex, 2008.
+
+    \bibitem{diploma-magisterij}
+        M. Di Bello, \emph{Statistics and probability in criminal trials}, doktorska dizertacija, Oddelek za filozofijo, Univerza Stanford, 2013.
+
+    \bibitem{referenca-spletni-vir}
+        J. Balaba, \emph{Statistical Analysis In Criminal Justice Research}, v: Journal of Civil and Legal Sciences, 5, [3. december 2022], dostopno na \url{https://www.omicsonline.org/open-access/statistical-analysis-in-criminal-justice-research-2169-0170-1000203.pdf}.
+
+    \bibitem{referenca-spletni-vir}
+        A. Biedermann, F. Taroni, W. C. Thompson in J. Vuille, \emph{The role of prior probability in forensic assessments}, v: Front Genet., 3, [15. oktober 2022], dostopno na \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3809556/}.
+    \end{thebibliography}
+\end{frame}
+
+\begin{frame}
+    \begin{thebibliography}{99}
+    \bibitem{referenca-spletni-vir}
+    D. A. Glover in V. Ramakrishnan, \emph{The use of statistics in legal proceedings: a primer for courts}, v: The Royal Society, 1, [25. november 2022], dostopno na \url{royalsociety.org/science-and-law}.
+
+    \bibitem{referenca-spletni-vir}
+    W. P. Skorupski in H. Wainer, \emph{The Bayesian flip: Correcting the prosecutor's fallacy}, v: Royal Statistical Society, 4, [22. oktober 2022], dostopno na \url{https://rss.onlinelibrary.wiley.com/doi/full/10.1111/j.1740-9713.2015.00839.x}.
+    \end{thebibliography}
+\end{frame}
 
 \end{document}

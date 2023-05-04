@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1682678473 "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/dimploska_naloga.tex" "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/dimploska_naloga.pdf" "dimploska_naloga" 1682837750
-  "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/dimploska_naloga.aux" 1682678474 8888 53b732153858fad8ca1057bfdf432c5a ""
-  "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/dimploska_naloga.tex" 1682837749 116366 e4ba694fe2c83ffd739ad823b0619ad9 ""
+["pdflatex"] 1683012197 "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/dimploska_naloga.tex" "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/dimploska_naloga.pdf" "dimploska_naloga" 1683012198
+  "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/dimploska_naloga.aux" 1683012198 8888 53b732153858fad8ca1057bfdf432c5a ""
+  "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/dimploska_naloga.tex" 1683012196 116341 77bfe4fc08ab99b66739367211e52e6a ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -104,16 +104,16 @@
   "/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1616695603 5169178 a2ce6e2d73f603b690db6777d06dbccb ""
   "/usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1638351185 2724738 99ced56f488d4dbb028a5474dfd1162f ""
   "/usr/local/texlive/2021/texmf.cnf" 1616695596 577 4c1911a7228e554c6032256d3cf5567d ""
-  "dimploska_naloga.aux" 1682678474 8888 53b732153858fad8ca1057bfdf432c5a "pdflatex"
-  "dimploska_naloga.tex" 1682837749 116366 e4ba694fe2c83ffd739ad823b0619ad9 ""
-  "dimploska_naloga.toc" 1682678474 3708 cbb656c648543f204b874f3e4cdd8713 "pdflatex"
+  "dimploska_naloga.aux" 1683012198 8888 53b732153858fad8ca1057bfdf432c5a "pdflatex"
+  "dimploska_naloga.tex" 1683012196 116341 77bfe4fc08ab99b66739367211e52e6a ""
+  "dimploska_naloga.toc" 1683012198 3708 cbb656c648543f204b874f3e4cdd8713 "pdflatex"
   "slika1.png" 1668353757 169403 c503cb08e480bc1dfe61b797ca72ad7c ""
   "slika2.png" 1668353757 214487 0e40f52d953d02b49cbbcfcdd599fbb6 ""
   "slika_3.png" 1681565767 64801 4fc37919a28aad516e30a37af0813b68 ""
   (generated)
-  "dimploska_naloga.log"
-  "dimploska_naloga.aux"
-  "dimploska_naloga.toc"
   "dimploska_naloga.pdf"
+  "dimploska_naloga.log"
   "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/dimploska_naloga.log"
+  "dimploska_naloga.toc"
+  "dimploska_naloga.aux"
   "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/dimploska_naloga.pdf"
