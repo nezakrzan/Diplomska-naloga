@@ -73,9 +73,10 @@
     \begin{block}{}
         \centering
         Določitev odvisnih in neodvisnih spremenljivk za modeliranje.
-    \end{block}
-    V proces določanja spremenljivk pogosto posežejo odvetniki, ki se sklicujejo na pravne zakone in načela. To lahko postane sporno, saj lahko takšni 
-    posegi ovirajo statistične znanstvenike pri izračunu verjetnostnega vpliva spremenljivk.
+    \end{block}\vspace{3mm}
+    \textit{
+    V proces določanja spremenljivk pogosto posežejo odvetniki, ki se sklicujejo na pravne zakone in načela. \\
+    To lahko postane sporno, saj lahko takšni posegi ovirajo statistične znanstvenike pri izračunu verjetnostnega vpliva spremenljivk.}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -101,12 +102,25 @@
     $\Rightarrow$ \textbf{Oblikujemo ustrezne primerjalne skupine.}
 \end{frame}
 
+\begin{frame}
+    \frametitle{Uporaba statistike pri pravnem postopku}
+    Statistične informacije, ki jih dobi sodnik, so filtrirane prek odvetnikov.\\
+    Odvenik avtorju statistične analize postavlja vprašanja z namenom razlage statistične analize.\\ \vspace{3mm}
+    \begin{block}{Zakaj nastanejo zmote?}
+        \begin{itemize}
+            \item nepopolne razlage statističnih analiz;
+            \item porota - poroti se predvidoma ne govori kako naj si razlaga dokaze;
+            \item kombiniranje različnih postopkov za pridobivanje informacij iz podatkov in razlago rezultatov;
+        \end{itemize}
+    \end{block}
+\end{frame}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Raziskovalni proces}
 \begin{frame}
     \frametitle{Raziskovalni proces}
-    Raziskovalni proces v kazenskem pravosodju je običajno namenjen preučevanju problemov kriminala. Proces se izvaja po naslednjih točkah.\\ \vspace{2mm}
+    Proces se izvaja po naslednjih točkah.\\ \vspace{2mm}
     \begin{enumerate}
         \item \textbf{Identifikacija problema.\\} 
         \item \textbf{Zasnova raziskave.\\} 
@@ -265,15 +279,15 @@
 \begin{frame}
     \frametitle{Metoda verjetnosti naključnega ujemanja}
     \begin{block}{}
-        Izraža možnost, da bi imel naključni posameznik, ki ni povezan z obdolžencem, ustrezni DNK profil. Ta verjetnost je enaka pogostosti profila DNK. 
+        Izraža možnost, da bi imel naključni posameznik, ki ni povezan z obdolžencem, ustrezno lastnost dokaza.\\
+        \textit{Na primer ustrezni DNK profil in potem je ta verjetnost enaka pogostosti profila DNK.} 
     \end{block}\vspace{2mm}
     Pogosto se to verjetnost interpretira kot:
     \begin{enumerate}
-        \item če je verjetnost naključnega ujemanja na primer 1 proti 100 milijonom, potem je verjetnost, da ima profil DNK drug posameznik in ne
-        obdolženec 1 proti 100 milijonom;
-        \item ker je to zelo majhna verjetnost, mora biti tudi verjetnost, da je sled DNK pustil nekdo drug na kraju zločina in ne obdolženec, zelo majhna;
+        \item če je verjetnost naključnega ujemanja 1 proti 100 milijonom, potem je verjetnost, da ima profil DNK druga oseba 1 proti 100 milijonom;
+        \item ker je to zelo majhna verjetnost, mora biti tudi verjetnost, da je sled DNK pustil nekdo drug na kraju zločina, zelo majhna;
         \item zato mora biti verjetnost, da je vir sledi DNK s kraja zločina obtoženec zelo velika, ampak znaša 1 proti 100 milijonov.
-    \end{enumerate} \vspace{2mm}
+    \end{enumerate} \vspace{1mm}
     \begin{block}{}
         \centering
         $\Rightarrow$ \textbf{TOŽILČEVA ZMOTA}
@@ -287,9 +301,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
     \frametitle{Razmerje verjetnosti v kazenskem pravu}
-    $H_p \dots$ interesna oseba oz. obtoženec je resnično kriv - nadomestimo $H$;\\
-    $H_d \dots$ interesna oseba je resnično nedolžen - nadomestimo $\bar{H}$;\\
-    $Ev \dots$ obravnavani dokaz - nadomestimo dogodek $E$;\\
+    $H_p \dots$ interesna oseba oz. obtoženec je resnično kriv;\\
+    $H_d \dots$ interesna oseba je resnično nedolžen;\\
+    $Ev \dots$ obravnavani dokaz;\\
     \begin{block}{Bayesovov izreka omogoča, da se predhodne verjetnosti v korist krivde posodobijo v posteriorne verjetnosti}
         \[
             \frac{P(H_p \lvert Ev)}{P(H_d \lvert Ev)} = \frac{P(Ev \lvert H_p)}{P(Ev \lvert H_d)} \times \frac{P(H_p)}{P(H_d)}. \vspace{2mm}
@@ -323,22 +337,33 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
     \frametitle{Utemeljitev uporabe razmerja verjetnosti}
-    \begin{enumerate}
-        \item katera hipoteza je bolje podprta z dokazi;
-        \item v primerih, ko je treba združiti več hipotez in/ali več dokazov;
-        \item za količinsko ovrednotenje skupnega učinka več dokazov, ki vključujejo različne povezane hipoteze;
-    \end{enumerate} \vspace{3mm}
-    \begin{block}{Negotovosti}
+        \begin{itemize}
+            \item Verjetnost hipoteze H na podlagi nekega dokaza E je verjetnost, da najdemo E, če je H resnična.
+            \item Za alternativno hipotezo je razmerje verjetnosti razmerje obeh verjetnosti.
+        \end{itemize} \vspace{3mm}
+        \begin{block}{Razmerje verjetnosti}
+            \begin{enumerate}
+                \item katera hipoteza je bolje podprta z dokazi;
+                \item kadar sta hipotezi medsebojno izključujoči;
+                \item v primerih, ko je treba združiti več hipotez in/ali več dokazov;
+                \item za količinsko ovrednotenje skupnega učinka več dokazov, ki vključujejo različne povezane hipoteze;
+            \end{enumerate} \vspace{3mm}
+        \end{block}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Utemeljitev uporabe razmerja verjetnosti - negotovosti}
         \begin{itemize}
             \item kakovost podatkov, pridobljenih z analizami;
             \item izbira kontrolnega vzorca;
             \item osebno poznavanje okoliščin iz določenega primera;
             \item pridobivanje predhodnih verjetnosti, pogojenih z razpoložljivim znanjem;
             \item numerični postopki za razreševanje računskih težav;
-        \end{itemize}
-    \end{block} \vspace{2mm}
-    \centering
-    $\Rightarrow$ \textbf{poročilo vključuje merilo njegove natančnosti}
+        \end{itemize} \vspace{2mm}
+        \begin{block}{}
+            \centering
+            $\Rightarrow$ \textbf{poročilo vključuje merilo njegove natančnosti}        
+        \end{block}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -347,7 +372,7 @@
 
 \begin{frame}
     \frametitle{Zmote v kazenskem pravu}
-    Če upoštevamo vzročno verigo dokazov, predstavljeno na sliki, lahko razvrstitev zmot posplošimo na večino vrst dokazov. 
+    Če upoštevamo vzročno verigo dokazov, predstavljeno na sliki, lahko opišemo vrsto različnih pogostih zmot, ki so posledica napačnega razumevanja pogojne verjetnost. 
     \begin{figure}[!ht]\label{fig:slika_3}
         \centering
         \includegraphics[scale=0.50]{slika_3.png}
@@ -357,106 +382,33 @@
 
 \begin{frame}
     \frametitle{Zmote v kazenskem pravu}
-    \begin{block}{Tožilčeva zmota}
-        enačimo $P(C \lvert \neg B)$ s $P(\neg A \lvert C)$.
-    \end{block}
-    \begin{figure}[!ht]\label{fig:slika_3}
-        \centering
-        \includegraphics[scale=0.50]{slika_3.png}
-        \caption{Vzorčna veriga dokazov}
-    \end{figure}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Zmote v kazenskem pravu}
-    \begin{block}{Napaka verjetnosti}
-        $P(C \lvert \neg B)$ enačimo z verjetnostjo (imenujmo jo $q$), da ima vsaj en nedolžen član populacije ustreza dokazom.
-    \end{block}
-    \begin{figure}[!ht]\label{fig:slika_3}
-        \centering
-        \includegraphics[scale=0.50]{slika_3.png}
-        \caption{Vzorčna veriga dokazov}
-    \end{figure}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Zmote v kazenskem pravu}
-    \begin{block}{Zanemarjanje predhodnih verjetnosti}
-        neupoštevanje predhodnih vrednosti, kot sta $P(A)$ in $P(B)$.
-    \end{block}
-    \begin{figure}[!ht]\label{fig:slika_3}
-        \centering
-        \includegraphics[scale=0.50]{slika_3.png}
-        \caption{Vzorčna veriga dokazov}
-    \end{figure}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Zmote v kazenskem pravu}
-    \begin{block}{Napaka pri številčnem preračunavanju}
-        gre za zamenjavo vrednosti $P(C \lvert \neg B)$ s pričakovanim številom drugih oseb, ki bi jih bilo treba testirati, preden bi našli ujemanje.
-    \end{block}
-    \begin{figure}[!ht]\label{fig:slika_3}
-        \centering
-        \includegraphics[scale=0.50]{slika_3.png}
-        \caption{Vzorčna veriga dokazov}
-    \end{figure}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Zmote v kazenskem pravu}
-    \begin{block}{Pričakovane vrednosti, ki pomenijo edinstvenost}
-        če je velikost populacije približno enaka $1/P(\neg B \lvert C)$, potem mora biti
-        obdolženec edini primerek.
-    \end{block}
-    \begin{figure}[!ht]\label{fig:slika_3}
-        \centering
-        \includegraphics[scale=0.50]{slika_3.png}
-        \caption{Vzorčna veriga dokazov}
-    \end{figure}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Zmote v kazenskem pravu}
-    \begin{block}{Zmota obrambnega odvetnika}
-        dokaz $C$ štejemo za nepomembnega, ker visoka predhodna verjetnost $P(\neg A)$ še vedno povzroči visoko verjetnost $P(\neg B \lvert C)$.    
-    \end{block}
-    \begin{figure}[!ht]\label{fig:slika_3}
-        \centering
-        \includegraphics[scale=0.50]{slika_3.png}
-        \caption{Vzorčna veriga dokazov}
-    \end{figure}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Zmote v kazenskem pravu}
-    \begin{block}{Napaka baze podatkov obrambnega odvetnika}
-        verjetnost $P(\neg B \lvert C)$ temelji na drugačni populaciji, kot jo določa $P(B)$ ali $P(A)$.    
-    \end{block}
-    \begin{figure}[!ht]\label{fig:slika_3}
-        \centering
-        \includegraphics[scale=0.50]{slika_3.png}
-        \caption{Vzorčna veriga dokazov}
-    \end{figure}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Zmote v kazenskem pravu}
-    \begin{block}{Zasliševalčeva zmota}
-        v tem primeru je dokaz neposredno priznanje krivde. Če to ni potrjeno, to pomeni, da uporabljamo $P(D \lvert A)$ za
-        informiranje $P(A \lvert D)$. Napaka je, da ne upoštevamo $P(D \lvert \neg A)$. Če je $P(D \lvert A) \leq P(D \lvert \neg A)$, potem dokaz
-        nima vrednosti.    
-    \end{block}
-    \begin{figure}[!ht]\label{fig:slika_3}
-        \centering
-        \includegraphics[scale=0.40]{slika_3.png}
-        \caption{Vzorčna veriga dokazov}
-    \end{figure}
+    \begin{enumerate}
+        \item \textbf{Tožilčeva zmota};
+        \item \textbf{Napaka verjetnosti};
+        \item \textbf{Zanemarjanje predhodnih verjetnosti};
+        \item \textbf{Napaka pri številčnem preračunavanju};
+        \item \textbf{Pričakovane vrednosti, ki pomenijo edinstvenost};
+        \item \textbf{Zmota obrambnega odvetnika};
+        \item \textbf{Napaka baze podatkov obrambnega odvetnika};
+        \item \textbf{Zasliševalčeva zmota};
+    \end{enumerate}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Načini za izogib zmotam}
+
+\begin{frame}
+    \frametitle{Načini za izogib zmotam}
+    \begin{itemize}
+        \item Vpletenost v učne programe pravnih fakultet, kar naj bi pripomoglo k boljšemu razumevanju statističnih analiz.
+        \item Zakonski standardi pri predstavitvi statistične analize.
+    \end{itemize} \vspace{3mm}
+    \begin{block}{}
+        \centering
+        \textit{Kljub temu so seveda zmote še vedno prisotne.}
+    \end{block}
+\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
@@ -521,14 +473,15 @@
     \bibitem{referenca-clanek}
         C. Dahlman in E. Kolflaath, \emph{The Problem of the Prior in Criminal Trials}, Lund University in University of Bergen, 2021.
 
-    \bibitem{referenca-clanek}
-        N. Fenton in M. Neil, \emph{Avoiding Probabilistic Reasoning Fallacies in Legal Practice using Bayesian Networks}, RADAR, School of Electronic Engineering and Computer Science, Queen Mary (University of London), 2008.
     \end{thebibliography}
 \end{frame}
 
 \begin{frame}
     \begin{thebibliography}{99}
-        \bibitem{referenca-clanek}
+    \bibitem{referenca-clanek}
+        N. Fenton in M. Neil, \emph{Avoiding Probabilistic Reasoning Fallacies in Legal Practice using Bayesian Networks}, RADAR, School of Electronic Engineering and Computer Science, Queen Mary (University of London), 2008.
+
+    \bibitem{referenca-clanek}
         N. Fenton in M. Neil, \emph{The “Jury Observation Fallacy” and the use of Bayesian Networks to present Probabilistic Legal Arguments}, Oddelek za računalništvo in informatiko, Faculty of Informatics and Mathematical Sciences, Queen Mary and Westfield College, 2000.
 
     \bibitem{referenca-clanek}
@@ -540,13 +493,14 @@
     \bibitem{referenca-clanek}
         N. Iliinsky in D. Westreich, \emph{Epidemiology Visualized: The Prosecutor’s Fallacy}, American Journal of Epidemiology, \textbf{179} (2014) 1125-1127.
 
-    \bibitem{referenca-clanek}
-        C. de Macedo, \emph{Guilt by statistical association: revisiting the prosecutor’s fallacy and the interrogator’s fallacy}, The Journal of Philosophy, \textbf{105} (2008) 320-332.
     \end{thebibliography}
 \end{frame}
 
 \begin{frame}
     \begin{thebibliography}{99}
+    \bibitem{referenca-clanek}
+        C. de Macedo, \emph{Guilt by statistical association: revisiting the prosecutor’s fallacy and the interrogator’s fallacy}, The Journal of Philosophy, \textbf{105} (2008) 320-332.
+
     \bibitem{referenca-clanek}
         R. A. Matthews, \emph{The interrogator’s fallacy}, Aston University, 1995.
 
@@ -559,16 +513,17 @@
     \bibitem{referenca-clanek}
         E. L. Schumann in W. C. Thompson, \emph{Interpretation of statistical evidence in criminal trials - The Prosecutor's Fallacy and the Defense Attorney's Fallacy}, Law and Human Behavior, \textbf{11} (1987) 167-187.
 
-    \bibitem{referenca-clanek}
-        N. Scurich, \emph{Interpretative Arguments of Forensic Match Evidence: An Evidentiary Analysis}, University of Southern California, 2010.
-
-    \bibitem{referenca-clanek}
-        R. Tarling, \emph{Statistical applications in criminology}, The Statisticia. \textbf{35} (1986) 369-388.
     \end{thebibliography}
 \end{frame}
 
 \begin{frame}
     \begin{thebibliography}{99}
+    \bibitem{referenca-clanek}
+        N. Scurich, \emph{Interpretative Arguments of Forensic Match Evidence: An Evidentiary Analysis}, University of Southern California, 2010.
+
+    \bibitem{referenca-clanek}
+        R. Tarling, \emph{Statistical applications in criminology}, The Statisticia. \textbf{35} (1986) 369-388.
+
     \bibitem{referenca-knjiga}
         C. Aitken, S. Bozza in F. Taroni, \emph{Evidence for Forensic Scientists}, \textbf{3}, Wiley, West Sussex, 2021.
 
@@ -581,16 +536,17 @@
     \bibitem{referenca-knjiga}
         M. O. Finkelstein in B. Levin, \emph{Statistics for Lawyers - Statistics for Social and Behavioral Sciences}, \textbf{3}, Springer, New York, 2015.
 
-    \bibitem{referenca-knjiga}
-        P. D. Hoff, \emph{A First Course in Bayesian Statistical Methods}, \textbf{1}, Springer, New York, 2009.
-
-    \bibitem{referenca-knjiga}
-        S. Maddan in J. T. Walker, \emph{Statistics in criminology and criminal justice: analysis and interpretation}, \textbf{3}, Jones and Bartlett Publishers, Sudbury, 2009.
     \end{thebibliography}
 \end{frame}
 
 \begin{frame}
     \begin{thebibliography}{99}
+    \bibitem{referenca-knjiga}
+        P. D. Hoff, \emph{A First Course in Bayesian Statistical Methods}, \textbf{1}, Springer, New York, 2009.
+
+    \bibitem{referenca-knjiga}
+        S. Maddan in J. T. Walker, \emph{Statistics in criminology and criminal justice: analysis and interpretation}, \textbf{3}, Jones and Bartlett Publishers, Sudbury, 2009.
+
     \bibitem{referenca-knjiga}
         B. Marcot, P. Naim in O. Pourret, \emph{Bayesian Networks, A Practical Guide to Applications}, \textbf{1}, John Wiley \& Sons, West Sussex, 2008.
 
@@ -600,13 +556,14 @@
     \bibitem{referenca-spletni-vir}
         J. Balaba, \emph{Statistical Analysis In Criminal Justice Research}, v: Journal of Civil and Legal Sciences, 5, [3. december 2022], dostopno na \url{https://www.omicsonline.org/open-access/statistical-analysis-in-criminal-justice-research-2169-0170-1000203.pdf}.
 
-    \bibitem{referenca-spletni-vir}
-        A. Biedermann, F. Taroni, W. C. Thompson in J. Vuille, \emph{The role of prior probability in forensic assessments}, v: Front Genet., 3, [15. oktober 2022], dostopno na \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3809556/}.
     \end{thebibliography}
 \end{frame}
 
 \begin{frame}
     \begin{thebibliography}{99}
+    \bibitem{referenca-spletni-vir}
+        A. Biedermann, F. Taroni, W. C. Thompson in J. Vuille, \emph{The role of prior probability in forensic assessments}, v: Front Genet., 3, [15. oktober 2022], dostopno na \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3809556/}.
+
     \bibitem{referenca-spletni-vir}
     D. A. Glover in V. Ramakrishnan, \emph{The use of statistics in legal proceedings: a primer for courts}, v: The Royal Society, 1, [25. november 2022], dostopno na \url{royalsociety.org/science-and-law}.
 
