@@ -1,6 +1,58 @@
-\documentclass[12pt,a4paper]{amsart}
-\usepackage[slovene]{babel}
-%\usepackage[cp1250]{inputenc}
+\documentclass[mat1, tisk]{fmfdelo}
+% \documentclass[fin1, tisk]{fmfdelo}
+% Če pobrišete možnost tisk, bodo povezave obarvane,
+% na začetku pa ne bo praznih strani po naslovu, …
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% METAPODATKI
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% - vaše ime
+\avtor{Neža Kržan}
+% - naslov dela v slovenščini
+\naslov{Statistika v kazenskem pravu}
+% - naslov dela v angleščini
+\title{Criminal justice statistics}
+% - ime mentorja/mentorice s polnim nazivom:
+\mentor{izr. prof. dr. Jaka Smrekar}
+
+% - leto diplome
+\letnica{2023} 
+
+% - povzetek v slovenščini
+%   V povzetku na kratko opišite vsebinske rezultate dela. Sem ne sodi razlaga
+%   organizacije dela, torej v katerem razdelku je kaj, pač pa le opis vsebine.
+\povzetek{V diplomski nalogi se bom osredotočila na statistiko v kazenskem pravu in na zmote, ki se pojavljajo pri uporabi le te, zaradi pomanjkanja
+znanja statistike pri odvetnikih, sodnikih in poroti. Osredotočila se bom na uporabo Bayesove statistike v kazenskih postopkih oziroma na izračune,
+ki izhajajo iz Bayesove statistike in jo primerjala z drugimi metodami. V nadaljevanju bom opisala in razložila dve najpogostejši zmoti, prva
+je Tožilčeva zmota, ki je dobro znan statistični problem, druga večja, ki pa izhaja iz prve, pa je Zmota obrambnega odvetnika. Ker je uporaba
+statistike in verjetnostnega računa čedalje pogostejša v sodnih postopkih, bom na koncu pregledala resničen primer sodbe medicinski sestri Lucii de Berk.
+}
+
+% - povzetek v angleščini
+\abstract{...}
+
+% - klasifikacijske oznake, ločene z vejicami
+%   Oznake, ki opisujejo področje dela, so dostopne na strani https://www.ams.org/msc/
+\klasifikacija{..., ...}
+
+% - ključne besede, ki nastopajo v delu, ločene s \sep
+\kljucnebesede{...\sep ...}
+
+% - angleški prevod ključnih besed
+\keywords{...\sep ...} % angleški prevod ključnih besed
+
+% - angleško-slovenski slovar strokovnih izrazov
+\slovar{
+% \geslo{angleški izraz}{slovenski izraz}
+% ...
+}
+
+% - ime datoteke z viri (vključno s končnico .bib), če uporabljate BibTeX
+% \literatura{....bib}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DODATNE DEFINICIJE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath,amssymb,amsfonts}
@@ -9,111 +61,25 @@
 \usepackage[dvipsnames,usenames]{color}
 \usepackage{graphicx}
 \usepackage{lipsum}
+\usepackage[slovene]{babel}
 
-% Oblika strani
-\textwidth 15cm
-\textheight 24cm
-\oddsidemargin.5cm
-\evensidemargin.5cm
-\topmargin-5mm
-\addtolength{\footskip}{10pt}
-\pagestyle{plain}
-\overfullrule=15pt % oznaci predlogo vrstico
+\usepackage{float}
+\restylefloat{table}
 
+% deklarirajte vse matematične operatorje, da jih bo LaTeX pravilno stavil
+% \DeclareMathOperator{\...}{...}
 
-% Ukazi za matematična okolja
 \theoremstyle{definition} % tekst napisan pokončno
-\newtheorem{definicija}{Definicija}[section]
-\newtheorem{primer}[definicija]{Primer}
-\newtheorem{opomba}[definicija]{Opomba}
-
-\renewcommand\endprimer{\hfill$\diamondsuit$}
+\theoremstyle{trditev} % tekst napisan pokončno
+\theoremstyle{izrek}
 
 
-\theoremstyle{plain} % tekst napisan poševno
-\newtheorem{lema}[definicija]{Lema}
-\newtheorem{izrek}[definicija]{Izrek}
-\newtheorem{trditev}[definicija]{Trditev}
-\newtheorem{posledica}[definicija]{Posledica}
-
-
-% Za številske mnozice uporabi naslednje simbole
-\newcommand{\R}{\mathbb R}
-\newcommand{\N}{\mathbb N}
-\newcommand{\Z}{\mathbb Z}
-\newcommand{\C}{\mathbb C}
-\newcommand{\Q}{\mathbb Q}
-
-% Ukaz za slovarsko geslo
-\newlength{\odstavek}
-\setlength{\odstavek}{\parindent}
-\newcommand{\geslo}[2]{\noindent\textbf{#1}\hspace*{3mm}\hangindent=\parindent\hangafter=1 #2}
-
-
-\newcommand{\program}{Finančna matematika} 
-\newcommand{\imeavtorja}{Neža Kržan} 
-\newcommand{\imementorja}{izred. prof. dr. Jaka Smrekar} 
-\newcommand{\naslovdela}{Statistika v kazenskem pravu}
-\newcommand{\letnica}{2023} %letnica diplome
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ZAČETEK VSEBINE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\thispagestyle{empty}
-\noindent{\large
-UNIVERZA V LJUBLJANI\\[1mm]
-FAKULTETA ZA MATEMATIKO IN FIZIKO\\[5mm]
-\program\ -- 1.~stopnja}
-\vfill
-
-\begin{center}{\large
-\imeavtorja\\[2mm]
-{\bf \naslovdela}\\[10mm]
-Delo diplomskega seminarja\\[1cm]
-Mentor: \imementorja}
-\end{center}
-\vfill
-
-\noindent{\large
-Ljubljana, \letnica}
-\pagebreak
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\thispagestyle{empty}
-\tableofcontents
-\pagebreak
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\thispagestyle{empty}
-\begin{center}
-{\bf \naslovdela}\\[3mm]
-{\sc Povzetek}\end{center}
-V diplomski nalogi se bom osredotočila na statistiko v kazenskem pravu in na zmote, ki se pojavljajo pri uporabi le te, zaradi pomanjkanja
-znanja statistike pri odvetnikih, sodnikih in poroti. Osredotočila se bom na uporabo Bayesove statistike v kazenskih postopkih oziroma na izračune,
-ki izhajajo iz Bayesove statistike in jo primerjala z drugimi metodami. V nadaljevanju bom opisala in razložila dve najpogostejši zmoti, prva
-je Tožilčeva zmota, ki je dobro znan statistični problem, druga večja, ki pa izhaja iz prve, pa je Zmota obrambnega odvetnika. Ker je uporaba
-statistike in verjetnostnega računa čedalje pogostejša v sodnih postopkih, bom na koncu pregledala resničen primer sodbe medicinski sestri Lucii de Berk.
-% tekst povzetka v slovenscini
-%V povzetku na kratko opišite vsebinske rezultate dela. Sem ne sodi razlaga organizacije dela -- v katerem poglavju/razdelku je kaj, pač pa le opis vsebine.
-\vfill
-\begin{center}
-{\bf Angleski naslov dela}\\[3mm] % prevod slovenskega naslova dela 
-{\sc Abstract}
-\end{center}
-% tekst povzetka v anglescini
-%Prevod zgornjega povzetka v angleščino.
-
-\vfill\noindent
-{\bf Math. Subj. Class. (2010):} navedite vsaj eno klasifikacijsko oznako -- dostopne so na \url{www.ams.org/mathscinet/msc/msc2010.html}  \\[1mm]  
-{\bf Ključne besede:} navedite nekaj ključnih pojmov, ki nastopajo v delu  \\[1mm]  
-{\bf Keywords:} angleški prevod ključnih besed
-\pagebreak
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Uvod}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -183,8 +149,6 @@ temeljite razlage analize ne pride, ker analitik ne dobi primernih vprašanj. Ka
 pri sodnikih, poroti in odvetnikih, mogoče pa nekatere izmed njih nastanejo tudi zaradi nepopolne razlage statistične analize. Do neke točke analitik sicer sam 
 predstavi analizo, potem pa mora biti tudi on previden z razlago, zaradi porote, kajti poroti se predvidoma ne govori kako naj si razlaga dokaze, kar pa ponavadi preučujemo 
 s statistično analizo. Mogoče bi moralo biti določeno kaj vse mora analitik predstaviti in razložiti, da bi se lahko izognili zmotam.\\
-%Med prebiranjem več poročil sodb, sem prišla do ugotovitve, da so ta vprašanja velikokrat pravilno postavljena oziroma postavljena v dobro strani, ki 
-%jo odvetnik zagovarja, torej razlaga ponavadi ni primerna oziroma jasna. Torej se zmote lahko pojavijo že zaradi odvetnikov. 
 Uporaba statističnih analiz na sodiščih prinaša tudi nove težave za statistiko. Temelj dobre statistične analize je dober pregled predpostavk, na 
 katerih morajo temeljiti naše metode in upoštevanje pravil prava. Pomembne so tudi baze podatkov in velikosti vzorcev, kar lahko predstavlja težavo. 
 Potrebno je kombiniranje različnih postopkov za pridobivanje informacij iz podatkov in razlago rezultatov, kar sem zasledila, da strokovnjaki velikokrat 
@@ -292,7 +256,7 @@ z Bayesovim pravilom lahko ocenimo verjetnosti vmesnih trditev oziroma dokazov, 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{ Predstavitev primera sodbe medicinski sestri Lucii De Berk}
+\section{Predstavitev kazenskega primera - medicinska sestra Lucia De Berk}
 Marca 2003 je bila medicinska sestra Lucia de Berk (v nadaljevanju osumljenka) v Haagu na Nizozemskem obsojena na dosmrtni zapor zaradi obtožb 
 uboja in domnevnega uboja več bolnikov v dveh bolnišnicah, v katerih je delala v bližnji preteklosti (bolnišnici JZK in RKZ). V bolnišnici JKZ 
 se je med Lucijinimi izmenami pojavilo nenavadno veliko incidentov, kar je sprožilo vprašanja glede njene morebitne vpletenosti v te dogodke. 
@@ -315,8 +279,9 @@ tudi vprašanje o obsegu modela.
 Henk Elffers je temeljil na podatkih o izmenah osmuljenke in drugih medicinskih sester ter incidentih, ki so se zgodili v teh izmenah, da bi 
 utemeljil svoj model v celoti.
 
-\begin{table}[htb]
-    \caption{Podatki o izmenah in incidentih, ki jih je uporabil Henk Elffers (za določeno obdobje).}
+\begin{table}[h!]
+    \centering
+    \caption{Podatki o izmenah in incidentih, ki jih je uporabil Henk Elffers (za določeno obdobje). \vspace{2mm}}
     \label{table:1}
      \begin{tabular}{l c c c}
         \hline
@@ -329,7 +294,6 @@ utemeljil svoj model v celoti.
         \hline
      \end{tabular}
  \end{table}
-
 Tekom sodbe je bilo ugotovljeno, da je osumljenka v RKZ-41 dejansko opravila tri izmene in ne le ene, zato bom v kasnejših izračunih uporabili to 
 pravilno število.\\\\
 Najprej bi se najprej lahko odločili za izdelavo modela na podlagi epidemioloških podatkov o verjetnosti incidentov med različnimi vrstami izmen; 
@@ -344,7 +308,7 @@ Izračunajmo pogojno verjetnost dogodka, da se (recimo v JKZ) vsi incidenti zgod
 incidentov in skupnega števila izmen v preučevanem obdobju. Naj bo\\
 $n \dots$ skupno število izmen,\\
 $r \dots$ število izmen osumljenke, \\
-potem je pogojna verjetnost, da je bila osumljenka priča $x$ incidentom, če se je zgodilo $k$ incidentov, naslednja
+potem je pogojna verjetnost, da je bila osumljenka priča $x$ incidentom, če se je zgodilo $k$ incidentov, naslednja 
 \begin{equation}\label{eq:l_pogojna}
     \frac{\binom{r}{x}p^x(1-p)^{r-x}\binom{n-r}{k-x}p^{k-x}(1-p)^{n-r-k+x}}{\binom{n}{k}p^k(1-p)^{n-k}} = \frac{\binom{r}{x}\binom{n-r}{k-x}}{\binom{n}{k}}.\vspace{2mm}
 \end{equation}
@@ -443,7 +407,7 @@ verjetnosti $P(M \lvert W_m)$, pri čemer je zanesljivost priče nespremenjena:
 
 \begin{table}[h!]
     \centering
-    \caption{Rezultati pogojne verjetnosti $P(M \lvert W_m)$ pri spreminjanje verjetnosti $M$ .}
+    \caption{Rezultati pogojne verjetnosti $P(M \lvert W_m)$ pri spreminjanje verjetnosti $M$. \vspace{2mm}}
     \begin{tabular}{c c c c}
         \hline
         $P(M)$ & $P(Z)$ & $P(W_m \lvert M)$ & $P(M \lvert W_m)$ \\
@@ -523,13 +487,13 @@ pojavljajo nove domneve o obtožencu in skoraj vedno najdejo nove dokaze s kraja
 se tekom sodbe marsikateri dokaz najprej prizna in je znan sodniku, ki presoja tožilčevo domnevo o obdolžencu, torej ga analitik upošteva v svojih izračunih za posodobitve 
 predhodnih verjetnosti hipotez. Potem pa dokaz iz sodbe umaknejo, ampak presnetilo me je, da dokaz največkrat ni umaknjen iz verjetnostnih računov. Mnenja sem, da bi 
 morali anlitiki, ko se določen dokaz iz sodbe, zaradi tehtnega razloga, umakne, posodobiti vse račune za nazaj in nato nadaljevati posodabljanje verjetnosti. Tako bi 
-dobili primeren izračun posteriornih verjetnosti, na katerih bi potem lahko temeljil zaključek sodbe. 
+dobili primeren izračun posteriornih verjetnosti, na katerih bi potem lahko temeljil zaključek sodnega procesa. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Nadaljevanje primera sodbe medicinski sestri Lucii de Berg: Pristop z Bayesovo teorijo}
+\section{Nadaljevanje kazenskega primera - medicinska sestra Lucia de Berg: Pristop z Bayesovo teorijo}
 Bayesov pristop bi rešil težave ponovne uporabe podatkov.\\\\
-Naj bo:\\
+Naj bo\\
 $H_d$ \dots Lucia de Berk je nedolžna;\\
 $H_p$ \dots Lucia de Berk je kriva;\\
 $E$ \dots razpoložljivi dokazi.\\\\
@@ -553,9 +517,9 @@ potem, po pridobitvi novih dokazov, izračunamo nove posteriorne verjetnosti
     & = \frac{P(E' \lvert H_p, E)}{P(E' \lvert H_d, E)} \times \textit{stare posteriorne verjetnosti}. \vspace{2mm}
 \end{align*}
 Menim, da imamo tudi tukaj podobne težave kot sem jih že opisala zgoraj - določitev verjetnosti hipotez $P(H_p)$ in $P(H_d)$, za katere dokaze je mogoče 
-izračunati razmerje verjetnosti ter kako izračunamo verjetnost $\frac{P(E' \lvert H_p, E)}{P(E' \lvert H_d, E)}$, saj ne vemo kako so različni dokazi med seboj 
+izračunati razmerje verjetnosti ter kako izračunamo verjetnost \[\frac{P(E' \lvert H_p, E)}{P(E' \lvert H_d, E)}, \vspace{2mm}\] saj ne vemo kako so različni dokazi med seboj 
 povezani. Z določitvijo predhodnih verjetnosti lahko pridemo do zelo različnih rezultatov, ampak nimamo pa več težav z ponovno uporabo podatkov in 
-naknadnimi popravki. 
+naknadnimi popravki.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -632,12 +596,9 @@ sorodnih posameznikov.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Drugi pristopi}
-Da lahko ocenilm moč Bayesove analize dokazov DNK, jo v nadaljevanju primerjam z nekaterimi drugimi pristopi.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Frekvence}
-Predlagano je bilo s strani mnogih avtorjev, da je bolj naraven način za obravnavo verjetnosti uporaba naravnih frekvenc.
+\section{Frekvence}
+Da lahko ocenilm moč Bayesove analize dokazov DNK, jo v nadaljevanju primerjam z nekaterimi drugimi pristopi. Ker je bilo predlagano s strani 
+mnogih avtorjev, da je bolj naraven način za obravnavo verjetnosti uporaba naravnih frekvenc, sledi opis tega pristopa.\\\\
 \begin{definicija}
    Frekvenca $f$ je posamezno število diskretnih statističnih enot iste vrednosti. Če je diskretnih podatkov zelo veliko ali če so
    podatki zvezni, jih združujemo v frekvenčne razrede.
@@ -662,7 +623,7 @@ vmesno sklepanje o moči dokazov, ki se nanašajo na sporna dejstva, kar vodi do
 frekvence so rutinsko vključene v znanstvene dokaze, ki se predložijo v kazenskih postopkih.\\\\
 Recimo, da je pogostost profila DNK $f$ 1 proti 10 milijonov, predpostavimo tudi, da ima obtoženec enak DNK in da je začetna populacija osumljencev
 100 milijonov ljudi. Zanima nas kakšna je verjetnost, da je obtoženec vir DNK-ja s kraja zločina. \\
-Naj bo: \\
+Naj bo \\
 $f$ \dots pogostost profila DNK;\\
 $m$ \dots velikost populacije osumljencev; \\
 $n$ \dots število ljudi, ki imajo ustrezen DNK profil. \\
@@ -680,7 +641,7 @@ profil, ob pogoju da ga ima vsaj en posameznik, torej:
 
 \begin{table}[h!]
    \centering
-   \caption{Primerjava rezultatov, dobljenih z frekvenčno metodo in Bayesovim pravilom.}
+   \caption{Primerjava rezultatov, dobljenih z frekvenčno metodo in Bayesovim pravilom. \vspace{2mm}}
    \begin{tabular}{l l c c}
        \hline
        $m$ & $f$ & $P(n = 1 \lvert n \ge 1)$ & $P(S \lvert M)$[Bayes]\\
@@ -716,7 +677,8 @@ ti pogoji niso izpolnjeni, kar pomeni, da je uporaba frekvenčnih modelov lahko 
 izračunom verjetnosti ni mogoče upoštevati posameznih primerov.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Metoda verjetnosti naključnega ujemanja}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Metoda verjetnosti naključnega ujemanja}
 Metoda verjetnost naključnega ujemanja izraža možnost, da bi imel naključni posameznik, ki ni povezan z obdolžencem,
 ustrezni DNK profil. Ta verjetnost je enaka pogostosti profila DNK. Težava tega pristopa je, da verjetnost naključnega ujemanja lahko predstavljena
 oziroma razumevana narobe. \\
@@ -793,8 +755,8 @@ verjetnost krivde (pri čemer višje vrednosti pomenijo večjo verjetnost krivde
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Razmerje verjetnosti v kazenskem pravu}
 Obravnavajmo obliko Bayesovega izreka o verjetnosti v forenzičnem kontekstu ocenjevanja vrednosti nekaterih dokazov. Naj bo:\\
-$H_p \dots$ interesna oseba(PoI) oz. obtoženec je resnično kriv - nadomestimo $H$;\\
-$H_d \dots$ interesna oseba(PoI) je resnično nedolžen - nadomestimo $\bar{H}$;\\
+$H_p \dots$ interesna oseba (PoI) oz. obtoženec je resnično kriv - nadomestimo $H$;\\
+$H_d \dots$ interesna oseba (PoI) je resnično nedolžen - nadomestimo $\bar{H}$;\\
 $Ev \dots$ obravnavani dokaz - nadomestimo dogodek $E$;\\\\
 Oblika Bayesovega izreka nato omogoča, da se predhodne verjetnosti(tj, pred predstavitvijo $Ev$) v korist krivde posodobijo v posteriorne
 verjetnosti ob upoštevanju $Ev$, na naslednji način:
@@ -823,10 +785,10 @@ Da lahko ocenimo oziroma določimo vrednost dokaza potrebujemo razmerje verjetno
        \frac{P(H_p \lvert Ev, I)}{P(H_d \lvert Ev, I)}.
    \]
 \end{definicija}
-
+\pagebreak
 \begin{table}[h!]
     \centering
-    \caption{Kvalitativna lestvica za poročanje o vrednosti $V$ podpore dokazov za $H_p$ proti $H_d$.}
+    \caption{Kvalitativna lestvica za poročanje o vrednosti $V$ podpore dokazov za $H_p$ proti $H_d$. \vspace{2mm}}
     \label{table:1}
      \begin{tabular}{c l c l}
         \hline
@@ -856,7 +818,7 @@ Vzemimo še en dokaz $T$, ki je neodvisen od dokazov $E$ in $H_p$ (in s tem $H_d
    & = P(E \lvert H_p)P(T)\\
    & = \theta x, \vspace{2mm}
 \end{align}
-pri čemer iz (11) v (12) upoštevamo neodvisnost dokaza $E$ in $T$ ter iz (12) v (13) vrstico neodvisnost dokaza $T$ in $H_p$. Podobno
+pri čemer iz (13.4) v (13.5) upoštevamo neodvisnost dokaza $E$ in $T$ ter iz (13.5) v (13.6) neodvisnost dokaza $T$ in $H_p$. Podobno
 \[
    P(E,T \lvert H_d)  = \theta y. \vspace{2mm}
 \]
@@ -911,7 +873,7 @@ kako naj razmišlja in presoja dokaze; Bayesovo pravilo pa je natanko metoda za 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Nadaljevanje primera sodbe medicinski sestri Lucii de Berg: Pristop z razmerjem verjetnosti}
+\section{Nadaljevanje kazenskega primera - medicinska sestra Lucia de Berg: Pristop z razmerjem verjetnosti}
 Primeren pristop bi bil tudi, da je verjetnostna porazdelitev slučajne spremenljivke $X$, ki predstavlja število incidentov, ki jim je bila priča 
 določena medicinska sestra, podana s Poissonovo porazdelitvijo
 \[
@@ -944,7 +906,7 @@ Potem je razmerje verjetnosti
 Za oceno izida katerega koli izračuna s tem razmerjem, lahko iz tabele 3 izpeljemo naslednjo lestvico za opis višine razmerja verjetnosti.
 \begin{table}[h!]
     \centering
-    \caption{Kvalitativna lestvica za poročanje o vrednosti $V$ iz enačbe \eqref{eq:rv} podpore dokazov za $H_p$ proti $H_d$.}
+    \caption{Kvalitativna lestvica za poročanje o vrednosti $V$ iz enačbe \eqref{eq:rv} podpore dokazov za $H_p$ proti $H_d$. \vspace{2mm}}
     \label{table:1}
      \begin{tabular}{l l}
         \hline
@@ -966,16 +928,17 @@ Tožilčeva zmota in Zmota obrambnega odvetnika. Čeprav so posledice tožilčev
 lahko hujše kot posledice zmote obrambnega odvetnika, so porote morda bolj dovzetne za slednjo kot za prvo. \\\\
 Če upoštevamo vzročno verigo dokazov, predstavljeno na sliki 1, lahko razvrstitev zmot posplošimo na večino vrst dokazov. Ta shema
 nam omogoča klasifikacijo napak v sklepanju.
-\begin{figure}[!ht]\label{fig:slika_3}
-   \centering
-   \includegraphics[scale=0.60]{slika_3.png}
-   \caption{Vzorčna veriga dokazov}
-\end{figure}
-\\
+
 Ta analiza je močno odvisna od pojma »pogostost ujemajočih se lastnosti«, označenega kot $F$(lastnosti). Ta se včasih imenuje
 tudi »verjetnost naključnega ujemanja«. V našem vzročno-posledičnem okviru je $F$(lastnosti) enakovreden bolj formalno opredeljeni verjetnosti
 $P(C \lvert \neg B)$, t.j. verjetnost, da oseba, ki ni vpletena v kaznivo dejanje, po naključju zagotovi dokaze, ki se ujemajo.\\\\
 S tem vzročno-posledičnim okvirom lahko opišemo vrsto različnih pogostih zmot, ki so posledica napačnega razumevanja pogojne verjetnosti:\\
+\begin{figure}[h]\label{fig:slika_3}
+    \centering
+    \includegraphics[scale=0.60]{slika_3.png}
+    \caption{Vzorčna veriga dokazov}
+ \end{figure}
+ \\
 \textit{Tožilčeva zmota}: pri tem enačimo $P(C \lvert \neg B)$ s $P(\neg A \lvert C)$. Presega napako predhodne verjetnosti, saj si jo lahko 
 predstavljamo kot dopolnitev te napake z dodatno napačno predpostavko $P(A) = P(B)$.\\\\
 \textit{Napaka verjetnosti $P(\text{drugo ujemanje})$}: gre za zmoto, ko verjetnost $P(C \lvert \neg B)$ enačimo z verjetnostjo
@@ -1063,7 +1026,7 @@ Vizualno opazimo, da delež sivih kvadratov, ki se prekrivajo s črtastimi kvadr
 \begin{figure}[!ht]\label{fig:slika1}
    \centering
    \includegraphics[scale=0.45]{slika1.png}
-   \caption{Populacija, predstavljena s 100 kvadrati, z 9 črtastimi, 25 sivimi in 4 črtastimi in sivimi}\vspace{2mm}
+   \caption{Populacija, predstavljena s 100 kvadrati, z 9 črtastimi, 25 sivimi in 4 črtastimi in sivimi.}\vspace{2mm}
 \end{figure}\\
 Slika 3 prikazuje izjeme pri tožilčevi zmoti, predstavljeni na sliki 1. Sedaj imamo 16 črtastih kvadratov, 16 sivih in 4 pikčaste in sive kvadrate, ker je splošna
 razširjenost črtastih in sivih kvadratov enaka, je
@@ -1084,9 +1047,9 @@ Tožilčeva zmota velja, kadar je ena skupina podmnožica druge.
 \begin{figure}[!ht]\label{fig:slika2}
    \centering
    \includegraphics[scale=0.45]{slika2.png}
-   \caption{Populacija, predstavljena s 100 kvadrati, z 16 črtastimi, 16 sivimi in 4 pikčastimi in sivimi}\vspace{2mm}
+   \caption{Populacija, predstavljena s 100 kvadrati, z 16 črtastimi, 16 sivimi in 4 pikčastimi in sivimi.}\vspace{2mm}
 \end{figure}
-\pagebreak
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Načini za izogib zmotam}
@@ -1138,12 +1101,12 @@ Slednjo trditev je mogoče izpeljati s pomočjo Bayesove teorije:
 \begin{equation}\label{eq:btrditev}
     \frac{P(H \lvert E)}{P(\neg H \lvert E)} = \frac{P(H)}{P(\neg H)}  \times \frac{P(E \lvert H)}{P(E \lvert \neg H)}
 \end{equation}
-Na levi strani je $\frac{P(H \lvert E)}{P(\neg H \lvert E)}$, razmerje posteriornih verjetnosti krivde in nedolžnosti (tj. verjetnosti po 
-upoštevanju priznanja). Enak je zmnožku dveh drugih razmerij na desni strani. Razmerje $\frac{P(H)}{P(\neg H)}$ predstavlja razmerje predhodnih 
+Na levi strani je \[\frac{P(H \lvert E)}{P(\neg H \lvert E)},\] razmerje posteriornih verjetnosti krivde in nedolžnosti (tj. verjetnosti po 
+upoštevanju priznanja). Enak je zmnožku dveh drugih razmerij na desni strani. Razmerje \[\frac{P(H)}{P(\neg H)}\] predstavlja razmerje predhodnih 
 verjetnosti krivde in nedolžnosti (to je verjetnosti krivde in nedolžnosti pred upoštevanjem dejstva priznanja). Zadnje razmerje, 
-$\frac{P(E \lvert H)}{P(E \lvert \neg H)}$, se imenuje razmerje verjetnosti in določa, kakšen vpliv bo imel nov dokaz (priznanje) na 
+\[\frac{P(E \lvert H)}{P(E \lvert \neg H)},\] se imenuje razmerje verjetnosti in določa, kakšen vpliv bo imel nov dokaz (priznanje) na 
 verjetnosti krivde in nedolžnosti. Zlasti bo posteriorna verjetnost krivde večja od predhodne verjetnosti krivde le, če bo razmerje verjetnosti 
-večje od 1. Če pa je razmerje verjetnosti $\frac{P(E \lvert H)}{P(E \lvert \neg H)} < 1$, priznanje dejansko postane kazalnik nedolžnosti. \\\\
+večje od 1. Če pa je razmerje verjetnosti \[\frac{P(E \lvert H)}{P(E \lvert \neg H)} < 1,\] priznanje dejansko postane kazalnik nedolžnosti. \\\\
 Ni nujno, da iz vsega tega sledi, da bi bil obstoj priznanja v tej situaciji dokaz proti krivdi. V nasprotju s tem, bi lahko priznanje še vedno 
 povečalo verjetnost krivde, tudi če je bolj verjetno, da bo nedolžna oseba priznala kot kriva. Takšna zamisel se zdi logično nemogoča, če 
 pogledamo \eqref{eq:btrditev}. Vendar želim povedati, da enačba \eqref{eq:btrditev} morda ni prava formula za uporabo v tem primeru. Morda obstaja še eno empirično dejstvo, 
@@ -1174,7 +1137,7 @@ Primerjajmo enačbo \eqref{eq:btrditev} z enačbo \eqref{eq:razširitev}, ki daj
 razliko, da so v \eqref{eq:btrditev} te verjetnosti pogojene samo s priznanjem, medtem ko so v \eqref{eq:razširitev} pogojene tako s priznanjem kot z zaslišanjem. Prvo razmerje na desni strani je enako 
 tako v \eqref{eq:btrditev} kot \eqref{eq:razširitev}: razmerje predhodnih verjetnosti $H$ in $\neg H$. Tudi zadnje razmerje na desni strani je v obeh primerih podobno: verjetnost priznanja glede na 
 krivdo (in zaslišanje), deljena z verjetnostjo priznanja glede na nedolžnost (in zaslišanje). V enačbi \eqref{eq:razširitev} imamo na desni strani razmerje 
-$\frac{P(I \lvert H)}{P(I \lvert \neg H)}$, kar je verjetnost, da vas bo policija zaslišala, če je oseba kriva, deljena z verjetnostjo, da vas bo policija 
+\[\frac{P(I \lvert H)}{P(I \lvert \neg H)},\] kar je verjetnost, da vas bo policija zaslišala, če je oseba kriva, deljena z verjetnostjo, da vas bo policija 
 zaslišala, če je oseba nedolžna. To razmerje je večje od 1. Razumno je namreč pričakovati, da bo policija z večjo verjetnostjo izbrala za zaslišanje nekoga, 
 ki je kriv, kot nekoga, ki je nedolžen. Prav to razmerje v \eqref{eq:razširitev} razkriva, kaj je narobe z zgornjo trditvijo, da se lahko verjetnost krivde po priznanju poveča le, 
 če je $P(E \lvert H) > P(E \lvert \neg H)$. \\
@@ -1201,7 +1164,7 @@ S tem je dokaz, da je priznanje lahko dokaz krivde le, če je verjetnost priznan
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Nadaljevanje primera sodbe medicinski sestri Lucii de Berg: Interpretacija verjetnosti na sodišču}
+\section{Nadaljevanje kazenskega primera - medicinska sestra Lucia de Berg: Interpretacija verjetnosti na sodišču}
 Sodišče je bilo mnenja, da verjetnostni izračun, ki ga je podal Henk Elfferson, pomeni, da je osumljenka vse dogodke, navedene v obtožnici, doživela naključno. Ti 
 izračuni naj bi poseldično prikazovali, da je velika verjetnost, da obstaja povezava med izmeno osumljenke in pojavom incidenta. Te sklepi sodišča bi morali statistikom 
 vzbujati dvome, saj se sodba dvoumna in lahko bi rekla, da je sodišče storilo znano tožilčevo zmoto. Po sklepu sodišča bi lahko rekli, da govorijo o verjetnosti, da se je nekaj zgodilo 
@@ -1209,7 +1172,7 @@ ob predpostavki, da je vse popolnoma naključno ali pa si sodbo sodišča razlag
 pokažem z naslednjimi formulami. Naj bo\\
 $F$ \dots opazovani dogodek;\\
 $H_0$ \dots trditev, da se dogodek zgodi naključno.\\
-Henk Elffers je izračunal verjetnost $P(F \lvert H_0) < 342 \times 10^{-6}$, medtem ko je sodišče mislilo, da je Elffersonova izračunana verjetnost v bistvu $P(H_0 \lvert F)$, 
+Henk Elffers je izračunal verjetnost $P(F \lvert H_0) < 342 \times 10^{-6}$, medtem ko je sodišče mislilo, da je Elffersonova izračunana  verjetnost v bistvu $P(H_0 \lvert F)$, 
 kar pa je definicija tožilčeve zmote.\\\\
 Torej poleg tega, da je bila uporabljena metoda za izračun verjetnosti nekoliko sporna, kljub kasnejšim popravkom, je na koncu prišlo še do napake na sodišču, zaradi 
 nerazumevanja pogojnih verjetnosti. Če bi hoteli pravično sodbo, bi, po mojem mnenju, seveda morali najprej izbrati ustrezne metode za izračun vseh verjetnosti, predstavitev 
@@ -1218,7 +1181,7 @@ zaradi ugovorov na uporabljene metode Henka Elffersona.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Izogibanje zmotam z uporabo Bayesovih omrežij}
+\section{Izogibanje zmotam z uporabo Bayesovih \\omrežij}
 Ker je največkrat težava v tem, da se večina odvetnikov in sodnikov ob pogledu na verjetnostne izračune in statistično analizo dokazov, ustraši, se mi 
 zdijo Bayeosova omrežja dober predlog za predstavitev verjetnostnih izračunov.
 
@@ -1263,12 +1226,7 @@ motenj v postopku pridobivanja podatkov. Metode za sklepanje morajo zato zagotov
 da se izpostavi dejavnik negotovosti. Primerjati morajo verjetnosti za nasprotujoče si hipoteze in morajo zagotoviti okvir za pravnike, da iz
 mreže sklepajo na argumente.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Zaključek}
-napiš Še
-\pagebreak
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{thebibliography}{99}
@@ -1357,7 +1315,7 @@ napiš Še
         M. Di Bello, \emph{Statistics and probability in criminal trials}, doktorska dizertacija, Oddelek za filozofijo, Univerza Stanford, 2013.
 
     \bibitem{referenca-spletni-vir}
-        J. Balaba, \emph{Statistical Analysis In Criminal Justice Research}, v: Journal of Civil and Legal Sciences, 5, [3. december 2022], dostopno na \url{https://www.omicsonline.org/open-access/statistical-analysis-in-criminal-justice-research-2169-0170-1000203.pdf}.
+        J. Balaba, \emph{Statistical Analysis In Criminal Justice Research}, v: Journal of Civil and Legal Sciences, 5, [3. december 2022], dostopno na \url{https://www.omicsonline.org/open-access/statistical-analysis-in-criminal-justice-research}.
 
     \bibitem{referenca-spletni-vir}
         A. Biedermann, F. Taroni, W. C. Thompson in J. Vuille, \emph{The role of prior probability in forensic assessments}, v: Front Genet., 3, [15. oktober 2022], dostopno na \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3809556/}.
@@ -1369,5 +1327,6 @@ napiš Še
         W. P. Skorupski in H. Wainer, \emph{The Bayesian flip: Correcting the prosecutor's fallacy}, v: Royal Statistical Society, 4, [22. oktober 2022], dostopno na \url{https://rss.onlinelibrary.wiley.com/doi/full/10.1111/j.1740-9713.2015.00839.x}.
 
 \end{thebibliography}
+
 
 \end{document}
