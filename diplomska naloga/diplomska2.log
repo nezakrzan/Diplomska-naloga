@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.12.1)  5 JUL 2023 08:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.12.1)  1 JUL 2023 10:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.tex"
-(/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.tex
+**"/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska2.tex"
+(/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska2.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18> (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/fmfdelo.cls
 Document Class: fmfdelo 2023/01/20 Zakljucna dela na FMF
@@ -178,10 +178,10 @@ Package babel Info: Making " an active character on input line 79.
 \c@aksiom=\count269
 \c@definicija=\count270
 \@indexfile=\write3
-\openout3 = `diplomska_naloga.idx'.
+\openout3 = `diplomska2.idx'.
 
 
-Writing index file diplomska_naloga.idx
+Writing index file diplomska2.idx
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 112.
@@ -251,7 +251,7 @@ Package amsthm Warning: Unknown theoremstyle `trditev' on input line 73.
 Package amsthm Warning: Unknown theoremstyle `izrek' on input line 74.
 
 \xmpdatafileoutstre@m=\write4
-\openout4 = `diplomska_naloga.xmpdata'.
+\openout4 = `diplomska2.xmpdata'.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/pdfx/pdfx.sty
 Package: pdfx 2019/02/27 v1.6.3 PDF/X and PDF/A support (CVR/HTH/RRM/PS)
@@ -403,8 +403,8 @@ File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/pdfx/AdobeColorProfiles.tex) (/usr/local/texlive/2021/texmf-dist/tex/latex/pdfx/8bit.def
 File: 8bit.def 2008/03/30 v1.1d Input encoding file
 )
-** pdfx: Metadata file diplomska_naloga.xmpdata read successfully.
-(/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.xmpdata)<<sRGB.icc>> (/usr/local/texlive/2021/texmf-dist/tex/latex/pdfx/8bit.def
+** pdfx: Metadata file diplomska2.xmpdata read successfully.
+(/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska2.xmpdata)<<sRGB.icc>> (/usr/local/texlive/2021/texmf-dist/tex/latex/pdfx/8bit.def
 File: 8bit.def 2008/03/30 v1.1d Input encoding file
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/pdfx/8bit.def
 File: 8bit.def 2008/03/30 v1.1d Input encoding file
@@ -433,8 +433,99 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 81.
 Package hyperref Info: Option `unicode' set `true' on input line 81.
 Package hyperref Info: Option `breaklinks' set `true' on input line 81.
 Package hyperref Info: Option `psdextra' set `true' on input line 81.
- (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.aux)
-\openout1 = `diplomska_naloga.aux'.
+ (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska2.aux
+
+LaTeX Warning: Label `table:1' multiply defined.
+
+
+LaTeX Warning: Label `table:1' multiply defined.
+
+
+LaTeX Warning: Label `referenca-clanek' multiply defined.
+
+
+LaTeX Warning: Label `referenca-clanek' multiply defined.
+
+
+LaTeX Warning: Label `referenca-clanek' multiply defined.
+
+
+LaTeX Warning: Label `referenca-clanek' multiply defined.
+
+
+LaTeX Warning: Label `referenca-clanek' multiply defined.
+
+
+LaTeX Warning: Label `referenca-clanek' multiply defined.
+
+
+LaTeX Warning: Label `referenca-clanek' multiply defined.
+
+
+LaTeX Warning: Label `referenca-clanek' multiply defined.
+
+
+LaTeX Warning: Label `referenca-clanek' multiply defined.
+
+
+LaTeX Warning: Label `referenca-clanek' multiply defined.
+
+
+LaTeX Warning: Label `referenca-clanek' multiply defined.
+
+
+LaTeX Warning: Label `referenca-clanek' multiply defined.
+
+
+LaTeX Warning: Label `referenca-clanek' multiply defined.
+
+
+LaTeX Warning: Label `referenca-clanek' multiply defined.
+
+
+LaTeX Warning: Label `referenca-clanek' multiply defined.
+
+
+LaTeX Warning: Label `referenca-clanek' multiply defined.
+
+
+LaTeX Warning: Label `referenca-clanek' multiply defined.
+
+
+LaTeX Warning: Label `referenca-clanek' multiply defined.
+
+
+LaTeX Warning: Label `referenca-clanek' multiply defined.
+
+
+LaTeX Warning: Label `referenca-knjiga' multiply defined.
+
+
+LaTeX Warning: Label `referenca-knjiga' multiply defined.
+
+
+LaTeX Warning: Label `referenca-knjiga' multiply defined.
+
+
+LaTeX Warning: Label `referenca-knjiga' multiply defined.
+
+
+LaTeX Warning: Label `referenca-knjiga' multiply defined.
+
+
+LaTeX Warning: Label `referenca-knjiga' multiply defined.
+
+
+LaTeX Warning: Label `referenca-spletni-vir' multiply defined.
+
+
+LaTeX Warning: Label `referenca-spletni-vir' multiply defined.
+
+
+LaTeX Warning: Label `referenca-spletni-vir' multiply defined.
+
+)
+\openout1 = `diplomska2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
 LaTeX Font Info:    ... okay on input line 81.
@@ -486,9 +577,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 81.
 LaTeX Info: Redefining \pageref on input line 81.
 LaTeX Info: Redefining \nameref on input line 81.
- (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.out) (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.out)
+ (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska2.out) (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska2.out)
 \@outlinefile=\write6
-\openout6 = `diplomska_naloga.out'.
+\openout6 = `diplomska2.out'.
 
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 81.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/ot1lmr.fd
@@ -533,223 +624,461 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 81.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 81.
- (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.toc)
+ (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska2.toc
+Overfull \hbox (1.85768pt too wide) in paragraph at lines 8--8
+ [] [][][]\T1/lmr/bx/n/12 Predstavitev ka-zen-skega pri-mera - me-di-cin-ska se-stra Lu-cia De Berk[][] []  |
+ []
+
+
+Overfull \hbox (1.04192pt too wide) in paragraph at lines 17--17
+ [] [][][]\T1/lmr/bx/n/12 Nadaljevanje ka-zen-skega pri-mera - me-di-cin-ska se-stra Lu-cia de Berg: |
+ []
+
+
+Overfull \hbox (1.04192pt too wide) in paragraph at lines 28--28
+ [] [][][]\T1/lmr/bx/n/12 Nadaljevanje ka-zen-skega pri-mera - me-di-cin-ska se-stra Lu-cia de Berg: |
+ []
+
+[3]
+Overfull \hbox (1.04192pt too wide) in paragraph at lines 36--36
+ [] [][][]\T1/lmr/bx/n/12 Nadaljevanje ka-zen-skega pri-mera - me-di-cin-ska se-stra Lu-cia de Berg: |
+ []
+
+)
 \tf@toc=\write7
-\openout7 = `diplomska_naloga.toc'.
+\openout7 = `diplomska2.toc'.
 
- [3] [4
+ [4] [5
 
-] [5] [6
+] [6
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 88--94
+Underfull \hbox (badness 10000) in paragraph at lines 88--93
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--106
+Underfull \hbox (badness 10000) in paragraph at lines 99--105
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--139
+Underfull \hbox (badness 10000) in paragraph at lines 111--135
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 143--161
+Underfull \hbox (badness 10000) in paragraph at lines 139--156
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 165--193
+Underfull \hbox (badness 10000) in paragraph at lines 160--188
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 165--193
+Underfull \hbox (badness 10000) in paragraph at lines 160--188
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 165--193
+Underfull \hbox (badness 10000) in paragraph at lines 160--188
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 197--212
+Underfull \hbox (badness 10000) in paragraph at lines 192--213
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 197--212
+Underfull \hbox (badness 10000) in paragraph at lines 192--213
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 197--212
+Underfull \hbox (badness 10000) in paragraph at lines 192--213
 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 214--224
+Underfull \hbox (badness 10000) in paragraph at lines 226--241
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 214--224
+Underfull \hbox (badness 10000) in paragraph at lines 226--241
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 226--241
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 237--253
+Underfull \hbox (badness 10000) in paragraph at lines 247--251
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 237--253
+Underfull \vbox (badness 4940) has occurred while \output is active []
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 237--253
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 237--253
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 259--263
-
- []
-
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 275--283
+ [12]
+Underfull \hbox (badness 10000) in paragraph at lines 297--303
 
  []
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 307--309
+Underfull \hbox (badness 10000) in paragraph at lines 314--326
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--345
+Underfull \hbox (badness 10000) in paragraph at lines 333--341
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--345
+Underfull \vbox (badness 3209) has occurred while \output is active []
 
- []
-
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 378--391
+ [14]
+Underfull \hbox (badness 10000) in paragraph at lines 362--364
 
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 398--446
+Underfull \hbox (badness 10000) in paragraph at lines 385--399
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 398--446
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 398--446
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 398--446
+Underfull \hbox (badness 10000) in paragraph at lines 385--399
 
  []
 
 [16]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 430--442
 
- [17]
+ []
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 445--491
+
+ []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 485--491
+Underfull \hbox (badness 10000) in paragraph at lines 445--491
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 445--491
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 445--491
 
  []
 
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 502--514
-
- []
-
-[19]
-Underfull \hbox (badness 10000) in paragraph at lines 517--523
+Underfull \hbox (badness 10000) in paragraph at lines 495--501
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 517--523
+Underfull \hbox (badness 10000) in paragraph at lines 495--501
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 525--527
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19]
+Underfull \hbox (badness 10000) in paragraph at lines 503--505
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 532--538
 
  []
 
 [20]
-Underfull \hbox (badness 10000) in paragraph at lines 554--560
+Underfull \hbox (badness 10000) in paragraph at lines 557--562
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 562--571
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 579--584
+Underfull \hbox (badness 10000) in paragraph at lines 570--575
 
  []
 
 [21]
-Underfull \hbox (badness 10000) in paragraph at lines 600--605
+Underfull \hbox (badness 10000) in paragraph at lines 581--585
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 611--612
+Underfull \hbox (badness 10000) in paragraph at lines 587--596
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 611--612
+Underfull \hbox (badness 10000) in paragraph at lines 600--602
 
  []
 
-[22] (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.ind) (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.aux)
-Package rerunfilecheck Info: File `diplomska_naloga.out' has not changed.
-(rerunfilecheck)             Checksum: 2F7D5EE9D00D56522454AFB6B14FB2A6;1827.
+
+Underfull \hbox (badness 10000) in paragraph at lines 600--602
+
+ []
+
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 616--638
+
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 661--678
+
+ []
+
+[23]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [24]
+Underfull \hbox (badness 10000) in paragraph at lines 714--717
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 719--723
+
+ []
+
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 727--729
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 757--763
+
+ []
+
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 769--774
+
+ []
+
+
+Underfull \vbox (badness 5189) has occurred while \output is active []
+
+ [27]
+Underfull \hbox (badness 10000) in paragraph at lines 809--815
+
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 827.
+(/usr/local/texlive/2021/texmf-dist/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) [28]
+Underfull \hbox (badness 10000) in paragraph at lines 835--861
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 835--861
+
+ []
+
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 881--893
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 881--893
+
+ []
+
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 925--931
+
+ []
+
+<slika_3.png, id=405, 701.62125pt x 179.67125pt>
+File: slika_3.png Graphic file (type png)
+<use slika_3.png>
+Package pdftex.def Info: slika_3.png  used on input line 938.
+(pdftex.def)             Requested size: 420.97598pt x 107.80356pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 932--968
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 932--968
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 932--968
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 932--968
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 932--968
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 932--968
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 932--968
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 932--968
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 932--968
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 932--968
+
+ []
+
+[31] [32 </Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/slika_3.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 971--997
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 971--997
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 971--997
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 971--997
+
+ []
+
+[33]
+<slika1.png, id=426, 256.96pt x 252.945pt>
+File: slika1.png Graphic file (type png)
+<use slika1.png>
+Package pdftex.def Info: slika1.png  used on input line 1028.
+(pdftex.def)             Requested size: 115.63092pt x 113.82419pt.
+ [34]
+<slika2.png, id=431, 262.9825pt x 260.975pt>
+File: slika2.png Graphic file (type png)
+<use slika2.png>
+Package pdftex.def Info: slika2.png  used on input line 1049.
+(pdftex.def)             Requested size: 118.34102pt x 117.43767pt.
+ [35 </Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/slika1.png> </Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/slika2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1064--1071
+
+ []
+
+[36]
+Underfull \hbox (badness 10000) in paragraph at lines 1109--1117
+
+ []
+
+[37]
+Underfull \hbox (badness 10000) in paragraph at lines 1134--1140
+
+ []
+
+[38]
+Underfull \hbox (badness 10000) in paragraph at lines 1168--1181
+
+ []
+
+[39]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 1184.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1209--1228
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1209--1228
+
+ []
+
+[40] [41] [42]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1318.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Underfull \hbox (badness 10000) in paragraph at lines 1318--1319
+[]\T1/lmr/m/n/12 J. Ba-laba, \T1/lmr/m/it/12 Sta-ti-sti-cal Ana-lysis In Cri-mi-nal Ju-stice Re-se-arch\T1/lmr/m/n/12 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1318--1319
+\T1/lmr/m/n/12 v: Jo-ur-nal of Ci-vil and Le-gal Sci-en-ces, 5, [3. de-cem-ber
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1318--1319
+\T1/lmr/m/n/12 2022], do-sto-pno na [][]$\T1/lmtt/m/n/12 https : / / www . omicsonline . org / open-[]access /
+ []
+
+
+Underfull \hbox (badness 1117) in paragraph at lines 1327--1328
+\T1/lmr/m/n/12 sto-pno na [][]$\T1/lmtt/m/n/12 https : / / rss . onlinelibrary . wiley . com / doi / full / 10 . 1111 / j .
+ []
+
+[43] [44] (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska2.ind) (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska2.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `diplomska2.out' has not changed.
+(rerunfilecheck)             Checksum: 114D0A1DD58D825D6F67F48D9721D9ED;5474.
  ) 
 Here is how much of TeX's memory you used:
- 15168 strings out of 478994
- 219357 string characters out of 5858184
- 627314 words of memory out of 5000000
- 32261 multiletter control sequences out of 15000+600000
- 472980 words of font info for 78 fonts, out of 8000000 for 9000
+ 15405 strings out of 478994
+ 222517 string characters out of 5858184
+ 628649 words of memory out of 5000000
+ 32381 multiletter control sequences out of 15000+600000
+ 473673 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,10n,90p,599b,2538s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
-Output written on "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.pdf" (22 pages, 216763 bytes).
+ 90i,10n,90p,722b,2538s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
+Output written on "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska2.pdf" (44 pages, 588196 bytes).
 PDF statistics:
- 315 PDF objects out of 1000 (max. 8388607)
- 265 compressed objects within 3 object streams
- 72 named destinations out of 1000 (max. 500000)
- 189 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 651 PDF objects out of 1000 (max. 8388607)
+ 564 compressed objects within 6 object streams
+ 177 named destinations out of 1000 (max. 500000)
+ 364 words of extra memory for PDF output out of 10000 (max. 10000000)
 

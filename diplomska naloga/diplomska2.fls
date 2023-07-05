@@ -2,8 +2,8 @@ PWD /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga
 INPUT /usr/local/texlive/2021/texmf.cnf
 INPUT /usr/local/texlive/2021/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.tex
-OUTPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.log
+INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska2.tex
+OUTPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska2.log
 INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/fmfdelo.cls
 INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/fmfdelo.cls
 INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/fmfdelo.cls
@@ -255,7 +255,7 @@ INPUT /usr/local/texlive/2021/texmf-dist/tex/generic/babel-slovenian/slovene.ldf
 INPUT /usr/local/texlive/2021/texmf-dist/tex/generic/babel-slovenian/slovene.ldf
 INPUT /usr/local/texlive/2021/texmf-dist/tex/generic/babel-slovenian/slovene.ldf
 INPUT /usr/local/texlive/2021/texmf-dist/tex/generic/babel-slovenian/slovene.ldf
-OUTPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.idx
+OUTPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska2.idx
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/fontenc.sty
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/fontenc.sty
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/fontenc.sty
@@ -432,7 +432,7 @@ INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/float/float.sty
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/float/float.sty
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/float/float.sty
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/float/float.sty
-OUTPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.xmpdata
+OUTPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska2.xmpdata
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/pdfx/pdfx.sty
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/pdfx/pdfx.sty
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/pdfx/pdfx.sty
@@ -848,13 +848,13 @@ INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/pdfx/8bit.def
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/pdfx/8bit.def
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/pdfx/8bit.def
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/pdfx/8bit.def
-INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.xmpdata
-INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.xmpdata
-INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.xmpdata
-INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.xmpdata
+INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska2.xmpdata
+INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska2.xmpdata
+INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska2.xmpdata
+INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska2.xmpdata
 INPUT /usr/local/texlive/2021/texmf-dist/tex/generic/colorprofiles/sRGB.icc
 INPUT /usr/local/texlive/2021/texmf-dist/tex/generic/colorprofiles/sRGB.icc
-OUTPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.pdf
+OUTPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska2.pdf
 INPUT /usr/local/texlive/2021/texmf-dist/tex/generic/colorprofiles/sRGB.icc
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/pdfx/8bit.def
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/pdfx/8bit.def
@@ -909,10 +909,10 @@ OUTPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/pdfa.
 INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/pdfa.xmpi
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/xcolor/xcolor.sty
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/xcolor/xcolor.sty
-INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.aux
-INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.aux
-INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.aux
-OUTPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.aux
+INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska2.aux
+INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska2.aux
+INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska2.aux
+OUTPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska2.aux
 INPUT /usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -970,17 +970,17 @@ INPUT /usr/local/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestri
 INPUT /usr/local/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 INPUT /usr/local/texlive/2021/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.out
-INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.out
-INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.out
-INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.out
-INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.out
-INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.out
-INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.out
-INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.out
-INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.out
-INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.out
-OUTPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.out
+INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska2.out
+INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska2.out
+INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska2.out
+INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska2.out
+INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska2.out
+INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska2.out
+INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska2.out
+INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska2.out
+INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska2.out
+INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska2.out
+OUTPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska2.out
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/lm/ec-lmr12.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/lm/ec-lmr17.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
@@ -1044,37 +1044,65 @@ INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam1
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.toc
-INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.toc
-INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.toc
+INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska2.toc
+INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska2.toc
+INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska2.toc
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
-OUTPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.toc
+OUTPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska2.toc
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/lm/ec-lmcsc10.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/lm/ec-lmri12.tfm
-INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/lm/ec-lmr8.tfm
-INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/lm/ec-lmr6.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/lm/ec-lmr8.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/lm/ec-lmri8.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/lm/ec-lmr6.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/lm/ec-lmri7.tfm
-INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.ind
-INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.ind
-INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.ind
-INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.ind
-INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.aux
-INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.out
-INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.out
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/lm/ts1lmr.fd
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/lm/ts1lmr.fd
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/lm/ts1lmr.fd
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/lm/ts1lmr.fd
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/lm/ts1-lmr12.tfm
+INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/slika_3.png
+INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/slika_3.png
+INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/slika_3.png
+INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/slika_3.png
+INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/slika_3.png
+INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/slika1.png
+INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/slika1.png
+INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/slika1.png
+INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/slika1.png
+INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/slika1.png
+INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/slika2.png
+INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/slika2.png
+INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/slika2.png
+INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/slika2.png
+INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/slika2.png
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/lm/t1lmtt.fd
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/lm/t1lmtt.fd
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/lm/t1lmtt.fd
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/lm/t1lmtt.fd
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/lm/ec-lmtt12.tfm
+INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska2.ind
+INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska2.ind
+INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska2.ind
+INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska2.ind
+INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska2.aux
+INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska2.out
+INPUT /Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska2.out
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc
-INPUT /usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
-INPUT /usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
-INPUT /usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmbx12.pfb
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmex10.pfb
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi12.pfb
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi6.pfb
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi8.pfb
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr12.pfb
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr8.pfb
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmri12.pfb
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy10.pfb
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy8.pfb
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmtt12.pfb
