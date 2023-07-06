@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.12.1)  5 JUL 2023 08:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.12.1)  6 JUL 2023 21:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -433,7 +433,11 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 81.
 Package hyperref Info: Option `unicode' set `true' on input line 81.
 Package hyperref Info: Option `breaklinks' set `true' on input line 81.
 Package hyperref Info: Option `psdextra' set `true' on input line 81.
- (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.aux)
+ (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.aux
+
+LaTeX Warning: Label `table:1' multiply defined.
+
+)
 \openout1 = `diplomska_naloga.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
@@ -724,32 +728,90 @@ Underfull \hbox (badness 10000) in paragraph at lines 600--605
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 611--612
+Underfull \hbox (badness 10000) in paragraph at lines 611--615
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 611--612
+Underfull \hbox (badness 10000) in paragraph at lines 617--627
 
  []
 
-[22] (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.ind) (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.aux)
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 647--670
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 647--670
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 647--670
+
+ []
+
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 692--709
+
+ []
+
+[24] [25]
+Underfull \hbox (badness 10000) in paragraph at lines 746--749
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 751--755
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 759--761
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 778--787
+
+ []
+
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 790--797
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 790--797
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 803--808
+
+ []
+
+[27] [28] (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.ind) (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `diplomska_naloga.out' has not changed.
-(rerunfilecheck)             Checksum: 2F7D5EE9D00D56522454AFB6B14FB2A6;1827.
+(rerunfilecheck)             Checksum: CF690FA3F0EAD5BB7AA9D6285F828E86;2345.
  ) 
 Here is how much of TeX's memory you used:
- 15168 strings out of 478994
- 219357 string characters out of 5858184
- 627314 words of memory out of 5000000
- 32261 multiletter control sequences out of 15000+600000
+ 15199 strings out of 478994
+ 219708 string characters out of 5858184
+ 627436 words of memory out of 5000000
+ 32267 multiletter control sequences out of 15000+600000
  472980 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  90i,10n,90p,599b,2538s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
-Output written on "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.pdf" (22 pages, 216763 bytes).
+Output written on "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.pdf" (28 pages, 235576 bytes).
 PDF statistics:
- 315 PDF objects out of 1000 (max. 8388607)
- 265 compressed objects within 3 object streams
- 72 named destinations out of 1000 (max. 500000)
- 189 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 387 PDF objects out of 1000 (max. 8388607)
+ 330 compressed objects within 4 object streams
+ 97 named destinations out of 1000 (max. 500000)
+ 229 words of extra memory for PDF output out of 10000 (max. 10000000)
 

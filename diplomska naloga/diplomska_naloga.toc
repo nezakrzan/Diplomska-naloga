@@ -18,3 +18,8 @@
 \contentsline {section}{\numberline {9}Bayesova analiza}{21}{section.9}%
 \contentsline {subsection}{\numberline {9.1}Poenostavljena Bayesova analiza}{21}{subsection.9.1}%
 \contentsline {subsection}{\numberline {9.2}Izpopolnjena Bayesova analiza}{21}{subsection.9.2}%
+\contentsline {section}{\numberline {10}Frekvence}{23}{section.10}%
+\contentsline {section}{\numberline {11}Metoda verjetnosti naključnega ujemanja}{25}{section.11}%
+\contentsline {section}{\numberline {12}Razmerje verjetnosti}{26}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Opredelitev}{26}{subsection.12.1}%
+\contentsline {subsection}{\numberline {12.2}Razmerje verjetnosti v kazenskem pravu}{27}{subsection.12.2}%
