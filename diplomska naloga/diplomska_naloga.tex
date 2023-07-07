@@ -448,15 +448,15 @@ izračun posteriornih verjetnosti, na katerih bi potem lahko temeljil zaključek
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Predstavitev sodnega procesa - medicinska sestra Lucia De Berk}
 Marca 2003 je bila medicinska sestra Lucia de Berk (v nadaljevanju osumljenka) v Haagu na Nizozemskem obsojena na dosmrtni zapor zaradi obtožb 
-uboja in domnevnega uboja več bolnikov v dveh bolnišnicah, v katerih je delala v bližnji preteklosti (bolnišnici JZK in RKZ). V bolnišnici JKZ 
-se je med Lucijinimi izmenami pojavilo nenavadno veliko smrti bolnikov, kar je sprožilo vprašanja glede njene morebitne vpletenosti v te dogodke. 
-Razmišljalo se je, ali bi lahko bila Lucijina prisotnost pri toliko smrtih zgolj naključje.\\
+uboja in domnevnega uboja več bolnikov (v nadaljevanju je zadevni dogodek smrt bolnika) v dveh bolnišnicah, v katerih je delala v bližnji preteklosti (bolnišnici JZK in RKZ). V bolnišnici JKZ 
+se je med Lucijinimi izmenami pojavilo nenavadno veliko zadevnih dogodkov, kar je sprožilo vprašanja glede njene morebitne vpletenosti v te dogodke. 
+Razmišljalo se je, ali bi lahko bila Lucijina prisotnost pri toliko zadevnih dogodkih zgolj naključje.\\
 Na zahtevo državnega tožilca, je statistično analizo podal statistik Henk Elffers. V grobem je bila njegova ugotovitev naslednja: ob predpostavkah, da
 \begin{enumerate}
-    \item je verjetnost, da osumljenka doživi smrt bolnika med izmeno, enaka verjetnosti za katero koli drugo medicinsko sestro in
-    \item da so pojavi smrt bolnika neodvisni za različne delovne izmene,
+    \item je verjetnost, da osumljenka doživi zadevni dogodek med izmeno, enaka verjetnosti za katero koli drugo medicinsko sestro in
+    \item da so pojavi zadevnih dogodkov neodvisni za različne delovne izmene,
 \end{enumerate}
-potem je verjetnost, da je osumljenka doživela toliko smrti bolnikov, kot jih je dejansko doživela, manjša od 1 proti 342 milijonom. Henk Elffers je mnenja, 
+potem je verjetnost, da je osumljenka doživela toliko zadevnih dogodkov, kot jih je dejansko doživela, manjša od 1 proti 342 milijonom. Henk Elffers je mnenja, 
 da je verjetnost naključja tako majhna, da standardna statistična metodologija zavrne ničelno hipotezo o naključju. Vendar je poudaril, da 
 to ne pomeni nujno, da je osumljenka kriva. Prvi problem, ki sem ga zasledila je, da Henk Elffers in sodišče nista upoštevala subjektivnega 
 elementa pri izbiri verjetnostnega modela in s tem možnosti za obstoj več modelov z različnimi napovedmi ali celo različnimi odgovori 
@@ -464,11 +464,11 @@ na različna vprašanja.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Podatki in uporabljena metoda}
-Henk Elffers je temeljil na podatkih o izmenah osmuljenke in drugih medicinskih sester ter smrt bolnika, ki so se zgodili v teh izmenah, da bi 
+Henk Elffers je temeljil na podatkih o izmenah osmuljenke in drugih medicinskih sester ter smrti bolnikov, ki so se zgodili v teh izmenah, da bi 
 utemeljil svoj model v celoti.
 \begin{table}[h!]
     \centering
-    \caption{Podatki o izmenah in smrtih bolnikov, ki jih je uporabil Henk Elffers (za določeno obdobje).}
+    \caption{Podatki o izmenah in zadevnih dogodkih, ki jih je uporabil Henk Elffers (za določeno obdobje).}
     \label{table:1}
      \begin{tabular}{l c c c}
         \hline
@@ -476,7 +476,7 @@ utemeljil svoj model v celoti.
         \hline
         Število vseh izmen & 1029 & 336 & 339 \\
         Število izmen osumljenke & 142 & 1 & 58 \\
-        Število vseh incidentov & 8 & 5 & 14 \\
+        Število vseh zadevnih dogodkov & 8 & 5 & 14 \\
         Število smrti v času izmene osumljenke & 8 & 1 & 5 \\
         \hline
      \end{tabular}
@@ -492,15 +492,15 @@ je, da
     \item dogodki smrt bolnika se pojavljajo neodvisno drug od drugega.
 \end{enumerate}
 Izračunajmo pogojno verjetnost dogodka, da se (recimo v JKZ) vse smrti zgodijo med izmenami osumljenke, ob upoštevanju skupnega števila 
-smrti bolnikov in skupnega števila izmen v preučevanem obdobju. Naj bo\\
+zadevnih dogodkov in skupnega števila izmen v preučevanem obdobju. Naj bo\\
 $n \dots$ skupno število izmen,\\
 $r \dots$ število izmen osumljenke, \\
-potem je pogojna verjetnost, da je bila osumljenka priča $x$ smrtim, če se je zgodilo $k$ smrti bolnikov, naslednja 
+potem je pogojna verjetnost, da je bila osumljenka priča $x$ zadevnemu dogodku, če se je zgodilo $k$ smrti bolnikov, naslednja 
 \begin{equation}\label{eq:l_pogojna}
     \frac{\binom{r}{x}p^x(1-p)^{r-x}\binom{n-r}{k-x}p^{k-x}(1-p)^{n-r-k+x}}{\binom{n}{k}p^k(1-p)^{n-k}} = \frac{\binom{r}{x}\binom{n-r}{k-x}}{\binom{n}{k}}.\vspace{2mm}
 \end{equation}
 Ta porazdelitev je znana kot hipergeometrijska porazdelitev. S to formulo lahko enostavno izračunamo (pogojno) verjetnost, da je bila osumljenka 
-priča vsaj takšnemu številu smrti, kot jih je dejansko doživela.\\
+priča vsaj takšnemu številu zadevnih dogodkov, kot jih je dejansko doživela.\\
 Po Elffersovem mnenju naj izračun ne bi bil povsem pošten do osumljenke. Bolj smislno naj bi bilo, da se ne bi izračunavala verjetnost, da je 
 bila osumljenka priča toliko smrtim, temveč verjetnost, da je bila neka medicinska sestra priča toliko smrtim bolnikov. V JKZ je za izmene skrbelo 
 27 medicinskih sester, zato je Henk Elffers domnevno, da bi dobil zgornjo mejo te verjetnosti, svoj rezultat pomnoži s 27, kar je imenovano 
