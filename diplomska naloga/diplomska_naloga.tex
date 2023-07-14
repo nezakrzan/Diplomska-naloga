@@ -1,7 +1,5 @@
-\documentclass[mat1, tisk]{fmfdelo}
-% \documentclass[fin1, tisk]{fmfdelo}
-% Če pobrišete možnost tisk, bodo povezave obarvane,
-% na začetku pa ne bo praznih strani po naslovu, …
+%\documentclass[mat1, tisk]{fmfdelo}
+\documentclass[fin1, tisk]{fmfdelo}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % METAPODATKI
@@ -16,7 +14,7 @@
 \mentor{izr. prof. dr. Jaka Smrekar}
 
 % - leto diplome
-\letnica{2023} 
+\letnica{2023}
 
 % - povzetek v slovenščini
 %   V povzetku na kratko opišite vsebinske rezultate dela. Sem ne sodi razlaga
@@ -51,22 +49,19 @@ hipotez in dokazov ponovno temelji na Bayesovi teoriji, se pomanjkljivost Bayeso
 
 % - klasifikacijske oznake, ločene z vejicami
 %   Oznake, ki opisujejo področje dela, so dostopne na strani https://www.ams.org/msc/
-\klasifikacija{..., ...}
+\klasifikacija{62P99, 62C10, 60A99}
 
 % - ključne besede, ki nastopajo v delu, ločene s \sep
-\kljucnebesede{bayesova statistika\sep predhodna verjetnost \sep posteriorna verjetnost \sep razmerje verjetnosti \sep frekvence \sep tožilčeva zmota \sep bayesova omrežja}
+\kljucnebesede{bayesova statistika\sep predhodna verjetnost\sep posteriorna verjetnost\sep razmerje verjetnosti\sep frekvence\sep tožilčeva zmota\sep bayesova omrežja}
 
 % - angleški prevod ključnih besed
-\keywords{...\sep ...} % angleški prevod ključnih besed
+\keywords{bayesian statistics\sep apriori probability\sep posterior probability\sep likelihood ratio\sep frequencies\sep prosecutor's fallacy\sep bayesian networks} % angleški prevod ključnih besed
 
 % - angleško-slovenski slovar strokovnih izrazov
-\slovar{
+%\slovar{
 % \geslo{angleški izraz}{slovenski izraz}
-% ...
-}
+% ...}
 
-% - ime datoteke z viri (vključno s končnico .bib), če uporabljate BibTeX
-% \literatura{....bib}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % DODATNE DEFINICIJE
@@ -99,6 +94,30 @@ hipotez in dokazov ponovno temelji na Bayesovi teoriji, se pomanjkljivost Bayeso
 \begin{document}
 
 \section{Uvod}
+Statistične metode za vrednotenje dokazov v sodnih procesih so se začele uporabljati že v letih prejšnjega stoletja. Iz znanih teorij verjetnosti in
+statistike so se razvile metode za čim boljše ocenjevanje in vrednotenje dokazov na podlagi začetnih hipotez. Zaradi pomanjkanja znanja teorije
+verjetnosti so se hitro začele pojavljati zmote statističnih analiz dokazov. Ker do večina zmot pride pri napačnem razumevanju končnega rezultata
+statistične analize, so danes v razvoju novi načini za predstavitev le teh. Poleg tega se problema zavedajo tudi pravne fakultete, ki v ta namen v svoje učne
+programe že vključujejo teorijo statistike in verjetnosti. Težava pa ni le pri razumevanju končnega poročila, ampak tudi pri analizi in vrednotenju
+dokazov. Statistični znanstveniki se srečujejo s problemi metod vrednotenja in upoštevanjem pravnih zakonov in teorije. V diplomskem delu poskušam
+čim bolje predstaviti nekatere metode za vrednotenje dokazov, njihove pomanjkljivosti in prednosti. Poleg tega pa poskušam najti način čim hitrejše
+analize dokazov in hkrati tudi najboljši prikaz končnega poročila analize poroti, sodnikom in odvetnikom v skladu s pravnimi pravili.\\\\
+Diplomsko delo je razdeljeno v več razdelkov. Najprej so opredeljeni osnovni koncepti statistike v kazenskem pravu in predstavljen je 
+razsikovalni proces za preučevanje problemov kriminologije. Nato sledi opis vrednotenja dokazov in konept verjetnosti v kazenskem 
+pravu. V glavnem delu diplomske naloge predstavim metode vrednotenja dokazov in se osredotočim na podroben opis Bayesove statistike 
+v kazenskem pravu in njene uporabe pri ugotavljanju, ali je obtoženec vir sledi DNK-ja s kraja zločina. Ker je Bayesova statistika 
+na nek način tehtanje dokazov opredelim tudi razmerje verjetnosti, ki je potrebno za določitev vrednosti dokaza oziroma dokazov. Za 
+primerno predstavo prednosti in slabosti Bayesove teorije v kazenskem pravu, opišem še metodo frekvenc in njeno uporabo pri DNK dokazih 
+ter metodo verjetnosti naključnega ujemanja. V zadnjem delu sledi predstavitev zmot, ki nastanejo zaradi napačnega razumevanja verjetnosti 
+in možni pristopi za odpravo oziroma izogib le teh. Opis statistike v kazenskem pravu podkrepim s predstavitvijo kazenskega primera medicinske 
+sestre Lucie De Berg, v katerem prikažem glavne težave s katerimi se srečujejo statistični analitiki. Poleg tega so tudi vmesni pojmi, 
+poleg teoretične opredelitve, podprti s primerljivimi primeri za lažjo predstavo.\\\\
+Cilj dela diplomskega seminarja je spoznavanje uporabnosti statistike in verjetnosti na manj znanem področju kot je kazensko pravo. Ker je koncept 
+verjetnosti v kazenskem pravu še v razvoju me zanimajo predvsem napake in pomanjkljivosti. Želela bi ugotoviti katere metode vrednotenja 
+dokazov in ocenjevanja verjetnosti hipotez so najboljše in kako se najlažje izogniti Tožilčevi zmoti in zmoti Obrambnega odvetnika. Namen 
+naloge ni predstaviti vseh metod, ki jih uporabljajo za vrednotenje dokazov, ker se ravno zaradi razvoja vede, to hitro posodablja. Zanimajo pa 
+me tudi možne napake in težave, ki se zgodijo pred predstavitvijo rezultatov statističnih analiz na sodišču. Osredotočila se bom 
+predvsem na evropsko kazensko pravo in evropske kazenske primere, ter svoje zaključke napisala na podlagi teh.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1302,11 +1321,32 @@ mreže sklepajo na argumente.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Zaključek}
-
+Statistika v kazenskem pravu je zelo razširjena veda, ki jo v prihodnosti čaka še veliko napredka. Njeni temelji se razlikujejo glede na države in pravno ureditev
+tamkajšnjih sodišč. Zahteva pa tudi dobre temelje koncepta verjetnosti, statistični znanstvenik, ki se ukvarja z analizo in vrednotenjem dokazov, pa mora poznati
+osnove prava.\\\\
+V diplomski nalogi ugotovim, na podlagi pregleda nekaterih drugih metod, da je Bayesov pristop na splošno najboljši za vrednotenje dokazov, še posebaj v primeru,
+ko se dokazi nanašajo na DNK ali laboratorijske analize. Koncept Bayesove metode je posodabljanje predhodnih oziroma apriornih verjetnosti začetnih hipotez in dokazov v
+posteriorne s pomočjo razmerja  verjetnosti in Bayesovega pravila. Težava pristopa se pojavi pri določanju predhodnih verjetnosti, ker lahko različne metode za izračun
+teh verjetnosti, dajejo na koncu različne rezultate. V delu pridem do ugotovitve, da je mogoče najbolje, da za določitev in izračun prehodnih verjetnosti poskrbijo
+statistični znanstveniki, saj znajo v svoje modele vključevati tudi pravno teorijo. Težave pa nastanejo tudi pri vključevanju novih dokazov, ki so sodišču priloženi
+tekom sodnega procesa in izključevanju nepomembnih oziroma nepotrebnih dokazov za sodni proces. Te dokaze vedno upoštevajo na drugačen način in jih drugače
+vpeljejo oziroma izključijo iz svojih izračunov, kar bi v nekaterih primerih lahko bilo sporno. In ker se nekateri sodni procesi zaključijo na podlagi statistične
+analize, bi po mojem mnenju tu morali biti malenkost bolj previdni in natančni. Torej do napačnih rezultatov lahko pridemo še pred predstavitvijo analize na sodišču, kar
+je dobro prikazano tudi v primeru sodbe medicinski sestri Lucii de Berk, kjer je prišlo do problema, da je statistični znanstvenik na podlagi določenih podatkov
+določil hipotezo, nato pa ta isti podatek uporabil za preverjanje te hipoteze. \\
+Ko pa statistični znanstvenik predstavi analizo in rezultate na sodišču pa se lahko zgodijo tudi druge zmote. Podrobno sem opredelila Tožilčevo zmoto, ki je tudi
+najpogostejša. Največkrat se verjetno zgodi, zaradi pomankljive predstavitve in razlage analize in, po mojih ugotovitvah, nezanimanja porote in sodnika, ko se predstavi
+nek algebrski zapis izračuna. Zaradi zamenjave dveh različnih pogojnih verjetnosti, se zgodijo tudi napačni zaključki sodnih procesov. Zmotam, ki izhajajo iz napačnega
+razumevanja pogojnih verjetnosti, se lahko izognemo z uporabo razmerja verjetnosti in Bayesove teorije, vendar sem prišla do sklepa, da je tudi pri tem razumevanju
+formulacij in izračunov veliko težav. \\
+Glavna ugotovitev dela je, da se lahko s pomočjo Bayesovih omrežij izognemo zmotam, saj ne prikažejo polno algebrsko obliko verjetnostne formule, omogočajo skoraj popolno
+avtomatizacijo potrebnih verjetnostnih izračunov in več prefinjenih možnosti. Ponovno pa je pomembno, da se za izdelavo uporablja dosleden okvir, saj lahko Bayesovo omrežje,
+ki jih oblikujejo različne stranke za en primer, kaž različne rezultate. Ker pa je v praksi ponavadi v sodni proces vključeno ogromno dokazov, ki jih težko analiziramo s
+tradicionalnimi pristopi, nam pridejo Bayesova omrežja prav, saj omogočajo kompleksnejše analize.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\pagebreak
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{thebibliography}{99}
     \bibitem{referenca-clanek}
@@ -1404,8 +1444,6 @@ mreže sklepajo na argumente.
 
     \bibitem{referenca-spletni-vir}
         W. P. Skorupski in H. Wainer, \emph{The Bayesian flip: Correcting the prosecutor's fallacy}, v: Royal Statistical Society, 4, [22. oktober 2022], dostopno na \url{https://rss.onlinelibrary.wiley.com/doi/full/10.1111/j.1740-9713.2015.00839.x}.
-
 \end{thebibliography}
-
 
 \end{document}

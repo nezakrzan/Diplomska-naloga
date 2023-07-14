@@ -26,9 +26,14 @@ hipotez in dokazov ponovno temelji na Bayesovi teoriji, se pomanjkljivost Bayeso
 
 UVOD:
 
-Velik del kazenskega prava je preverjanje teorij in hipotez na podlagi pridobljenih dokazov in čedalje bolj pogosto v sodni proces za ocenjevanje 
-vpliva dokaza na hipotezo vključujejo verjetnost in statistiko. 
-
+Statistične metode za vrednotenje dokazov v sodnih procesih so se začele uporabljati že v letih prejšnjega stoletja. Iz znanih teorij verjetnosti in
+statistike so se razvile metode za čim boljše ocenjevanje in vrednotenje dokazov na podlagi začetnih hipotez. Zaradi pomanjkanja znanja teritorije
+verjetnosti so se hitro začele pojavljati zmote tičnih analiz dokazov in zmote. Ker do večina zmot pride pri napačnem razumevanju končnega rezultata
+statistične analize, so danes v razvoju novi načini za predstavitev le teh. Poleg tega se problema zavedajo tudi pravne fakultete, ki v ta namen v svoje učne
+programe že vključujejo teorijo statistike in verjetnosti. Težava pa ni le pri razumevanju končnega poročila, ampak tudi pri analizi in vrednotenju
+dokazov. Statistični znanstveniki se srečujejo s problemi metod vrednotenja in upoštevanjem pravnih zakonov in teorije. V diplomskem delu poskušam
+čim bolje predstaviti nekatere metode za vrednotenje dokazov, njihove pomanjkljivosti in prednosti. Poleg tega pa poskušam najti način čim hitrejše
+analize dokazov in hkrati tudi najboljši prikaz končnega poročila analize poroti, sodnikom in odvetnikom v skladu s pravnimi pravili.
 Diplomsko delo je razdeljeno v več razdelkov. Najprej so opredeljeni osnovni koncepti statistike v kazenskem pravu in predstavljen je 
 razsikovalni proces za preučevanje problemov kriminologije. Nato sledi opis vrednotenja dokazov in konept verjetnosti v kazenskem 
 pravu. V glavnem delu diplomske naloge predstavim metode vrednotenja dokazov in se osredotočim na podroben opis Bayesove statistike 
@@ -45,5 +50,36 @@ dokazov in ocenjevanja verjetnosti hipotez so najboljše in kako se najlažje iz
 naloge ni predstaviti vseh metod, ki jih uporabljajo za vrednotenje dokazov, ker se ravno zaradi razvoja vede, to hitro posodablja. Zanimajo pa 
 me tudi možne napake in težave, ki se zgodijo pred predstavitvijo rezultatov statističnih analiz na sodišču. Osredotočila se bom 
 predvsem na evropsko kazensko pravo in evropske kazenske primere, ter svoje zaključke napisala na podlagi teh.
+
+
+ZAKLJUČEK:
+Statistika v kazenskem pravu je zelo razširjena veda, ki jo v prihodnosti čaka še veliko napredka. Njeni temelji se razlikujejo glede na države in pravno ureditev
+tamkajšnjih sodišč. Zahteva pa tudi dobre temelje koncepta verjetnosti, statistični znanstvenik, ki se ukvarja z analizo in vrednotenjem dokazov, pa mora poznati
+osnove prava.
+
+
+V diplomski nalogi ugotovim, na podlagi pregleda nekaterih drugih metod, da je Bayesov pristop na splošno najboljši za vrednotenje dokazov, še posebaj v primeru,
+ko se dokazi nanašajo na DNK ali laboratorijske analize. Koncept Bayesove metode je posodabljanje predhodnih oziroma apriornih verjetnosti začetnih hipotez in dokazov v
+posteriorne s pomočjo razmerja  verjetnosti in Bayesovega pravila. Težava pristopa se pojavi pri določanju predhodnih verjetnosti, ker lahko različne metode za izračun
+teh verjetnosti, dajejo na koncu različne rezultate. V delu pridem do ugotovitve, da je mogoče najbolje, da za določitev in izračun prehodnih verjetnosti poskrbijo
+statistični znanstveniki, saj znajo v svoje modele vključevati tudi pravno teorijo. Težave pa nastanejo tudi pri vključevanju novih dokazov, ki so sodišču priloženi
+tekom sodnega procesa in izključevanju nepomembnih oziroma nepotrebnih dokazov za sodni proces. Te dokaze vedno upoštevajo na drugačen način in jih drugače
+vpeljejo oziroma izključijo iz svojih izračunov, kar bi v nekaterih primerih lahko bilo sporno. In ker se nekateri sodni procesi zaključijo na podlagi statistične
+analize, bi po mojem mnenju tu morali biti malenkost bolj previdni in natančni. Torej do napačnih rezultatov lahko pridemo še pred predstavitvijo analize na sodišču, kar 
+je dobro prikazano tudi v primeru sodbe medicinski sestri Lucii de Berk, kjer je prišlo do problema, da je statistični znanstvenik na podlagi določenih podatkov 
+določil hipotezo, nato pa ta isti podatek uporabil za preverjanje te hipoteze. \\
+Ko pa statistični znanstvenik predstavi analizo in rezultate na sodišču pa se lahko zgodijo tudi druge zmote. Podrobno sem opredelila Tožilčevo zmoto, ki je tudi 
+najpogostejša. Največkrat se verjetno zgodi, zaradi pomankljive predstavitve in razlage analize in, po mojih ugotovitvah, nezanimanja porote in sodnika, ko se predstavi 
+nek algebrski zapis izračuna. Zaradi zamenjave dveh različnih pogojnih verjetnosti, se zgodijo tudi napačni zaključki sodnih procesov. Zmotam, ki izhajajo iz napačnega 
+razumevanja pogojnih verjetnosti, se lahko izognemo z uporabo razmerja verjetnosti in Bayesove teorije, vendar sem prišla do sklepa, da je tudi pri tem razumevanju 
+formulacij in izračunov veliko težav. \\
+Glavna gotovitev dela je, da se lahko s pomočjo Bayesovih omrežij izognemo zmotam, saj ne prikažejo polno algebrsko obliko verjetnostne formule, omogočajo skoraj popolno 
+avtomatizacijo potrebnih verjetnostnih izračunov in več prefinjenih možnosti. Ponovno pa je pomembno, da se za izdelavo uporablja dosleden okvir, saj lahko Bayesovo omrežje,
+ki jih oblikujejo različne stranke za en primer, kaž različne rezultate. Ker pa je v praksi ponavadi v sodni proces vključeno ogromno dokazov, ki jih težko analiziramo s 
+tradicionalnimi pristopi, nam pridejo Bayesova omrežja prav, saj omogočajo kompleksnejše analize.
+
+
+
+
 
 
