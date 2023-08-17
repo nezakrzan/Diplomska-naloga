@@ -17,11 +17,14 @@ pa izhaja iz prve, pa je Zmota obrambnega odvetnika in ker zmoti največkrat
 nista prepoznani, je posledica lahko tudi napačen zaključek sodnega procesa. Tožilčeva zmota temelji na zamenjavi dveh različnih pogojnih 
 verjetnosti, ki imata zelo različni vrednosti. Pri Zmoti obrambnega odvetnika pa dokaze obdolženca, ki se ujemajo z dokazi kaznivega 
 dejanja štejejo za nepomembne. Večina ostalih zmot prav tako izhaja iz napačnega razumevanja pogojne verjetnosti. \\
-Ker so zmote velik problem, pregledam tudi nekatere ustrezne pristope za izogib zmotam, pri čemer je po mojem mnenju najbolj učinkovit 
+Ker so zmote velik problem, opišem tudi nekatere ustrezne pristope za izogib zmotam, pri čemer je po mojem mnenju najbolj učinkovit 
 pristop uporaba Bayesovih omrežij, ker nam pomagajo določiti ustrezne verjetnostne formule v grafičnih modelih, ne da bi prikazali njihovo 
 popolno algebrsko obliko. Bistveno izboljšajo vrednotenje verjetnostnih razmerij, ki se uporabljajo za ocenjevanje dokazov in omogočajo 
 kompleksnejše analize. Za njihovo izdelavo je potreben dosleden okvir, sicer lahko pridemo do različnih rezultatov. Ker pa izračun verjetnosti 
 hipotez in dokazov ponovno temelji na Bayesovi teoriji, se pomanjkljivost Bayesove statistike prenese tudi na Bayesova omrežja.\\
+
+ANGLEŠKI POVZETEK:
+In this Bachelor’s thesis we describe the use of probability and statistics in criminal law.
 
 
 UVOD:
