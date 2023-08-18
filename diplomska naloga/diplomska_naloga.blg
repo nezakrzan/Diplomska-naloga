@@ -1,0 +1,63 @@
+This is BibTeX, Version 0.99d (TeX Live 2021)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: diplomska_naloga.aux
+The style file: fmf-sl.bst
+Database file #1: literatura.bib
+Warning--there's a number but no volume in aitkenb
+Warning--there's a number but no volume in aitkenc
+Warning--there's a number but no volume in berger
+Warning--there's a number but no volume in collins
+Warning--there's a number but no volume in conklin
+Warning--there's a number but no volume in macedo
+Warning--empty journal in fentonb
+Warning--there's a number but no volume in gastwirth
+Warning--empty journal in giannini
+Warning--there's a number but no volume in iliinski
+Warning--empty journal in matthews
+Warning--empty journal in orban
+Warning--there's a number but no volume in schumana
+Warning--there's a number but no volume in schumanb
+Warning--empty journal in scurich
+Warning--there's a number but no volume in tarling
+You've used 32 entries,
+            2705 wiz_defined-function locations,
+            747 strings with 8826 characters,
+and the built_in function-call counts, 11397 in all, are:
+= -- 771
+> -- 406
+< -- 0
++ -- 207
+- -- 116
+* -- 747
+:= -- 1467
+add.period$ -- 32
+call.type$ -- 32
+change.case$ -- 146
+chr.to.int$ -- 0
+cite$ -- 48
+duplicate$ -- 1034
+empty$ -- 1086
+format.name$ -- 137
+if$ -- 2292
+int.to.chr$ -- 0
+int.to.str$ -- 32
+missing$ -- 227
+newline$ -- 102
+num.names$ -- 64
+pop$ -- 518
+preamble$ -- 1
+purify$ -- 122
+quote$ -- 0
+skip$ -- 273
+stack$ -- 0
+substring$ -- 520
+swap$ -- 510
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 114
+warning$ -- 16
+while$ -- 94
+width$ -- 34
+write$ -- 249
+(There were 16 warnings)

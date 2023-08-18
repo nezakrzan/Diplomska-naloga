@@ -70,6 +70,9 @@ Because fallacies are a significant issue, I also describe some appropriate appr
 \usepackage{lipsum}
 \usepackage[slovene]{babel}
 \usepackage{float}
+\usepackage{breakurl} % Break URLs over multiple lines
+\usepackage{hyperref} % Link bibliography links (avoid long links for clarity)
+\usepackage{etoolbox}
 
 \restylefloat{table}
 
@@ -82,6 +85,8 @@ Because fallacies are a significant issue, I also describe some appropriate appr
 % ZAČETEK VSEBINE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
+
+\nocite{collins,byers,aitkena,hoff,aitkenb,aitkenc,aitkend,bello,berger,conklin,dahlman,fentona,fentonb,finkelstein,gastwirth,giannini,glover,iliinski,maarcot,macedo,maddan,matthews,orban,schumana,schumanb,scurich,balaba,blankenship,skorupski,balding,bidermann,tarling}
 
 \section{Uvod}
 Statistične metode za vrednotenje dokazov v sodnih procesih so se začele uporabljati že v letih prejšnjega stoletja. Iz znanih teorij verjetnosti in

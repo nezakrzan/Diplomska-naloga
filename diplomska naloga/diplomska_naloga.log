@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.12.1)  18 AUG 2023 16:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.12.1)  18 AUG 2023 18:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -241,26 +241,812 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box53
 \@float@everytoks=\toks34
 \@floatcapt=\box54
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/breakurl/breakurl.sty
+Package: breakurl 2013/04/10 v1.40 Breakable hyperref URLs
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/local/texlive/2021/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks35
+\XKV@tempa@toks=\toks36
 )
-\@float@every@table=\toks35
+\XKV@depth=\count274
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (/usr/local/texlive/2021/texmf-dist/tex/generic/iftex/ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+
+Package breakurl Warning: You are using breakurl while processing via pdflatex.
+(breakurl)                \burl will be just a synonym of \url.
+(breakurl)                 on input line 48.
+
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2021-02-27 v7.00k Hypertext links for LaTeX
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+)
+\@linkdim=\dimen154
+\Hy@linkcounter=\count275
+\Hy@pagecounter=\count276
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2021-02-27 v7.00k Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
+File: hyperref-langpatches.def 2021-02-27 v7.00k Hyperref: patches for babel languages
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count277
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2021-02-27 v7.00k Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing OFF on input line 4212.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4445.
+\c@Hy@tempcnt=\count278
+LaTeX Info: Redefining \url on input line 4804.
+\XeTeXLinkMargin=\dimen155
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count279
+\Field@Width=\dimen156
+\Fld@charsize=\dimen157
+Package hyperref Info: Hyper figures OFF on input line 6075.
+Package hyperref Info: Link nesting OFF on input line 6080.
+Package hyperref Info: Hyper index ON on input line 6083.
+Package hyperref Info: backreferencing OFF on input line 6090.
+Package hyperref Info: Link coloring OFF on input line 6095.
+Package hyperref Info: Link coloring with OCG OFF on input line 6100.
+Package hyperref Info: PDF/A mode OFF on input line 6105.
+LaTeX Info: Redefining \ref on input line 6145.
+LaTeX Info: Redefining \pageref on input line 6149.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi package
+with kernel methods
+)
+\Hy@abspage=\count280
+\c@Item=\count281
+\c@Hfootnote=\count282
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2021-02-27 v7.00k Hyperref driver for pdfTeX
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery package
+with kernel methods
+)
+\Fld@listcount=\count283
+\c@bookmark@seq@number=\count284
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
+)
+\Hy@SectionHShift=\skip56
+)
+\@float@every@table=\toks37
 
 
-Package amsthm Warning: Unknown theoremstyle `trditev' on input line 77.
+Package amsthm Warning: Unknown theoremstyle `trditev' on input line 80.
 
 
-Package amsthm Warning: Unknown theoremstyle `izrek' on input line 78.
+Package amsthm Warning: Unknown theoremstyle `izrek' on input line 81.
 
 \xmpdatafileoutstre@m=\write4
 \openout4 = `diplomska_naloga.xmpdata'.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/pdfx/pdfx.sty
 Package: pdfx 2019/02/27 v1.6.3 PDF/X and PDF/A support (CVR/HTH/RRM/PS)
-\pdfx@minorversion=\count274
- (/usr/local/texlive/2021/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2020/03/06 v1.0d TeX engine tests
-) (/usr/local/texlive/2021/texmf-dist/tex/generic/iftex/ifpdf.sty
-Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
-) (/usr/local/texlive/2021/texmf-dist/tex/generic/iftex/ifxetex.sty
+\pdfx@minorversion=\count285
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/iftex/ifxetex.sty
 Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/base/everyshi-ltx.sty
-Package: everyshi-ltx 2020
+Package: everyshi-ltx 2020/08/17 v1.0a Emulation of the original everyshi package
+with kernel methods
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+){/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map} (/usr/local/texlive/2021/texmf-dist/tex/latex/pdfx/l8u-penc.def
+File: l8u-penc.def 2017/06/23 v0.8 Custom LaTeX file, for UTF8 encoded letters and symbols
+LaTeX Info: Composite with undeclared \b in encoding L8U on input line 278.
+)
+\pdfxsafeforxmp@toks=\toks38
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 709.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+\pdfx@tmptoks=\toks39
+
+
+Package hyperref Warning: Option `pdftex' has already been used,
+(hyperref)                setting the option has no effect on input line 1461.
+
+
+Package hyperref Warning: Option `pdfa' has already been used,
+(hyperref)                setting the option has no effect on input line 1461.
+
+Package hyperref Info: Option `unicode' set `true' on input line 1463.
+(/usr/local/texlive/2021/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
+)
+Package hyperref Info: Option `psdextra' set `true' on input line 1465.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/puenc-greekbasic.def
+File: puenc-greekbasic.def 2021-02-27 v7.00k Hyperref: PDF Unicode definition (greek block) (HO)
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/psdextra.def
+File: psdextra.def 2021-02-27 v7.00k Hyperref: Additions to PDF string support
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/colorprofiles/colorprofiles.sty
+Package: colorprofiles 2018/11/01 v1.0.1 color profiles for PDF/X and PDF/A support
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/colorprofiles/colorprofiles.tex)) (/usr/local/texlive/2021/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
+File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/pdfx/AdobeColorProfiles.tex) (/usr/local/texlive/2021/texmf-dist/tex/latex/pdfx/8bit.def
+File: 8bit.def 2008/03/30 v1.1d Input encoding file
+)
+** pdfx: Metadata file diplomska_naloga.xmpdata read successfully.
+(/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.xmpdata)<<sRGB.icc>> (/usr/local/texlive/2021/texmf-dist/tex/latex/pdfx/8bit.def
+File: 8bit.def 2008/03/30 v1.1d Input encoding file
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/pdfx/8bit.def
+File: 8bit.def 2008/03/30 v1.1d Input encoding file
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/stringenc/se-utf8.def
+File: se-utf8.def 2019/11/29 v1.12 stringenc: UTF-8
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/pdfx/8bit.def
+File: 8bit.def 2008/03/30 v1.1d Input encoding file
+)
+Package hyperref Info: Option `unicode' set `true' on input line 2411.
+Package hyperref Info: Option `unicode' set `true' on input line 2412.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/pdfx/8bit.def
+File: 8bit.def 2008/03/30 v1.1d Input encoding file
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/pdftex/glyphtounicode.tex) (/usr/local/texlive/2021/texmf-dist/tex/latex/pdfx/glyphtounicode-cmr.tex) (/usr/local/texlive/2021/texmf-dist/tex/latex/pdfx/glyphtounicode-ntx.tex) (/usr/local/texlive/2021/texmf-dist/tex/latex/xmpincl/xmpincl.sty
+Package: xmpincl 2008/05/10 v2.2 Include XMP data in pdflatex
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/pdfx/8bit.def
+File: 8bit.def 2008/03/30 v1.1d Input encoding file
+)
+Using XMP template file: pdfa.xmp
+\xmpinclWrite=\write5
+\xmpinclRead=\read4
+\openout5 = `pdfa.xmpi'.
+
+<<pdfa.xmpi>>)
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 87.
+Package hyperref Info: Option `colorlinks' set `true' on input line 87.
+Package hyperref Info: Option `unicode' set `true' on input line 87.
+Package hyperref Info: Option `breaklinks' set `true' on input line 87.
+Package hyperref Info: Option `psdextra' set `true' on input line 87.
+ (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.aux
+
+LaTeX Warning: Label `table:1' multiply defined.
+
+
+LaTeX Warning: Label `table:1' multiply defined.
+
+)
+\openout1 = `diplomska_naloga.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+ (/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count286
+\scratchdimen=\dimen158
+\scratchbox=\box55
+\nofMPsegments=\count287
+\nofMParguments=\count288
+\everyMPshowfont=\toks40
+\MPscratchCnt=\count289
+\MPscratchDim=\dimen159
+\MPnumerator=\count290
+\makeMPintoPDFobject=\count291
+\everyMPtoPDFconversion=\toks41
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+Package hyperref Info: Link coloring ON on input line 87.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count292
+)
+LaTeX Info: Redefining \ref on input line 87.
+LaTeX Info: Redefining \pageref on input line 87.
+LaTeX Info: Redefining \nameref on input line 87.
+ (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.out) (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.out)
+\@outlinefile=\write6
+\openout6 = `diplomska_naloga.out'.
+
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 87.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 87.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 87.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 87.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <17.28> on input line 87.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 87.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 87.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 87.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 87.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 87.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 87.
+ [1
+
+] [2
+
+]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 87.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 87.
+ (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.toc [3])
+\tf@toc=\write7
+\openout7 = `diplomska_naloga.toc'.
+
+ [4]
+Underfull \hbox (badness 10000) in paragraph at lines 87--87
+
+ []
+
+[5
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 87--87
+
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 92--116
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--116
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--126
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 132--138
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--171
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 175--193
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 197--225
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--225
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--225
+
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 229--244
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--244
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--244
+
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 246--256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--256
+
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 269--285
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--285
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--285
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--285
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 291--295
+
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 307--315
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 339--341
+
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 363--377
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 363--377
+
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 410--423
+
+ []
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 430--478
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 430--478
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 430--478
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 430--478
+
+ []
+
+[17]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18]
+Underfull \hbox (badness 10000) in paragraph at lines 499--522
+
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 533--545
+
+ []
+
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 548--554
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 548--554
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 556--558
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 585--591
+
+ []
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 593--602
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 610--615
+
+ []
+
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 631--636
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 642--646
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 648--658
+
+ []
+
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 678--701
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 678--701
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 678--701
+
+ []
+
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 703--739
+
+ []
+
+[25] [26]
+Underfull \hbox (badness 10000) in paragraph at lines 776--779
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 781--785
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 789--791
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 808--817
+
+ []
+
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 820--827
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 820--827
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 833--838
+
+ []
+
+[28]
+Underfull \hbox (badness 10000) in paragraph at lines 873--879
+
+ []
+
+[29]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 891.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Underfull \hbox (badness 10000) in paragraph at lines 900--931
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 900--931
+
+ []
+
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 949--962
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 949--962
+
+ []
+
+[31]
+<slika_3.png, id=417, 701.62125pt x 179.67125pt>
+File: slika_3.png Graphic file (type png)
+<use slika_3.png>
+Package pdftex.def Info: slika_3.png  used on input line 1005.
+(pdftex.def)             Requested size: 420.97598pt x 107.80356pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 993--1037
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 993--1037
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 993--1037
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 993--1037
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 993--1037
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 993--1037
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 993--1037
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 993--1037
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 993--1037
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 993--1037
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 993--1037
+
+ []
+
+[32] [33 </Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/slika_3.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1041--1067
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1041--1067
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1041--1067
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1041--1067
+
+ []
+
+[34]
+Underfull \hbox (badness 10000) in paragraph at lines 1080--1086
+
+ []
+
+[35]
+<slika1.png, id=440, 256.96pt x 252.945pt>
+File: slika1.png Graphic file (type png)
+<use slika1.png>
+Package pdftex.def Info: slika1.png  used on input line 1100.
+(pdftex.def)             Requested size: 115.63092pt x 113.82419pt.
+<slika2.png, id=441, 262.9825pt x 260.975pt>
+File: slika2.png Graphic file (type png)
+<use slika2.png>
+Package pdftex.def Info: slika2.png  used on input line 1120.
+(pdftex.def)             Requested size: 118.34102pt x 117.43767pt.
+ [36 </Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/slika1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1135--1142
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1145--1154
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1145--1154
+
+ []
+
+[37 </Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/slika2.png>] [38]
+Underfull \hbox (badness 10000) in paragraph at lines 1194--1203
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1220--1226
+
+ []
+
+[39]
+Underfull \hbox (badness 10000) in paragraph at lines 1256--1271
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1256--1271
+
+ []
+
+[40]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 1273.
+
+[41]
+Underfull \hbox (badness 10000) in paragraph at lines 1298--1317
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1298--1317
+
+ []
+
+[42]
+Underfull \hbox (badness 10000) in paragraph at lines 1321--1343
+
+ []
+
+[43] [44] (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.bbl [45
+
+]) [46] (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.ind) (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `diplomska_naloga.out' has not changed.
+(rerunfilecheck)             Checksum: 7CD21C7895EF5E4DD4A13A84DA650095;5414.
+ ) 
+Here is how much of TeX's memory you used:
+ 15628 strings out of 478994
+ 226189 string characters out of 5858184
+ 647803 words of memory out of 5000000
+ 32585 multiletter control sequences out of 15000+600000
+ 473355 words of font info for 79 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 82i,10n,88p,1025b,2538s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
+Output written on "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.pdf" (46 pages, 569899 bytes).
+PDF statistics:
+ 656 PDF objects out of 1000 (max. 8388607)
+ 569 compressed objects within 6 object streams
+ 182 named destinations out of 1000 (max. 500000)
+ 372 words of extra memory for PDF output out of 10000 (max. 10000000)
+
