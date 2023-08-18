@@ -343,8 +343,9 @@
   \thispagestyle{empty}
   \pdfbookmark[1]{Povzetek}{povzetek}
   \@frontpages@sl@povzetek
-  \@frontpages@en@abstract
   \@frontpages@sl@kljucnebesede
+  \@frontpages@en@abstract
+  \@frontpages@en@keywords
   \cleardoublepage
 }
 \def\@frontpages@en{
@@ -598,14 +599,12 @@
   \textbf{Math. Subj. Class. (2020):} \@klasifikacija \\[1mm]
   \def\sep{, } % Pri izpisu ključne besede ločimo z vejico.
   \textbf{Ključne besede:} \@kljucnebesede \\[1mm]
-  \textbf{Keywords:} \@keywords
 }
 \def\@frontpages@en@keywords{
   \noindent
   \textbf{Math. Subj. Class. (2020):} \@klasifikacija \\[1mm]
   \def\sep{, } % Pri izpisu ključne besede ločimo z vejico.
   \textbf{Keywords:} \@keywords \\[1mm]
-  \textbf{Ključne besede:} \@kljucnebesede
 }
 \def\@frontpages@trst@keywords{
   \noindent
