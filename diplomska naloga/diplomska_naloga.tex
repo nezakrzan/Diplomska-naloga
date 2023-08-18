@@ -1,24 +1,15 @@
-%\documentclass[mat1, tisk]{fmfdelo}
 \documentclass[fin1, tisk]{fmfdelo}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % METAPODATKI
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% - vaše ime
-\avtor{Neža Kržan}
-% - naslov dela v slovenščini
-\naslov{Statistika v kazenskem pravu}
-% - naslov dela v angleščini
-\title{Criminal justice statistics}
-% - ime mentorja/mentorice s polnim nazivom:
-\mentor{izr. prof. dr. Jaka Smrekar}
 
-% - leto diplome
+\avtor{Neža Kržan}
+\naslov{Statistika v kazenskem pravu}
+\title{Criminal justice statistics}
+\mentor{izr. prof. dr. Jaka Smrekar}
 \letnica{2023}
 
-% - povzetek v slovenščini
-%   V povzetku na kratko opišite vsebinske rezultate dela. Sem ne sodi razlaga
-%   organizacije dela, torej v katerem razdelku je kaj, pač pa le opis vsebine.
 \povzetek{
 Diplomsko delo opisuje uporabo verjetnosti in statistike v kazenskem pravu. Statistične metode so temelj kazenskega pravosodja in kriminologije, 
 pa ne le za raziskave, pri katerih so podlaga statistični podati in analize, ampak tudi za vrednotenje hipotez in dokazov sodnega procesa. Čedalje 
@@ -44,32 +35,28 @@ kompleksnejše analize. Za njihovo izdelavo je potreben dosleden okvir, sicer la
 hipotez in dokazov ponovno temelji na Bayesovi teoriji, se pomanjkljivost Bayesove statistike prenese tudi na Bayesova omrežja.
 } 
 
-% - klasifikacijske oznake, ločene z vejicami
-%   Oznake, ki opisujejo področje dela, so dostopne na strani https://www.ams.org/msc/
-\klasifikacija{62P99, 62C10, 60A99}
-
-% - ključne besede, ki nastopajo v delu, ločene s \sep
-\kljucnebesede{bayesova statistika\sep predhodna verjetnost\sep posteriorna verjetnost\sep razmerje verjetnosti\sep frekvence\sep tožilčeva zmota\sep bayesova omrežja}
-
-% - povzetek v angleščini
 \abstract{In this Bachelor’s thesis we describe the use of probability and statistics in criminal justice. Statistical methods are the foundation of criminal justice and criminology, not only for research based on statistical data and analysis, but also for evaluating hypotheses and evidence in the judicial process. Increasingly, a significant portion of the conclusion of legal proceedings is based on probabilistic calculations of the impact of evidence on initial and intermediate hypotheses. The concept of probability relies on comparing the probability of evidence based on two competing propositions, namely the prosecution's proposition and the defense's proposition, and is crucial in assessing evidence as it provides an objective evaluation of their impact on the probability of a particular assumption or hypothesis. In this Bachelor’s thesis we also describe methods that are used in the assessment of evidence.\\
 The most commonly used method, and also one of the most developed, is based on Bayesian statistics. Bayesian statistics is a statistical branch that employs mathematical approaches to update prior probabilities of evidence into posterior probabilities. Challenges arise in determining prior probabilities, as there is a divided opinion on who should establish these probabilities and in what manner. Different methods of determination can yield different results, which is problematic since the entire Bayesian theory relies on these initial calculations. Due to the probabilistic nature of the Bayesian theorem, the measure of the evidential value uses the likelihood ratio.\\
 As statistics in criminal law is still evolving and the knowledge and understanding of probability are quite limited among lawyers, judges, and juries, numerous misconceptions arise. The most well-known examples of such misconceptions are the Prosecutor's Fallacy, which is a well-known statistical problem, and a more significant fallacy stemming from it, known as the Defense Attorney's Fallacy. Because these fallacies often go unrecognized, their consequence can be an incorrect conclusion in the judicial process. The Prosecutor's Fallacy is based on the confusion of two different conditional probabilities with vastly different values. In the Defense Attorney's Fallacy, evidence presented by the accused that matches evidence of the criminal act is considered insignificant. Most other fallacies also arise from a misunderstanding of conditional probability. \\
 Because fallacies are a significant issue, I also describe some appropriate approaches to avoid them. In my opinion, the most effective approach is the use of Bayesian networks, as they help us determine appropriate probability formulas within graphical models without displaying their complete algebraic form. They significantly enhance the evaluation of likelihood ratios used for evidence assessment and enable more complex analyses. Constructing them requires a consistent framework, as inconsistent approaches can yield different results. However, since the computation of hypotheses and evidence probabilities once again relies on Bayesian theory, the shortcomings of Bayesian statistics are also transferred to Bayesian networks.
 }
 
-% - angleški prevod ključnih besed
 \klasifikacija{62P99, 62C10, 60A99}
+\kljucnebesede{bayesova statistika\sep predhodna verjetnost\sep posteriorna verjetnost\sep razmerje verjetnosti\sep frekvence\sep tožilčeva zmota\sep bayesova omrežja}
 \keywords{bayesian statistics\sep apriori probability\sep posterior probability\sep likelihood ratio\sep frequencies\sep prosecutor's fallacy\sep bayesian networks}
 
-% - angleško-slovenski slovar strokovnih izrazov
 \slovar{
  \geslo{apriori probability}{predhodna verjetnost}
  \geslo{posterior probability}{posteriorna verjetnost}
  \geslo{likelihood ratio}{razmerje verjetnosti}
+ \geslo{fallacy}{tožilčeva zmota}
  \geslo{prosecutor's fallacy}{tožilčeva zmota}
+ \geslo{defense attorney's fallacy}{zmota obrambnega odvetnika}
  \geslo{network}{omrežje}
 }
+
+\literatura{lit.bib}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % DODATNE DEFINICIJE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -82,15 +69,12 @@ Because fallacies are a significant issue, I also describe some appropriate appr
 \usepackage{graphicx}
 \usepackage{lipsum}
 \usepackage[slovene]{babel}
-
 \usepackage{float}
+
 \restylefloat{table}
 
-% deklarirajte vse matematične operatorje, da jih bo LaTeX pravilno stavil
-% \DeclareMathOperator{\...}{...}
-
-\theoremstyle{definition} % tekst napisan pokončno
-\theoremstyle{trditev} % tekst napisan pokončno
+\theoremstyle{definition} 
+\theoremstyle{trditev} 
 \theoremstyle{izrek}
 
 
@@ -98,6 +82,7 @@ Because fallacies are a significant issue, I also describe some appropriate appr
 % ZAČETEK VSEBINE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
+
 \section{Uvod}
 Statistične metode za vrednotenje dokazov v sodnih procesih so se začele uporabljati že v letih prejšnjega stoletja. Iz znanih teorij verjetnosti in
 statistike so se razvile metode za čim boljše ocenjevanje in vrednotenje dokazov na podlagi začetnih hipotez. Zaradi pomanjkanja znanja teorije
@@ -1243,11 +1228,13 @@ na nedolžnost, se zdi, da sledi, da zdaj obstoj priznanja ne more povečati ver
 da je verjetnost, da bo policija zaslišala krivega, devetkrat večja kot verjetnost, da bo zaslišala nedolžnega posameznika. Nazadnje predpostavimo, da je 
 predhodna verjetnost, da je oseba X kriva, na podlagi vseh dokazov pred priznanjem, 0,75. \\
 Verjetnosti, ki veljajo za opisano situacijo:\\ \vspace{2mm}
-$P(E \lvert H, I) = 0,4\\ \vspace{2mm}$
-$P(E \lvert \neg H, I) = 0,6\\ \vspace{2mm}$
-$P(H) = 0,75\\ \vspace{2mm}$
-$P(\neg H) = 0.25\\ \vspace{2mm}$
-$\frac{P(I \lvert H)}{P(I \lvert \neg H)} = 9.\\ \vspace{2mm}$
+\[P(E \lvert H, I)  = 0,4  \]
+\[P(E \lvert \neg H, I) = 0,6  \]
+\[P(H) = 0,75  \]
+\[P(\neg H) = 0.25  \]
+\[\frac{P(I \lvert H)}{P(I \lvert \neg H)} = 9. \]
+
+
 Sledi po enačbi \eqref{eq:razširitev}
 \begin{equation}\label{eq:rezultat}
     \frac{P(H \lvert E, I)}{P(\neg H \lvert E, I)}  = \frac{P(H \lvert I)}{P(\neg H \lvert I)}  \times \frac{P(E \lvert H, I)}{P(E \lvert \neg H, I)} = \frac{0,75}{0,25} \times 9 \times \frac{0,4}{0,6} = 18
@@ -1351,104 +1338,6 @@ tradicionalnimi pristopi, nam pridejo Bayesova omrežja prav, saj omogočajo kom
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\pagebreak
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{thebibliography}{99}
-    \bibitem{referenca-clanek}
-        C. Aitken, G. Jackson in P. Roberts, \emph{1. Fundamentals of Probability and Statistical Evidence in Criminal Proceedings}, Guidance for Judges, Lawyers, Forensic Scientists and Expert Witnesses, Communicating and Interpreting Statistical Evidence in the Administration of Criminal Justice, 2010.
-
-    \bibitem{referenca-clanek}
-        C. Aitken in Y. McDermott, \emph{Analysis of evidence in international criminal trials using Bayesian Belief Networks}, Law, Probability and Risk, \textbf{16} (2017) 111-129.
-
-    \bibitem{referenca-clanek}
-        C. Aitken, W. C. Thompson in F. Taroni, \emph{How the Probability of a False Positive Affects the Value of DNA Evidence}, J. Forensic Sci., \textbf{48} (2003) 47-54.
-
-    \bibitem{referenca-clanek}
-        D. Balding, N. Fenton, R. Gill, D. Lagnado in L. Schneps \emph{Twelve Guiding Principles and Recommendations for Dealing with Quantitative Evidence in Criminal Law}, Probability and Statistics in Forensic Science,Isaac Newton Institute for Mathematical Sciences, 2017.
-
-    \bibitem{referenca-clanek}
-        D. Berger, N. Fenton in M. Neil, \emph{Bayes and the Law}, Annu Rev Stat Appl. Author manuscript., \textbf{3} (2016) 51-77.
-
-    \bibitem{referenca-clanek}
-        M. Conklin, \emph{The Effectiveness of Bayesian Jury Instructions in Mitigating the Defense Attorney's Fallacy}, Hous. L. Rev., \textbf{73} (2019) 21-30.
-
-    \bibitem{referenca-clanek}
-        M. Collins, R. Gill, M. Van Lambalgen in R. Meester, \emph{On the (ab)use of statistics in the legal case against the nurse Lucia de B.}, Law, Probability and Risk, \textbf{5} (2007) 233-250.
-
-    \bibitem{referenca-clanek}
-        C. Dahlman in E. Kolflaath, \emph{The Problem of the Prior in Criminal Trials}, Lund University in University of Bergen, 2021.
-
-    \bibitem{referenca-clanek}
-        N. Fenton in M. Neil, \emph{Avoiding Probabilistic Reasoning Fallacies in Legal Practice using Bayesian Networks}, RADAR, School of Electronic Engineering and Computer Science, Queen Mary (University of London), 2008.
-
-    \bibitem{referenca-clanek}
-        N. Fenton in M. Neil, \emph{The “Jury Observation Fallacy” and the use of Bayesian Networks to present Probabilistic Legal Arguments}, Oddelek za računalništvo in informatiko, Faculty of Informatics and Mathematical Sciences, Queen Mary and Westfield College, 2000.
-
-    \bibitem{referenca-clanek}
-        J. L. Gastwirth, \emph{Statistical Reasoning in the Legal Setting}, The American Statistician, \textbf{46} (1992) 55–69.
-
-    \bibitem{referenca-clanek}
-        A. Giannini, \emph{Theories of Evaluation of Evidence and the International Criminal Court Practice}, Maastricht University - Department of Criminal Law and Criminology, 2017.
-
-    \bibitem{referenca-clanek}
-        N. Iliinsky in D. Westreich, \emph{Epidemiology Visualized: The Prosecutor’s Fallacy}, American Journal of Epidemiology, \textbf{179} (2014) 1125-1127.
-
-    \bibitem{referenca-clanek}
-        C. de Macedo, \emph{Guilt by statistical association: revisiting the prosecutor’s fallacy and the interrogator’s fallacy}, The Journal of Philosophy, \textbf{105} (2008) 320-332.
-
-    \bibitem{referenca-clanek}
-        R. A. Matthews, \emph{The interrogator’s fallacy}, Aston University, 1995.
-
-    \bibitem{referenca-clanek}
-        J. Orbán, \emph{Bayesian Networks in Law Enforcement}, Budapest University of Technology and Economics, 2022.
-
-    \bibitem{referenca-clanek}
-        E. L. Schumann in W. C. Thompson, \emph{Interpretation of Statistical Evidence in Criminal Trials}, Law and Human Behavior, \textbf{11} (1987) 167–187.
-
-    \bibitem{referenca-clanek}
-        E. L. Schumann in W. C. Thompson, \emph{Interpretation of statistical evidence in criminal trials - The Prosecutor's Fallacy and the Defense Attorney's Fallacy}, Law and Human Behavior, \textbf{11} (1987) 167-187.
-
-    \bibitem{referenca-clanek}
-        N. Scurich, \emph{Interpretative Arguments of Forensic Match Evidence: An Evidentiary Analysis}, University of Southern California, 2010.
-
-    \bibitem{referenca-clanek}
-        R. Tarling, \emph{Statistical applications in criminology}, The Statisticia. \textbf{35} (1986) 369-388.
-
-    \bibitem{referenca-knjiga}
-        C. Aitken, S. Bozza in F. Taroni, \emph{Evidence for Forensic Scientists}, \textbf{3}, Wiley, West Sussex, 2021.
-
-    \bibitem{referenca-knjiga}
-        M. B. Blankenship in G. F. Vito, \emph{Statistical analysis in criminal justice and criminology: a user's guide}, \textbf{1}, Prentice Hall, Upper Saddle River, 2002.
-
-    \bibitem{referenca-knjiga}
-        B. Byers in J. McKean, \emph{Data analysis for criminal justice and criminology: practice and applications}, \textbf{1}, Allyn and Bacon, Boston, 2000.
-
-    \bibitem{referenca-knjiga}
-        M. O. Finkelstein in B. Levin, \emph{Statistics for Lawyers - Statistics for Social and Behavioral Sciences}, \textbf{3}, Springer, New York, 2015.
-
-    \bibitem{referenca-knjiga}
-        P. D. Hoff, \emph{A First Course in Bayesian Statistical Methods}, \textbf{1}, Springer, New York, 2009.
-
-    \bibitem{referenca-knjiga}
-        S. Maddan in J. T. Walker, \emph{Statistics in criminology and criminal justice: analysis and interpretation}, \textbf{3}, Jones and Bartlett Publishers, Sudbury, 2009.
-
-    \bibitem{referenca-knjiga}
-        B. Marcot, P. Naim in O. Pourret, \emph{Bayesian Networks, A Practical Guide to Applications}, \textbf{1}, John Wiley \& Sons, West Sussex, 2008.
-
-    \bibitem{diploma-magisterij}
-        M. Di Bello, \emph{Statistics and probability in criminal trials}, doktorska dizertacija, Oddelek za filozofijo, Univerza Stanford, 2013.
-
-    \bibitem{referenca-spletni-vir}
-        J. Balaba, \emph{Statistical Analysis In Criminal Justice Research}, v: Journal of Civil and Legal Sciences, 5, [3. december 2022], dostopno na \url{https://www.omicsonline.org/open-access/statistical-analysis-in-criminal-justice-research}.
-
-    \bibitem{referenca-spletni-vir}
-        A. Biedermann, F. Taroni, W. C. Thompson in J. Vuille, \emph{The role of prior probability in forensic assessments}, v: Front Genet., 3, [15. oktober 2022], dostopno na \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3809556/}.
-
-    \bibitem{referenca-spletni-vir}
-        D. A. Glover in V. Ramakrishnan, \emph{The use of statistics in legal proceedings: a primer for courts}, v: The Royal Society, 1, [25. november 2022], dostopno na \url{royalsociety.org/science-and-law}.
-
-    \bibitem{referenca-spletni-vir}
-        W. P. Skorupski in H. Wainer, \emph{The Bayesian flip: Correcting the prosecutor's fallacy}, v: Royal Statistical Society, 4, [22. oktober 2022], dostopno na \url{https://rss.onlinelibrary.wiley.com/doi/full/10.1111/j.1740-9713.2015.00839.x}.
-\end{thebibliography}
 
 \end{document}
