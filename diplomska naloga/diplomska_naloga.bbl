@@ -1,0 +1,123 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem{byers}
+J.~M. B.~Byers, \emph{Data analysis for criminal justice and criminology:
+  practice and applications}, Allyn and Bacon, Boston, 2000.
+
+\bibitem{maarcot}
+O.~P. B.~Marcot, P.~Naim, \emph{Bayesian Networks, A Practical Guide to
+  Applications}, John Wiley & Sons,, est Sussex,, 2008.
+
+\bibitem{balaba}
+J.~Balaba, \emph{Statistical analysis in criminal justice research}.
+
+\bibitem{bello}
+M.~D. Bello, \emph{Statistics and probability in criminal trials}, doktorska
+  disertacija, Univerza Stanford, 2013.
+
+\bibitem{aitken3}
+F.~T. C.~Aitken, W. C.~Thompson, \emph{How the probability of a false positive
+  affects the value of dna evidence}, J. Forensic Sci. (48) (2003) 47--54.
+
+\bibitem{aitken1}
+P.~R. C.~Aitken, G.~Jackson, \emph{1. fundamentals of probability and
+  statistical evidence in criminal proceedings}, Guidance for Judges, Lawyers,
+  Forensic Scientists and Expert Witnesse, Communicating and Interpreting
+  Statistical Evidence in the Administration of Criminal Justice  (2010).
+
+\bibitem{aitken2}
+Y.~M. C.~Aitken, \emph{Analysis of evidence in international criminal trials
+  using bayesian belief networks}, Law, Probability and Risk (16) (2017)
+  111--129.
+
+\bibitem{dahlman}
+E.~K. C.~Dahlman, \emph{The problem of the prior in criminal trials}, Lund
+  University in University of Bergen  (2021).
+
+\bibitem{conklin}
+M.~Conklin, \emph{The effectiveness of bayesian jury instructions in mitigating
+  the defense attorney’s fallacy}, Hous. L. Rev (73) (2019) 21--30.
+
+\bibitem{balding}
+R.~G. D. L. L.~S. D.~Balding, N.~Fenton, \emph{Twelve guiding principles and
+  recommendations for dealing with quantitative evidence in criminal law},
+  Probability and Statistics in Forensic Science  (2017).
+
+\bibitem{berger}
+M.~N. D.~Berger, N.~Fenton, \emph{Bayes and the law}, Annu Rev Stat Appl.
+  Author manuscript. (3) (2016) 51--77.
+
+\bibitem{macedo}
+C.~de~Macedo, \emph{Guilt by statistical association: revisiting the
+  prosecutor’s fallacy and the interrogator’s fallacy}, The Journal of
+  Philosophy (105) (2008) 320--332.
+
+\bibitem{schuman1}
+W.~C.~T. E.~L.~Schumann, \emph{Interpretation of statistical evidence in
+  criminal trials}, Law and Human Behavior (11) (1987) 167--187.
+
+\bibitem{schuman2}
+W.~C.~T. E.~L.~Schumann, \emph{Interpretation of statistical evidence
+  incriminal trials -- the prosecutor’s fallacy and the defense attorney’s
+  fallacy}, Law and Human Behavior (11) (1987) 167--187.
+
+\bibitem{gastwirth}
+J.~L. Gastwirth, \emph{Statistical reasoning in the legal setting}, The
+  American Statistician (46) (1992) 55--69.
+
+\bibitem{giannini}
+A.~Giannini, \emph{heories of evaluation of evidence and the international
+  criminal court practice}  (2017).
+
+\bibitem{hoff}
+P.~D. Hoff, \emph{A First Course in Bayesian Statistical Methods}, Springe, New
+  York, 2009.
+
+\bibitem{matthews}
+T.~interrogator’s fallacy, \emph{R. a. matthews}  (1995).
+
+\bibitem{blankenship}
+G.~F.~V. M.~B.~Blankenship, \emph{Statistical analysis in criminal justice and
+  criminology: a user’s guide}, Prentice Hall, Upper Saddle River, 2002.
+
+\bibitem{collins}
+M.~V. L. R.~M. M.~Collins, R.~Gill, \emph{On the (ab)use of statistics in the
+  legal case against the nurse lucia de b.}, Probability and Risk (5) (2007)
+  233--250.
+
+\bibitem{finkelstein}
+B.~L. M.~O.~Finkelstein, \emph{Statistics for Lawyers -- Statistics for Social
+  and Behavioral Sciences}, Springe, New York, 2015.
+
+\bibitem{fenton2}
+M.~N. N.~Fenton, \emph{The “jury observation fallacy” and the use of
+  bayesian networks to present probabilistic legal arguments}  (2000).
+
+\bibitem{fenton1}
+M.~N. N.~Fenton, \emph{Avoiding probabilistic reasoning fallacies in legal
+  practice using bayesian networks}, RADAR  (2008).
+
+\bibitem{iliinski}
+D.~W. N.~Iliinsky, \emph{Epidemiology visualized: The prosecutor’s fallacy},
+  American Journal of Epidemiology (179) (2014) 1125--1127.
+
+\bibitem{orban}
+J.~Orbán, \emph{Bayesian networks in law enforcement}  (2022).
+
+\bibitem{maddan}
+J.~T.~W. S.~Maddan, \emph{Statistics in criminology and criminal justice:
+  analysis and interpretation}, Jones and Bartlett Publishers, Sudbury, 2009.
+
+\bibitem{scurich}
+N.~Scurich, \emph{Interpretative arguments of forensic match evidence: An
+  evidentiary analysis}  (2010).
+
+\bibitem{tarling}
+R.~Tarling, \emph{Statistical applications in criminology}, The Statisticia
+  (35) (1986) 369--388.
+
+\end{thebibliography}
