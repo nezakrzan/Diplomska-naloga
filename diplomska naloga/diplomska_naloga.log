@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.12.1)  22 AUG 2023 15:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.12.1)  23 AUG 2023 09:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -364,10 +364,10 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 \@float@every@table=\toks37
 
 
-Package amsthm Warning: Unknown theoremstyle `trditev' on input line 80.
+Package amsthm Warning: Unknown theoremstyle `trditev' on input line 102.
 
 
-Package amsthm Warning: Unknown theoremstyle `izrek' on input line 81.
+Package amsthm Warning: Unknown theoremstyle `izrek' on input line 103.
 
 \xmpdatafileoutstre@m=\write4
 \openout4 = `diplomska_naloga.xmpdata'.
@@ -455,11 +455,11 @@ Using XMP template file: pdfa.xmp
 \openout5 = `pdfa.xmpi'.
 
 <<pdfa.xmpi>>)
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 87.
-Package hyperref Info: Option `colorlinks' set `true' on input line 87.
-Package hyperref Info: Option `unicode' set `true' on input line 87.
-Package hyperref Info: Option `breaklinks' set `true' on input line 87.
-Package hyperref Info: Option `psdextra' set `true' on input line 87.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 109.
+Package hyperref Info: Option `colorlinks' set `true' on input line 109.
+Package hyperref Info: Option `unicode' set `true' on input line 109.
+Package hyperref Info: Option `breaklinks' set `true' on input line 109.
+Package hyperref Info: Option `psdextra' set `true' on input line 109.
  (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.aux
 
 LaTeX Warning: Label `table:1' multiply defined.
@@ -470,24 +470,24 @@ LaTeX Warning: Label `table:1' multiply defined.
 )
 \openout1 = `diplomska_naloga.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
  (/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count286
@@ -507,7 +507,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/local/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring ON on input line 87.
+Package hyperref Info: Link coloring ON on input line 109.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/local/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty
@@ -517,84 +517,84 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count292
 )
-LaTeX Info: Redefining \ref on input line 87.
-LaTeX Info: Redefining \pageref on input line 87.
-LaTeX Info: Redefining \nameref on input line 87.
+LaTeX Info: Redefining \ref on input line 109.
+LaTeX Info: Redefining \pageref on input line 109.
+LaTeX Info: Redefining \nameref on input line 109.
  (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.out) (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.out)
 \@outlinefile=\write6
 \openout6 = `diplomska_naloga.out'.
 
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 87.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 109.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 87.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 109.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 87.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 109.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 87.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 109.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <17.28> on input line 87.
+(Font)              <17.28> on input line 109.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 87.
+(Font)              <12> on input line 109.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 87.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 87.
+(Font)              <10> on input line 109.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 109.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 87.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 109.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 87.
+(Font)              <14.4> on input line 109.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 87.
+(Font)              <7> on input line 109.
  [1
 
 ] [2
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 87.
+(Font)              <8> on input line 109.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 87.
+(Font)              <6> on input line 109.
  (/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.toc [3])
 \tf@toc=\write7
 \openout7 = `diplomska_naloga.toc'.
 
  [4]
-Underfull \hbox (badness 10000) in paragraph at lines 87--87
+Underfull \hbox (badness 10000) in paragraph at lines 109--109
 
  []
 
 [5
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 87--87
+Underfull \hbox (badness 10000) in paragraph at lines 109--109
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 92--116
+Underfull \hbox (badness 10000) in paragraph at lines 114--138
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--116
+Underfull \hbox (badness 10000) in paragraph at lines 114--138
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--126
+Underfull \hbox (badness 10000) in paragraph at lines 142--148
 
  []
 
@@ -604,127 +604,127 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [7
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 132--138
+Underfull \hbox (badness 10000) in paragraph at lines 154--160
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--171
+Underfull \hbox (badness 10000) in paragraph at lines 166--193
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 175--193
+Underfull \hbox (badness 10000) in paragraph at lines 197--215
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 197--225
+Underfull \hbox (badness 10000) in paragraph at lines 219--247
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 197--225
+Underfull \hbox (badness 10000) in paragraph at lines 219--247
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 197--225
+Underfull \hbox (badness 10000) in paragraph at lines 219--247
 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 229--244
+Underfull \hbox (badness 10000) in paragraph at lines 251--266
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--244
+Underfull \hbox (badness 10000) in paragraph at lines 251--266
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--244
+Underfull \hbox (badness 10000) in paragraph at lines 251--266
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 246--256
+Underfull \hbox (badness 10000) in paragraph at lines 268--278
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--256
+Underfull \hbox (badness 10000) in paragraph at lines 268--278
 
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 269--285
+Underfull \hbox (badness 10000) in paragraph at lines 291--307
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--285
+Underfull \hbox (badness 10000) in paragraph at lines 291--307
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--285
+Underfull \hbox (badness 10000) in paragraph at lines 291--307
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--285
+Underfull \hbox (badness 10000) in paragraph at lines 291--307
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--295
+Underfull \hbox (badness 10000) in paragraph at lines 313--317
 
  []
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 307--315
+Underfull \hbox (badness 10000) in paragraph at lines 329--337
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 339--341
+Underfull \hbox (badness 10000) in paragraph at lines 361--363
 
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 363--377
+Underfull \hbox (badness 10000) in paragraph at lines 385--399
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 363--377
+Underfull \hbox (badness 10000) in paragraph at lines 385--399
 
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 410--423
+Underfull \hbox (badness 10000) in paragraph at lines 432--445
 
  []
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 430--478
+Underfull \hbox (badness 10000) in paragraph at lines 452--500
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 430--478
+Underfull \hbox (badness 10000) in paragraph at lines 452--500
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 430--478
+Underfull \hbox (badness 10000) in paragraph at lines 452--500
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 430--478
+Underfull \hbox (badness 10000) in paragraph at lines 452--500
 
  []
 
@@ -732,7 +732,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 430--478
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [18]
-Underfull \hbox (badness 10000) in paragraph at lines 499--522
+Underfull \hbox (badness 10000) in paragraph at lines 521--544
 
  []
 
@@ -740,136 +740,136 @@ Underfull \hbox (badness 10000) in paragraph at lines 499--522
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [19]
-Underfull \hbox (badness 10000) in paragraph at lines 533--545
+Underfull \hbox (badness 10000) in paragraph at lines 555--567
 
  []
 
 [20]
-Underfull \hbox (badness 10000) in paragraph at lines 548--554
+Underfull \hbox (badness 10000) in paragraph at lines 570--576
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 548--554
+Underfull \hbox (badness 10000) in paragraph at lines 570--576
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 556--558
+Underfull \hbox (badness 10000) in paragraph at lines 578--580
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 585--591
+Underfull \hbox (badness 10000) in paragraph at lines 607--613
 
  []
 
 [21]
-Underfull \hbox (badness 10000) in paragraph at lines 593--602
+Underfull \hbox (badness 10000) in paragraph at lines 615--624
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 610--615
+Underfull \hbox (badness 10000) in paragraph at lines 632--637
 
  []
 
 [22]
-Underfull \hbox (badness 10000) in paragraph at lines 631--636
+Underfull \hbox (badness 10000) in paragraph at lines 653--658
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 642--646
+Underfull \hbox (badness 10000) in paragraph at lines 664--668
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 648--658
+Underfull \hbox (badness 10000) in paragraph at lines 670--680
 
  []
 
 [23]
-Underfull \hbox (badness 10000) in paragraph at lines 678--701
+Underfull \hbox (badness 10000) in paragraph at lines 700--723
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 678--701
+Underfull \hbox (badness 10000) in paragraph at lines 700--723
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 678--701
+Underfull \hbox (badness 10000) in paragraph at lines 700--723
 
  []
 
 [24]
-Underfull \hbox (badness 10000) in paragraph at lines 703--739
+Underfull \hbox (badness 10000) in paragraph at lines 725--761
 
  []
 
 [25] [26]
-Underfull \hbox (badness 10000) in paragraph at lines 776--779
+Underfull \hbox (badness 10000) in paragraph at lines 798--801
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 781--785
+Underfull \hbox (badness 10000) in paragraph at lines 803--807
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 789--791
+Underfull \hbox (badness 10000) in paragraph at lines 811--813
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 808--817
+Underfull \hbox (badness 10000) in paragraph at lines 830--839
 
  []
 
 [27]
-Underfull \hbox (badness 10000) in paragraph at lines 820--827
+Underfull \hbox (badness 10000) in paragraph at lines 842--849
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 820--827
+Underfull \hbox (badness 10000) in paragraph at lines 842--849
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 833--838
+Underfull \hbox (badness 10000) in paragraph at lines 855--860
 
  []
 
 [28]
-Underfull \hbox (badness 10000) in paragraph at lines 873--879
+Underfull \hbox (badness 10000) in paragraph at lines 895--901
 
  []
 
 [29]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 891.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 913.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Underfull \hbox (badness 10000) in paragraph at lines 900--931
+Underfull \hbox (badness 10000) in paragraph at lines 922--953
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 900--931
+Underfull \hbox (badness 10000) in paragraph at lines 922--953
 
  []
 
 [30]
-Underfull \hbox (badness 10000) in paragraph at lines 949--962
+Underfull \hbox (badness 10000) in paragraph at lines 971--984
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 949--962
+Underfull \hbox (badness 10000) in paragraph at lines 971--984
 
  []
 
@@ -877,85 +877,85 @@ Underfull \hbox (badness 10000) in paragraph at lines 949--962
 <slika_3.png, id=417, 701.62125pt x 179.67125pt>
 File: slika_3.png Graphic file (type png)
 <use slika_3.png>
-Package pdftex.def Info: slika_3.png  used on input line 1005.
+Package pdftex.def Info: slika_3.png  used on input line 1027.
 (pdftex.def)             Requested size: 420.97598pt x 107.80356pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 993--1037
+Underfull \hbox (badness 10000) in paragraph at lines 1015--1059
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 993--1037
+Underfull \hbox (badness 10000) in paragraph at lines 1015--1059
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 993--1037
+Underfull \hbox (badness 10000) in paragraph at lines 1015--1059
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 993--1037
+Underfull \hbox (badness 10000) in paragraph at lines 1015--1059
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 993--1037
+Underfull \hbox (badness 10000) in paragraph at lines 1015--1059
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 993--1037
+Underfull \hbox (badness 10000) in paragraph at lines 1015--1059
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 993--1037
+Underfull \hbox (badness 10000) in paragraph at lines 1015--1059
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 993--1037
+Underfull \hbox (badness 10000) in paragraph at lines 1015--1059
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 993--1037
+Underfull \hbox (badness 10000) in paragraph at lines 1015--1059
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 993--1037
+Underfull \hbox (badness 10000) in paragraph at lines 1015--1059
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 993--1037
+Underfull \hbox (badness 10000) in paragraph at lines 1015--1059
 
  []
 
 [32] [33 </Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/slika_3.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1041--1067
+Underfull \hbox (badness 10000) in paragraph at lines 1063--1089
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1041--1067
+Underfull \hbox (badness 10000) in paragraph at lines 1063--1089
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1041--1067
+Underfull \hbox (badness 10000) in paragraph at lines 1063--1089
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1041--1067
+Underfull \hbox (badness 10000) in paragraph at lines 1063--1089
 
  []
 
 [34]
-Underfull \hbox (badness 10000) in paragraph at lines 1080--1086
+Underfull \hbox (badness 10000) in paragraph at lines 1102--1108
 
  []
 
@@ -963,65 +963,65 @@ Underfull \hbox (badness 10000) in paragraph at lines 1080--1086
 <slika1.png, id=440, 256.96pt x 252.945pt>
 File: slika1.png Graphic file (type png)
 <use slika1.png>
-Package pdftex.def Info: slika1.png  used on input line 1100.
+Package pdftex.def Info: slika1.png  used on input line 1122.
 (pdftex.def)             Requested size: 115.63092pt x 113.82419pt.
 <slika2.png, id=441, 262.9825pt x 260.975pt>
 File: slika2.png Graphic file (type png)
 <use slika2.png>
-Package pdftex.def Info: slika2.png  used on input line 1120.
+Package pdftex.def Info: slika2.png  used on input line 1142.
 (pdftex.def)             Requested size: 118.34102pt x 117.43767pt.
  [36 </Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/slika1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1135--1142
+Underfull \hbox (badness 10000) in paragraph at lines 1157--1164
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1145--1154
+Underfull \hbox (badness 10000) in paragraph at lines 1167--1176
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1145--1154
+Underfull \hbox (badness 10000) in paragraph at lines 1167--1176
 
  []
 
 [37 </Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/slika2.png>] [38]
-Underfull \hbox (badness 10000) in paragraph at lines 1194--1203
+Underfull \hbox (badness 10000) in paragraph at lines 1216--1225
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1220--1226
+Underfull \hbox (badness 10000) in paragraph at lines 1242--1248
 
  []
 
 [39]
-Underfull \hbox (badness 10000) in paragraph at lines 1256--1271
+Underfull \hbox (badness 10000) in paragraph at lines 1278--1293
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1256--1271
+Underfull \hbox (badness 10000) in paragraph at lines 1278--1293
 
  []
 
 [40]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 1273.
+(hyperref)                removing `\\' on input line 1295.
 
 [41]
-Underfull \hbox (badness 10000) in paragraph at lines 1298--1317
+Underfull \hbox (badness 10000) in paragraph at lines 1320--1339
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1298--1317
+Underfull \hbox (badness 10000) in paragraph at lines 1320--1339
 
  []
 
 [42]
-Underfull \hbox (badness 10000) in paragraph at lines 1321--1343
+Underfull \hbox (badness 10000) in paragraph at lines 1343--1365
 
  []
 
@@ -1037,13 +1037,13 @@ Package rerunfilecheck Info: File `diplomska_naloga.out' has not changed.
 Here is how much of TeX's memory you used:
  15628 strings out of 478994
  226189 string characters out of 5858184
- 647779 words of memory out of 5000000
+ 646853 words of memory out of 5000000
  32585 multiletter control sequences out of 15000+600000
  473355 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 82i,10n,88p,1025b,2538s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 82i,10n,88p,713b,2538s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
-Output written on "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.pdf" (46 pages, 569899 bytes).
+Output written on "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.pdf" (46 pages, 569908 bytes).
 PDF statistics:
  656 PDF objects out of 1000 (max. 8388607)
  569 compressed objects within 6 object streams
