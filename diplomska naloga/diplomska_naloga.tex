@@ -18,16 +18,16 @@ temelji na primerjavi verjetnosti dokazov na podlagi dveh konkurenčnih predlogo
 ocenjevanju dokazov, saj nam zagotovi objektivno oceno njihovega vpliva na verjetnost določene domneve oziroma hipoteze. Pri presoji dokazov se 
 uporablja različne metode in nekatere izmed njih sem opisala v diplomskem delu. \\
 Najpogosteje uporabljena metoda in tudi ena izmed najbolj razvitih temelji na Bayesovi statistiki. Bayesova statistika je statistična veja, ki nam s 
-pomočjo matematičnih pristopov omogoča posodabljanje predhodnih oziroma apriornih verjetnosti dokazov v posteriorno verjetnost. Težave se pojavijo 
-pri določitvi predhodnih verjetnosti, saj je deljeno mnenje kdo naj določi te verjetnosti in na kakšen način. Različne metode za določitev lahko 
+pomočjo matematičnih pristopov omogoča posodabljanje predhodnih oziroma apriornih verjetnosti dokazov v aposteriorno verjetnost. Težave se pojavijo 
+pri določitvi predhodnih verjetnosti, saj je deljeno mnenje, kdo naj določi te verjetnosti in na kakšen način. Različne metode za določitev lahko 
 dajejo različne rezultate, kar pa je problematično, saj celotna Bayesova teorija temelji ravno na teh začetnih izračunih. Zaradi verjetnostne 
-oblika Bayesovega izreka, za merilo vrednosti dokazov uporabljamo razmerje verjetnosti.\\
+oblika Bayesovega izreka za merilo vrednosti dokazov uporabljamo razmerje verjetij.\\
 Ker pa je statistika v kazenskem pravu še v razvoju in je znanje ter razumevanje verjetnosti precej omejeno pri odvetnikih, sodnikih in 
-poroti, se pojavlja mnogo zmot. Najbolj znana primera takih zmot sta Tožilčeva zmota, ki je dobro znan statistični problem, druga večja, ki 
-pa izhaja iz prve, pa je Zmota obrambnega odvetnika in ker zmoti največkrat 
+poroti, se pojavlja mnogo zmot. Najbolj znana primera takih zmot sta tožilčeva zmota, ki je dobro znan statistični problem, druga, večja, ki 
+pa izhaja iz prve, pa je zmota obrambnega odvetnika in ker zmoti največkrat 
 nista prepoznani, je posledica lahko tudi napačen zaključek sodnega procesa. Tožilčeva zmota temelji na zamenjavi dveh različnih pogojnih 
-verjetnosti, ki imata zelo različni vrednosti. Pri Zmoti obrambnega odvetnika pa dokaze obdolženca, ki se ujemajo z dokazi kaznivega 
-dejanja štejejo za nepomembne. Večina ostalih zmot prav tako izhaja iz napačnega razumevanja pogojne verjetnosti. \\
+verjetnosti, ki imata zelo različni vrednosti. Pri zmoti obrambnega odvetnika pa dokaze obtoženca, ki se ujemajo z dokazi kaznivega 
+dejanja, štejejo za nepomembne. Večina ostalih zmot prav tako izhaja iz napačnega razumevanja pogojne verjetnosti. \\
 Ker so zmote velik problem, opišem tudi nekatere ustrezne pristope za izogib zmotam, pri čemer je po mojem mnenju najbolj učinkovit 
 pristop uporaba Bayesovih omrežij, ker nam pomagajo določiti ustrezne verjetnostne formule v grafičnih modelih, ne da bi prikazali njihovo 
 popolno algebrsko obliko. Bistveno izboljšajo vrednotenje verjetnostnih razmerij, ki se uporabljajo za ocenjevanje dokazov in omogočajo 
@@ -35,46 +35,48 @@ kompleksnejše analize. Za njihovo izdelavo je potreben dosleden okvir, sicer la
 hipotez in dokazov ponovno temelji na Bayesovi teoriji, se pomanjkljivost Bayesove statistike prenese tudi na Bayesova omrežja.
 } 
 
-\abstract{In this Bachelor’s thesis we describe the use of probability and statistics in criminal justice. Statistical methods are base 
-of criminal justice and criminology, not only for research based on statistical data and analysis, but also for evaluating hypotheses and evidence 
-in the judicial process. Increasingly, a significant portion of the conclusion of legal proceedings is based on probabilistic calculations of the 
-impact of evidence on initial and intermediate hypotheses. The concept of probability relies on comparing the probability of evidence based on 
-two competing propositions, namely the prosecution's proposition and the defense's proposition, and is very important in assessing evidence as it 
-provides an objective evaluation of their impact on the probability of a particular assumption or hypothesis. 
-In this Bachelor’s thesis we also describe methods that are used in the evidence assessment.\\
-The most often used method, and also one of the most developed, is based on Bayesian statistics. Bayesian statistics is a statistical branch that 
-employs mathematical approaches to update prior probabilities of evidence into posterior probabilities. Challenges arise in determining prior 
-probabilities, as there is a divided opinion on who should establish these probabilities and in what manner. Different methods of determination 
-can yield different results, which is problematic since the entire Bayesian theory relies on these initial calculations. Due to the probabilistic 
-nature of the Bayesian theorem, the measure of the evidential value uses the likelihood ratio.\\
-As statistics in criminal law is still evolving and the knowledge and understanding of probability are quite limited among lawyers, judges, and juries, 
-numerous fallacys arise. The most well-known examples of such fallacys are the Prosecutor's Fallacy, which is a well-known statistical problem, and 
-a more significant fallacy stemming from it, known as the Defense Attorney's Fallacy. Because these fallacies often go unrecognized, their 
-consequence can be an incorrect conclusion in the judicial process. The Prosecutor's Fallacy is based on the confusion of two different 
-conditional probabilities with vastly different values. In the Defense Attorney's Fallacy, evidence presented by the accused that matches 
-evidence of the criminal act is considered insignificant. Most other fallacies also arise from a misunderstanding of conditional probability. \\
-Because fallacies are a significant issue, I also describe some appropriate approaches to avoid them. In my opinion, the most effective 
-approach is the use of Bayesian networks, as they help us determine appropriate probability formulas within graphical models without 
-displaying their complete algebraic form. They significantly enhance the evaluation of likelihood ratios used for evidence assessment and 
-enable more complex analyses. Constructing them requires a consistent framework, as inconsistent approaches can yield different results. However, 
-since the computation of hypotheses and evidence probabilities once again relies on Bayesian theory, the imperfections of Bayesian statistics are 
-also transferred to Bayesian networks.
+\abstract{In this Bachelor’s thesis we describe the use of probability and statistics in criminal justice. Statistical methods are base of criminal 
+justice and criminology, not only for research based on statistical data and analysis, but also for evaluating hypotheses and evidence in the judicial 
+process. Increasingly, a significant portion of the conclusion of legal proceedings is based on probabilistic calculations of the impact of 
+evidence on initial and intermediate hypotheses. The concept of probability relies on comparing the probability of evidence based on two 
+competing propositions, namely the prosecution's proposition and the defence's proposition, and it is very important in assessing evidence 
+as it provides an objective evaluation of their impact on the probability of a particular assumption or hypothesis. 
+In this Bachelor’s thesis we also describe methods that are used in the evidence assessment. \\
+The most frequently used method, and also one of the most developed ones, is based on Bayesian statistics. Bayesian statistics 
+is a statistical branch that employs mathematical approaches to update prior probabilities of evidence into posterior probabilities. 
+Challenges arise in determining prior probabilities, as there is a divided opinion on who should establish these probabilities 
+and in what manner. Different methods of determination can yield different results, which is problematic since the entire 
+Bayesian theory relies on these initial calculations. Due to the probabilistic nature of the Bayesian theorem, the measure 
+of the evidential value uses the likelihood ratio.\\
+As statistics in criminal law is still evolving and the knowledge and understanding of probability are quite limited among 
+lawyers, judges, and juries, numerous fallacies arise. The most well-known examples of such fallacies are the Prosecutor's 
+Fallacy, which is a well-known statistical problem, and a more significant fallacy stemming from it, known as the Defence 
+Attorney's Fallacy. Because these fallacies often go unrecognized, their consequence can be an incorrect conclusion in the 
+judicial process. The Prosecutor's Fallacy is based on the confusion of two different conditional probabilities with vastly 
+different values. In the Defence Attorney's Fallacy, evidence presented by the accused that matches evidence of the criminal 
+act is considered insignificant. Most other fallacies also arise from a misunderstanding of conditional probability.\\
+Because fallacies are a significant issue, I also describe some appropriate approaches to avoid them. In my opinion, the most 
+effective approach is the use of Bayesian networks, as they help us determine appropriate probability formulas within graphical 
+models without displaying their complete algebraic form. They significantly enhance the evaluation of likelihood ratios used 
+for evidence assessment and enable more complex analyses. Constructing them requires a consistent framework, as inconsistent 
+approaches can yield different results. However, since the computation of hypotheses and evidence probabilities once again 
+relies on Bayesian theory, the imperfections of Bayesian statistics are also transferred to Bayesian networks.\\
 }
 
 \klasifikacija{62P99, 62C10, 60A99}
-\kljucnebesede{bayesova statistika\sep predhodna verjetnost\sep posteriorna verjetnost\sep razmerje verjetnosti\sep frekvence\sep tožilčeva zmota\sep bayesova omrežja}
-\keywords{bayesian statistics\sep apriori probability\sep posterior probability\sep likelihood ratio\sep frequencies\sep prosecutor's fallacy\sep bayesian networks}
+\kljucnebesede{bayesova statistika\sep apriorna verjetnost\sep aposteriorna verjetnost\sep razmerje verjetij \sep frekvence\sep tožilčeva zmota\sep Bayesova omrežja}
+\keywords{bayesian statistics\sep priori probability\sep posterior probability\sep likelihood ratio\sep frequencies\sep prosecutor's fallacy\sep bayesian networks}
 
 \slovar{
  \geslo{priori probability}{predhodna verjetnost}
- \geslo{posterior probability}{posteriorna verjetnost}
- \geslo{likelihood ratio}{razmerje verjetnosti}
+ \geslo{posterior probability}{aposteriorna verjetnost}
+ \geslo{likelihood ratio}{razmerje verjetij}
  \geslo{fallacy}{zmota}
  \geslo{prosecutor's fallacy}{tožilčeva zmota}
  \geslo{defense attorney's fallacy}{zmota obrambnega odvetnika}
  \geslo{network}{omrežje}
- \geslo{prosecution's proposition}{}
- \geslo{defense's proposition}{}  
+ \geslo{prosecution's proposition}{predlog tožilstva}
+ \geslo{defense's proposition}{predlog obrambe}  
 }
 
 \literatura{literatura.bib}
@@ -111,28 +113,28 @@ also transferred to Bayesian networks.
 \nocite{collins,byers,aitkena,hoff,aitkenb,aitkenc,aitkend,bello,berger,conklin,dahlman,fentona,fentonb,finkelstein,gastwirth,giannini,glover,iliinski,maarcot,macedo,maddan,matthews,orban,schumana,schumanb,scurich,balaba,blankenship,skorupski,balding,bidermann,tarling}
 
 \section{Uvod}
-Statistične metode za vrednotenje dokazov v sodnih procesih so se začele uporabljati že v letih prejšnjega stoletja. Iz znanih teorij verjetnosti in
+Statistične metode za vrednotenje dokazov v sodnih procesih so se začele uporabljati že v prejšnjem stoletju. Iz znanih teorij verjetnosti in
 statistike so se razvile metode za čim boljše ocenjevanje in vrednotenje dokazov na podlagi začetnih hipotez. Zaradi pomanjkanja znanja teorije
-verjetnosti so se hitro začele pojavljati zmote statističnih analiz dokazov. Ker do večina zmot pride pri napačnem razumevanju končnega rezultata
+verjetnosti so se hitro začele pojavljati zmote statističnih analiz dokazov. Ker do večine zmot pride pri napačnem razumevanju končnega rezultata
 statistične analize, so danes v razvoju novi načini za predstavitev le teh. Poleg tega se problema zavedajo tudi pravne fakultete, ki v ta namen v svoje učne
 programe že vključujejo teorijo statistike in verjetnosti. Težava pa ni le pri razumevanju končnega poročila, ampak tudi pri analizi in vrednotenju
-dokazov. Statistični znanstveniki se srečujejo s problemi metod vrednotenja in upoštevanjem pravnih zakonov in teorije. V diplomskem delu poskušam
+dokazov. Statistiki se srečujejo s problemi metod vrednotenja in upoštevanjem pravnih zakonov in teorije. V diplomskem delu poskušam
 čim bolje predstaviti nekatere metode za vrednotenje dokazov, njihove pomanjkljivosti in prednosti. Poleg tega pa poskušam najti način čim hitrejše
 analize dokazov in hkrati tudi najboljši prikaz končnega poročila analize poroti, sodnikom in odvetnikom v skladu s pravnimi pravili.\\\\
 Diplomsko delo je razdeljeno v več razdelkov. Najprej so opredeljeni osnovni koncepti statistike v kazenskem pravu in predstavljen je 
-razsikovalni proces za preučevanje problemov kriminologije. Nato sledi opis vrednotenja dokazov in konept verjetnosti v kazenskem 
+raziskovalni proces za preučevanje problemov kriminologije. Nato sledi opis vrednotenja dokazov in koncept verjetnosti v kazenskem 
 pravu. V glavnem delu diplomske naloge predstavim metode vrednotenja dokazov in se osredotočim na podroben opis Bayesove statistike 
 v kazenskem pravu in njene uporabe pri ugotavljanju, ali je obtoženec vir sledi DNK-ja s kraja zločina. Ker je Bayesova statistika 
-na nek način tehtanje dokazov opredelim tudi razmerje verjetnosti, ki je potrebno za določitev vrednosti dokaza oziroma dokazov. Za 
-primerno predstavo prednosti in slabosti Bayesove teorije v kazenskem pravu, opišem še metodo frekvenc in njeno uporabo pri DNK dokazih 
+na neki način tehtanje dokazov opredelim tudi razmerje verjetij, ki je potrebno za določitev vrednosti dokaza oziroma dokazov. Za 
+primerno predstavo prednosti in slabosti Bayesove teorije v kazenskem pravu opišem še metodo frekvenc in njeno uporabo pri DNK dokazih 
 ter metodo verjetnosti naključnega ujemanja. V zadnjem delu sledi predstavitev zmot, ki nastanejo zaradi napačnega razumevanja verjetnosti 
 in možni pristopi za odpravo oziroma izogib le teh. Opis statistike v kazenskem pravu podkrepim s predstavitvijo kazenskega primera medicinske 
-sestre Lucie De Berg, v katerem prikažem glavne težave s katerimi se srečujejo statistični analitiki. Poleg tega so tudi vmesni pojmi, 
-poleg teoretične opredelitve, podprti s primerljivimi primeri za lažjo predstavo.\\\\
-Cilj dela diplomskega seminarja je spoznavanje uporabnosti statistike in verjetnosti na manj znanem področju kot je kazensko pravo. Ker je koncept 
-verjetnosti v kazenskem pravu še v razvoju me zanimajo predvsem napake in pomanjkljivosti. Želela bi ugotoviti katere metode vrednotenja 
-dokazov in ocenjevanja verjetnosti hipotez so najboljše in kako se najlažje izogniti Tožilčevi zmoti in zmoti Obrambnega odvetnika. Namen 
-naloge ni predstaviti vseh metod, ki jih uporabljajo za vrednotenje dokazov, ker se ravno zaradi razvoja vede, to hitro posodablja. Zanimajo pa 
+sestre Lucie De Berg, v katerem prikažem glavne težave s katerimi se srečujejo statistični analitiki. Tudi vmesni pojmi, 
+poleg teoretične opredelitve, so podprti s primerljivimi primeri za lažjo predstavo.\\\\
+Cilj dela diplomskega seminarja je spoznavanje uporabnosti statistike in verjetnosti na manj znanem področju, kot je kazensko pravo. Ker je koncept 
+verjetnosti v kazenskem pravu še v razvoju, me zanimajo predvsem napake in pomanjkljivosti. Želela bi ugotoviti, katere metode vrednotenja 
+dokazov in ocenjevanja verjetnosti hipotez so najboljše in kako se najlažje izogniti tožilčevi zmoti in zmoti obrambnega odvetnika. Namen 
+naloge ni predstaviti vseh metod, ki jih uporabljajo za vrednotenje dokazov, ker se ravno zaradi razvoja vede to hitro posodablja. Zanimajo pa 
 me tudi možne napake in težave, ki se zgodijo pred predstavitvijo rezultatov statističnih analiz na sodišču. Osredotočila se bom 
 predvsem na evropsko kazensko pravo in evropske kazenske primere, ter svoje zaključke napisala na podlagi teh.
 
@@ -149,45 +151,45 @@ in hipotez.
     \textit{Teorija} je niz predlaganih in preverljivih razlag realnosti, ki jih povezujejo logika in dokazi.
 \end{definicija}
 \begin{definicija}
-    \textit{Hipoteza} je posamezna trditev, izpeljana iz teorije, ki mora biti resnična, da bi teorija veljala za veljavno.
+    \textit{Hipoteza} je posamezna trditev, izpeljana iz teorije, ki mora biti resnična, da bi bila teorija veljavna.
 \end{definicija}
 Teorije so predlagane razlage določenih dogodkov. Hipoteze so majhni deli teorij, ki morajo biti resnični, da bi celotna teorija držala. Teorijo 
 si lahko predstavljamo kot verigo, hipoteze pa kot člene, ki sestavljajo to verigo.\\\\
-Statistični znanstveniki na področju kazenskega pravosodja in kriminologije si običajno prizadevajo preučiti razmerja med dvema ali več spremenljivkami. 
-Opazovani ali empirični pojavi pa sprožajo vprašanja. Vzemimo za primer umor. Empirični pojavi so umori in stopnje umorov na mesta kaznivega 
-dejanja. Vendar pa statistični znanstveniki običajno želijo več kot le zapisati empirične ugotovitve - želijo vedeti, zakaj so stvari takšne, kot so. 
+Statistiki si na področju kazenskega pravosodja in kriminologije običajno prizadevajo preučiti razmerja med dvema ali več spremenljivkami. 
+Opazovani ali empirični pojavi pa sprožajo vprašanja. Vzemimo za primer umor. Empirični pojavi so umori. Vendar pa statistiki običajno želijo več kot 
+le zapisati empirične ugotovitve - želijo vedeti, zakaj so stvari takšne, kot so. 
 Poskušajo ugotoviti dejavnike, ki so prisotni, zato morajo določiti odvisne in neodvisne spremenljivke.
 \begin{definicija}
-    \textit{Odvisna spremenljivka} je pojav, ki ga želi statistični znanstvenik preučiti, razložiti ali napovedati.
+    \textit{Odvisna spremenljivka} je pojav, ki ga želi statistik preučiti, razložiti ali napovedati.
 \end{definicija}
 \begin{definicija}
     \textit{Neodvisna spremenljivka} je dejavnik ali značilnost, s katero se poskuša pojasniti ali napovedati odvisno spremenljivko.
 \end{definicija}
-Odvisne spremenljivke so empirični dogodki, ki jih želi statistični znanstvenik pojasniti. Statistični znanstveniki skušajo opredeliti spremenljivke, ki pomagajo
-napovedati ali pojasniti dogodke. Neodvisne spremenljivke so dejavniki, za katere statistični znanstvenik meni, da bi lahko vplivali na odvisne
+Odvisne spremenljivke so empirični dogodki, ki jih želi statistik pojasniti. Statistiki skušajo opredeliti spremenljivke, ki pomagajo
+napovedati ali pojasniti dogodke. Neodvisne spremenljivke so dejavniki, za katere statistik meni, da bi lahko vplivali na odvisne
 spremenljivke. Glede na naravo raziskovalne študije določijo neodvisne in odvisne spremenljivke.\\
 Pomembno je razumeti, da neodvisno in odvisno nista sinonima za vzrok in posledico. Določene neodvisne spremenljivke so lahko povezane z
 določenimi odvisnimi spremenljivkami, vendar to še zdaleč ni dokončen dokaz, da so prve vzrok drugih. Za dokazovanje vzročnosti morajo
-statistični znanstveniki dokazati, da njihove študije izpolnjujejo tri merila. Prvo je časovno zaporedje, kar pomeni, da se mora neodvisna spremenljivka
+statistiki dokazati, da njihove študije izpolnjujejo tri merila. Prvo je časovno zaporedje, kar pomeni, da se mora neodvisna spremenljivka
 pojaviti pred odvisno spremenljivko. Druga zahteva glede vzročnosti je, da obstaja empirična povezava med neodvisno in odvisno spremenljivko.
 Zadnja zahteva je, da je razmerje med neodvisno spremenljivko in odvisno spremenljivko nepristransko. Nepristranskost je v kriminologiji in
 kazenskopravnih raziskavah pogosto najtežje dokazati, saj je človeško vedenje zapleteno in ima vsako dejanje, ki ga oseba stori, več vzrokov.
 Razmejitev teh vzročnih dejavnikov je lahko težavna ali nemogoča. Razlog, zakaj je nepristranskost problem, je, da lahko obstaja tretja
 spremenljivka, ki pojasnjuje odvisno spremenljivko enako dobro ali celo bolje kot neodvisne spremenljivke. Ta tretja spremenljivka lahko delno
 ali v celoti pojasni razmerje med neodvisno in odvisno spremenljivko. Nenamerna izključitev ene ali več pomembnih spremenljivk lahko privede do
-napačnih zaključkov, saj lahko statistični znanstvenik zmotno verjame, da neodvisna spremenljivka močno napoveduje odvisno spremenljivko, medtem ko je v
+napačnih zaključkov, saj lahko statistik zmotno verjame, da neodvisna spremenljivka močno napoveduje odvisno spremenljivko, medtem ko je v
 resnici razmerje dejansko delno ali v celoti posledica posrednih dejavnikov. Drug izraz za to težavo je pristranskost izpuščenih spremenljivk.
 Kadar je pristranskost izpuščenih spremenljivk prisotna v razmerju neodvisne spremenljivke - odvisne spremenljivke, vendar se ne prepozna, lahko
 pridemo do napačnega sklepa o zločinu.\\
 Torej vse vrste spremenljivk so med seboj povezane, vendar je pomembno, da na podlagi statističnih povezav ne sklepamo prehitro o vzročnih posledicah,
 kar pa bi lahko bila težava.\\\\
-Statistični znanstveniki se že na začetku sodnega procesa soočajo s prvimi težavami - določitvijo odvisnih in neodvisnih spremenljivk za
+Statistiki se že na začetku sodnega procesa soočajo s prvimi težavami - določitvijo odvisnih in neodvisnih spremenljivk za
 modeliranje. V proces določanja spremenljivk pa pogosto v preveliki meri posegajo odvetniki, ki se sklicujejo na pravne zakone in načela. To lahko
 postane sporno, saj lahko takšni pretirani posegi ovirajo statistične znanstvenike pri izračunu verjetnostnega vpliva spremenljivk. Odvetniki sicer
 imajo pomembno vlogo pri zagovarjanju strank v sodnih procesih, vendar je njihovo znanje o statistiki in verjetnostnih izračunih pomanjkljivo. Po
 mojem mnenju zato odvetniki lahko napačno opredelijo odvisne in neodvisne spremenljivke ter s tem vplivajo na kakovost modeliranja, kar lahko privede
 do napačnih zaključkov in nepravilnih odločitev v sodnih procesih. Zagotovo določitev spremenljivk ne sme biti naloga le odvetnikov ali le statističnih
-znanstvenikov, ampak menim, da je sodelovanje med statistični znanstveniki in odvetniki pomembno, saj vsak prispeva svoj del poznavanja teorije,
+znanstvenikov, ampak menim, da je sodelovanje med statistiki in odvetniki pomembno, saj vsak prispeva svoj del poznavanja teorije,
 ki je v ozadju.  S tem se lahko zagotovi pravilno opredelitev spremenljivk in pravilne verjetnostne izračune, ki bodo prispevali k pravičnim
 odločitvam v sodnih postopkih.
 
@@ -200,17 +202,17 @@ statističnih znanstvenikov, ki ocenijo zanesljivost podatkovne baze in pravilno
 vedeti, na kaj točno se podatki nanašajo, kako so bili zbrani in kakšen del manjka ali je neuporaben, da se lahko odločimo za ustrezen postopek
 analize podatkov. Potrebujemo osnovne informacije odvetnika in drugih strokovnjakov, da lahko oblikujemo ustrezne primerjalne skupine. Ta postopek
 vključuje določitev ustrezne populacije (populacij), ki jo (jih) je treba preučiti, parametrov, ki nas zanimajo, in statističnega postopka, ki ga
-je treba uporabiti. Statistični znanstveniki ne morejo določiti, katere vrednosti parametra so pravno pomembne, ker je parameter pravno določen.\\\\
+je treba uporabiti. Statistiki ne morejo določiti, katere vrednosti parametra so pravno pomembne, ker je parameter pravno določen.\\\\
 Statistične informacije, ki jih dobi sodnik, so filtrirane prek odvetnikov. Odvetnik avtorju statistične analize postavlja vprašanja z namenom razlage
 statistične analize poroti, sodniku in drugim v sodni dvorani. Vprašanja so s strani odvetnikov seveda premišljeno postavljena, zato se lahko zgodi,
-da do temeljite razlage analize ne pride, ker statistični znanstvenik ne dobi primernih vprašanj. Kasneje so v delu obrazložene zmote, ki nastanejo
+da do temeljite razlage analize ne pride, ker statistik ne dobi primernih vprašanj. Kasneje so v delu obrazložene zmote, ki nastanejo
 zaradi pomanjkanja znanja verjetnosti pri sodnikih, poroti in odvetnikih, ampak mogoče pa nekatere izmed njih nastanejo tudi zaradi nepopolne razlage
-statistične analize. Do neke točke statistični znanstvenik sicer sam predstavi analizo, potem pa mora biti tudi on previden z razlago, zaradi porote,
-kajti poroti se predvidoma ne narekuje kako naj si razlaga dokaze, kar pa ponavadi preučujemo s statistično analizo. Mogoče bi moralo biti določeno
-kaj vse mora statistični znanstvenik predstaviti in razložiti, da bi se lahko izognili zmotam.\\
+statistične analize. Do neke točke statistik sicer sam predstavi analizo, potem pa mora biti tudi on previden z razlago, zaradi porote,
+kajti poroti se predvidoma ne narekuje, kako naj si razlaga dokaze, kar pa ponavadi preučujemo s statistično analizo. Mogoče bi moralo biti določeno,
+kaj vse mora statistik predstaviti in razložiti, da bi se lahko izognili zmotam.\\
 Uporaba statističnih analiz na sodiščih prinaša tudi nove težave za statistiko. Temelj dobre statistične analize je dober pregled predpostavk, na
 katerih morajo temeljiti naše metode in upoštevanje pravil prava. Pomembne so tudi baze podatkov in velikosti vzorcev, kar lahko predstavlja težavo.
-Potrebno je kombiniranje različnih postopkov za pridobivanje informacij iz podatkov in razlago rezultatov, kar sem zasledila, da statistični znanstveniki
+Potrebno je kombiniranje različnih postopkov za pridobivanje informacij iz podatkov in razlago rezultatov, kar sem zasledila, da statistiki
 velikokrat izkoriščajo, se ne poglobijo dovolj in predstavljena analiza postane nepopolna.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -222,7 +224,7 @@ Na tej stopnji je treba navesti, zakaj je raziskava potrebna oziroma kakšen pro
 opredeliti in opisati. Navesti je potrebno hipotezo(e), dokaz(e) in spremenljivko(e), ki jih preučujejo.\\
 Koncepti so posebne vrste spremenljivk (npr. socialno-ekonomski status), ki jih ni mogoče neposredno opazovati, vendar jih želijo izmeriti. 
 Meritve morajo biti veljavne in zanesljive. Veljavnost je stopnja, do katere merilo natančno meri spremenljivko in njen osnovni koncept. Po mojem 
-mnenju bi se na tem mestu že lahko vprašali oziroma soočili s problemom ali je izbrana mera jasen kazalnik zadevnega koncepta. Zanesljivost je 
+mnenju bi se na tem mestu že lahko vprašali oziroma soočili s problemom, ali je izbrana mera jasen kazalnik zadevnega koncepta. Zanesljivost je 
 stopnja, do katere je spremenljivka dosleden in zanesljiv kazalnik koncepta. Spremenljivka je namenjena merjenju teh opazovanj ali konceptov. 
 Običajno ima več kot eno možno vrednost. Merjenje spremenljivke mora biti jasno opredeljeno oziroma mora imeti operativno opredelitev. Hipoteza je 
 izražena v obliki odnosa med spremenljivkami. V smislu reševanja problemov hipoteza opisuje način, na katerega je mogoče rešiti problem. V raziskavi 
@@ -231,17 +233,17 @@ neodvisne spremenljivke. Hipoteza je torej napoved. Pričakujemo, da bo neodvisn
 \textbf{2. Zasnova raziskave.\\} 
 Več elementov raziskovalnega procesa se nanaša na postopek statistične analize. Vsi imajo ključno vlogo v logiki statistike. Zasnova raziskave 
 nam pomaga ugotoviti, ali je metoda učinkovita, če bi jo poskušali izvajati na drugih mestih in v drugih časih. To opazimo 
-z t.i. klasičnim eksperimentom. Cilj raziskave je dokazati, ali je imela spremenljivka želeni učinek ali ne. Da bi to ugotovili, poskušamo z 
+s t.i. klasičnim eksperimentom. Cilj raziskave je dokazati, ali je imela spremenljivka želeni učinek ali ne. Da bi to ugotovili, poskušamo z 
 raziskovalno zasnovo izolirati učinek ukrepa na problem. Klasični eksperiment vključuje razvrstitev udeležencev v eksperimentalno in kontrolno 
 skupino. Ključni element postopka je naključna izbira, ki zagotavlja, da sta skupini primerljivi v vseh pomembnih vidikih. V statističnem smislu 
 naključna dodelitev pomeni, da ima vsak član ciljne populacije enake možnosti, da bo izbran v eksperimentalno skupino. Drugi element je verjetnostno 
-vzorčenje. Statistični znanstvenik običajno ne more preučiti vseh elementov populacije. Večina raziskav se izvaja z izbiro vzorca iz populacije. 
+vzorčenje. Statistik običajno ne more preučiti vseh elementov populacije. Večina raziskav se izvaja z izbiro vzorca iz populacije. 
 Zbiranje podatkov vključuje opredelitev in izbiro virov podatkov. Vir podatkov je lahko raziskava, uradne evidence ali uradni statistični podatki.\\\\
 \textbf{3. Analiza podatkov.\\}
 Po zbiranju podatkov se začne analiza, ki vključuje pravilno izbiro in uporabo statističnih metod. Toda interpretacija in predstavitev rezultatov raziskave 
-sta prav tako ključna vidika celotnega procesa. Kot je že bilo omenjeno je pomembno, da statistični znanstveniki upoštevajo ciljno občinstvo, ki jim bodo 
+sta prav tako ključna vidika celotnega procesa. Kot je že bilo omenjeno, je pomembno, da statistiki upoštevajo ciljno občinstvo, ki jim bodo 
 raziskovalni rezultati namenjeni. Pri neustrezni predstavitvi lahko pride do napačnega razumevanja rezultatov in posledično do napačnih sklepov. Vendar pa 
-se pri predstavitvi rezultatov pojavijo največje težave, ko gre za področje kazenskega pravosodja. Statistični znanstveniki morajo biti pozorni na 
+se pri predstavitvi rezultatov pojavijo največje težave, ko gre za področje kazenskega pravosodja. Statistiki morajo biti pozorni na 
 posledice svojih rezultatov, zato svoje ugotovitve predstavijo na način, ki izraža resnico, hkrati pa je razumljiv in nepristranski. Poleg tega je 
 treba upoštevati, da so posledice raziskav lahko dolgoročne in se lahko pojavijo šele v prihodnosti.
 
@@ -251,18 +253,18 @@ treba upoštevati, da so posledice raziskav lahko dolgoročne in se lahko pojavi
 Ena od najbolj obravnavanih in kontroverznih tem med pravniki je vloga verjetnosti pri ocenjevanju pravnih dokazov, pridobljenih v sodnem procesu 
 ugotavljanja dejstev in preiskave, ki je značilen za sodišča. Na mednarodnih kazenskih sodiščih je vodilno načelo prosta ocena dokazov, kar pomeni, 
 da sodniki niso dolžni spoštovati pravil, kako ocenjevati dokaze, in zato lahko izberejo pristop, ki naj bi bil najprimernejši za oceno.\\
-Postopek ugotavljanja dejstev zahteva oceno vseh dokazov, ki jih predložijo sodišču, da se določi, ali je obdolženec kriv 
+Postopek ugotavljanja dejstev zahteva oceno vseh dokazov, ki jih predložijo sodišču, da se določi, ali je obtoženec kriv 
 ali ne. Uvedeta se pojma dokazni standard in vrednotenje dokazov.\\\\
-\textbf{Dokazni standard} je pravno vprašanje. Gre za gre za abstraktno normo, ki je opredeljena s pravnim pravilom; podobno kot obstoj 
+\textbf{Dokazni standard} je pravno vprašanje. Gre za abstraktno normo, ki je opredeljena s pravnim pravilom; podobno kot obstoj 
 določenih predpostavk za določeno kaznivo dejanje.\\\\
-\textbf{Vrednotenje dokazov} pa je pravni problem. Gre za odločitev, kako se dokazi, v določenem sodnem procesu oziroma kazenskem primeru, 
+\textbf{Vrednotenje dokazov} pa je pravni problem. Gre za odločitev, kako se dokazi v določenem sodnem procesu oziroma kazenskem primeru 
 nanašajo na abstraktno normo.\\\\
 Matematični pristopi za ocenjevanje dokazov določajo odstotke za dokazni standard, ki so manjši od popolne gotovosti, zato se 
 predložene informacije (ali njihovo pomanjkanje) pretvorijo v številčne vrednosti (običajno približno 90-95-odstotna stopnja verjetnosti), ki se nato 
 primerjajo z zahtevanim dokaznim standardom. Matematična tradicionalna verjetnost je opredeljena kot povezava med verjetnostjo 
 nastanka dogodka s trenutno številčno vrednostjo. Po tem je možnost nastanka dogodka bolj verjetna, če spada med večino opazovanih dogodkov. Nasprotno 
 pa možnost dogodka manj verjetna, če spada v manjšino opazovanih dogodkov. Verjetnost dogodka je torej razmerje med številom primerov, v katerih se je dogodek 
-zgodil in število vseh relevantnih primerov, tj.\vspace{2mm}
+zgodil in število relevantnih primerov, tj.\vspace{2mm}
 \[
     P(\text{dogodek}) = \frac{\text{število primerov, v katerih se je dogodek zgodil}}{\text{število relevantnih primerov}}
 \]\\\\
@@ -295,14 +297,14 @@ Hipoteze se lahko dopolnjujejo na enak način kot dogodki - ena in samo ena je l
 tako, da zajemajo vse možne razlage dokazov. Dve hipotezi lahko označujeta komplementarne dogodke(npr. resnično kriv in resnično nedolžen), 
 vendar pa se lahko zgodi, da se določena dogodka ne dopolnjujeta. \\\\
 Koncept verjetnosti je ključen pri ocenjevanju dokazov, saj omogoča objektivno oceno njihovega vpliva na verjetnost določene domneve o interesni 
-osebi (v nadaljevanju PoI) ali obdolžencu. Pri presoji dokazov se uporablja različne metode in tehnike, ki temeljijo na statistični verjetnosti. 
+osebi (v nadaljevanju PoI) ali obtožencu. Pri presoji dokazov se uporablja različne metode in tehnike, ki temeljijo na statistični verjetnosti. 
 Te metode omogočajo oceno, kako verjetno je, da so dokazi resnični in zanesljivi. Pri presoji dokazov se najprej analizira njihova verjetnost, pri 
 čemer je pomembno, da se upošteva tudi kontekst. Dokazi se namreč ne presojajo izolirano, ampak v kontekstu celotnega primera. To pomeni, da se 
 pri presoji dokazov upošteva tudi druge dokaze in okoliščine primera. Na ta način se lahko izvede bolj objektivna presoja dokazov in ugotovi, kako 
-vplivajo na določeno domnevo o interesni osebi ali obdolžencu.\\
+vplivajo na določeno domnevo o interesni osebi ali obtožencu.\\
 V skladu s konceptom verjetnosti se pri presoji dokazov upošteva tudi verjetnost napake. Ta se nanaša na verjetnost, da so dokazi napačni ali 
 zavajajoči. \\\\
-V splošnem nas zanima vpliv dokazov na verjetnost krivde($H_p$) in nedolžnosti($H_d$) osumljenca. Gre za dopolnjujoča se dogodka in razmerje verjetnosti 
+V splošnem nas zanima vpliv dokazov na verjetnost krivde($H_p$) in nedolžnosti($H_d$) osumljenca. Gre za dopolnjujoča se dogodka in razmerje verjetij 
 teh dveh dogodkov,
 \begin{equation}
    \frac{P(H_p)}{P(H_d)}, \vspace{2mm}
@@ -326,27 +328,27 @@ z Bayesovim pravilom lahko ocenimo verjetnosti vmesnih trditev oziroma dokazov, 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Opredelitev}
-Bayesova statistika je statistična veja, ki nam s pomočjo matematičnih pristopov omogoča uporabo verjetnosti pri reševanju statističnih
+Bayesova statistika je statistična veja, ki s pomočjo matematičnih pristopov omogoča uporabo verjetnosti pri reševanju statističnih
 problemov. V svoje modele vključuje pogojno verjetnost, katero izračunamo z uporabo Bayesovega pravila. \\\\
 Bayesova analiza je standardna metoda za posodabljanje verjetnosti po opazovanju več dokazov, zato je zelo primerna za obravnavo in vrednotenje 
 dokazov. Vsakdo, ki mora presoditi o hipotezi, kot je »krivda« (vključno s preiskovalci pred sojenjem, sodniki, porotami), neformalno začne z nekim
 predhodnim prepričanjem o hipotezi in ga posodablja, ko se dokazi ponovno pojavijo. Včasih lahko obstajajo celo objektivni podatki, na katerih temelji
-predhodna verjetnost. Pri uporabi Bayesovega sklepanja morajo statistični znanstveniki utemeljiti predhodne predpostavke, kadar je to mogoče, na primer z
+predhodna verjetnost. Pri uporabi Bayesovega sklepanja morajo statistiki utemeljiti predhodne predpostavke, kadar je to mogoče, na primer z
 uporabo zunanjih podatkov; v nasprotnem primeru morajo uporabiti razpon vrednosti predpostavk in analizo občutljivosti, da preverijo zanesljivost rezultata
 glede na te vrednosti.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Bayesovo pravilo}
 Bayesovo sklepanje temelji na Bayesovem pravilu, ki izraža verjetnost nekega dogodka z verjetnostjo dveh dogodkov in obrnjene pogojne
-verjetnosti. Pogojna verjetnost predstavlja verjetnost dogodka, glede na drug dogodek.
+verjetnosti. Pogojna verjetnost predstavlja verjetnost dogodka glede na drug dogodek.
 \begin{definicija}
-   Pogojna verjetnost dogodka H, glede na dogodek E, je
+   Pogojna verjetnost dogodka H glede na dogodek E je
    \begin{equation}\label{eq:pogojna}
         P(H \lvert E) = \frac{P(H \cap E)}{P(E)}, \vspace{2mm}
    \end{equation}
    ob predpostavki, da je $P(E) > 0$.
 \end{definicija}
-Formula \eqref{eq:pogojna} pove, da je verjetnost dogodka H ob pogoju, da se je zgodil dogodek E, enaka razmerju verjetnosti, da se
+Formula \eqref{eq:pogojna} pove, da je verjetnost dogodka H ob pogoju, da se je zgodil dogodek E, enaka razmerju verjetij, da se
 zgodita oba dogodka in verjetnosti, da se je zgodil dogodek E.
 Potem pogojno verjetnost uporabimo še v števcu formule \eqref{eq:pogojna} in dobimo Bayesovo pravilo.
 \begin{izrek}
@@ -369,35 +371,38 @@ Obstaja še ena formulacija Bayesovega pravila, ki olajša izračune in je pogos
 %V nizu Bayesovih posodobitev je predhodna verjetnost, uporabljena v vsaki posodobitvi, verjetnost hipoteze ob upoštevanju vseh dokazov, ki so bili že upoštevani v prejšnjih posodobitvah.
 Bayesovo pravilo se razlikuje od Bayesovega posodabljanja. Prvo je matematični izrek, drugo pa logična trditev, kako se sčasoma posodabljajo
 apriorne oziroma predhodne verjetnosti dokazov glede na novo zbrane dokaze oziroma prepričanja.
-\begin{trditev}
+\begin{definicija}
     (Bayesovo posodabljanje)
     Če se dogodek E zgodi ob času $t_1 > t_0$, potem je $P_1(H) = P_0(H \lvert E)$.
-\end{trditev}
+\end{definicija}
 Ob času $t_0$ dogodku H dodelimo verjetnost $P_0(H)$; to se imenuje predhodna verjetnost oziroma apriorna verjetnost. Ko se zgodi dogodek E
 ob času $t_1$, ki vpliva na naša prepričanja o dogodku H, Bayesovo posodabljanje pravi, da je potrebno apriorno verjetnost dogodka H v času $t_1$
-enačiti z pogojno verjetnostjo dogodka H glede na dogodek E v času $t_0$. \\
-Recimo, da je dogodek H neka hipoteza oziroma prepričanje o zločinu in dogodek E dokazi, zbrani za ta zložin. Pri Bayesovem posodabljanju je videti,
-kot da je dokaz E nesporno resničen. Z drugimi besedami, predpostavka je, da moramo imeti po zbiranju dokazov E stopnjo zaupanja v E enako 1,
-torej če so dokazi zbarni v času $t_1$, je $P_1(E)=1$.
+enačiti s pogojno verjetnostjo dogodka H glede na dogodek E v času $t_0$. \\
+Recimo, da je dogodek H neka hipoteza oziroma prepričanje o zločinu in dogodek E dokazi, zbrani za ta zločin. Pri Bayesovem posodabljanju je videti,
+kot da je dokaz E za to hipotezo nesporno resničen. Z drugimi besedami, predpostavka je, da moramo imeti po zbiranju dokazov E stopnjo zaupanja v E enako 1,
+torej če so dokazi zbrani v času $t_1$, je $P_1(E)=1$.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Primer - Taksi podjetja}
 Za lažje razumevanje Bayesovega pravila sem pripravila spodnji primer. \\
-Obstajata dve taksi podjetji, Zeleni Taksi in Modri taksi, katerih vozila so pobarvana zeleno oziroma modro. Podjetje Zeleni taksi pokriva
+Obstajata dve taksi podjetji, Zeleni taksi in Modri taksi, katerih vozila so pobarvana zeleno oziroma modro. Podjetje Zeleni taksi pokriva
 85 odstotkov trga, podjetje Modri taksi pa preostanek. Predpostavimo še, da v okolici ni drugih taksi podjetij. V meglenem dnevu taksi trči
 v mimoidočega pešca in ga poškoduje, vendar odpelje s kraja nesreče. Priča nesreče poroča, da je bilo vozilo modre barve. Priča ima prav le
-v 80 odstotkih primerov, kar pomeni, da je njegova zanesljivost enaka $0,8$. Kolikšna je verjetnost, da je bil taksi, ki je povzročil nesrečo,
+v 80 odstotkih primerov, kar pomeni, da je njena zanesljivost enaka $0,8$. Kolikšna je verjetnost, da je bil taksi, ki je povzročil nesrečo,
 modre barve glede na poročilo priče? \\\\
 Vpeljimo oznake:\\
 $Z$ \dots hipoteza, da je bil taksi zelen, \\
 $M$ \dots hipoteza, da je bil taksi moder, \\
-$W_m$ \dots dokaz, t.j. poročanje priče, da je bil taksi moder. \\\\
+$W_m$ \dots dokaz, t.j. poročanje priče, da je bil taksi moder,\\
+$W_z$ \dots dokaz, t.j. poročanje priče, da je bil taksi zelen. \\\\
 Problem je določiti pogojno verjetnost hipoteze $M$, ob pogoju, da je dokaz $W_m$ resničen, torej $P(M \lvert W_m)$. \\
 Za uporabo Bayesovega pravila potrebujemo tri elemente: verjetnost dokazov glede na hipotezo, verjetnost dokazov in verjetnost hipoteze. Podjetje
-Zeleni taksi pokriva 85 odstotkov trga, zato je verjetnost $P(Z)=0,85$. Po definiciji verjetnosti, je potem $P(M)=1-P(Z)=0,15$. Vemo tudi, da ima
-priča v 80 odstotkih primerov prav, torej $P(W_m \lvert M) = 0,8$ in $P(W_m \lvert Z) = 0,2$. Izračunajmo še verjetnost dokaza $P(W_m)$:
+Zeleni taksi pokriva 85 odstotkov trga, zato je verjetnost $P(Z)=0,85$. Po definiciji verjetnosti je potem $P(M)=1-P(Z)=0,15$. Vemo tudi, da ima
+priča v 80 odstotkih primerov prav, torej $P(W_m \lvert M) = 0,8$ in $P(W_m \lvert Z) = 0,2$, ker se priča v 20 odstotkih primerov moti, torej je 
+$P(W_z \lvert Z) = 0,8$ in $P(W_m \lvert Z) = 1 - P(W_z \lvert Z) = 1 - 0,8 = 0,2$.\\
+Izračunajmo še verjetnost dokaza $P(W_m)$:
 \[
-    P(W_m) = P(W_m \lvert B)P(M) + P(W_m \lvert Z)P(Z)= 0,8 \times 0,15 + 0,2 \times 0,85 = 0,29. \vspace{2mm}
+    P(W_m) = P(W_m \lvert M)P(M) + P(W_m \lvert Z)P(Z)= 0,8 \times 0,15 + 0,2 \times 0,85 = 0,29. \vspace{2mm}
 \]
 Sedaj lahko uporabimo Bayesovo pravilo:
 \[
@@ -431,52 +436,52 @@ verjetnosti $P(M \lvert W_m)$, pri čemer je zanesljivost priče nespremenjena:
 \subsection{Bayesova teorija v kazenskem pravu}
 Bayesova teorija razlaga verjetnost kot merilo verjetnosti ali zaupanja, ki ga lahko ima posameznik glede nastanka določenega dogodka. Daje nam
 matematične modele za vključevanje naših apriornih prepričanj in dokazov, ki jih že lahko že imamo o nekem dogodku, za ustvarjanje novih prepričanj 
-oziroma za pridobitev posteriornih prepričanja, ki se lahko uporabijo za kasnejše odločitve, ko se pojavijo novi dokazi.\\\\
+oziroma za pridobitev aposteriornih prepričanj, ki se lahko uporabijo za kasnejše odločitve, ko se pojavijo novi dokazi.\\\\
 Sodniki ali porotniki, ki ugotavljajo sklep sodnega procesa, imajo na voljo vrsto dokazov. Njihova naloga je ocena, kako te informacije oziroma dokazi vplivajo 
-na tožilčevo domnevo o obdolžencu oziroma storilcu kaznivega dejanja. Pri Bayesovi teoriji moramo upoštevati vsak dokaz posebej, kar je še posebej 
+na tožilčevo domnevo o obtožencu oziroma storilcu kaznivega dejanja. Pri Bayesovi teoriji moramo upoštevati vsak dokaz posebej, kar je še posebej 
 pomembno pri začetku sodnega procesa. \\
 Gre za postopek posodabljanja verjetnosti tožilčeve hipoteze na podlagi predhodnih oziroma apriornih verjetnosti. Pretvorimo predhodno verjetnost, 
-tj. verjetnost hipoteze pred upoštevanjem določenega dokaza (dokazov), v posteriorno verjetnost, tj. verjetnost hipoteze po upoštevanju določenega 
+tj. verjetnost hipoteze pred upoštevanjem določenega dokaza (dokazov), v aposteriorno verjetnost, tj. verjetnost hipoteze po upoštevanju določenega 
 dokaza (dokazov).\\
 Pomembno je tudi, da razlikujemo med dokazi pri Bayesovi teoriji in dokazi na sodišču. V Bayesovi teoriji je vsaka informacija dokaz, če je pomembna 
 za verjetnost hipoteze. V kazenskem postopku pa je dokaz informacija, ki je bila predložena sodišču za podporo določeni izjavi na sodišču in je 
-sprejeta kot pravno dopustna, kar pomeni, da je ta informacija znana sodniku, ki presoja tožilčevo domnevo o obdolžencu in je pomembna za 
+sprejeta kot pravno dopustna, kar pomeni, da je ta informacija znana sodniku, ki presoja tožilčevo domnevo o obtožencu in je pomembna za 
 verjetnost hipoteze.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Predhodna verjetnost in določitev posteriorne verjetnosti}
+\subsection{Predhodna verjetnost in določitev aposteriorne verjetnosti}
 \begin{definicija}
     Predhodna verjetnost, ki je uporabljena v vsaki posodobitvi verjetnosti s pomočjo Bayesove teorije, je začetna verjetnost hipoteze 
-    oziroma tožilčeve domneve o obdolžencu oziroma storilcu kaznivega dejanja.
+    oziroma tožilčeve domneve o obtožencu oziroma storilcu kaznivega dejanja.
 \end{definicija}
 Razjasniti je potrebno, da ko odvetniki govorijo o predhodni verjetnosti, pogosto mislijo na verjetnost začetne hipoteze oziroma tožilčeve 
-domneve o obdolžencu, preden so bili predloženi dokazi, kar je v skladu z opredelitvijo predhodne verjetnosti v Bayesovi teoriji. Po končni 
+domneve o obtožencu, preden so bili predloženi dokazi, kar je v skladu z opredelitvijo predhodne verjetnosti v Bayesovi teoriji. Po končni 
 posodobitvi dobimo verjetnost hipoteze glede na vse dokaze, predložene na sojenju.\\\\
-Recimo, da je statistični znanstvenik naprošen opraviti analizo profila DNK krvi, najdene na kraju kaznivega dejanja, in rezultat primerjati s 
-profilom DNK obdolženca. O krivdi ali nedolžnosti obtoženca bo odločala porota. Odločitev porotnikov bo delno odvisna od njihove ocene dveh 
+Recimo, da je statistik naprošen opraviti analizo profila DNK krvi, najdene na kraju kaznivega dejanja, in rezultat primerjati s 
+profilom DNK obtoženca. O krivdi ali nedolžnosti obtoženca bo odločala porota. Odločitev porotnikov bo delno odvisna od njihove ocene dveh 
 interesnih hipotez\\
 $H_1 \dots$ vir krvi je obtoženec,\\
 $H_2 \dots$ vir krvi je druga oseba.\\
-Porotniki bodo morda želeli, da jim statistični znanstvenik dokončno pove, katera hipoteza je resnična, ali da jim navede verjetnosti vira. 
+Porotniki bodo morda želeli, da jim statistik dokončno pove, katera hipoteza je resnična, ali da jim navede verjetnosti. 
 Za oceno verjetnosti vira mora upoštevati tudi druge dokaze v kazenskem primeru oziroma kontekst celotnega primera.\\\\
-Recimo, da je statistični znanstvenik ugotovil, da imata obtoženec in kri s kraja zločina skupen niz t.i. genetskih označevalcev, ki jih 
-najdemo pri eni osebi na 1 milijon prebivalcev v zadevni populaciji. Ne da bi upošteval druge dokaze, lahko statistični znanstvenik poda 
+Recimo, da je statistik ugotovil, da imata obtoženec in kri s kraja zločina skupen niz t.i. genetskih označevalcev, ki jih 
+najdemo pri eni osebi na 1 milijon prebivalcev v zadevni populaciji. Ne da bi upošteval druge dokaze, lahko statistik poda 
 izjavo o pogojni verjetnosti ugotovitve teh rezultatov pri dveh hipotezah o medsebojni povezanosti. Lahko na primer tudi izjavi, da so 
 skupni genetski označevalci skoraj zagotovo najdeni v primeru $H_1$ (vir je bil obtoženec), vendar imajo le 1 možnost na milijon, da bodo 
-najdeni v primeru $H_2$ (vir je bil nekdo drug). Na podlagi te ocene lahko statistični znanstvenik poroti predloži razmerje verjetnosti - na 
-primer, da so rezultati profila DNK 1 milijonkrat bolj verjetni, če je bil vir krvi obtoženec in ne neka druga oseba. Vendar razmerje verjetnosti 
+najdeni v primeru $H_2$ (vir je bil nekdo drug). Na podlagi te ocene lahko statistik poroti predloži razmerje verjetij - na 
+primer, da so rezultati profila DNK 1 milijonkrat bolj verjetni, če je bil vir krvi obtoženec in ne neka druga oseba. Vendar razmerje verjetij 
 ni isto kot verjetnost vira. \\
 Edini skladen način, kako na podlagi forenzičnih dokazov sklepati o verjetnosti virov, je uporaba Bayesovega pravila, ki zahteva, da začnemo s
-pripisom predhodnih verjetnosti za hipoteze, ki nas zanimajo, pri čemer bo Bayesov pristop bo deloval le, če bo statistični znanstvenik lahko 
+pripisom predhodnih verjetnosti za hipoteze, ki nas zanimajo, pri čemer bo Bayesov pristop deloval le, če bo statistik lahko 
 začel s predhodno oziroma apriorno verjetnostjo.\\\\
 Določitev predhodnih oziroma apriornih verjetnosti je resen problem pri Bayesovemu pristopu v kazenskih postopkih. Različne metode za določitev 
 in izračun teh verjetnosti lahko dajejo rezultate, ki se med seboj precej razlikujejo, kar pa je problematično, ker celotna Bayesova teorija 
-temelji ravno na teh začetnih izračunih. Bistveno vprašanje, ki se postavlja, je, ali naj statistični znanstvenik sploh poskušajo določiti 
+temelji ravno na teh začetnih izračunih. Bistveno vprašanje, ki se postavlja, je, ali naj statistik sploh poskušajo določiti 
 predhodne verjetnosti in če ja, kako naj jih določijo. Nekateri strokovnjaki predlagajo, da bi morali predpostaviti enake predhodne verjetnosti 
-za vse hipoteze v primeru, kar se imenuje nevtralno stanje. To pomeni, da se statistični znanstvenik ne opredeli za nobeno od hipotez, preden 
+za vse hipoteze v primeru, kar se imenuje nevtralno stanje. To pomeni, da se statistik ne opredeli za nobeno od hipotez, preden 
 zbere kakršne koli dokaze ali informacije, ampak predpostavlja enako verjetnost za vse hipoteze. Torej predpostavljajo, da sta predhodni verjetnosti 
-$H_1$ in $H_2$ enaki, nato pa ju v skladu z Bayesovim pravilom pomnožijo z razmerjem verjetnosti, da določijo posteriorno verjetnost. To bi se lahko 
-izkazalo za praktičen pristop, saj se lahko statistični znanstvenik s tem izogne vplivu lastnih in odvetniških predsodkov ter mnenj, ki bi lahko 
+$H_1$ in $H_2$ enaki, nato pa ju v skladu z Bayesovim pravilom pomnožijo z razmerjem verjetij, da določijo aposteriorno verjetnost. To bi se lahko 
+izkazalo za praktičen pristop, saj se lahko statistik s tem izogne vplivu lastnih in odvetniških predsodkov ter mnenj, ki bi lahko 
 vplivali na predpostavke o verjetnosti. Na ta način se lahko zagotovi objektivnost analize, saj ne poskušamo prikazati ene hipoteze bolj verjetne 
 od druge. Kljub temu pa mislim, da moramo biti do tega pristopa nekoliko kritični, saj je predpostavljanje enake verjetnosti za vse možnosti 
 problematično - v realnosti se različne hipoteze razlikujejo po svoji verjetnosti.\\
@@ -484,23 +489,24 @@ Mnenje in poročila statističnih znanstvenikov naj bi bila ključni vir informa
 vrednotenju dokazov in verjetnosti v sodnih postopkih. Zato sem mnenja, da je potrebno zagotoviti njihovo neodvisnost in strokovnost ter jih 
 zaščititi pred morebitnim poseganjem odvetnikov ali drugih udeležencev sodnega postopka v njihov proces dela, tako kot morajo to zagotoviti oni. 
 Po mojem mnenju je pri določanju apriorne verjetnosti hipotez in dokazov zelo pomembno, da smo natančni in korektni, kajti vsi naslednji verjetnostni 
-računi in statistične analize temeljijo ravno na tem. Zato naj statistični znanstvenik uporabi svoje strokovno znanje za izračun apriorne verjetnosti 
+računi in statistične analize temeljijo ravno na tem. Zato naj statistik uporabi svoje strokovno znanje za izračun apriorne verjetnosti 
 na podlagi razpoložljivih podatkov in brez nepotrebnega vplivanja odvetnikov ali drugih udeležencev postopka. \\
-Poleg tega sem ugotovila, da za statistiko v kazenskem pravu obstajajo pravila in smernice kako upoštevati zakonodajo, pravila in postopke 
+Poleg tega sem ugotovila, da za statistiko v kazenskem pravu obstajajo pravila in smernice, kako upoštevati zakonodajo, pravila in postopke 
 sodnega procesa, ki jih po mojem mnenju dosledno upoštevajo, torej načeloma zagotovijo ustrezne predhodne verjetnosti. Tako bi dobili dovolj 
-objektivno oceno verjetnosti krivde ali nedolžnosti obdolženca in zagotovili pravično sodno odločitev. Glavni očitek temu pristopu v okviru 
-sodnega procesa bi lahko bil, da lahko statistični znanstveniki presežejo svoje znanstveno znanje in si prisvojijo vlogo tistega, ki ugotavlja dejstva.\\\\
-Ko na nek način le določijo predhodne oziroma apriorne verjetnosti tožilčeve hipoteze in dokazov torej sledi posodabljanje le teh. Tekom sodnega 
-procesa se v realnosti vedno pojavljajo nove domneve o obtožencu in skoraj vedno najdejo nove dokaze s kraja zločina. Smiselno je, da vse to v postopku 
+objektivno oceno verjetnosti krivde ali nedolžnosti obtoženca in zagotovili pravično sodno odločitev. Glavni očitek temu pristopu v okviru 
+sodnega procesa bi lahko bil, da lahko statistiki presežejo svoje znanstveno znanje in si prisvojijo vlogo tistega, ki ugotavlja dejstva.\\\\
+Ko le določijo predhodne oziroma apriorne verjetnosti tožilčeve hipoteze in dokazov, sledi posodabljanje le teh. Tekom sodnega 
+procesa se v realnosti vedno pojavljajo nove domneve o obtožencu in skoraj vedno se najdejo novi dokazi s kraja zločina. Smiselno je, da vse to v postopku 
 izračuna tudi upoštevamo. Zasledila sem, da se tekom sodnega procesa marsikateri dokaz najprej prizna in je znan sodniku, ki presoja tožilčevo domnevo 
-o obdolžencu, torej ga upoštevajo v svojih izračunih za posodobitve predhodnih verjetnosti hipotez. Potem pa dokaz iz sodnega procesa umaknejo, ampak 
-presnetilo me je, da dokaz največkrat ni umaknjen iz verjetnostnih računov. Mnenja sem, da bi morali statistični znanstvenik, ko se določen dokaz iz 
+o obtožencu, torej ga upoštevajo v svojih izračunih za posodobitve predhodnih verjetnosti hipotez. Potem pa dokaz iz sodnega procesa umaknejo, ampak 
+presnetilo me je, da dokaz največkrat ni umaknjen iz verjetnostnih računov. Mnenja sem, da bi morali statistiki, ko se določen dokaz iz 
 sodnega procesa, zaradi tehtnega razloga, umakne, posodobiti vse račune za nazaj in nato nadaljevati posodabljanje verjetnosti. Tako bi dobili primeren 
 izračun posteriornih verjetnosti, na katerih bi potem lahko temeljil zaključek sodnega procesa.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Predstavitev sodnega procesa - medicinska sestra Lucia De Berk}
+Primer je povzet po \cite{collins}.\\\\
 Marca 2003 je bila medicinska sestra Lucia de Berk (v nadaljevanju osumljenka) v Haagu na Nizozemskem obsojena na dosmrtni zapor zaradi obtožb 
 uboja in domnevnega uboja več bolnikov (v nadaljevanju je zadevni dogodek smrt bolnika) v dveh bolnišnicah, v katerih je delala v bližnji preteklosti (bolnišnici JZK in RKZ). V bolnišnici JKZ 
 se je med Lucijinimi izmenami pojavilo nenavadno veliko zadevnih dogodkov, kar je sprožilo vprašanja glede njene morebitne vpletenosti v te dogodke. 
@@ -578,21 +584,21 @@ Z uporabo Bayeosovega pravila dobimo
 \]
 oziroma\\
 \begin{center}
-    \textit{posteriorna verjetnost $=$ razmerje verjetnosti $\times$ predhodna verjetnost}  
+    \textit{aposteriorna verjetnost $=$ razmerje verjetij $\times$ predhodna verjetnost}  
 \end{center}
 Verjetnost $P(H_d \lvert E)$ je verjetnost hipoteze $H_d$ po ovrednotenju dokazov $E$. Ob vsakih na novo pridobljenih dokazih lahko posodobimo 
 verjetnosti na naslednji način.\\
 Naj bodo $E'$ novi dokazi in 
 \[
-    \textit{stare posteriorne verjetnosti}  = \frac{P(E \lvert H_p)}{P(E \lvert H_d)} \times \frac{P(H_p)}{P(H_d)},
+    \textit{stare aposteriorne verjetnosti}  = \frac{P(E \lvert H_p)}{P(E \lvert H_d)} \times \frac{P(H_p)}{P(H_d)},
 \]
-potem, po pridobitvi novih dokazov, izračunamo nove posteriorne verjetnosti
+potem, po pridobitvi novih dokazov, izračunamo nove aposteriorne verjetnosti
 \begin{align*}
     \frac{P(H_p \lvert E, E')}{P(H_d \lvert E, E')} & = \frac{P(E' \cap E \lvert H_p)}{P(E' \cap E \lvert H_d)} \times \frac{P(H_p)}{P(H_d)} \\ \vspace{2mm}
-    & = \frac{P(E' \lvert H_p, E)}{P(E' \lvert H_d, E)} \times \textit{stare posteriorne verjetnosti}. \vspace{2mm}
+    & = \frac{P(E' \lvert H_p, E)}{P(E' \lvert H_d, E)} \times \textit{stare aposteriorne verjetnosti}. \vspace{2mm}
 \end{align*}
 Menim, da imamo tudi tukaj podobne težave kot sem jih že opisala zgoraj - določitev verjetnosti hipotez $P(H_p)$ in $P(H_d)$, za katere dokaze je mogoče 
-izračunati razmerje verjetnosti ter kako izračunamo verjetnost \[\frac{P(E' \lvert H_p, E)}{P(E' \lvert H_d, E)}, \vspace{2mm}\] saj ne vemo kako 
+izračunati razmerje verjetij ter kako izračunamo verjetnost \[\frac{P(E' \lvert H_p, E)}{P(E' \lvert H_d, E)}, \vspace{2mm}\] saj ne vemo kako 
 so različni dokazi med seboj povezani. Z določitvijo predhodnih verjetnosti lahko pridemo do zelo različnih rezultatov, ampak nimamo pa več težav z 
 ponovno uporabo podatkov in naknadnimi popravki.
 
@@ -662,13 +668,13 @@ Kot zgoraj, imamo:
 \[
    \frac{P(M_p \lvert S)}{P(M_p \lvert \neg S)} = \frac{1 - FN}{[(1 - FN) \times f] + [FN \times (1 - f)]}. 
 \]\\\\
-Za predstavo, kako stopnje napak vplivajo na razmerje verjetnosti, predpostavim, da je pogostost profila DNK 1 proti milijardi. Predpostavim
-tudi, da sta stopnji lažno poztivnih in negativnih laboratorijskih rezultatov (tj. FP in FN) enaki $0,01$. Če je razmerje verjetnosti enako
+Za predstavo, kako stopnje napak vplivajo na razmerje verjetij, predpostavim, da je pogostost profila DNK 1 proti milijardi. Predpostavim
+tudi, da sta stopnji lažno poztivnih in negativnih laboratorijskih rezultatov (tj. FP in FN) enaki $0,01$. Če je razmerje verjetij enako
 $\frac{1}{f}$, je milijarda. S formulo pa dobimo:
 \[
    \frac{P(M_p \lvert S)}{P(M_p \lvert \neg S)} = \frac{1 - 0,01}{[(1 - 0,01) \times 0,000000001] + [0,01 \times (1 - 0,000000001)]} \approx 99.
 \]\\
-Relativno majhne stopnje napak lahko bistveno zmanjšajo dokazno vrednost DNK dokazov, saj močno zmanjšajo razmerje verjetnosti; v našem primeru
+Relativno majhne stopnje napak lahko bistveno zmanjšajo dokazno vrednost DNK dokazov, saj močno zmanjšajo razmerje verjetij; v našem primeru
 smo iz milijarde prišli na približno 100. \\
 Vpliv stopnje laboratorijskih napak kaže, da ne glede na to, kako nizka se izkaže pogostost profila,
 bo ta relativno nepomembna, če pogostosti ne spremlja ocena stopnje laboratorijskih napak. Bayesovo pravilo nam omogoča, da ta vidik upoštevamo.\\\\
@@ -716,12 +722,12 @@ Po metodah, ki temeljijo na naravnih frekvencah, je potrebno izračunati, koliko
 da se $f$ pomnoži z $m$.  \\
 Če je posameznikov s takim profilom $n \ge 1$, je verjetnost, da je obtoženi vir, $\frac{1}{n}$. V primeru, ko je $n < 1$ in so frekvence še
 posebaj majhne, je bolje raziskovati ali je profil DNK edinstven ali ne - ali poleg obtoženca obstajajo še drugi posamezniki z enakim
-profilom DNK. Temu pravimo metoda edinstvenosti. \\
+profilom DNK. Temu pravimo metoda edinstvenosti. \\\\
 S formulo binomske porazdelitve lahko izračunamo verjetnost, da se bo dogodek $X$, na primer profil DNK, pojavil $k$ - krat v $s$ - kratnem
 številu ponovitev, pri čemer ima dogodek $X$ frekvenco $f$. Želimo vedeti, kolikšna je verjetnost, da ima točno en posameznik ustrezen DNK
 profil, ob pogoju da ga ima vsaj en posameznik, torej:
 \[
-   P(n = 1 \lvert n \ge 1) = \frac{P(n=1 \cap n \ge 1)}{P(n \ge 1)} = \frac{m \times f \times (1 - f)^{m-1}}{1 - (1 - f)^m}. \vspace{3mm}
+   P(n = 1 \lvert n \ge 1) = \frac{P(n=1 \cap n \ge 1)}{P(n \ge 1)} = \frac{m \times f \times (1 - f)^{m-1}}{1 - (1 - f)^m}. \vspace{2mm}
 \]
 \begin{table}[h!]
     \centering
@@ -741,6 +747,7 @@ profil, ob pogoju da ga ima vsaj en posameznik, torej:
         1 milijarda & 1 v 10 milijardah & 0,9 & 0,9 \\ \hline
     \end{tabular}
  \end{table}
+ 
 Tabela vsebuje primerjavo rezultatov z rezultati, ki jih daje Bayesovo pravilo. Vidimo lahko, da so razlike zelo majhne, nekje pa jih celo ni.  Obe metodi, 
 se lahko uporablja za reševanje določenih problemov, vendar se razlikujeta v načinu delovanja. Tako pri metodi edinstvenosti ni mogoče enostavno 
 upoštevati številnih zapletov, kot je vpliv stopnje laboratorijskih napak. Bayesovo pravilo pa namreč omogoča upoštevanje različnih dejavnikov in 
@@ -768,8 +775,8 @@ oziroma razumevana narobe. \\
 Pogosto se to verjetnost interpretira na slednji način:
 \begin{enumerate}
    \item če je verjetnost naključnega ujemanja na primer 1 proti 100 milijonov, potem je verjetnost, da ima profil DNK drug posameznik in ne
-   obdolženec 1 proti 100 milijonov;
-   \item ker je to zelo majhna verjetnost, mora biti tudi verjetnost, da je sled DNK pustil nekdo drug na kraju zločina in ne obdolženec, zelo majhna;
+   obtoženec 1 proti 100 milijonov;
+   \item ker je to zelo majhna verjetnost, mora biti tudi verjetnost, da je sled DNK pustil nekdo drug na kraju zločina in ne obtoženec, zelo majhna;
    \item zato mora biti verjetnost, da je vir sledi DNK s kraja zločina obtoženec zelo velika, ampak znaša 1 proti 100 milijonov.
 \end{enumerate}
 Takšno sklepanje je napačno in je znano kot tožilčeva zmota. \\
@@ -778,7 +785,7 @@ Sestavlja jo enačba
    1 - f = P(S \lvert M). \vspace{2mm}
 \end{equation}
 Zmota se pojavi v koraku (2.), ko je zamenjano $P(M \lvert \neg S)$ s $P(\neg S \lvert M)$ in predpostavljeno, da sta obe verjetnosti enaki $f$. \\
-Namesto verjetnosti naključnega ujemanja forenzični strokovnjaki pogosto pričajo o razmerju verjetnosti dokazov DNK, in
+Namesto verjetnosti naključnega ujemanja forenzični strokovnjaki pogosto pričajo o razmerju verjetij dokazov DNK, in
 sicer kot:
 \[
    P(M \lvert S) = P(M \lvert \neg S). \vspace{2mm}
@@ -786,9 +793,9 @@ sicer kot:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Razmerje verjetnosti}
+\section{Razmerje verjetij}
 Občasno se zgodi, da predloga tožilstva in obrambe nista komplementarna in v takih primerih ni mogoče določiti $P(H_p)$ ali $P(H_d)$ (poglavje 1), 
-ampak samo vpliv statistike, znane kot razmerje verjetnosti.
+ampak samo vpliv statistike, znane kot razmerje verjetij.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Opredelitev}
@@ -809,9 +816,9 @@ korist dogodka $H$ brez kakršnihkoli informacij o dogodku $E$.\\
     \begin{equation}
         \frac{P(E \lvert H)}{P(E \lvert \bar{H})} \vspace{2mm}
     \end{equation}
-     se imenuje razmerje verjetnosti. \\
+     se imenuje razmerje verjetij. \\
 \end{definicija}
-Oglejmo si dogodka $E$ in $H$, ter njuni dopolnitvi. Razmerje verjetnosti je tu razmerje verjetnosti $E$, ko je $H$ resničen in verjetnosti $E$,
+Oglejmo si dogodka $E$ in $H$, ter njuni dopolnitvi. Razmerje verjetnosti je tu razmerje verjetij $E$, ko je $H$ resničen in verjetnosti $E$,
 ko je $H$ neresničen. Da bi upoštevali učinek $E$ na verjetnost $H$, tj. da bi
 \[
    \frac{P(H)}{P(\bar{H})} \vspace{2mm}
@@ -820,7 +827,7 @@ spremenili v
 \[
    \frac{P(H \lvert E)}{P(\bar{H} \lvert E)}, \vspace{2mm}
 \]
-prvo pomnožimo z razmerjem verjetnosti. Verjetnost
+prvo pomnožimo z razmerjem verjetij. Verjetnost
 \[
    \frac{P(H)}{P(\bar{H})} \vspace{2mm}
 \]
@@ -828,12 +835,12 @@ je znana kot predhodna verjetnost v korist H, verjetnost
 \[
    \frac{P(H \lvert E)}{P(\bar{H} \lvert E)} \vspace{2mm}
 \]
-pa je znana kot posteriorna verjetnost v korist $H$.\\\\
+pa je znana kot aposteriorna verjetnost v korist $H$.\\\\
 Razlika med $P(E \lvert H)$ in $P(H \lvert E)$ je bistvena. Pri proučevanju vpliva
 $E$ na $H$ je treba upoštevati tako verjetnost $E$, ko je $H$ resničen in ko je $H$ neresničen. Pogosta napaka, tj. zmota prenesene pogojne
 verjetnosti, je, da dogodek $E$, ki je malo verjeten, če je $\bar{H}$ resničen, pomeni dokaz v prid $H$. Da bi bilo tako, je treba dodatno
 zagotoviti, da E ni tako malo verjeten, če je H resničen. Razmerje verjetnosti je potem večje od 1 in pozitivna verjetnost je večja od
-predhodne verjetnosti. Torej iz Bayesovega izreka neposredno izhaja, da če je razmerje verjetnosti večje od 1, potem dokaz povečuje
+predhodne verjetnosti. Torej iz Bayesovega izreka neposredno izhaja, da če je razmerje verjetij večje od 1, potem dokaz povečuje
 verjetnost krivde (pri čemer višje vrednosti pomenijo večjo verjetnost krivde), če pa je manjše od 1, zmanjšuje verjetnost krivde
 (in bolj ko se približuje ničli, manjša je verjetnost krivde).
 
@@ -845,7 +852,7 @@ $H_p \dots$ interesna oseba (PoI) oz. obtoženec je resnično kriv - nadomestimo
 $H_d \dots$ interesna oseba (PoI) je resnično nedolžen - nadomestimo $\bar{H}$;\\
 $Ev \dots$ obravnavani dokaz - nadomestimo dogodek $E$;\\\\
 Oblika Bayesovega izreka nato omogoča, da se predhodne verjetnosti, tj. pred predstavitvijo obravnavanih dokazov $Ev$, v korist krivde posodobijo v 
-posteriorne verjetnosti ob upoštevanju $Ev$, na naslednji način:
+aposteriorne verjetnosti ob upoštevanju $Ev$, na naslednji način:
 \[
    \frac{P(H_p \lvert Ev)}{P(H_d \lvert Ev)} = \frac{P(Ev \lvert H_p)}{P(Ev \lvert H_d)} \times \frac{P(H_p)}{P(H_d)}. \vspace{2mm}
 \]
@@ -856,17 +863,17 @@ Ob upoštevanju informacij o ozadju $I$, dobimo zapis
 Pri vrednotenju dokazov $Ev$ sta potrebni dve verjetnosti - verjetnost dokazov, če je PoI kriv in glede na informacije o ozadju, ter
 verjetnost dokazov, če je PoI nedolžen in glede na informacije o ozadju. Informacije o ozadju so včasih znane kot okvir okoliščin
 ali pogojne informacije. \\\\
-Da lahko ocenimo oziroma določimo vrednost dokaza potrebujemo razmerje verjetnosti.
+Da lahko ocenimo oziroma določimo vrednost dokaza potrebujemo razmerje verjetij.
 \begin{definicija}
     Naj bosta  $H_p$ in $H_d$ dve konkurenčni hipotezi ter $I$ informacije o ozadju. Vrednost $V$ dokaza $Ev$ je podana z
     \[
         V = \frac{P(Ev \lvert H_p, I)}{P(Ev \lvert H_d, I)}, \vspace{2mm}
     \]
-    razmerje verjetnosti, ki pretvori predhodne verjetnosti
+    razmerje verjetij, ki pretvori predhodne verjetnosti
     \[
         \frac{P(H_p \lvert I)}{P(H_d \lvert I)} \vspace{2mm}
     \]
-    v posteriorne verjetnosti
+    v aposteriorne verjetnosti
     \[
         \frac{P(H_p \lvert Ev, I)}{P(H_d \lvert Ev, I)}.
     \]
@@ -891,8 +898,8 @@ Pri uporabi takšnih tabel moramo biti previdni, če so hipoteze prelagane na po
 podamo predhodne verjetnosti za obravnavane hipoteze.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Utemeljitev uporabe razmerja verjetnosti}
-Verjetnostna oblika Bayesovega izreka predstavlja prepričljiv argument za uporabo razmerja verjetnosti kot merila vrednosti dokazov.
+\subsection{Utemeljitev uporabe razmerju verjetij}
+Verjetnostna oblika Bayesovega izreka predstavlja prepričljiv argument za uporabo razmerja verjetij kot merila vrednosti dokazov.
 Obstaja tudi matematična razlaga, ki opravičuje njegovo uporabo.\\\\
 Denimo, da želimo izmeriti vrednost $V$ dokazov $E$ v prid krivdi $H_p$. Pri tem naj obstajala odvisnost od osnovnih informacij $I$, vendar ta ni izrecno
 navedena. Predpostavimo, da je vrednost $V$ odvisna samo od verjetnosti dokazov $E$ ob pogoju, da je interesna oseba kriva ($H_p$), in od verjetnosti dokazov $E$ ob pogoju,
@@ -920,50 +927,50 @@ To je enako $f(x,y)$ za vsako $\theta$ na intervalu $[0,1]$. Iz tega sledi, da j
 \[
    \frac{P(E \lvert H_p)}{P(E \lvert H_d)}, \vspace{2mm}
 \]
-kar je razmerje verjetnosti.\\\\
-Verjetnost hipoteze H na podlagi nekega dokaza E je verjetnost, da najdemo E, če je H resnična. Za alternativno hipotezo je razmerje verjetnosti razmerje obeh
+kar je razmerje verjetij.\\\\
+Verjetnost hipoteze H na podlagi nekega dokaza E je verjetnost, da najdemo E, če je H resnična. Za alternativno hipotezo je razmerje verjetij razmerje obeh
 verjetnosti.\\
 Razmerje verjetnosti nam pove, katera hipoteza je bolje podprta z dokazi. Kadar sta hipotezi medsebojno izključujoči, nam pa pove še več.
 V tem primeru, če je verjetnost H večja od verjetnosti alternative, lahko sklepamo tudi, da se verjetnost H zaradi najdbe E poveča, medtem ko se
 verjetnost alternative zmanjša. \\
 Če je le mogoče, je treba upoštevati verjetnosti za vse razumne alternativne hipoteze (tako da je nabor hipotez izčrpen). Če se obravnavajo samo 
-nekatere hipoteze, je treba pojasniti, da so predstavljena samo razmerja verjetnosti za pare teh hipotez. V primerih, ko je treba
-združiti več hipotez in/ali več dokazov, se lahko razmerje verjetnosti bolje uporablja v povezavi z drugimi metodami.\\
+nekatere hipoteze, je treba pojasniti, da so predstavljena samo razmerja verjetij za pare teh hipotez. V primerih, ko je treba
+združiti več hipotez in/ali več dokazov, se lahko razmerje verjetij bolje uporablja v povezavi z drugimi metodami.\\
 Kadar je treba količinsko ovrednotiti skupni učinek več dokazov, ki vključujejo različne povezane hipoteze, poenostavljene rešitve, ki predpostavljajo 
 neodvisnost, niso ustrezne.\\
 Grafični prikazi dokazov so lahko v veliko pomoč pri modeliranju odvisnosti. Obstaja interaktivna programska oprema za izvajanje izračunov na 
 grafičnih modelih (Bayesovih mrežah), ki uporabnikom omogoča, da raziščejo vplive različnih predpostavk in dokazov. Čeprav je takšne metode 
 težko uvesti neposredno na sodišču, so koristne za sintezo dokazov v katerikoli fazi preiskave pred sodnim procesom.\\\\
-Ocena vrednosti razmerja verjetnosti je lahko podvržena številnim virom negotovosti, vključno s kakovostjo podatkov, pridobljenih z analizami, ki jih
+Ocena vrednosti razmerja verjetij je lahko podvržena številnim virom negotovosti, vključno s kakovostjo podatkov, pridobljenih z analizami, ki jih
 opravijo forenzični znanstveniki, izbiro kontrolnega vzorca in najdenih predmetov, ki jih lahko vzamejo različni preiskovalci ali analizirajo različni
 analitiki ali laboratoriji. Ocena znanstvenih dokazov na sodišču pogosto zahteva kombinacijo podatkov o pojavu ciljnih značilnosti skupaj z osebnim poznavanjem
 okoliščin iz določenega primera. Jasno je, da vsaka ocena verjetnosti, ki se nanaša na določen primer, tudi če jo obravnavamo v obliki frekvence, temelji 
 na poznavanju primera. Drugi viri negotovosti vključujejo pridobivanje predhodnih verjetnosti, pogojenih z razpoložljivim znanjem, ali celo
-izvajanje numeričnih postopkov za razreševanje računskih težav. Zato poročilo o vrednosti razmerja verjetnosti vključuje merilo njegove natančnosti, na primer z
-navedbo številčnega razpona vrednosti za verjetnost dokazov na podlagi konkurenčnih predlogov in s tem številčnega razpona vrednosti za razmerje verjetnosti.
+izvajanje numeričnih postopkov za razreševanje računskih težav. Zato poročilo o vrednosti razmerja verjetij vključuje merilo njegove natančnosti, na primer z
+navedbo številčnega razpona vrednosti za verjetnost dokazov na podlagi konkurenčnih predlogov in s tem številčnega razpona vrednosti za razmerje verjetij.
 Vendar sta vrednost dokaza in moč posameznikovega prepričanja o vrednosti različna pojma in se ne smeta združevati ali povzročiti spremembe
 vrednosti dokaza. V praksi je za kriminalistično preiskavo na voljo en niz
 podatkov o ozadju, ki so značilni za člane določene relevantne populacije, en niz kontrolnih podatkov in en niz izterjanih podatkov. Zato je za vrednotenje
-dokazov z določenim statističnim modelom na voljo ena sama vrednost $V$ za povezano razmerje verjetnosti. Ponovno je treba upati, da so vsi različni kontrolni
-vzorci in pridobljeni podatki dovolj reprezentativni za populacije, iz katerih so bili izbrani, tako da se bodo razmerja verjetnosti po vrednosti le malo
+dokazov z določenim statističnim modelom na voljo ena sama vrednost $V$ za povezano razmerje verjetij. Ponovno je treba upati, da so vsi različni kontrolni
+vzorci in pridobljeni podatki dovolj reprezentativni za populacije, iz katerih so bili izbrani, tako da se bodo razmerja verjetij po vrednosti le malo
 razlikovala.\\
-Metoda razmerja verjetnosti je koristna v državah kot sta na primer Velika Britanija in 
+Metoda razmerja verjetij je koristna v državah kot sta na primer Velika Britanija in 
 Združene države Amerike, kjer se lahko Bayesovo pravilo šteje kot poseg v pravico porote do previdnosti: poroti naj ne bi bilo potrebno govoriti, 
 kako naj razmišlja in presoja dokaze; Bayesovo pravilo pa je natanko metoda za tehtanje dokazov.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Bayesov faktor in razmerje verjetnosti}
+\subsection{Bayesov faktor in razmerje verjetij}
 V forenziki se ta dva pojma, kljub pogostejši uporabi Bayesovega faktorja(BF), pogosto obravnavata kot sinonima. Bayesov faktor je glavni
 element Bayesove metodologije za primerjavo konkurenčnih predlogov oziroma, v našem primeru, dokazov. Opredeljen je kot sprememba, ki jo 
-povzročijo novi podatki ali dokazi v verjetnosti pri prehodu od predhodne k posteriorni porazdelitvi v korist enega predloga k drugemu. Da se 
-pokazati, da je razmerje verjetnosti poseben primer Bayesovega faktorja, kadar so konkurenčne hipoteze parametrizirane z enim samim parametrom 
+povzročijo novi podatki ali dokazi v verjetnosti pri prehodu od predhodne k aposteriorni porazdelitvi v korist enega predloga k drugemu. Da se 
+pokazati, da je razmerje verjetij poseben primer Bayesovega faktorja, kadar so konkurenčne hipoteze parametrizirane z enim samim parametrom 
 (tj. preprosta hipoteza). Vendar pa lahko pride do primerov, ko se primerjajo sestavljene hipoteze. V takem primeru je Bayesov faktor razmerje dveh 
 mejnih verjetnosti pri konkurenčnih hipotezah in se zdi, da ni več odvisen samo od podatkov. 
-%Če je razmerje verjetnosti enako ali blizu 1, potem E nima nobene prave vrednosti, saj ne povečuje niti ne zmanjšuje verjetnosti krivde.(bayesovo razmerje verjetnosti)
+%Če je razmerje verjetij enako ali blizu 1, potem E nima nobene prave vrednosti, saj ne povečuje niti ne zmanjšuje verjetnosti krivde.(bayesovo razmerje verjetij)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Nadaljevanje sodnega procesa - medicinska sestra Lucia De Berk: Pristop z razmerjem verjetnosti}
+\section{Nadaljevanje sodnega procesa - medicinska sestra Lucia De Berk: Pristop z razmerjem verjetij}
 Primeren pristop bi bil tudi, da je verjetnostna porazdelitev slučajne spremenljivke $X$, ki predstavlja število zadevnih dogodkov, ki jim je bila priča 
 določena medicinska sestra, podana s Poissonovo porazdelitvijo
 \[
@@ -975,7 +982,7 @@ je binomska porazdelitev z majhno verjetnostjo $p$ zelo blizu Poissonovi. Hipote
 enak parameter pogostosti, da so priče zadevnemu dogodku, $\mu$. \\
 Tudi tožilčevo hipotezo $H_p$ lahko zapišemo na več načinov. Ena oblika je, da je število zadevnih dogodkov v Luciini izmeni 
 porazdeljeno Poissonovo s parametrom $\mu _L$ in potem je tožilčeva hipoteza $H_p$: $\mu _L > \mu$.\\\\
-Izračunamo lahko razmerje verjetnosti za $H_p$ glede na $H_d$. Naj bo:\\
+Izračunamo lahko razmerje verjetij za $H_p$ glede na $H_d$. Naj bo:\\
 $I$ \dots število vseh medicinskih sester;\\
 $k_i$ \dots število zadevnih dogodkov, katerim je bila priča $i$-ta medicinska sestra, $i = 1, \dots , I$;\\
 $r_i$ \dots število izmen medicinske sestre $i$;\\
@@ -989,11 +996,11 @@ in če upoštevamo, da je osumljenec medicinska sestra $l$
     \vspace{2mm}
     P(E \lvert H_p) = \frac{(\mu _L r_l)^{k_l}}{k_l!}e^{-\mu _L r_l}\prod_{i \neq l, i=1}^{I} \frac{(\mu r_i)^{k_i}}{k_i!}e^{-\mu r_i}.\vspace{2mm}
 \]
-Potem je razmerje verjetnosti
+Potem je razmerje verjetij
 \begin{equation}\label{eq:rv}
     V = \frac{P(E \lvert H_p)}{P(E \lvert H_d)} = e^{\mu r_l-\mu _L r_l}\biggl(\frac{\mu _L r_l}{\mu r_l}\biggr)^{k_l}.\vspace{2mm}
 \end{equation}
-Za oceno izida katerega koli izračuna s tem razmerjem, lahko iz tabele 3 izpeljemo naslednjo lestvico za opis višine razmerja verjetnosti.
+Za oceno izida katerega koli izračuna s tem razmerjem, lahko iz tabele 3 izpeljemo naslednjo lestvico za opis višine razmerja verjetij.
 \begin{table}[h!]
     \centering
     \caption{Kvalitativna lestvica za poročanje o vrednosti $V$ iz enačbe \eqref{eq:rv} podpore dokazov za $H_p$ proti $H_d$. \vspace{2mm}}
@@ -1014,7 +1021,7 @@ Za oceno izida katerega koli izračuna s tem razmerjem, lahko iz tabele 3 izpelj
 \section{Zmote v kazenskem pravu}
 Ker večina ljudi pri razmišljanju o verjetnosti dela osnovne napake, obstaja mnogo zmot, ki izhajajo iz osnovnega razumevanja pravil
 teorije verjetnosti. Številne od teh zmot so zlasti posledica napačnega razumevanja pogojne verjetnosti. Bolj znana primera takih zmot sta
-Tožilčeva zmota in Zmota obrambnega odvetnika. Čeprav so posledice tožilčeve zmote
+tožilčeva zmota in zmotaobrambnega odvetnika. Čeprav so posledice tožilčeve zmote
 lahko hujše kot posledice zmote obrambnega odvetnika, so porote morda bolj dovzetne za slednjo kot za prvo. \\\\
 Če upoštevamo vzročno verigo dokazov, predstavljeno na sliki 1, lahko razvrstitev zmot posplošimo na večino vrst dokazov. Ta shema
 nam omogoča klasifikacijo napak v sklepanju.\\
@@ -1042,7 +1049,7 @@ ali precenjena, ker je dogodek bolj nenavaden, kot se zdi.\\\\
 zagotovi dokaze, ki se ujemajo, tj. $P(C \lvert \neg B)$ s pričakovanim številom drugih oseb,
 ki bi jih bilo treba testirati, preden bi našli ujemanje. Ta zmota prav tako pretirava z vrednostjo dokaza $C$.\\\\
 \textit{Pričakovane vrednosti, ki pomenijo edinstvenost}: če je velikost populacije približno enaka $1/P(\neg B \lvert C)$, potem mora biti
-obdolženec edini primerek. \\\\
+obtoženec edini primerek. \\\\
 \textit{Zmota obrambnega odvetnika}: to se zgodi, ko se dokaz $C$ šteje za nepomembnega, ker visoka predhodna verjetnost $P(\neg A)$ (kar
 se zgodi, če je na primer potencialno število osumljencev zelo veliko) še vedno povzroči visoko verjetnost $P(\neg B \lvert C)$. \\\\
 \textit{Napaka baze podatkov obrambnega odvetnika}: za to napako gre, kadar verjetnost $P(\neg B \lvert C)$ temelji na drugačni populaciji,
@@ -1099,6 +1106,7 @@ kjer je $P(E \lvert \neg H)$ verjetnost, da bodo dokazi identificirali krivega o
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Primer - Tožilčeva zmota}
+Primer je povzet po \cite{iliinski}.\\\\
 Za še boljšo predstavo zmote sledi predstavitev zmote na bolj kompleksnem primeru.\\\\
 Slika 2 prikazuje populacijo 100 moških, starih 50 let, ki se ne zdravijo zaradi hipertenzije in imajo skupni holesterol 235 mg/dl in krvni tlak 120 mmHg. Pričakuje
 se, da bo 9\% teh moških (predstavljeno z devetimi črtastimi kvadrati) čez 10 let imelo miokardni infarkt(MI). Ena četrtina moških je kadilcev (predstavljeno s 25
@@ -1153,13 +1161,13 @@ ne moremo storiti. Poleg tega morajo biti statistični oziroma forenzični znans
 se dejansko izognimo zmotam in s tem ne posežemo v pravna pravila na sodiščih in sodnih procesih.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Izogib zmotam z uporabo razmerja verjetnosti}
+\subsection{Izogib zmotam z uporabo razmerja verjetij}
 Vsem zgoraj opisanim zmotam je skupno to, da je resnična koristnost dokaza predstavljena na zavajajoč način - bodisi je pretirana bodisi podcenjena.
-Prednost uporabe razmerja verjetnosti je, da odpravlja ugovor Bayesovemu izreku, in sicer upoštevanje predhodne verjetnosti za hipotezo,
+Prednost uporabe razmerja verjetij je, da odpravlja ugovor Bayesovemu izreku, in sicer upoštevanje predhodne verjetnosti za hipotezo,
 kot je »kriv«. V veliki meri pomiri pomisleke pravnikov, ki bi sicer zavrnili Bayesov argument z utemeljitvijo, da je nedopustno predpostavljati 
 predhodne verjetnosti o krivdi ali nedolžnosti.\\\\
-Čeprav je uporaba razmerja verjetnosti kot sredstva za izogibanje zmotam in merjenje uporabnosti dokazov močno podprta, sem vseeno mnenja, da
-imajo, po prebiranju različnih sodnih poročil, pravniki in laiki pogosto podobne težave pri razumevanju razmerja verjetnosti kot pri razumevanju
+Čeprav je uporaba razmerja verjetij kot sredstva za izogibanje zmotam in merjenje uporabnosti dokazov močno podprta, sem vseeno mnenja, da
+imajo, po prebiranju različnih sodnih poročil, pravniki in laiki pogosto podobne težave pri razumevanju razmerja verjetij kot pri razumevanju
 Bayesove teorije.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1208,9 +1216,9 @@ verjetnosti krivde in nedolžnosti (to je verjetnosti krivde in nedolžnosti pre
 \[
     \frac{P(E \lvert H)}{P(E \lvert \neg H)},
 \] 
-se imenuje razmerje verjetnosti in določa, kakšen vpliv bo imel nov dokaz (priznanje) na 
-verjetnosti krivde in nedolžnosti. Posteriorna verjetnost krivde bo večja od predhodne verjetnosti krivde le, če bo razmerje verjetnosti 
-večje od 1. Če pa je razmerje verjetnosti 
+se imenuje razmerje verjetij in določa, kakšen vpliv bo imel nov dokaz (priznanje) na 
+verjetnosti krivde in nedolžnosti. Posteriorna verjetnost krivde bo večja od predhodne verjetnosti krivde le, če bo razmerje verjetij 
+večje od 1. Če pa je razmerje verjetij 
 \[
     \frac{P(E \lvert H)}{P(E \lvert \neg H)} < 1,
 \] 
@@ -1222,14 +1230,14 @@ ki je pomembno za verjetnost krivde. V tem primeru bi morali uporabiti bolj zapl
 dokazni učinek priznanja, ki je rezultat zaslišanja, verjetnost, ki jo iščemo, v resnici ni verjetnost, da je oseba X kriva, če je priznala, 
 ampak verjetnost, da je oseba X kriva, če je priznala in če je bila zaslišana. Zato je treba razmerje posteriornih verjetnosti izraziti na 
 naslednji bolj celovit način, pri čemer $I$ predstavlja trditev \textit{je bil zaslišan}:
-\begin{equation}\label{eq:posteriorne}
+\begin{equation}\label{eq:aposteriorne}
     \frac{P(H \lvert E, I)}{P(\neg H \lvert E, I)} = \frac{P(H \lvert I)}{P(\neg H \lvert I)}  \times \frac{P(E \lvert H, I)}{P(E \lvert \neg H, I)}
 \end{equation}
-in z nadaljnjo razširitvijo prvega razmerja verjetnosti na desni strani \eqref{eq:posteriorne}
+in z nadaljnjo razširitvijo prvega razmerja verjetij na desni strani \eqref{eq:aposteriorne}
 \begin{equation}\label{eq:razširitev}
     \frac{P(H \lvert E, I)}{P(\neg H \lvert E, I)} = \frac{P(H)}{P(\neg H)} \times \frac{P(I \lvert H)}{P(I \lvert \neg H)}  \times \frac{P(E \lvert H, I)}{P(E \lvert \neg H, I)}
 \end{equation}
-Da bi videli, zakaj je prvo razmerje na desni strani \eqref{eq:posteriorne} enakovredno produktu prvih dveh razmerij na desni strani \eqref{eq:razširitev}, najprej upoštevajmo naslednji dve osnovni verjetnostni resnici:
+Da bi videli, zakaj je prvo razmerje na desni strani \eqref{eq:aposteriorne} enakovredno produktu prvih dveh razmerij na desni strani \eqref{eq:razširitev}, najprej upoštevajmo naslednji dve osnovni verjetnostni resnici:
 \begin{equation}\label{eq:ver1}
     P(H \lvert I) = \frac{P(H) \times P(I \lvert H)}{P(I)},
 \end{equation}
@@ -1240,7 +1248,7 @@ Da bi videli, zakaj je prvo razmerje na desni strani \eqref{eq:posteriorne} enak
 \begin{equation}\label{eq:enakovredno}
     \frac{P(H \lvert I)}{P(\neg H \lvert I)} = \frac{P(H)}{P(\neg H)}  \times \frac{P(I \lvert H)}{P(I \lvert \neg H)}.
 \end{equation}
-Enačba \eqref{eq:enakovredno} dokazuje, da sta \eqref{eq:posteriorne} in \eqref{eq:razširitev} enakovredni.\\\\
+Enačba \eqref{eq:enakovredno} dokazuje, da sta \eqref{eq:aposteriorne} in \eqref{eq:razširitev} enakovredni.\\\\
 Primerjajmo enačbo \eqref{eq:btrditev} z enačbo \eqref{eq:razširitev}, ki daje popolnejšo sliko stanja. Na levi strani je v vsakem primeru razmerje posteriornih verjetnosti krivde in nedolžnosti, s to 
 razliko, da so v \eqref{eq:btrditev} te verjetnosti pogojene samo s priznanjem, medtem ko so v \eqref{eq:razširitev} pogojene tako s priznanjem kot z zaslišanjem. Prvo razmerje na desni strani je enako 
 tako v \eqref{eq:btrditev} kot \eqref{eq:razširitev}: razmerje predhodnih verjetnosti $H$ in $\neg H$. Tudi zadnje razmerje na desni strani je v obeh primerih podobno: verjetnost priznanja glede na 
@@ -1267,7 +1275,7 @@ Sledi po enačbi \eqref{eq:razširitev}
     \frac{P(H \lvert E, I)}{P(\neg H \lvert E, I)}  = \frac{P(H \lvert I)}{P(\neg H \lvert I)}  \times \frac{P(E \lvert H, I)}{P(E \lvert \neg H, I)} = \frac{0,75}{0,25} \times 9 \times \frac{0,4}{0,6} = 18
 \end{equation}
 Enačba \eqref{eq:rezultat} nam pove, da je verjetnost, da je oseba X kriva, ob upoštevanju vseh okoliščin, 18-krat večja od verjetnosti, da je nedolžna. Ker mora biti 
-bodisi kriva bodisi nedolžna, lahko to razmerje uporabimo za pridobitev posteriorne verjetnosti krivde osebe X. Verjetnost, da je kriva, glede na to, 
+bodisi kriva bodisi nedolžna, lahko to razmerje uporabimo za pridobitev aposteriorne verjetnosti krivde osebe X. Verjetnost, da je kriva, glede na to, 
 da je priznala (in da je bil zaslišana), je 18/19 ali 0,95. Pred priznanjem je bila verjetnost krivde 0,75. Po priznanju se verjetnost krivde poveča 
 na 0,95 kljub temu, da je verjetnost, da bo priznala, če je kriva, manjša od verjetnosti, da bo priznala, če je nedolžna. \\
 S tem je dokaz, da je priznanje lahko dokaz krivde le, če je verjetnost priznanja glede na krivdo večja od verjetnosti priznanja glede na nedolžnost, popoln.
@@ -1292,7 +1300,7 @@ V tem kazenskem primeru lahko vidimo koliko je še pomanjkljivosti pri statistik
 verjetnostnih izračunov, ampak očitno je, da je včasih že z izbiro ustrezne metode veliko težav, kar lahko privede do napačnih zaključkov.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Izogibanje zmotam z uporabo Bayesovih \\omrežij}
+\section{Izogib zmotam z uporabo Bayesovih omrežij}
 Ker je največkrat težava v tem, da se večina odvetnikov in sodnikov ob pogledu na verjetnostne izračune in statistično analizo dokazov, ustraši, se mi 
 zdijo Bayeosova omrežja dober predlog za predstavitev verjetnostnih izračunov.
 
@@ -1341,22 +1349,22 @@ mreže sklepajo na argumente.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Zaključek}
 Statistika v kazenskem pravu je zelo razširjena veda, ki jo v prihodnosti čaka še veliko napredka. Njeni temelji se razlikujejo glede na države in pravno ureditev
-tamkajšnjih sodišč. Zahteva pa tudi dobre temelje koncepta verjetnosti, statistični znanstvenik, ki se ukvarja z analizo in vrednotenjem dokazov, pa mora poznati
+tamkajšnjih sodišč. Zahteva pa tudi dobre temelje koncepta verjetnosti, statistik, ki se ukvarja z analizo in vrednotenjem dokazov, pa mora poznati
 osnove prava.\\\\
 V diplomski nalogi ugotovim, na podlagi pregleda nekaterih drugih metod, da je Bayesov pristop na splošno najboljši za vrednotenje dokazov, še posebaj v primeru,
 ko se dokazi nanašajo na DNK ali laboratorijske analize. Koncept Bayesove metode je posodabljanje predhodnih oziroma apriornih verjetnosti začetnih hipotez in dokazov v
-posteriorne s pomočjo razmerja  verjetnosti in Bayesovega pravila. Težava pristopa se pojavi pri določanju predhodnih verjetnosti, ker lahko različne metode za izračun
+aposteriorne s pomočjo razmerja  verjetnosti in Bayesovega pravila. Težava pristopa se pojavi pri določanju predhodnih verjetnosti, ker lahko različne metode za izračun
 teh verjetnosti, dajejo na koncu različne rezultate. V delu pridem do ugotovitve, da je mogoče najbolje, da za določitev in izračun prehodnih verjetnosti poskrbijo
-statistični znanstveniki, saj znajo v svoje modele vključevati tudi pravno teorijo. Težave pa nastanejo tudi pri vključevanju novih dokazov, ki so sodišču priloženi
+statistiki, saj znajo v svoje modele vključevati tudi pravno teorijo. Težave pa nastanejo tudi pri vključevanju novih dokazov, ki so sodišču priloženi
 tekom sodnega procesa in izključevanju nepomembnih oziroma nepotrebnih dokazov za sodni proces. Te dokaze vedno upoštevajo na drugačen način in jih drugače
 vpeljejo oziroma izključijo iz svojih izračunov, kar bi v nekaterih primerih lahko bilo sporno. In ker se nekateri sodni procesi zaključijo na podlagi statistične
 analize, bi po mojem mnenju tu morali biti malenkost bolj previdni in natančni. Torej do napačnih rezultatov lahko pridemo še pred predstavitvijo analize na sodišču, kar
-je dobro prikazano tudi v primeru sodbe medicinski sestri Lucii de Berk, kjer je prišlo do problema, da je statistični znanstvenik na podlagi določenih podatkov
+je dobro prikazano tudi v primeru sodbe medicinski sestri Lucii de Berk, kjer je prišlo do problema, da je statistik na podlagi določenih podatkov
 določil hipotezo, nato pa ta isti podatek uporabil za preverjanje te hipoteze. \\
-Ko pa statistični znanstvenik predstavi analizo in rezultate na sodišču pa se lahko zgodijo tudi druge zmote. Podrobno sem opredelila Tožilčevo zmoto, ki je tudi
+Ko pa statistik predstavi analizo in rezultate na sodišču pa se lahko zgodijo tudi druge zmote. Podrobno sem opredelila Tožilčevo zmoto, ki je tudi
 najpogostejša. Največkrat se verjetno zgodi, zaradi pomankljive predstavitve in razlage analize in, po mojih ugotovitvah, nezanimanja porote in sodnika, ko se predstavi
 nek algebrski zapis izračuna. Zaradi zamenjave dveh različnih pogojnih verjetnosti, se zgodijo tudi napačni zaključki sodnih procesov. Zmotam, ki izhajajo iz napačnega
-razumevanja pogojnih verjetnosti, se lahko izognemo z uporabo razmerja verjetnosti in Bayesove teorije, vendar sem prišla do sklepa, da je tudi pri tem razumevanju
+razumevanja pogojnih verjetnosti, se lahko izognemo z uporabo razmerja verjetij in Bayesove teorije, vendar sem prišla do sklepa, da je tudi pri tem razumevanju
 formulacij in izračunov veliko težav. \\
 Glavna ugotovitev dela je, da se lahko s pomočjo Bayesovih omrežij izognemo zmotam, saj ne prikažejo polno algebrsko obliko verjetnostne formule, omogočajo skoraj popolno
 avtomatizacijo potrebnih verjetnostnih izračunov in več prefinjenih možnosti. Ponovno pa je pomembno, da se za izdelavo uporablja dosleden okvir, saj lahko Bayesovo omrežje,

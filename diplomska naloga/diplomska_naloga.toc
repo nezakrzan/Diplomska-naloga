@@ -1,41 +1,41 @@
 \babel@toc {slovene}{}
-\contentsline {section}{\numberline {1}Uvod}{7}{section.1}%
-\contentsline {section}{\numberline {2}Statistika v kazenskem pravu}{8}{section.2}%
-\contentsline {section}{\numberline {3}Uporaba statistike pri pravnem postopku}{9}{section.3}%
-\contentsline {section}{\numberline {4}Raziskovalni proces}{10}{section.4}%
-\contentsline {section}{\numberline {5}Vrednotenje dokazov}{11}{section.5}%
-\contentsline {section}{\numberline {6}Koncept verjetnosti}{13}{section.6}%
-\contentsline {section}{\numberline {7}Bayesova statistika}{14}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Opredelitev}{14}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Bayesovo pravilo}{14}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Bayesovo posodabljanje}{15}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.4}Primer - Taksi podjetja}{15}{subsection.7.4}%
-\contentsline {subsection}{\numberline {7.5}Bayesova teorija v kazenskem pravu}{16}{subsection.7.5}%
-\contentsline {subsection}{\numberline {7.6}Predhodna verjetnost in določitev posteriorne verjetnosti}{17}{subsection.7.6}%
-\contentsline {section}{\numberline {8}Predstavitev sodnega procesa - medicinska sestra Lucia De Berk}{19}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Podatki in uporabljena metoda}{19}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Pristop z Bayesovo teorijo}{21}{subsection.8.2}%
-\contentsline {section}{\numberline {9}Bayesova analiza}{22}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Poenostavljena Bayesova analiza}{22}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Izpopolnjena Bayesova analiza}{22}{subsection.9.2}%
-\contentsline {section}{\numberline {10}Frekvence}{24}{section.10}%
-\contentsline {section}{\numberline {11}Metoda verjetnosti naključnega ujemanja}{26}{section.11}%
-\contentsline {section}{\numberline {12}Razmerje verjetnosti}{27}{section.12}%
-\contentsline {subsection}{\numberline {12.1}Opredelitev}{27}{subsection.12.1}%
-\contentsline {subsection}{\numberline {12.2}Razmerje verjetnosti v kazenskem pravu}{28}{subsection.12.2}%
-\contentsline {subsection}{\numberline {12.3}Utemeljitev uporabe razmerja verjetnosti}{29}{subsection.12.3}%
-\contentsline {subsection}{\numberline {12.4}Bayesov faktor in razmerje verjetnosti}{31}{subsection.12.4}%
-\contentsline {section}{\numberline {13}Nadaljevanje sodnega procesa - medicinska sestra Lucia De Berk: Pristop z razmerjem verjetnosti}{31}{section.13}%
-\contentsline {section}{\numberline {14}Zmote v kazenskem pravu}{33}{section.14}%
-\contentsline {subsection}{\numberline {14.1}Tožilčeva zmota}{34}{subsection.14.1}%
-\contentsline {subsubsection}{\numberline {14.1.1}Primer - Tožilčeva zmota}{35}{subsubsection.14.1.1}%
-\contentsline {section}{\numberline {15}Načini za izogib zmotam}{37}{section.15}%
-\contentsline {subsection}{\numberline {15.1}Izogib zmotam z uporabo razmerja verjetnosti}{37}{subsection.15.1}%
-\contentsline {subsection}{\numberline {15.2}Učinkovitost Bayesove teorije pri zmanjšanju zmote obrambnega odvetnika}{37}{subsection.15.2}%
-\contentsline {subsection}{\numberline {15.3}Učinkovitost Bayesove teorije pri zmanjšanju zasliševalčeve zmote}{38}{subsection.15.3}%
-\contentsline {section}{\numberline {16}Nadaljevanje sodnega procesa - medicinska sestra Lucia de Berg: Interpretacija verjetnosti na sodišču}{41}{section.16}%
-\contentsline {section}{\numberline {17}Izogibanje zmotam z uporabo Bayesovih \\omrežij}{41}{section.17}%
-\contentsline {subsection}{\numberline {17.1}Opredelitev}{41}{subsection.17.1}%
-\contentsline {subsection}{\numberline {17.2}Uporaba Bayesovih omrežij na sodišču}{42}{subsection.17.2}%
-\contentsline {section}{\numberline {18}Zaključek}{43}{section.18}%
-\contentsline {section}{Literatura}{45}{section*.3}%
+\contentsline {section}{\numberline {1}Uvod}{9}{section.1}%
+\contentsline {section}{\numberline {2}Statistika v kazenskem pravu}{10}{section.2}%
+\contentsline {section}{\numberline {3}Uporaba statistike pri pravnem postopku}{11}{section.3}%
+\contentsline {section}{\numberline {4}Raziskovalni proces}{12}{section.4}%
+\contentsline {section}{\numberline {5}Vrednotenje dokazov}{13}{section.5}%
+\contentsline {section}{\numberline {6}Koncept verjetnosti}{15}{section.6}%
+\contentsline {section}{\numberline {7}Bayesova statistika}{16}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Opredelitev}{16}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Bayesovo pravilo}{16}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Bayesovo posodabljanje}{17}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Primer - Taksi podjetja}{17}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Bayesova teorija v kazenskem pravu}{18}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.6}Predhodna verjetnost in določitev aposteriorne verjetnosti}{19}{subsection.7.6}%
+\contentsline {section}{\numberline {8}Predstavitev sodnega procesa - medicinska sestra Lucia De Berk}{21}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Podatki in uporabljena metoda}{21}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Pristop z Bayesovo teorijo}{23}{subsection.8.2}%
+\contentsline {section}{\numberline {9}Bayesova analiza}{24}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Poenostavljena Bayesova analiza}{24}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Izpopolnjena Bayesova analiza}{24}{subsection.9.2}%
+\contentsline {section}{\numberline {10}Frekvence}{26}{section.10}%
+\contentsline {section}{\numberline {11}Metoda verjetnosti naključnega ujemanja}{28}{section.11}%
+\contentsline {section}{\numberline {12}Razmerje verjetij}{29}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Opredelitev}{29}{subsection.12.1}%
+\contentsline {subsection}{\numberline {12.2}Razmerje verjetnosti v kazenskem pravu}{30}{subsection.12.2}%
+\contentsline {subsection}{\numberline {12.3}Utemeljitev uporabe razmerju verjetij}{31}{subsection.12.3}%
+\contentsline {subsection}{\numberline {12.4}Bayesov faktor in razmerje verjetij}{33}{subsection.12.4}%
+\contentsline {section}{\numberline {13}Nadaljevanje sodnega procesa - medicinska sestra Lucia De Berk: Pristop z razmerjem verjetij}{33}{section.13}%
+\contentsline {section}{\numberline {14}Zmote v kazenskem pravu}{35}{section.14}%
+\contentsline {subsection}{\numberline {14.1}Tožilčeva zmota}{36}{subsection.14.1}%
+\contentsline {subsubsection}{\numberline {14.1.1}Primer - Tožilčeva zmota}{37}{subsubsection.14.1.1}%
+\contentsline {section}{\numberline {15}Načini za izogib zmotam}{39}{section.15}%
+\contentsline {subsection}{\numberline {15.1}Izogib zmotam z uporabo razmerja verjetij}{39}{subsection.15.1}%
+\contentsline {subsection}{\numberline {15.2}Učinkovitost Bayesove teorije pri zmanjšanju zmote obrambnega odvetnika}{39}{subsection.15.2}%
+\contentsline {subsection}{\numberline {15.3}Učinkovitost Bayesove teorije pri zmanjšanju zasliševalčeve zmote}{40}{subsection.15.3}%
+\contentsline {section}{\numberline {16}Nadaljevanje sodnega procesa - medicinska sestra Lucia de Berg: Interpretacija verjetnosti na sodišču}{43}{section.16}%
+\contentsline {section}{\numberline {17}Izogib zmotam z uporabo Bayesovih omrežij}{43}{section.17}%
+\contentsline {subsection}{\numberline {17.1}Opredelitev}{43}{subsection.17.1}%
+\contentsline {subsection}{\numberline {17.2}Uporaba Bayesovih omrežij na sodišču}{44}{subsection.17.2}%
+\contentsline {section}{\numberline {18}Zaključek}{45}{section.18}%
+\contentsline {section}{Literatura}{47}{section*.3}%

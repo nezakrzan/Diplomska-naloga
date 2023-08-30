@@ -66,12 +66,12 @@
    <dc:creator><rdf:Seq><rdf:li>Neža Kržan</rdf:li></rdf:Seq></dc:creator>
    <dc:description><rdf:Alt><rdf:li xml:lang="x-default">Delo diplomskega seminarja, Finančna matematika, 62P99, 62C10, 60A99</rdf:li></rdf:Alt></dc:description>
    <dc:subject><rdf:Bag><rdf:li>bayesova statistika</rdf:li>
-     <rdf:li>predhodna verjetnost</rdf:li>
-     <rdf:li>posteriorna verjetnost</rdf:li>
-     <rdf:li>razmerje verjetnosti</rdf:li>
+     <rdf:li>apriorna verjetnost</rdf:li>
+     <rdf:li>aposteriorna verjetnost</rdf:li>
+     <rdf:li>razmerje verjetij </rdf:li>
      <rdf:li>frekvence</rdf:li>
      <rdf:li>tožilčeva zmota</rdf:li>
-     <rdf:li>bayesova omrežja</rdf:li></rdf:Bag></dc:subject>
+     <rdf:li>Bayesova omrežja</rdf:li></rdf:Bag></dc:subject>
   </rdf:Description> 
   <rdf:Description rdf:about="" xmlns:prism="http://prismstandard.org/namespaces/basic/2.2/"> 
   </rdf:Description> 
@@ -83,15 +83,15 @@
   </rdf:Description> 
   <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/"> 
    <xmp:CreatorTool>LaTeX with hyperref</xmp:CreatorTool> 
-   <xmp:ModifyDate>2023-08-23T09:20:34+02:00</xmp:ModifyDate> 
-   <xmp:CreateDate>2023-08-23T09:20:34+02:00</xmp:CreateDate> 
-   <xmp:MetadataDate>2023-08-23T09:20:34+02:00</xmp:MetadataDate> 
+   <xmp:ModifyDate>2023-08-29T19:51:43+02:00</xmp:ModifyDate> 
+   <xmp:CreateDate>2023-08-29T19:51:43+02:00</xmp:CreateDate> 
+   <xmp:MetadataDate>2023-08-29T19:51:43+02:00</xmp:MetadataDate> 
   </rdf:Description> 
   <rdf:Description rdf:about="" xmlns:xmpRights = "http://ns.adobe.com/xap/1.0/rights/"> 
   </rdf:Description> 
   <rdf:Description rdf:about="" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"> 
    <xmpMM:DocumentID>uuid:DB2424F5-E2D7-4376-D148-C9506A32D648</xmpMM:DocumentID> 
-   <xmpMM:InstanceID>uuid:527663A1-B28D-1FFD-60F0-51E9219ECCEA</xmpMM:InstanceID> 
+   <xmpMM:InstanceID>uuid:F2791DDD-FB33-5349-4062-0B9969374409</xmpMM:InstanceID> 
   </rdf:Description> 
  </rdf:RDF> 
 </x:xmpmeta> 

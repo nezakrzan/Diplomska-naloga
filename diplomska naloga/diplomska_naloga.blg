@@ -21,7 +21,7 @@ Warning--empty journal in scurich
 Warning--there's a number but no volume in tarling
 You've used 32 entries,
             2705 wiz_defined-function locations,
-            747 strings with 8826 characters,
+            747 strings with 8827 characters,
 and the built_in function-call counts, 11397 in all, are:
 = -- 771
 > -- 406
