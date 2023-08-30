@@ -507,11 +507,11 @@ izračun posteriornih verjetnosti, na katerih bi potem lahko temeljil zaključek
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Predstavitev sodnega procesa - medicinska sestra Lucia De Berk}
 Primer je povzet po \cite{collins}.\\\\
-Marca 2003 je bila medicinska sestra Lucia de Berk (v nadaljevanju osumljenka) v Haagu na Nizozemskem obsojena na dosmrtni zapor zaradi obtožb 
-uboja in domnevnega uboja več bolnikov (v nadaljevanju je zadevni dogodek smrt bolnika) v dveh bolnišnicah, v katerih je delala v bližnji preteklosti (bolnišnici JZK in RKZ). V bolnišnici JKZ 
+Marca 2003 je bila medicinska sestra Lucia de Berk (v nadaljevanju osumljenka) v Haagu na Nizozemskem obsojena na dosmrtni zapor zaradi obtožbe 
+uboja več bolnikov (v nadaljevanju je zadevni dogodek smrt bolnika) v dveh bolnišnicah, v katerih je delala v bližnji preteklosti (bolnišnici JZK in RKZ). V bolnišnici JKZ 
 se je med Lucijinimi izmenami pojavilo nenavadno veliko zadevnih dogodkov, kar je sprožilo vprašanja glede njene morebitne vpletenosti v te dogodke. 
 Razmišljalo se je, ali bi lahko bila Lucijina prisotnost pri toliko zadevnih dogodkih zgolj naključje.\\
-Na zahtevo državnega tožilca, je statistično analizo podal statistik Henk Elffers. V grobem je bila njegova ugotovitev naslednja: ob predpostavkah, da
+Na zahtevo državnega tožilca je statistično analizo podal statistik Henk Elffers. V grobem je bila njegova ugotovitev naslednja: ob predpostavkah, da
 \begin{enumerate}
     \item je verjetnost, da osumljenka doživi zadevni dogodek med izmeno, enaka verjetnosti za katero koli drugo medicinsko sestro in
     \item da so pojavi zadevnih dogodkov neodvisni za različne delovne izmene,
@@ -525,14 +525,14 @@ na različna vprašanja.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Podatki in uporabljena metoda}
 Henk Elffers je temeljil na podatkih o izmenah osmuljenke in drugih medicinskih sester ter smrti bolnikov, ki so se zgodili v teh izmenah, da bi 
-utemeljil svoj model v celoti.
+utemeljil svoj model v celoti.\\\\
 \begin{table}[h!]
     \centering
     \caption{Podatki o izmenah in zadevnih dogodkih, ki jih je uporabil Henk Elffers (za določeno obdobje).}
     \label{table:1}
      \begin{tabular}{l c c c}
         \hline
-        Ime bolnišnice (in številka izmene) & JKZ  & RKZ-41 & RKZ-42 \\ 
+        Ime bolnišnice (in številka izmene) & JKZ  & RKZ-1 & RKZ-2 \\ 
         \hline
         Število vseh izmen & 1029 & 336 & 339 \\
         Število izmen osumljenke & 142 & 1 & 58 \\
@@ -541,7 +541,7 @@ utemeljil svoj model v celoti.
         \hline
      \end{tabular}
  \end{table}
-Tekom sodbe je bilo ugotovljeno, da je osumljenka v RKZ-41 dejansko opravila tri izmene in ne le ene, zato v kasnejših izračunih uporabimo to 
+Tekom sodbe je bilo ugotovljeno, da je osumljenka v RKZ dejansko opravila tri izmene in ne le ene, zato v kasnejših izračunih uporabimo to 
 pravilno število.\\\\
 Najprej bi se lahko odločili za izdelavo modela na podlagi epidemioloških podatkov o verjetnosti smrti med različnimi vrstami izmen; 
 tako bi lahko izračunali verjetnost, da bi bila osumljenka naključno prisotna pri toliko smrtih, kolikor jim je bila dejansko priča. Težava 
@@ -549,13 +549,13 @@ tega pristopa pa je, da nimamo potrebnih podatkov. Zato je Henk Elffers poskuša
 je, da
 \begin{enumerate}
     \item obstaja verjetnost $p$ za nastanek smrti bolnika med določeno izmeno (torej $p$ ni odvisen od tega, ali gre za dnevno ali nočno izmeno),
-    \item dogodki smrt bolnika se pojavljajo neodvisno drug od drugega.
+    \item smrti bolnikov se pojavljajo neodvisno drug od drugega.
 \end{enumerate}
 Izračunajmo pogojno verjetnost dogodka, da se (recimo v JKZ) vse smrti zgodijo med izmenami osumljenke, ob upoštevanju skupnega števila 
 zadevnih dogodkov in skupnega števila izmen v preučevanem obdobju. Naj bo\\
 $n \dots$ skupno število izmen,\\
 $r \dots$ število izmen osumljenke, \\
-potem je pogojna verjetnost, da je bila osumljenka priča $x$ zadevnemu dogodku, če se je zgodilo $k$ smrti bolnikov, naslednja 
+potem je pogojna verjetnost, da je bila osumljenka priča $x$ zadevnim dogodkom, če se je zgodilo $k$ smrti bolnikov, naslednja 
 \begin{equation}\label{eq:l_pogojna}
     \frac{\binom{r}{x}p^x(1-p)^{r-x}\binom{n-r}{k-x}p^{k-x}(1-p)^{n-r-k+x}}{\binom{n}{k}p^k(1-p)^{n-k}} = \frac{\binom{r}{x}\binom{n-r}{k-x}}{\binom{n}{k}}.\vspace{2mm}
 \end{equation}
@@ -598,39 +598,39 @@ potem, po pridobitvi novih dokazov, izračunamo nove aposteriorne verjetnosti
     & = \frac{P(E' \lvert H_p, E)}{P(E' \lvert H_d, E)} \times \textit{stare aposteriorne verjetnosti}. \vspace{2mm}
 \end{align*}
 Menim, da imamo tudi tukaj podobne težave kot sem jih že opisala zgoraj - določitev verjetnosti hipotez $P(H_p)$ in $P(H_d)$, za katere dokaze je mogoče 
-izračunati razmerje verjetij ter kako izračunamo verjetnost \[\frac{P(E' \lvert H_p, E)}{P(E' \lvert H_d, E)}, \vspace{2mm}\] saj ne vemo kako 
-so različni dokazi med seboj povezani. Z določitvijo predhodnih verjetnosti lahko pridemo do zelo različnih rezultatov, ampak nimamo pa več težav z 
+izračunati razmerje verjetij ter kako izračunamo verjetnost \[\frac{P(E' \lvert H_p, E)}{P(E' \lvert H_d, E)}, \vspace{2mm}\] saj ne vemo, kako 
+so različni dokazi med seboj povezani. Z določitvijo predhodnih verjetnosti lahko pridemo do zelo različnih rezultatov, nimamo pa več težav s 
 ponovno uporabo podatkov in naknadnimi popravki.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Bayesova analiza}
 Najbolj pogosta uporaba Bayesovega pravila je pri ugotavljanju, ali je obtoženec vir sledi DNK-ja s kraja zločina. V ta namen sem opisala 
-poenostavljeno in izpopolnjeno Bayeosvo analizo, v primeru, ko je dokaz DNK sled.
+poenostavljeno in izpopolnjeno Bayesovo analizo, v primeru, ko je dokaz DNK sled.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Poenostavljena Bayesova analiza}
 Naj bo:\\
-$S$ \dots trditev, da je obtoženec vir sledi DNK s kraja zločina; \\
-$M$ \dots trditev, da se obtoženčev DNK ujema z DNK-jem s kraja zločina; \\
+$S$ \dots dogodek, da je obtoženec vir sledi DNK s kraja zločina; \\
+$M$ \dots dogodek, da se obtoženčev DNK ujema z DNK-jem s kraja zločina; \\
 $f$ \dots funkcija pogostosti ujemanja DNK z DNK-jem s kraja zločina. \\
 Želimo vedeti, kakšna je verjetnost S glede na M, tj. $P(S \lvert M)$. \\\\
 Bayesovo pravilo lahko uporabimo na naslednji način:
 \[
    \frac{P(S \lvert M)}{P(\neg S \lvert M)} = \frac{P(M \lvert S)}{P(M \lvert \neg S)} \times \frac{P(S)}{P(\neg S)}. \vspace{2mm}
 \]
-Verjetnosti $P(S)$ in $P(\neg S)$ je težko oceniti, ker ne vemo kakšna je množica osumljencev. Smiselno bi bilo, da zanju upoštevamo interval
-predhodnih verjetnosti in ocenimo njihov vpliv na verjetnost trditve $S$ in njene negacije. Nato moramo določiti vrednost $P(M \lvert S)$, ki
-je običajno enaka ena - če bi obtoženec dejansko pustil sledove, bi laboratorijske analize pokazale ujemanje, kar imenujemo lažno
+Verjetnosti $P(S)$ in $P(\neg S)$ je težko oceniti, ker ne vemo, kakšna je množica osumljencev. Smiselno bi bilo, da zanju upoštevamo interval
+predhodnih verjetnosti in ocenimo njihov vpliv na verjetnost dogodka $S$ in njegove negacije. Nato moramo določiti vrednost $P(M \lvert S)$, ki
+je običajno enaka ena - če bi obtoženec dejansko pustil sledove, bi laboratorijske analize pokazale ujemanje, kar imenujemo lažni
 negativni rezultat; to je sicer poenostavitev, saj se lahko zgodi, da analize ne pokažejo ujemanja, čeprav je obtoženec pustil sledi. \\
 Potrebujemo še verjetnost $P(M \lvert \neg S)$, tj. verjetnost, da se bo našlo ujemanje, če obtoženec ni vir sledi na kraju zločina. To je
-običajno enakovredno pogostosti ujemnja DNK-ja z DNK-jem s kraja zložina, tj. $f$; tudi to je poenostavitev, saj se lahko zgodi, da
-obtoženec nima enakega DNK profila, vendar so laboratorijske analize pokazale, da ga ima, kar imenujemo lažno pozitivni rezultat.\\\\
+običajno enakovredno pogostosti ujemanja DNK-ja z DNK-jem s kraja zločina, tj. $f$; tudi to je poenostavitev, saj se lahko zgodi, da
+obtoženec nima enakega DNK profila, vendar so laboratorijske analize pokazale, da ga ima, kar imenujemo lažni pozitivni rezultat.\\\\
 Sledi:
 \[
    \frac{P(S \lvert M)}{P(\neg S \lvert M)} = \frac{1}{f} \times \frac{P(S)}{P(\neg S)}. \vspace{4mm}
 \]
-Ker poenostavljena Bayesova analiza ne upošteva možnosti lažno pozitivnega in negativnega rezultata laboratorijske analize, sem si pogledala še 
+Ker poenostavljena Bayesova analiza ne upošteva možnosti lažnih pozitivnih in negativnih rezultatov laboratorijske analize, sem si pogledala še 
 izpopolnjeno Bayesovo analizo.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -670,15 +670,15 @@ Kot zgoraj, imamo:
 \]\\\\
 Za predstavo, kako stopnje napak vplivajo na razmerje verjetij, predpostavim, da je pogostost profila DNK 1 proti milijardi. Predpostavim
 tudi, da sta stopnji lažno poztivnih in negativnih laboratorijskih rezultatov (tj. FP in FN) enaki $0,01$. Če je razmerje verjetij enako
-$\frac{1}{f}$, je milijarda. S formulo pa dobimo:
+$\frac{1}{f}$, je to milijarda. S formulo pa dobimo:
 \[
    \frac{P(M_p \lvert S)}{P(M_p \lvert \neg S)} = \frac{1 - 0,01}{[(1 - 0,01) \times 0,000000001] + [0,01 \times (1 - 0,000000001)]} \approx 99.
 \]\\
 Relativno majhne stopnje napak lahko bistveno zmanjšajo dokazno vrednost DNK dokazov, saj močno zmanjšajo razmerje verjetij; v našem primeru
 smo iz milijarde prišli na približno 100. \\
-Vpliv stopnje laboratorijskih napak kaže, da ne glede na to, kako nizka se izkaže pogostost profila,
+Vpliv stopnje laboratorijskih napak kaže, da ne glede na to, kako nizka je pogostost profila,
 bo ta relativno nepomembna, če pogostosti ne spremlja ocena stopnje laboratorijskih napak. Bayesovo pravilo nam omogoča, da ta vidik upoštevamo.\\\\
-Ker profili DNK predstavlja del naše genetske zasnove in imajo ljudje, ki so v sorodu, večjo verjetnost, da bodo imeli enak profil DNK, kot ljudje,
+Ker profil DNK predstavlja del naše genetske zasnove in imajo ljudje, ki so v sorodu, večjo verjetnost, da bodo imeli enak profil DNK, kot ljudje,
 ki niso v sorodu, morajo forenzični strokovnjaki svoje izjave vedno opredeliti z navedbo, da njihove ocene pogostosti veljajo za populacijo nepovezanih
 posameznikov. To spremenljivost pogostosti profila lahko v Bayesovem okviru upoštevamo na dva načina: s spremembo predhodne verjetnosti in s
 spremembo pogostosti profila. Izvedli bi lahko tudi različne izračune: enega za populacijo nepovezanih posameznikov in drugega za populacijo
@@ -708,23 +708,23 @@ običajno opisujejo kot osnovne stopnje. Sklepanje o krivdi je lahko podprto s s
 ustreznih podatkov in verjetnostnim sklepanjem z uporabo absolutnih ali relativnih frekvenc, pri čemer je verjetnost, da bi določene
 podatke (dokaze) pridobili zgolj po naključju, izjemno majhna. \\
 Relativne frekvence vedno navajajo ali predpostavljajo, da obstaja nek
-referenčni vzorec, na podlagi katerega se lahko oceni pogostost zadevnega dogodka. Nadaljna predpostavka je, da je ta primerjava poučna
+referenčni vzorec, na podlagi katerega se lahko oceni pogostost zadevnega dogodka. Nadaljnja predpostavka je, da je ta primerjava poučna
 in pomembna za obravnavano zadevo. V okviru kazenskega postopka relativna frekvenca lahko podpre
 vmesno sklepanje o moči dokazov, ki se nanašajo na sporna dejstva, kar vodi do končnega sklepa, ali je obtoženec nedolžen ali kriv. Relativne
 frekvence so rutinsko vključene v znanstvene dokaze, ki se predložijo v kazenskih postopkih.\\\\
 Recimo, da je pogostost profila DNK $f$ 1 proti 10 milijonov, predpostavimo tudi, da ima obtoženec enak DNK in da je začetna populacija osumljencev
-100 milijonov ljudi. Zanima nas kakšna je verjetnost, da je obtoženec vir DNK-ja s kraja zločina. \\\\
+100 milijonov ljudi. Zanima nas, kakšna je verjetnost, da je obtoženec vir DNK-ja s kraja zločina. \\\\
 Naj bo \\
 $f$ \dots pogostost profila DNK;\\
 $m$ \dots velikost populacije osumljencev; \\
 $n$ \dots število ljudi, ki imajo ustrezen DNK profil. \\\\
-Po metodah, ki temeljijo na naravnih frekvencah, je potrebno izračunati, koliko ljudi z zadevnim profilom DNK je v populaciji osumljencem, tako
+Po metodah, ki temeljijo na naravnih frekvencah, je potrebno izračunati, koliko ljudi z zadevnim profilom DNK je v populaciji osumljencev, tako
 da se $f$ pomnoži z $m$.  \\
 Če je posameznikov s takim profilom $n \ge 1$, je verjetnost, da je obtoženi vir, $\frac{1}{n}$. V primeru, ko je $n < 1$ in so frekvence še
-posebaj majhne, je bolje raziskovati ali je profil DNK edinstven ali ne - ali poleg obtoženca obstajajo še drugi posamezniki z enakim
+posebaj majhne, je bolje raziskovati, ali je profil DNK edinstven ali ne - ali poleg obtoženca obstajajo še drugi posamezniki z enakim
 profilom DNK. Temu pravimo metoda edinstvenosti. \\\\
-S formulo binomske porazdelitve lahko izračunamo verjetnost, da se bo dogodek $X$, na primer profil DNK, pojavil $k$ - krat v $s$ - kratnem
-številu ponovitev, pri čemer ima dogodek $X$ frekvenco $f$. Želimo vedeti, kolikšna je verjetnost, da ima točno en posameznik ustrezen DNK
+S binomsko porazdelitvijo lahko izračunamo verjetnost, da se bo dogodek $X$, na primer profil DNK, pojavil $k$ - krat v $s$ - kratnem
+številu neodvisnih ponovitev, pri čemer ima dogodek $X$ frekvenco $f$. Želimo vedeti, kolikšna je verjetnost, da ima točno en posameznik ustrezen DNK
 profil, ob pogoju da ga ima vsaj en posameznik, torej:
 \[
    P(n = 1 \lvert n \ge 1) = \frac{P(n=1 \cap n \ge 1)}{P(n \ge 1)} = \frac{m \times f \times (1 - f)^{m-1}}{1 - (1 - f)^m}. \vspace{2mm}
@@ -736,9 +736,9 @@ profil, ob pogoju da ga ima vsaj en posameznik, torej:
         \hline
         $m$ & $f$ & $P(n = 1 \lvert n \ge 1)$ & $P(S \lvert M)$[Bayes]\\
         \hline
-        10 milijonov & 1 v 100 milojonov & 0,9 & 0,9 \\
-        100 milijonov & 1 v 100 milojonov & 0,62 & 0,5 \\
-        1 milijarda & 1 v 100 milojonov & 0 & 0,09 \\ \hline
+        10 milijonov & 1 v 100 milijonov & 0,9 & 0,9 \\
+        100 milijonov & 1 v 100 milijonov & 0,62 & 0,5 \\
+        1 milijarda & 1 v 100 milijonov & 0 & 0,09 \\ \hline
         10 milijonov & 1 v 1 milijardi & 1 & 0,99 \\
         100 milijonov & 1 v 1 milijardi & 0,9 & 0,9 \\
         1 milijarda & 1 v 1 milijardi & 0,62 & 0,5 \\ \hline
@@ -748,15 +748,15 @@ profil, ob pogoju da ga ima vsaj en posameznik, torej:
     \end{tabular}
  \end{table}
  
-Tabela vsebuje primerjavo rezultatov z rezultati, ki jih daje Bayesovo pravilo. Vidimo lahko, da so razlike zelo majhne, nekje pa jih celo ni.  Obe metodi, 
+Tabela vsebuje primerjavo rezultatov z rezultati, ki jih daje Bayesovo pravilo. Vidimo lahko, da so razlike zelo majhne, nekje pa jih celo ni.  Obe metodi 
 se lahko uporablja za reševanje določenih problemov, vendar se razlikujeta v načinu delovanja. Tako pri metodi edinstvenosti ni mogoče enostavno 
-upoštevati številnih zapletov, kot je vpliv stopnje laboratorijskih napak. Bayesovo pravilo pa namreč omogoča upoštevanje različnih dejavnikov in 
+upoštevati številnih zapletov, kot je vpliv stopnje laboratorijskih napak. Bayesovo pravilo namreč omogoča upoštevanje različnih dejavnikov in 
 zapletov, ki vplivajo na verjetnost določenega dogodka, s tem pa omogoča tudi bolj natančne izračune in posledično bolj zanesljive rezultate. Kljub 
 temu pa ima tudi Bayesovo pravilo svoje omejitve, saj je odvisno od predpostavk in podatkov, ki jih uporabimo za izračun verjetnosti. V vsakem primeru je 
-izbira metode odvisna od specifičnih zahtev problema in od tega, katera metoda bo najbolj primerna za njegovo reševanje.\\\\
+izbira metode odvisna od specifičnih zahtev problema in od tega, katera metoda je najbolj primerna za njegovo reševanje.\\\\
 Res je, da so frekvenčni modeli pomembni v primerih, kjer so na voljo DNK ali druge vrste dokazov, in jih je mogoče uporabiti za prikaz, kako verjetno je, 
 da bi se naključno izbrana oseba ujemala z vzorcem ali v primerih z velikim številom žrtev za izbiro statistično ustreznih vzorcev celotne populacije 
-žrtev. Kljub temu pa imajo ti modeli notranje pomanjkljivosti, ki jih ni mogoče zanemariti. \\
+žrtev. Kljub temu imajo ti modeli notranje pomanjkljivosti, ki jih ni mogoče zanemariti. \\
 Bistvena teoretična pomanjkljivost frekvenčnih modelov je, 
 da zahtevajo statistične dokaze, ki sodišču niso na voljo. Sodišča ne morejo številčno ovrednotiti nekega dejanskega dokaza, saj se ne zavedajo možnih 
 anomalij pri uporabi drugih sredstev in storitev. Na primer, če priča trdi, da je videla osumljenca na kraju zločina, sodišče ne more oceniti verjetnosti, 
