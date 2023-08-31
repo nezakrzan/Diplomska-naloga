@@ -759,7 +759,7 @@ da bi se naključno izbrana oseba ujemala z vzorcem ali v primerih z velikim št
 žrtev. Kljub temu imajo ti modeli notranje pomanjkljivosti, ki jih ni mogoče zanemariti. \\
 Bistvena teoretična pomanjkljivost frekvenčnih modelov je, 
 da zahtevajo statistične dokaze, ki sodišču niso na voljo. Sodišča ne morejo številčno ovrednotiti nekega dejanskega dokaza, saj se ne zavedajo možnih 
-anomalij pri uporabi drugih sredstev in storitev. Na primer, če priča trdi, da je videla osumljenca na kraju zločina, sodišče ne more oceniti verjetnosti, 
+anomalij pri uporabi drugih sredstev in storitev. Na primer, če priča trdfi, da je videla osumljenca na kraju zločina, sodišče ne more oceniti verjetnosti, 
 da je opazovanje določene priče v skladu s tem, kar se je dejansko zgodilo. To je zato, ker sodišče ponavadi nima na vseh voljo informacij o tem, koliko drugih ljudi 
 bi lahko bilo na kraju zločina ob istem času. Poleg tega frekvenčni modeli temeljijo na predpostavki, da visoka vrednost verjetnosti, ki opisuje razmerje 
 med obstoječimi dokazi in primerom, pomeni, da je vrednost tega dokaza visoka. Vendar to ni nujno vedno res. Merjenje skladnosti med predloženimi dokazi 
@@ -769,26 +769,27 @@ ti pogoji niso izpolnjeni, kar pomeni, da je uporaba frekvenčnih modelov lahko 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Metoda verjetnosti naključnega ujemanja}
-Metoda verjetnost naključnega ujemanja izraža možnost, da bi imel naključni posameznik, ki ni povezan z obdolžencem,
-ustrezni DNK profil. Ta verjetnost je enaka pogostosti profila DNK. Težava tega pristopa je, da verjetnost naključnega ujemanja lahko predstavljena
+Metoda verjetnosti naključnega ujemanja izraža možnost, da bi imel naključni posameznik, ki ni povezan z obdolžencem,
+ustrezni DNK profil. Ta verjetnost je enaka pogostosti profila DNK. Težava tega pristopa je, da je verjetnost naključnega ujemanja lahko predstavljena
 oziroma razumevana narobe. \\
 Pogosto se to verjetnost interpretira na slednji način:
 \begin{enumerate}
    \item če je verjetnost naključnega ujemanja na primer 1 proti 100 milijonov, potem je verjetnost, da ima profil DNK drug posameznik in ne
    obtoženec 1 proti 100 milijonov;
    \item ker je to zelo majhna verjetnost, mora biti tudi verjetnost, da je sled DNK pustil nekdo drug na kraju zločina in ne obtoženec, zelo majhna;
-   \item zato mora biti verjetnost, da je vir sledi DNK s kraja zločina obtoženec zelo velika, ampak znaša 1 proti 100 milijonov.
+   \item zato mora biti verjetnost, da je vir sledi DNK s kraja zločina obtoženec zelo velika, ampak je obratna od 1 proti 100 milijonov.
 \end{enumerate}
 Takšno sklepanje je napačno in je znano kot tožilčeva zmota. \\
-Sestavlja jo enačba
+Ekvivalentna je enačbi
 \begin{equation}\label{eq:tozilcevazmota}
    1 - f = P(S \lvert M). \vspace{2mm}
 \end{equation}
 Zmota se pojavi v koraku (2.), ko je zamenjano $P(M \lvert \neg S)$ s $P(\neg S \lvert M)$ in predpostavljeno, da sta obe verjetnosti enaki $f$. \\
-Namesto verjetnosti naključnega ujemanja forenzični strokovnjaki pogosto pričajo o razmerju verjetij dokazov DNK, in
+Nato sledi (3.) korak, saj če je $P(M \lvert \neg S) = f$ in $P(\neg S \lvert M) = f$, potem je $1-f = P(S \lvert M)$. Z uporabo Bayesovega 
+pravila izognemo možnosti te napake in omogočimo popolnejšo analizo. Namesto verjetnosti naključnega ujemanja forenzični strokovnjaki pogosto pričajo o razmerju verjetij dokazov DNK, in
 sicer kot:
 \[
-   P(M \lvert S) = P(M \lvert \neg S). \vspace{2mm}
+   \frac{P(M \lvert S)}{P(M \lvert \neg S)}. \vspace{2mm}
 \]
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -799,18 +800,18 @@ ampak samo vpliv statistike, znane kot razmerje verjetij.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Opredelitev}
-V Bayesovi formuli \eqref{eq:bpravilo} nadomestim $H$ z $\bar{H}$ in enakovredna različica Bayesovega izreka je
+V Bayesovi formuli \eqref{eq:bpravilo} nadomestimo $H$ z $\bar{H}$ in enakovredna različica Bayesovega izreka je
 \begin{equation}
    P(\bar{H} \lvert E) = \frac{P(E \lvert \bar{H})P(\bar{H})}{P(E)}, \vspace{2mm}
 \end{equation}
 kjer $P(E) \ne 0$.\\\\
-Če prvo enačbo delim z drugo, dobim verjetnostno obliko Bayesovega izreka
+Če prvo enačbo delim z drugo, dobimo Bayesov izrek v obliki razmerja verjetij
 \begin{equation}
    \frac{P(H \lvert E)}{P(\bar{H} \lvert E)} = \frac{P(E \lvert H)}{P(E \lvert \bar{H})} \times \frac{P(H)}{P(\bar{H})}. \vspace{2mm}
 \end{equation}
-Leva stran je verjetnost dogodka $H$ ob pogoju, da se je zgodil dogodek $E$. Pogojna verjetnost na desni strani dogodka, $H$ in $\bar{H}$,
-sta v števcu in imenovalcu različna, medtem ko je dogodek $E$, katerega verjetnost nas zanima, enak. Na koncu pa imamo verjetnost v
-korist dogodka $H$ brez kakršnihkoli informacij o dogodku $E$.\\
+Leva stran enačbe je razmerje verjetij. Pogojna verjetnost na desni strani dogodka, $H$ in $\bar{H}$,
+sta v števcu in imenovalcu različna, medtem ko je dogodek $E$, katerega verjetnost nas zanima, enak. Desni faktro na desni strani enačbe 
+predstavlja verjetnost v korist dogodka $H$ brez kakršnihkoli informacij o dogodku $E$.\\
 \begin{definicija}
     Razmerje
     \begin{equation}
@@ -818,7 +819,7 @@ korist dogodka $H$ brez kakršnihkoli informacij o dogodku $E$.\\
     \end{equation}
      se imenuje razmerje verjetij. \\
 \end{definicija}
-Oglejmo si dogodka $E$ in $H$, ter njuni dopolnitvi. Razmerje verjetij je tu razmerje verjetij $E$, ko je $H$ resničen in verjetnosti $E$,
+Oglejmo si dogodka $E$ in $H$, ter njuna komplementa. Razmerje verjetij je tu razmerje verjetij $E$, ko je $H$ resničen in verjetnosti $E$,
 ko je $H$ neresničen. Da bi upoštevali učinek $E$ na verjetnost $H$, tj. da bi
 \[
    \frac{P(H)}{P(\bar{H})} \vspace{2mm}
@@ -827,60 +828,62 @@ spremenili v
 \[
    \frac{P(H \lvert E)}{P(\bar{H} \lvert E)}, \vspace{2mm}
 \]
-prvo pomnožimo z razmerjem verjetij. Verjetnost
+prvo pomnožimo z razmerjem verjetij. Razmerje
 \[
    \frac{P(H)}{P(\bar{H})} \vspace{2mm}
 \]
-je znana kot predhodna verjetnost v korist H, verjetnost
+je znano kot apriorno razmerje v korist H, razmerje
 \[
    \frac{P(H \lvert E)}{P(\bar{H} \lvert E)} \vspace{2mm}
 \]
-pa je znana kot aposteriorna verjetnost v korist $H$.\\\\
+pa je znano kot aposteriorno razmerje v korist $H$.\\\\
 Razlika med $P(E \lvert H)$ in $P(H \lvert E)$ je bistvena. Pri proučevanju vpliva
 $E$ na $H$ je treba upoštevati tako verjetnost $E$, ko je $H$ resničen in ko je $H$ neresničen. Pogosta napaka, tj. zmota prenesene pogojne
 verjetnosti, je, da dogodek $E$, ki je malo verjeten, če je $\bar{H}$ resničen, pomeni dokaz v prid $H$. Da bi bilo tako, je treba dodatno
 zagotoviti, da E ni tako malo verjeten, če je H resničen. Razmerje verjetij je potem večje od 1 in pozitivna verjetnost je večja od
 predhodne verjetnosti. Torej iz Bayesovega izreka neposredno izhaja, da če je razmerje verjetij večje od 1, potem dokaz povečuje
-verjetnost krivde (pri čemer višje vrednosti pomenijo večjo verjetnost krivde), če pa je manjše od 1, zmanjšuje verjetnost krivde
-(in bolj ko se približuje ničli, manjša je verjetnost krivde).
+»verjetnost« krivde (pri čemer višje vrednosti pomenijo večjo verjetnost krivde), če pa je manjše od 1, zmanjšuje »verjetnost« krivde
+(in bolj ko se približuje ničli, manjša je »verjetnost« krivde).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Razmerje verjetij v kazenskem pravu}
-Če sedaj pogledamo obliko Bayesovega izreka o verjetnosti v forenzičnem kontekstu, tj. ocenjevanje vrednosti nekaterih dokazov.\\\\
+Sedaj si poglejmo obliko Bayesovega izreka o razmerju verjetij v forenzičnem kontekstu, tj. ocenjevanje vrednosti nekaterih dokazov.\\\\
 Naj bo:\\
-$H_p \dots$ interesna oseba (PoI) oz. obtoženec je resnično kriv - nadomestimo $H$;\\
-$H_d \dots$ interesna oseba (PoI) je resnično nedolžen - nadomestimo $\bar{H}$;\\
+$H_p \dots$ obtoženec je resnično kriv - nadomestimo $H$;\\
+$H_d \dots$ obtoženec je resnično nedolžen - nadomestimo $\bar{H}$;\\
 $Ev \dots$ obravnavani dokaz - nadomestimo dogodek $E$;\\\\
-Oblika Bayesovega izreka nato omogoča, da se predhodne verjetnosti, tj. pred predstavitvijo obravnavanih dokazov $Ev$, v korist krivde posodobijo v 
-aposteriorne verjetnosti ob upoštevanju $Ev$, na naslednji način:
+Oblika Bayesovega izreka nato omogoča, da se predhodna razmerja, tj. pred predstavitvijo obravnavanih dokazov $Ev$, v korist krivde posodobijo v 
+aposteriorna razmerja ob upoštevanju $Ev$, na naslednji način:
 \[
    \frac{P(H_p \lvert Ev)}{P(H_d \lvert Ev)} = \frac{P(Ev \lvert H_p)}{P(Ev \lvert H_d)} \times \frac{P(H_p)}{P(H_d)}. \vspace{2mm}
 \]
-Ob upoštevanju informacij o ozadju $I$, dobimo zapis
+Ker ima vsak kazenski primer specifične posebnosti, moramo v enačbo vpeljati še t.i. informacije o ozadju, $I$. Te informacije so osebne za vsakega 
+posameznika, zato se lahko zgodi, da je vrednost posameznih dokazov drugačna za vsakega posameznika. Če jih ne upoštevamo, lahko posamezno vrednotenje dokazov 
+postane preveč splošno. Ob upoštevanju informacij o ozadju $I$ dobimo zapis
 \[
    \frac{P(H_p \lvert Ev, I)}{P(H_d \lvert Ev, I)} = \frac{P(Ev \lvert H_p, I)}{P(Ev \lvert H_d, I)} \times \frac{P(H_p \lvert I)}{P(H_d \lvert I)}. \vspace{2mm}
 \]
-Pri vrednotenju dokazov $Ev$ sta potrebni dve verjetnosti - verjetnost dokazov, če je PoI kriv in glede na informacije o ozadju, ter
-verjetnost dokazov, če je PoI nedolžen in glede na informacije o ozadju. Informacije o ozadju so včasih znane kot okvir okoliščin
+Pri vrednotenju dokazov $Ev$ sta potrebni dve verjetnosti - verjetnost dokazov, če je obtoženec kriv in glede na informacije o ozadju, ter
+verjetnost dokazov, če je obtoženec nedolžen in glede na informacije o ozadju. Informacije o ozadju so včasih znane kot okvir okoliščin
 ali pogojne informacije. \\\\
-Da lahko ocenimo oziroma določimo vrednost dokaza potrebujemo razmerje verjetij.
+Da lahko ocenimo oziroma določimo vrednost dokaza, potrebujemo razmerje verjetij.
 \begin{definicija}
     Naj bosta  $H_p$ in $H_d$ dve konkurenčni hipotezi ter $I$ informacije o ozadju. Vrednost $V$ dokaza $Ev$ je podana z
     \[
         V = \frac{P(Ev \lvert H_p, I)}{P(Ev \lvert H_d, I)}, \vspace{2mm}
     \]
-    razmerje verjetij, ki pretvori predhodne verjetnosti
+    to je razmerje verjetij, ki pretvori predhodno razmerje
     \[
         \frac{P(H_p \lvert I)}{P(H_d \lvert I)} \vspace{2mm}
     \]
-    v aposteriorne verjetnosti
+    v aposteriorno razmerje
     \[
         \frac{P(H_p \lvert Ev, I)}{P(H_d \lvert Ev, I)}.
     \]
 \end{definicija}
 \begin{table}[h!]
     \centering
-    \caption{Kvalitativna lestvica za poročanje o vrednosti $V$ podpore dokazov za $H_p$ proti $H_d$. \vspace{2mm}}
+    \caption{Kvalitativna lestvica za poročanje o vrednosti $V$ podpore dokazov za $H_p$ proti $H_d$. Vir: ENFSI, 2015 \vspace{2mm}}
     \label{table:1}
      \begin{tabular}{c l c l}
         \hline
@@ -894,46 +897,44 @@ Da lahko ocenimo oziroma določimo vrednost dokaza potrebujemo razmerje verjetij
         \hline
      \end{tabular}
  \end{table} \vspace{2mm}
-Pri uporabi takšnih tabel moramo biti previdni, če so hipoteze prelagane na podlagi podatkov; v tem primeru postanejo smiselne le če 
+Če imamo dva konkurenčna dokaza oziroma hipotezi, na primer $H_p$ proti $H_d$, ter vrednost V, se velikokrat uporabljajo kvantitativne lestvice 
+inštituta ENFSI za poročanje o vrednosti $V$ podpore dokazov (za ponazoritev glej tabelo \ref{table:1}).
+Pri uporabi takšnih tabel moramo biti previdni, če so hipoteze predlagane na podlagi podatkov; v tem primeru postanejo smiselne le, če 
 podamo predhodne verjetnosti za obravnavane hipoteze.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Utemeljitev uporabe razmerju verjetij}
 Verjetnostna oblika Bayesovega izreka predstavlja prepričljiv argument za uporabo razmerja verjetij kot merila vrednosti dokazov.
 Obstaja tudi matematična razlaga, ki opravičuje njegovo uporabo.\\\\
-Denimo, da želimo izmeriti vrednost $V$ dokazov $E$ v prid krivdi $H_p$. Pri tem naj obstajala odvisnost od osnovnih informacij $I$, vendar ta ni izrecno
-navedena. Predpostavimo, da je vrednost $V$ odvisna samo od verjetnosti dokazov $E$ ob pogoju, da je interesna oseba kriva ($H_p$), in od verjetnosti dokazov $E$ ob pogoju,
-da je interesna oseba nedolžna ($H_d$). Naj bo $x=P(E \lvert H_p)$ in $y=P(E \lvert H_d)$. Zgornja predpostavka pravi, da je $V = f (x, y)$ za neko funkcijo $f$.
-Vzemimo še en dokaz $T$, ki je neodvisen od dokazov $E$ in $H_p$ (in s tem $H_d$) in je tak, da je $P(T) = \theta$. Nato
+Denimo, da želimo izmeriti vrednost $V$ dokazov $E$ v prid krivdi $H_p$. Pri tem naj bi obstajala odvisnost od osnovnih informacij $I$, vendar ta ni izrecno
+navedena. Predpostavimo, da je vrednost $V$ odvisna samo od verjetnosti dokazov $E$ ob pogoju, da je obtoženec kriv ($H_p$), in od verjetnosti dokazov $E$ ob pogoju,
+da je obtoženec nedolžen ($H_d$). Naj bo $x=P(E \lvert H_p)$ in $y=P(E \lvert H_d)$. Zgornja predpostavka pravi, da je $V = f (x, y)$ za neko funkcijo $f$.
+Vzemimo še en dokaz $T$, ki je neodvisen od dokazov $E$ in od $H_p$ (in s tem $H_d$) in je tak, da je $P(T) = a$. Nato
 \begin{align}
    P(E,T \lvert H_p) & = \\
    & = P(E \lvert H_p)P(T \lvert H_p) \\
    & = P(E \lvert H_p)P(T)\\
-   & = \theta x, \vspace{2mm}
+   & = a x, \vspace{2mm}
 \end{align}
-pri čemer iz (13.4) v (13.5) upoštevamo neodvisnost dokaza $E$ in $T$ ter iz (13.5) v (13.6) neodvisnost dokaza $T$ in $H_p$. Podobno
+pri čemer iz (12.4) v (12.5) upoštevamo neodvisnost dokaza $E$ in $T$ ter iz (12.5) v (12.6) neodvisnost dokaza $T$ in dogodka $H_p$. Podobno
 \[
-   P(E,T \lvert H_d)  = \theta y. \vspace{2mm}
+   P(E,T \lvert H_d)  = a y. \vspace{2mm}
 \]
-Vrednost kombiniranih dokazov $(E, T)$ je enaka vrednosti $E$, saj je bil $T$ predpostavljen kot nepomemben. Vrednost $(E, T)$ je $f(\theta x, \theta y)$ in 
-vrednost $E = V = f (x, y)$. Tako je $f(\theta x, \theta y) = f(x,y)$ za vsako $\theta$ na intervalu $[0,1]$ možnih vrednosti $P(T)$. Razmerje med
-$x$ in $y$ v funkciji $f$ ima lahko eno od štirih oblik, odvisno od štirih matematičnih operatorjev +, ×, - in /. \\
- Če pogledamo $\frac{x}{y}$ sledi
+Vrednost kombiniranih dokazov $(E, T)$ je enaka vrednosti $E$, saj je bil $T$ predpostavljen kot nepomemben. Vrednost $(E, T)$ je $f(a x, a y)$ in 
+vrednost $E = f (x, y)$ in $V = f (x, y)$. Tako je $f(a x, a y) = f(x,y)$ za vsak $a$ na intervalu $[0,1]$ možnih vrednosti $P(T)$.
+Če pogledamo $\frac{x}{y}$ sledi
 \[
    f(x,y) = f \big(\frac{x}{y}\big)
-   f(\theta x, \theta y) = f(\frac{\theta x}{\theta y}) = f(\frac{x}{y}). \vspace{2mm}
+   f(a x, a y) = f(\frac{a x}{a y}) = f(\frac{x}{y}), \vspace{2mm}
 \]
-To je enako $f(x,y)$ za vsako $\theta$ na intervalu $[0,1]$. Iz tega sledi, da je $f$ funkcija $\frac{x}{y}$ in torej, da je $V$ funkcija
+torej je $f(x,y)$ odvisen le od $\frac{x}{y}$ in je zato $V$ funkcija razmerja verjetij
 \[
-   \frac{P(E \lvert H_p)}{P(E \lvert H_d)}, \vspace{2mm}
-\]
-kar je razmerje verjetij.\\\\
-Verjetnost hipoteze H na podlagi nekega dokaza E je verjetnost, da najdemo E, če je H resnična. Za alternativno hipotezo je razmerje verjetij razmerje obeh
-verjetnosti.\\
-Razmerje verjetij nam pove, katera hipoteza je bolje podprta z dokazi. Kadar sta hipotezi medsebojno izključujoči, nam pa pove še več.
+   \frac{P(E \lvert H_p)}{P(E \lvert H_d)}. \vspace{2mm}
+\]\\
+Razmerje verjetij nam pove, katera hipoteza je bolje podprta z dokazi. Kadar sta hipotezi medsebojno izključujoči, nam pove še več.
 V tem primeru, če je verjetnost H večja od verjetnosti alternative, lahko sklepamo tudi, da se verjetnost H zaradi najdbe E poveča, medtem ko se
 verjetnost alternative zmanjša. \\
-Če je le mogoče, je treba upoštevati verjetnosti za vse razumne alternativne hipoteze (tako da je nabor hipotez izčrpen). Če se obravnavajo samo 
+Če je le mogoče, je treba upoštevati verjetnosti za vse razumne alternativne hipoteze (tako da je nabor hipotez izčrpen). Če obravnavamo samo 
 nekatere hipoteze, je treba pojasniti, da so predstavljena samo razmerja verjetij za pare teh hipotez. V primerih, ko je treba
 združiti več hipotez in/ali več dokazov, se lahko razmerje verjetij bolje uporablja v povezavi z drugimi metodami.\\
 Kadar je treba količinsko ovrednotiti skupni učinek več dokazov, ki vključujejo različne povezane hipoteze, poenostavljene rešitve, ki predpostavljajo 
@@ -955,7 +956,7 @@ dokazov z določenim statističnim modelom na voljo ena sama vrednost $V$ za pov
 vzorci in pridobljeni podatki dovolj reprezentativni za populacije, iz katerih so bili izbrani, tako da se bodo razmerja verjetij po vrednosti le malo
 razlikovala.\\
 Metoda razmerja verjetij je koristna v državah kot sta na primer Velika Britanija in 
-Združene države Amerike, kjer se lahko Bayesovo pravilo šteje kot poseg v pravico porote do previdnosti: poroti naj ne bi bilo potrebno govoriti, 
+Združene države Amerike, kjer se lahko Bayesovo pravilo šteje kot poseg v pravico porote: poroti naj ne bi bilo potrebno govoriti, 
 kako naj razmišlja in presoja dokaze; Bayesovo pravilo pa je natanko metoda za tehtanje dokazov.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1000,11 +1001,11 @@ Potem je razmerje verjetij
 \begin{equation}\label{eq:rv}
     V = \frac{P(E \lvert H_p)}{P(E \lvert H_d)} = e^{\mu r_l-\mu _L r_l}\biggl(\frac{\mu _L r_l}{\mu r_l}\biggr)^{k_l}.\vspace{2mm}
 \end{equation}
-Za oceno izida katerega koli izračuna s tem razmerjem, lahko iz tabele 3 izpeljemo naslednjo lestvico za opis višine razmerja verjetij.
+Za oceno izida katerega koli izračuna s tem razmerjem, lahko iz tabele \ref{table:1} izpeljemo naslednjo lestvico za opis višine razmerja verjetij.
 \begin{table}[h!]
     \centering
     \caption{Kvalitativna lestvica za poročanje o vrednosti $V$ iz enačbe \eqref{eq:rv} podpore dokazov za $H_p$ proti $H_d$. \vspace{2mm}}
-    \label{table:1}
+    \label{table:2}
      \begin{tabular}{l l}
         \hline
         V $= 1$ & Dokazi enako podpirajo $H_p$ kot $H_d$. \\

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.12.1)  30 AUG 2023 09:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.12.1)  31 AUG 2023 19:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -464,9 +464,6 @@ Package hyperref Info: Option `psdextra' set `true' on input line 111.
 
 LaTeX Warning: Label `table:1' multiply defined.
 
-
-LaTeX Warning: Label `table:1' multiply defined.
-
 )
 \openout1 = `diplomska_naloga.aux'.
 
@@ -830,218 +827,217 @@ Underfull \hbox (badness 10000) in paragraph at lines 751--768
  []
 
 [27] [28]
-Underfull \hbox (badness 10000) in paragraph at lines 805--808
+Underfull \hbox (badness 10000) in paragraph at lines 806--809
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 810--814
+Underfull \hbox (badness 10000) in paragraph at lines 811--815
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 818--820
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 837--846
+Underfull \hbox (badness 10000) in paragraph at lines 819--821
 
  []
 
 [29]
-Underfull \hbox (badness 10000) in paragraph at lines 849--856
+Underfull \hbox (badness 10000) in paragraph at lines 838--847
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 849--856
+Underfull \hbox (badness 10000) in paragraph at lines 850--857
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 862--867
+Underfull \hbox (badness 10000) in paragraph at lines 850--857
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 865--870
 
  []
 
 [30]
-Underfull \hbox (badness 10000) in paragraph at lines 902--908
+Underfull \hbox (badness 10000) in paragraph at lines 907--913
 
  []
 
 [31]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 920.
- (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/ts1lmr.fd
-File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-Underfull \hbox (badness 10000) in paragraph at lines 929--960
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 929--960
+Underfull \hbox (badness 10000) in paragraph at lines 933--961
 
  []
 
 [32]
-Underfull \hbox (badness 10000) in paragraph at lines 978--991
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [33]
+Underfull \hbox (badness 10000) in paragraph at lines 979--992
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 978--991
+Underfull \hbox (badness 10000) in paragraph at lines 979--992
 
  []
 
-[33]
-<slika_3.png, id=426, 701.62125pt x 179.67125pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<slika_3.png, id=427, 701.62125pt x 179.67125pt>
 File: slika_3.png Graphic file (type png)
 <use slika_3.png>
-Package pdftex.def Info: slika_3.png  used on input line 1034.
+Package pdftex.def Info: slika_3.png  used on input line 1035.
 (pdftex.def)             Requested size: 420.97598pt x 107.80356pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1022--1066
+Underfull \hbox (badness 10000) in paragraph at lines 1023--1067
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1022--1066
+Underfull \hbox (badness 10000) in paragraph at lines 1023--1067
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1022--1066
+Underfull \hbox (badness 10000) in paragraph at lines 1023--1067
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1022--1066
+Underfull \hbox (badness 10000) in paragraph at lines 1023--1067
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1022--1066
+Underfull \hbox (badness 10000) in paragraph at lines 1023--1067
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1022--1066
+Underfull \hbox (badness 10000) in paragraph at lines 1023--1067
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1022--1066
+Underfull \hbox (badness 10000) in paragraph at lines 1023--1067
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1022--1066
+Underfull \hbox (badness 10000) in paragraph at lines 1023--1067
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1022--1066
+Underfull \hbox (badness 10000) in paragraph at lines 1023--1067
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1022--1066
+Underfull \hbox (badness 10000) in paragraph at lines 1023--1067
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1022--1066
+Underfull \hbox (badness 10000) in paragraph at lines 1023--1067
 
  []
 
 [34] [35 </Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/slika_3.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1070--1096
+Underfull \hbox (badness 10000) in paragraph at lines 1071--1097
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1070--1096
+Underfull \hbox (badness 10000) in paragraph at lines 1071--1097
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1070--1096
+Underfull \hbox (badness 10000) in paragraph at lines 1071--1097
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1070--1096
+Underfull \hbox (badness 10000) in paragraph at lines 1071--1097
 
  []
 
 [36]
-Underfull \hbox (badness 10000) in paragraph at lines 1109--1116
+Underfull \vbox (badness 3417) has occurred while \output is active []
+
+ [37]
+Underfull \hbox (badness 10000) in paragraph at lines 1110--1117
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1109--1116
+Underfull \hbox (badness 10000) in paragraph at lines 1110--1117
 
  []
 
-[37]
 <slika1.png, id=452, 256.96pt x 252.945pt>
 File: slika1.png Graphic file (type png)
 <use slika1.png>
-Package pdftex.def Info: slika1.png  used on input line 1130.
+Package pdftex.def Info: slika1.png  used on input line 1131.
 (pdftex.def)             Requested size: 115.63092pt x 113.82419pt.
-<slika2.png, id=453, 262.9825pt x 260.975pt>
+[38 </Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/slika1.png>]
+<slika2.png, id=460, 262.9825pt x 260.975pt>
 File: slika2.png Graphic file (type png)
 <use slika2.png>
-Package pdftex.def Info: slika2.png  used on input line 1150.
+Package pdftex.def Info: slika2.png  used on input line 1151.
 (pdftex.def)             Requested size: 118.34102pt x 117.43767pt.
- [38 </Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/slika1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1165--1172
+
+Underfull \hbox (badness 10000) in paragraph at lines 1166--1173
+
+ []
+
+[39 </Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/slika2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1176--1185
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1175--1184
+Underfull \hbox (badness 10000) in paragraph at lines 1176--1185
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1175--1184
-
- []
-
-[39 </Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/slika2.png>] [40]
-Underfull \hbox (badness 10000) in paragraph at lines 1224--1233
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1250--1256
+[40]
+Underfull \hbox (badness 10000) in paragraph at lines 1225--1234
 
  []
 
 [41]
-Underfull \hbox (badness 10000) in paragraph at lines 1286--1301
+Underfull \hbox (badness 10000) in paragraph at lines 1251--1257
+
+ []
+
+[42]
+Underfull \hbox (badness 10000) in paragraph at lines 1287--1302
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1286--1301
+Underfull \hbox (badness 10000) in paragraph at lines 1287--1302
 
  []
 
-[42] [43]
-Underfull \hbox (badness 10000) in paragraph at lines 1328--1347
+[43]
+Underfull \hbox (badness 10000) in paragraph at lines 1329--1348
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1328--1347
+Underfull \hbox (badness 10000) in paragraph at lines 1329--1348
 
  []
 
 [44]
-Underfull \hbox (badness 10000) in paragraph at lines 1351--1373
+Underfull \hbox (badness 10000) in paragraph at lines 1352--1374
 
  []
 
@@ -1055,18 +1051,18 @@ Package rerunfilecheck Info: File `diplomska_naloga.out' has not changed.
 (rerunfilecheck)             Checksum: 4F8C167E11E46D51B9F9E305FEAD56CB;5397.
  ) 
 Here is how much of TeX's memory you used:
- 15629 strings out of 478994
- 226199 string characters out of 5858184
- 647931 words of memory out of 5000000
- 32584 multiletter control sequences out of 15000+600000
- 473355 words of font info for 79 fonts, out of 8000000 for 9000
+ 15598 strings out of 478994
+ 225368 string characters out of 5858184
+ 646988 words of memory out of 5000000
+ 32557 multiletter control sequences out of 15000+600000
+ 472980 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  82i,10n,88p,713b,2538s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
-Output written on "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.pdf" (48 pages, 570498 bytes).
+{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
+Output written on "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/diplomska naloga/diplomska_naloga.pdf" (48 pages, 569931 bytes).
 PDF statistics:
- 665 PDF objects out of 1000 (max. 8388607)
- 576 compressed objects within 6 object streams
+ 663 PDF objects out of 1000 (max. 8388607)
+ 575 compressed objects within 6 object streams
  184 named destinations out of 1000 (max. 500000)
  372 words of extra memory for PDF output out of 10000 (max. 10000000)
 

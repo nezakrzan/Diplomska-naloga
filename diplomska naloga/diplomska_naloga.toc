@@ -25,17 +25,17 @@
 \contentsline {subsection}{\numberline {12.2}Razmerje verjetij v kazenskem pravu}{30}{subsection.12.2}%
 \contentsline {subsection}{\numberline {12.3}Utemeljitev uporabe razmerju verjetij}{31}{subsection.12.3}%
 \contentsline {subsection}{\numberline {12.4}Bayesov faktor in razmerje verjetij}{33}{subsection.12.4}%
-\contentsline {section}{\numberline {13}Nadaljevanje sodnega procesa - medicinska sestra Lucia De Berk: Pristop z razmerjem verjetij}{33}{section.13}%
+\contentsline {section}{\numberline {13}Nadaljevanje sodnega procesa - medicinska sestra Lucia De Berk: Pristop z razmerjem verjetij}{34}{section.13}%
 \contentsline {section}{\numberline {14}Zmote v kazenskem pravu}{35}{section.14}%
 \contentsline {subsection}{\numberline {14.1}Tožilčeva zmota}{36}{subsection.14.1}%
-\contentsline {subsubsection}{\numberline {14.1.1}Primer - Tožilčeva zmota}{37}{subsubsection.14.1.1}%
+\contentsline {subsubsection}{\numberline {14.1.1}Primer - Tožilčeva zmota}{38}{subsubsection.14.1.1}%
 \contentsline {section}{\numberline {15}Načini za izogib zmotam}{39}{section.15}%
 \contentsline {subsection}{\numberline {15.1}Izogib zmotam z uporabo razmerja verjetij}{39}{subsection.15.1}%
-\contentsline {subsection}{\numberline {15.2}Učinkovitost Bayesove teorije pri zmanjšanju zmote obrambnega odvetnika}{39}{subsection.15.2}%
+\contentsline {subsection}{\numberline {15.2}Učinkovitost Bayesove teorije pri zmanjšanju zmote obrambnega odvetnika}{40}{subsection.15.2}%
 \contentsline {subsection}{\numberline {15.3}Učinkovitost Bayesove teorije pri zmanjšanju zasliševalčeve zmote}{40}{subsection.15.3}%
 \contentsline {section}{\numberline {16}Nadaljevanje sodnega procesa - medicinska sestra Lucia de Berg: Interpretacija verjetnosti na sodišču}{43}{section.16}%
-\contentsline {section}{\numberline {17}Izogib zmotam z uporabo Bayesovih omrežij}{43}{section.17}%
-\contentsline {subsection}{\numberline {17.1}Opredelitev}{43}{subsection.17.1}%
+\contentsline {section}{\numberline {17}Izogib zmotam z uporabo Bayesovih omrežij}{44}{section.17}%
+\contentsline {subsection}{\numberline {17.1}Opredelitev}{44}{subsection.17.1}%
 \contentsline {subsection}{\numberline {17.2}Uporaba Bayesovih omrežij na sodišču}{44}{subsection.17.2}%
 \contentsline {section}{\numberline {18}Zaključek}{45}{section.18}%
 \contentsline {section}{Literatura}{47}{section*.3}%
