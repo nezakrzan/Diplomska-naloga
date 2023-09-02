@@ -6,58 +6,58 @@ Database file #1: literatura.bib
 Warning--there's a number but no volume in aitkenb
 Warning--there's a number but no volume in aitkenc
 Warning--there's a number but no volume in berger
-Warning--there's a number but no volume in collins
 Warning--there's a number but no volume in conklin
 Warning--there's a number but no volume in macedo
 Warning--empty journal in fentonb
 Warning--there's a number but no volume in gastwirth
 Warning--empty journal in giannini
 Warning--there's a number but no volume in iliinski
+Warning--there's a number but no volume in collins
 Warning--empty journal in matthews
 Warning--empty journal in orban
 Warning--there's a number but no volume in schumana
 Warning--there's a number but no volume in schumanb
 Warning--empty journal in scurich
 Warning--there's a number but no volume in tarling
-You've used 32 entries,
+You've used 33 entries,
             2705 wiz_defined-function locations,
-            747 strings with 8827 characters,
-and the built_in function-call counts, 11397 in all, are:
-= -- 771
-> -- 406
+            750 strings with 8925 characters,
+and the built_in function-call counts, 11628 in all, are:
+= -- 782
+> -- 413
 < -- 0
-+ -- 207
-- -- 116
-* -- 747
-:= -- 1467
-add.period$ -- 32
-call.type$ -- 32
-change.case$ -- 146
++ -- 211
+- -- 118
+* -- 760
+:= -- 1487
+add.period$ -- 33
+call.type$ -- 33
+change.case$ -- 150
 chr.to.int$ -- 0
-cite$ -- 48
-duplicate$ -- 1034
-empty$ -- 1086
-format.name$ -- 137
-if$ -- 2292
+cite$ -- 49
+duplicate$ -- 1055
+empty$ -- 1113
+format.name$ -- 139
+if$ -- 2338
 int.to.chr$ -- 0
-int.to.str$ -- 32
-missing$ -- 227
-newline$ -- 102
-num.names$ -- 64
-pop$ -- 518
+int.to.str$ -- 33
+missing$ -- 231
+newline$ -- 105
+num.names$ -- 66
+pop$ -- 537
 preamble$ -- 1
-purify$ -- 122
+purify$ -- 125
 quote$ -- 0
-skip$ -- 273
+skip$ -- 283
 stack$ -- 0
-substring$ -- 520
-swap$ -- 510
+substring$ -- 526
+swap$ -- 520
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 114
+type$ -- 118
 warning$ -- 16
-while$ -- 94
-width$ -- 34
-write$ -- 249
+while$ -- 96
+width$ -- 35
+write$ -- 255
 (There were 16 warnings)
