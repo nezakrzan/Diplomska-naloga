@@ -1,0 +1,238 @@
+\documentclass[12pt,a4paper]{amsart}
+\usepackage[slovene]{babel}
+%\usepackage[cp1250]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{url}
+\usepackage[normalem]{ulem}
+\usepackage[dvipsnames,usenames]{color}
+\usepackage{graphicx}
+
+% Oblika strani
+\textwidth 15cm
+\textheight 24cm
+\oddsidemargin.5cm
+\evensidemargin.5cm
+\topmargin-5mm
+\addtolength{\footskip}{10pt}
+\pagestyle{plain}
+\overfullrule=15pt % oznaci predlogo vrstico
+
+% Ukazi za matematična okolja
+\theoremstyle{definition} % tekst napisan pokončno
+\newtheorem{definicija}{Definicija}[section]
+\newtheorem{primer}[definicija]{Primer}
+\newtheorem{opomba}[definicija]{Opomba}
+
+\renewcommand\endprimer{\hfill$\diamondsuit$}
+
+
+\theoremstyle{plain} % tekst napisan poševno
+\newtheorem{lema}[definicija]{Lema}
+\newtheorem{izrek}[definicija]{Izrek}
+\newtheorem{trditev}[definicija]{Trditev}
+\newtheorem{posledica}[definicija]{Posledica}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Statistika v kazenskem pravu}
+\author{Neža Kržan}
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Statistika v kazenskem pravu}
+Raziskave na področju kazenskega pravosodja in kriminologije so različne po naravi in namenu. Velik del raziskav vključuje preverjanje teorije 
+in hipotez. Statistiki si na področju kazenskega pravosodja in kriminologije običajno prizadevajo preučiti razmerja med dvema ali več spremenljivkami.
+\begin{definicija}
+    \textit{Odvisna spremenljivka} je pojav, ki ga želi statistik preučiti, razložiti ali napovedati.
+\end{definicija}
+\begin{definicija}
+    \textit{Neodvisna spremenljivka} je dejavnik ali značilnost, s katero se poskuša pojasniti ali napovedati odvisno spremenljivko.
+\end{definicija}
+Pomembno je razumeti, da neodvisno in odvisno nista sinonima za vzrok in posledico. Določene neodvisne spremenljivke so lahko povezane z
+določenimi odvisnimi spremenljivkami, vendar to še zdaleč ni dokončen dokaz, da so prve vzrok drugih. Za dokazovanje vzročnosti morajo
+statistiki dokazati, da njihove študije izpolnjujejo tri merila. Prvo je časovno zaporedje, kar pomeni, da se mora neodvisna spremenljivka
+pojaviti pred odvisno spremenljivko. Druga zahteva glede vzročnosti je, da obstaja empirična povezava med neodvisno in odvisno spremenljivko.
+Zadnja zahteva je, da je razmerje med neodvisno spremenljivko in odvisno spremenljivko nepristransko. Nepristranskost je v kriminologiji in
+kazenskopravnih raziskavah pogosto najtežje dokazati, saj je človeško vedenje zapleteno in ima vsako dejanje, ki ga oseba stori, več vzrokov.
+Razmejitev teh vzročnih dejavnikov je lahko težavna ali nemogoča. Razlog, zakaj je nepristranskost problem, je, da lahko obstaja tretja
+spremenljivka, ki pojasnjuje odvisno spremenljivko enako dobro ali celo bolje kot neodvisne spremenljivke. Ta tretja spremenljivka lahko delno
+ali v celoti pojasni razmerje med neodvisno in odvisno spremenljivko. Nenamerna izključitev ene ali več pomembnih spremenljivk lahko privede do
+napačnih zaključkov, saj lahko statistik zmotno verjame, da neodvisna spremenljivka močno napoveduje odvisno spremenljivko, medtem ko je v
+resnici razmerje dejansko delno ali v celoti posledica posrednih dejavnikov. Drug izraz za to težavo je pristranskost izpuščenih spremenljivk.
+Kadar je pristranskost izpuščenih spremenljivk prisotna v razmerju neodvisne spremenljivke - odvisne spremenljivke, vendar se ne prepozna, lahko
+pridemo do napačnega sklepa o sodnem procesu.\\\\
+Statistiki se že na začetku sodnega procesa soočajo s prvimi težavami - določitvijo odvisnih in neodvisnih spremenljivk za
+modeliranje. V proces določanja spremenljivk pa pogosto v preveliki meri posegajo odvetniki, ki se sklicujejo na pravne zakone in načela. To lahko
+postane sporno, saj lahko takšni pretirani posegi ovirajo statistične znanstvenike pri izračunu verjetnostnega vpliva spremenljivk. Zagotovo 
+določitev spremenljivk ne sme biti naloga le odvetnikov ali le statistikov, ampak menim, da je sodelovanje med statistiki in odvetniki pomembno, 
+saj vsak prispeva svoj del poznavanja teorije, ki je v ozadju.  S tem se lahko zagotovi pravilno opredelitev spremenljivk in pravilne verjetnostne 
+izračune, ki bodo prispevali k pravičnim odločitvam v sodnih postopkih.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Raziskovalni proces}
+Raziskovalni proces se izvaja po naslednjih točkah.\\
+\textbf{1. Identifikacija problema.\\} 
+\textbf{2. Zasnova raziskave.\\} 
+\textbf{3. Analiza podatkov.\\}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Vrednotenje dokazov}
+Najpogostejši uporabljeni metodi za ocenjevanje dokazov sta metoda dokazne vrednosti in model verjetnosti hipoteze.\\
+Metoda dokazne vrednosti temelji na vrednosti, ki jo ima dokaz za dokazno temo, njen namen pa je ugotoviti, ali med dokazom in zadevno dokazno temo 
+obstaja naključna povezava, pri čemer je dokazna tema glavna obtožba v kazenskem primeru. S to metodo dokazujemo določen omejen nabor dokazov, njen cilj pa 
+je oceniti verjetnost, da dokazi dokazujejo hipotezo.\\
+Z modelom verjetnosti hipoteze pa ocenjujemo verjetnost hipoteze glede na dokaze. Cilj je ugotoviti, kako verjetno je, da je hipoteza, za katero dokazi 
+zagotavljajo določeno stopnjo podpore, resnična. Glavna razlika z metodo dokazne vrednosti je, da predpostavlja, da obstaja začetna verjetnost za hipotezo 
+pred obravnavo dokazov, t.i. predhodna verjetnost.\\\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Koncept verjetnosti}
+Pogosto se opravlja primerjava verjetnosti dokazov na podlagi dveh konkurenčnih predlogov, in sicer predloga tožilca in predloga obrambe.\\\\
+$H_p \dots$ trditev, ki jo predlaga tožilstvo;\\
+$H_d \dots$ trditev, ki jo predlaga obramba;\\\\
+V splošnem nas zanima vpliv dokazov na verjetnost krivde($H_p$) in nedolžnosti($H_d$) osumljenca. Gre za dopolnjujoča se dogodka in razmerje verjetij 
+teh dveh dogodkov,
+\begin{equation}
+   \frac{P(H_p)}{P(H_d)}, \vspace{2mm}
+\end{equation}
+je verjetnost proti nedolžnosti ali verjetnost za krivdo. Ob upoštevanju dodatnih informacij $E$ oziroma dokazov, je razmerje
+\begin{equation}
+   \frac{P(H_p \lvert E)}{P(H_d \lvert E)} \vspace{2mm},
+\end{equation}
+verjetnost v prid krivdi ob upoštevanju dokazov $E$.\\\\
+Ali je obtoženec kriv glede na znan doka $E$, je glavna stvar, ki nas pri sojenju zanima. Če imamo torej na voljo dokaz $E$, nas zanima pogojna 
+verjetnost
+\[
+    P(kriv \lvert E), \vspace{2mm}
+\]
+pri čemer nam je lahko v pomoč Bayesovo pravilo. To v teoriji drži, čeprav je v praksi izračun verjetnostne krivde lahko preveč zapleten. Ampak 
+z Bayesovim pravilom lahko ocenimo verjetnosti vmesnih trditev oziroma dokazov, ki so ključnega pomena za ugotavljanje obtoženčeve krivde.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Bayesova statistika}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Opredelitev}
+Bayesova analiza je standardna metoda za posodabljanje verjetnosti po opazovanju več dokazov, zato je zelo primerna za obravnavo in vrednotenje 
+dokazov.
+Začnemo z nekim predhodnim prepričanjem o hipotezi in ga posodabljamo, ko se dokazi ponovno pojavijo. Pri uporabi Bayesovega sklepanja morajo statistiki utemeljiti predhodne predpostavke, kadar je to mogoče, na primer z
+uporabo zunanjih podatkov; v nasprotnem primeru morajo uporabiti razpon vrednosti predpostavk in analizo občutljivosti, da preverijo zanesljivost rezultata
+glede na te vrednosti.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Bayesovo pravilo}
+Bayesovo sklepanje temelji na Bayesovem pravilu, ki izraža verjetnost nekega dogodka z verjetnostjo dveh dogodkov in obrnjene pogojne
+verjetnosti.
+\begin{izrek}
+    (Bayesovo pravilo)
+    \begin{equation}\label{eq:bpravilo}
+        P(H \lvert E) = \frac{P(E \lvert H) \times P(H)}{P(E)}. \vspace{2mm}
+     \end{equation}
+\end{izrek}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Bayesovo posodabljanje}
+Bayesovo pravilo se razlikuje od Bayesovega posodabljanja. Prvo je matematični izrek, drugo pa logična trditev, kako se sčasoma posodabljajo
+apriorne oziroma predhodne verjetnosti dokazov glede na novo zbrane dokaze oziroma prepričanja.
+\begin{definicija}
+    (Bayesovo posodabljanje)
+    Če se dogodek E zgodi ob času $t_1 > t_0$, potem je $P_1(H) = P_0(H \lvert E)$.
+\end{definicija}
+Ob času $t_0$ dogodku H dodelimo verjetnost $P_0(H)$; to se imenuje predhodna verjetnost oziroma apriorna verjetnost. Ko se zgodi dogodek E
+ob času $t_1$, ki vpliva na naša prepričanja o dogodku H, Bayesovo posodabljanje pravi, da je potrebno apriorno verjetnost dogodka H v času $t_1$
+enačiti s pogojno verjetnostjo dogodka H glede na dogodek E v času $t_0$. \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Bayesova teorija v kazenskem pravu}
+Gre za postopek posodabljanja verjetnosti tožilčeve hipoteze na podlagi predhodnih oziroma apriornih verjetnosti. Pretvorimo predhodno verjetnost, 
+tj. verjetnost hipoteze pred upoštevanjem določenega dokaza (dokazov), v aposteriorno verjetnost, tj. verjetnost hipoteze po upoštevanju določenega 
+dokaza (dokazov).\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Predhodna verjetnost in določitev aposteriorne verjetnosti}
+\begin{definicija}
+    Predhodna verjetnost, ki je uporabljena v vsaki posodobitvi verjetnosti s pomočjo Bayesove teorije, je začetna verjetnost hipoteze 
+    oziroma tožilčeve domneve o obtožencu oziroma storilcu kaznivega dejanja.
+\end{definicija}
+Po končni posodobitvi dobimo verjetnost hipoteze glede na vse dokaze, predložene na sojenju.\\\\
+Določitev predhodnih oziroma apriornih verjetnosti je resen problem pri Bayesovemu pristopu v kazenskih postopkih. Različne metode za določitev 
+in izračun teh verjetnosti lahko dajejo rezultate, ki se med seboj precej razlikujejo, kar pa je problematično, ker celotna Bayesova teorija 
+temelji ravno na teh začetnih izračunih.\\\\
+Bistveno vprašanje, ki se postavlja, je, ali naj analitiki sploh poskušajo določiti predhodne verjetnosti in če ja, kako naj jih določijo. Nekateri 
+strokovnjaki predlagajo, da bi analitiki morali predpostaviti enake predhodne verjetnosti za vse hipoteze v primeru, kar se imenuje nevtralno stanje. 
+To bi se lahko izkazalo za praktičen pristop, saj se lahko statistik s tem izogne vplivu lastnih in odvetniških predsodkov ter mnenj, ki bi lahko 
+vplivali na predpostavke o verjetnosti. Na ta način se lahko zagotovi objektivnost analize, saj ne poskušamo prikazati ene hipoteze bolj verjetne 
+od druge. Kljub temu pa mislim, da moramo biti do tega pristopa nekoliko kritični, saj je predpostavljanje enake verjetnosti za vse možnosti 
+problematično - v realnosti se različne hipoteze razlikujejo po svoji verjetnosti.\\
+Ker obstajajo pravila in smernice, kako upoštevati zakonodajo, pravila in postopke sodnega procesa, naj statistik uporabi svoje strokovno znanje za 
+izračun apriorne verjetnosti na podlagi razpoložljivih podatkov in brez nepotrebnega vplivanja odvetnikov ali drugih udeležencev postopka. \\\\
+Tekom sodnega procesa se pojavljajo nove domneve o obtožencu in novi dokazi s kraja zločina. Smiselno je, da vse to v postopku 
+izračuna tudi upoštevamo. Zasledila sem, da se tekom sodnega procesa marsikateri dokaz najprej prizna in je znan sodniku, ki presoja tožilčevo domnevo 
+o obtožencu, torej ga upoštevajo v svojih izračunih za posodobitve predhodnih verjetnosti hipotez. Potem pa dokaz iz sodnega procesa umaknejo, ampak 
+presnetilo me je, da dokaz največkrat ni umaknjen iz verjetnostnih računov. Mnenja sem, da bi morali statistiki, ko se določen dokaz iz 
+sodnega procesa, zaradi tehtnega razloga, umakne, posodobiti vse račune za nazaj in nato nadaljevati posodabljanje verjetnosti. Tako bi dobili primeren 
+izračun posteriornih verjetnosti, na katerih bi potem lahko temeljil zaključek sodnega procesa.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Bayesova analiza}
+Najbolj pogosta uporaba Bayesovega pravila je pri ugotavljanju, ali je obtoženec vir sledi DNK-ja s kraja zločina. V ta namen sem opisala 
+poenostavljeno in izpopolnjeno Bayesovo analizo, v primeru, ko je dokaz DNK sled.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Poenostavljena Bayesova analiza}
+Naj bo:\\
+$S$ \dots dogodek, da je obtoženec vir sledi DNK s kraja zločina; \\
+$M$ \dots dogodek, da se obtoženčev DNK ujema z DNK-jem s kraja zločina; \\
+$f$ \dots funkcija pogostosti ujemanja DNK z DNK-jem s kraja zločina. \\
+Želimo vedeti, kakšna je verjetnost S glede na M, tj. $P(S \lvert M)$. \\\\
+Bayesovo pravilo lahko uporabimo na naslednji način:
+\[
+   \frac{P(S \lvert M)}{P(\neg S \lvert M)} = \frac{P(M \lvert S)}{P(M \lvert \neg S)} \times \frac{P(S)}{P(\neg S)}. \vspace{2mm}
+\]
+Največja težava je pri določitvi vrednosti $P(M \lvert S)$, ki je običajno enaka ena - če bi obtoženec dejansko pustil sledove, bi laboratorijske 
+analize pokazale ujemanje, kar imenujemo lažni negativni rezultat; to je sicer poenostavitev, saj se lahko zgodi, da analize ne pokažejo ujemanja, 
+čeprav je obtoženec pustil sledi. \\
+Potrebujemo še verjetnost $P(M \lvert \neg S)$, tj. verjetnost, da se bo našlo ujemanje, če obtoženec ni vir sledi na kraju zločina. To je
+običajno enakovredno pogostosti ujemanja DNK-ja z DNK-jem s kraja zločina, tj. $f$; tudi to je poenostavitev, saj se lahko zgodi, da
+obtoženec nima enakega DNK profila, vendar so laboratorijske analize pokazale, da ga ima, kar imenujemo lažni pozitivni rezultat.\\\\
+Ker poenostavljena Bayesova analiza ne upošteva možnosti lažnih pozitivnih in negativnih rezultatov laboratorijske analize, sem si pogledala še 
+izpopolnjeno Bayesovo analizo.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Izpopolnjena Bayesova analiza}
+Da upoštevam možnosti laboratorijskih napak, namesto $M$ uvedem spremenljivko $M_p$.\\
+$M_p$ \dots poročano ujemanje laboratorijske analize; \\
+$M_t$ \dots trditev, da obstaja dejansko ujemanje v DNK-ju;\\
+$\neg M_t$ \dots trditev, da obstaja neujemanje v DNK-ju.\\\\
+Sledi:
+\[
+   P(M_p \lvert \neg S) = P(M_p \lvert M_t)P(M_t \lvert \neg S) + P(M_p \lvert \neg M_t)P(\neg M_t \lvert \neg S).
+\]\\
+$P(M_p \lvert \neg M_t)$ opisuje verjetnost lažno pozitivnih rezultatov laboratorijske analize in $P(M_p \lvert M_t)$ verjetnost resničnih 
+pozitivnih rezultatov laboratorijske analize.\\
+Za pravilno oceno verjetnosti $P(M_p \lvert \neg S)$ potrebujemo statistično oceno pogostosti profila DNK in stopnje napak
+laboratorijskih analiz, ki pa so redko na voljo.\\\\
+Relativno majhne stopnje napak lahko bistveno zmanjšajo dokazno vrednost DNK dokazov, saj močno zmanjšajo razmerje verjetij. Vpliv stopnje 
+laboratorijskih napak kaže, da ne glede na to, kako nizka je pogostost profila, bo ta relativno nepomembna, če pogostosti ne spremlja ocena 
+stopnje laboratorijskih napak. Bayesovo pravilo nam omogoča, da ta vidik upoštevamo.\\\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Razmerje verjetij}
+Občasno se zgodi, da predloga tožilstva in obrambe nista komplementarna in v takih primerih ni mogoče določiti $P(H_p)$ ali $P(H_d)$ (poglavje 1), 
+ampak samo vpliv statistike, znane kot razmerje verjetij.
+
+
+
+
+
+\end{document}
