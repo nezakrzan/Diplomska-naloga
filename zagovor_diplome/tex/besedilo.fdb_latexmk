@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1693717051 "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/zagovor_diplome/tex/besedilo.tex" "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/zagovor_diplome/tex/besedilo.pdf" "besedilo" 1693717052
-  "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/zagovor_diplome/tex/besedilo.aux" 1693717052 1519 4a52abb97b44df833167136e1928e317 ""
-  "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/zagovor_diplome/tex/besedilo.tex" 1693717050 13803 73e2b33bdeef473a46254ffc35c4f844 ""
+["pdflatex"] 1693838257 "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/zagovor_diplome/tex/besedilo.tex" "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/zagovor_diplome/tex/besedilo.pdf" "besedilo" 1693838258
+  "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/zagovor_diplome/tex/besedilo.aux" 1693838257 2718 ce2ac596119df83c8be498780d975c55 ""
+  "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/zagovor_diplome/tex/besedilo.tex" 1693838256 22204 bf4cbe784ed3c54d935c0028abdae0d5 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm" 1136768653 3584 402da0b29eafbad07963b1224b222f18 ""
@@ -75,11 +75,11 @@
   "/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1616695603 5169178 a2ce6e2d73f603b690db6777d06dbccb ""
   "/usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1638351185 2724738 99ced56f488d4dbb028a5474dfd1162f ""
   "/usr/local/texlive/2021/texmf.cnf" 1616695596 577 4c1911a7228e554c6032256d3cf5567d ""
-  "besedilo.aux" 1693717052 1519 4a52abb97b44df833167136e1928e317 "pdflatex"
-  "besedilo.tex" 1693717050 13803 73e2b33bdeef473a46254ffc35c4f844 ""
+  "besedilo.aux" 1693838257 2718 ce2ac596119df83c8be498780d975c55 "pdflatex"
+  "besedilo.tex" 1693838256 22204 bf4cbe784ed3c54d935c0028abdae0d5 ""
   (generated)
-  "besedilo.aux"
-  "besedilo.log"
   "besedilo.pdf"
-  "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/zagovor_diplome/tex/besedilo.log"
+  "besedilo.aux"
   "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/zagovor_diplome/tex/besedilo.pdf"
+  "/Users/nezakrzan/Documents/GitHub/Diplomska-naloga/zagovor_diplome/tex/besedilo.log"
+  "besedilo.log"
