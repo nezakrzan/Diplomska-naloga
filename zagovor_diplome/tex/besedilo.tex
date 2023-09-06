@@ -43,8 +43,34 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Zmote v kazenskem pravu}
+Ker večina ljudi pri razmišljanju o verjetnosti dela osnovne napake, obstaja mnogo zmot, ki izhajajo iz osnovnega razumevanja pravil
+teorije verjetnosti. Številne od teh zmot so posledica napačnega razumevanja pogojne verjetnosti. Bolj znana primera takih zmot sta
+tožilčeva zmota in zmota obrambnega odvetnika.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Tožilčeva zmota}
+Tožilčeva zmota je bila motivacija za mojo diplomsko nalogo. Izhaja iz napačnega razumevanja
+pogojnih verjetnosti, matematično sicer nič posebno, vendar lahko pusti hude posledice v sodnem procesu.\\\\
+Če je $E$ dokaz in $H$ trditev,  da je obtoženi nedolžen. \\
+Tožilčeva zmota je zamenjava verjetnost dokaza $E$ glede na
+hipotezo $H$ z verjetnostjo hipoteze $H$ glede na dokaze $E$ oziroma $P(E \lvert H)$ z $P(H \lvert E)$.\\\\
+Pa si poglejmo to na realnem primeru - sodni proces medicinski sestri Lucii de Berg.  Lucia de Berk je bila obsojena na dosmrtni zapor zaradi obtožbe 
+uboja več bolnikov v dveh bolnišnicah, v katerih je delala v bližnji preteklosti. \\\\
+Sodišče je bilo mnenja, da podan verjetnostni izračun, pomeni, da je osumljenka vse dogodke, navedene v obtožnici, doživela naključno. Ti 
+izračuni naj bi poseldično prikazovali, da je velika verjetnost, da obstaja povezava med izmeno osumljenke in pojavom zadevnega dogodka. Ti sklepi sodišča 
+bi morali statistikom vzbujati dvome, saj je sodba dvoumna in lahko bi rekla, da je sodišče storilo znano tožilčevo zmoto. Po sklepu sodišča bi lahko rekli, 
+da govorijo o verjetnosti, da se je nekaj zgodilo ob predpostavki, da je vse popolnoma naključno ali pa si sodbo sodišča razlagamo kot verjetnost, da se 
+je nekaj naključno zgodilo. Ti dve trditvi pa sta različni, kar lahko pokažem z naslednjimi formulami. Naj bo\\
+$F$ \dots opazovani dogodek;\\
+$H_0$ \dots trditev, da se dogodek zgodi naključno.\\
+Statistik je izračunal verjetnost $P(F \lvert H_0)$, medtem ko je sodišče mislilo, da je izračunana  verjetnost v bistvu $P(H_0 \lvert F)$, 
+kar pa je definicija tožilčeve zmote.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Statistika v kazenskem pravu}
-Velik del raziskav vključuje preverjanje teorije in hipotez. Statistiki si običajno prizadevajo preučiti razmerja med dvema ali več spremenljivkami.
+Statistiki si običajno prizadevajo preučiti razmerja med dvema ali več spremenljivkami.
 \begin{definicija}
     \textit{Odvisna spremenljivka} je pojav, ki ga želi statistik preučiti, razložiti ali napovedati.
 \end{definicija}
@@ -60,25 +86,6 @@ modeliranje. V proces določanja spremenljivk pa pogosto v preveliki meri posega
 postane sporno, saj lahko takšni pretirani posegi ovirajo statistične znanstvenike pri izračunu verjetnostnega vpliva spremenljivk. Zagotovo 
 določitev spremenljivk ne sme biti naloga le odvetnikov ali le statistikov, ampak menim, da je sodelovanje med statistiki in odvetniki pomembno.  S tem se lahko zagotovi pravilno opredelitev spremenljivk in pravilne verjetnostne 
 izračune, ki bodo prispevali k pravičnim odločitvam v sodnih postopkih.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Raziskovalni proces}
-Raziskovalni proces se izvaja po naslednjih točkah.\\
-\textbf{1. Identifikacija problema.\\} 
-\textbf{2. Zasnova raziskave.\\} 
-\textbf{3. Analiza podatkov.\\}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Vrednotenje dokazov}
-Najpogostejši uporabljeni metodi za ocenjevanje dokazov sta metoda dokazne vrednosti in model verjetnosti hipoteze.\\
-Metoda dokazne vrednosti temelji na vrednosti, ki jo ima dokaz za dokazno temo, njen namen pa je ugotoviti, ali med dokazom in zadevno dokazno temo 
-obstaja naključna povezava, pri čemer je dokazna tema glavna obtožba v kazenskem primeru. S to metodo dokazujemo določen omejen nabor dokazov, njen cilj pa 
-je oceniti verjetnost, da dokazi dokazujejo hipotezo.\\
-Z modelom verjetnosti hipoteze pa ocenjujemo verjetnost hipoteze glede na dokaze. Cilj je ugotoviti, kako verjetno je, da je hipoteza, za katero dokazi 
-zagotavljajo določeno stopnjo podpore, resnična. Glavna razlika z metodo dokazne vrednosti je, da predpostavlja, da obstaja začetna verjetnost za hipotezo 
-pred obravnavo dokazov, t.i. predhodna verjetnost.\\\\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -173,45 +180,6 @@ Občasno se zgodi, da predloga tožilstva in obrambe nista komplementarna in v t
 ampak samo vpliv statistike, znane kot razmerje verjetij.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Opredelitev}
-Bayesov izrek v obliki razmerja verjetij
-\begin{equation}
-   \frac{P(H \lvert E)}{P(\bar{H} \lvert E)} = \frac{P(E \lvert H)}{P(E \lvert \bar{H})} \times \frac{P(H)}{P(\bar{H})}. \vspace{2mm}
-\end{equation}
-\begin{definicija}
-    Razmerje
-    \begin{equation}
-        \frac{P(E \lvert H)}{P(E \lvert \bar{H})} \vspace{2mm}
-    \end{equation}
-     se imenuje razmerje verjetij. \\
-\end{definicija}
-Oglejmo si dogodka $E$ in $H$, ter njuna komplementa. Razmerje verjetij je tu razmerje verjetij $E$, ko je $H$ resničen in verjetnosti $E$,
-ko je $H$ neresničen. Da bi upoštevali učinek $E$ na verjetnost $H$, tj. da bi
-\[
-   \frac{P(H)}{P(\bar{H})} \vspace{2mm}
-\]
-spremenili v
-\[
-   \frac{P(H \lvert E)}{P(\bar{H} \lvert E)}, \vspace{2mm}
-\]
-prvo pomnožimo z razmerjem verjetij. Razmerje
-\[
-   \frac{P(H)}{P(\bar{H})} \vspace{2mm}
-\]
-je znano kot apriorno razmerje v korist H, razmerje
-\[
-   \frac{P(H \lvert E)}{P(\bar{H} \lvert E)} \vspace{2mm}
-\]
-pa je znano kot aposteriorno razmerje v korist $H$.\\\\
-Razlika med $P(E \lvert H)$ in $P(H \lvert E)$ je bistvena. Pri proučevanju vpliva
-$E$ na $H$ je treba upoštevati tako verjetnost $E$, ko je $H$ resničen in ko je $H$ neresničen. Pogosta napaka, tj. zmota prenesene pogojne
-verjetnosti, je, da dogodek $E$, ki je malo verjeten, če je $\bar{H}$ resničen, pomeni dokaz v prid $H$. Da bi bilo tako, je treba dodatno
-zagotoviti, da E ni tako malo verjeten, če je H resničen. Razmerje verjetij je potem večje od 1 in pozitivna verjetnost je večja od
-predhodne verjetnosti. Torej iz Bayesovega izreka neposredno izhaja, da če je razmerje verjetij večje od 1, potem dokaz povečuje
-»verjetnost« krivde (pri čemer višje vrednosti pomenijo večjo verjetnost krivde), če pa je manjše od 1, zmanjšuje »verjetnost« krivde
-(in bolj ko se približuje ničli, manjša je »verjetnost« krivde).
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Razmerje verjetij v kazenskem pravu}
 Sedaj si poglejmo obliko Bayesovega izreka o razmerju verjetij v forenzičnem kontekstu, tj. ocenjevanje vrednosti nekaterih dokazov.\\\\
 Naj bo:\\
@@ -238,43 +206,26 @@ Da lahko ocenimo oziroma določimo vrednost dokaza, potrebujemo razmerje verjeti
         \frac{P(H_p \lvert Ev, I)}{P(H_d \lvert Ev, I)}.
     \]
 \end{definicija}
-Razmerje verjetij nam pove, katera hipoteza je bolje podprta z dokazi.\\\\
+Razmerje verjetij nam pove, katera hipoteza je bolje podprta z dokazi. Iz Bayesovega izreka neposredno izhaja, da če je razmerje verjetij večje od 1, potem dokaz povečuje
+»verjetnost« krivde (pri čemer višje vrednosti pomenijo večjo verjetnost krivde), če pa je manjše od 1, zmanjšuje »verjetnost« krivde
+(in bolj ko se približuje ničli, manjša je »verjetnost« krivde).\\\\
 Ker je ocena vrednosti razmerja verjetij lahko podvržena številnim virom negotovosti, mora poročilo o vrednosti razmerja verjetij vključevati merilo 
 njegove natančnosti, na primer  na primer z navedbo številčnega razpona vrednosti za verjetnost dokazov na podlagi konkurenčnih predlogov in s tem 
 številčnega razpona vrednosti za razmerje verjetij.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Zmote v kazenskem pravu}
-Ker večina ljudi pri razmišljanju o verjetnosti dela osnovne napake, obstaja mnogo zmot, ki izhajajo iz osnovnega razumevanja pravil
-teorije verjetnosti. Številne od teh zmot so zlasti posledica napačnega razumevanja pogojne verjetnosti. Bolj znana primera takih zmot sta
-tožilčeva zmota in zmota obrambnega odvetnika.
+\section{Druge metode}
+Da sem lahko ocenila ustreznost Bayesove statistike, sem jo primerjala z drugimi metodatmi.\\\\
+Velikokrat uporabljena metoda temelji na relativnih frekvencah. Relativne frekvence vedno navajajo ali predpostavljajo, da obstaja nek
+referenčni vzorec, na podlagi katerega se lahko oceni pogostost zadevnega dogodka. V okviru kazenskega postopka relativna frekvenca lahko podpre
+vmesno sklepanje o moči dokazov, kar nam pomaga pri končnem sklepu.\\\\
+Metoda verjetnosti naključnega ujemanja izraža možnost, da bi imel naključni posameznik, ki ni povezan z obdolžencem,
+ustrezni DNK profil. Težava tega pristopa je, da je verjetnost naključnega ujemanja lahko predstavljena
+oziroma razumevana narobe. Gre za zamenjavo dveh pogojnih verjetnosti oziroma tožilčevo zmoto.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Tožilčeva zmota}
-Tožilčeva zmota je dobro znana statistična zmota, ki izhaja iz napačnega razumevanja
-pogojnih verjetnosti, pogosto imenuje napaka prenesenega pogojnika oziroma tudi 
-tožilčeva zmota.\\\\
-Če je $E$ dokaz in $H$ trditev,  da je obtoženi nedolžen, upoštevamo pogojne verjetnosti: \\
-$P(E \lvert H)$ \dots verjetnost resničnosti dokaz $E$, kljub temu da je obtoženi nedolžen; \\
-$P(H \lvert E)$ \dots verjetnost, da je obtoženi nedolžen kljub dokazu $E$. \\\\
-Tožilčeva zmota je zamenjava verjetnost dokaza $E$ glede na
-hipotezo $H$ z verjetnostjo hipoteze $H$ glede na dokaze $E$ oziroma $P(E \lvert H)$ z $P(H \lvert E)$, torej ko napačno verjamemo, da je verjetnost 
-naključnega znanstvenega ujemanja enaka verjetnosti, da je obtoženec nedolžen.\\\\
-Pri forenzičnih dokazih je ponavadi verjetnost $P(E \lvert H)$ majhna. Tožilec pa velikokrat sklepa, da je tudi verjetnost
-$P(H \lvert E)$ majhna.
-Zgoraj napisani pogojni verjetnosti pa sta lahko precej različni; uporabimo Bayesovo pravilo:
-\[
-   P(H \lvert E) = P(E \lvert H) \times \frac{P(H)}{P(E)}, \vspace{2mm}
-\]
-kjer je $P(H)$ verjetnost nedolžnosti in $P(E)$ verjetnost dokaza. Enačba kaže, da majhna pogojna verjetnost $P(E \lvert H)$ ne pomeni majhne
-pogojne verjetnosti $P(H \lvert E)$ v primeru velike verjetnosti nedolžnosti in majhne verjetnosti dokaza. \\
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Zmota obrambnega odvetnika}
-Se zgodi, ko se dokazi obtoženca ujemajo z dokazi kaznivega dejanja štejejo za nepomembne, ker visoka predhodna verjetnost, da obotženec ni storil kaznivega dejanja (kar
-se zgodi, če je na primer potencialno število osumljencev zelo veliko) še vedno povzroči visoko verjetnost, da oseba ustreza dokazom kaznivega dejanja, kljub temu, da ni 
-vpletena v kaznivo dejanje. \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -309,8 +260,5 @@ tekom sodnega procesa in izključevanju nepomembnih oziroma nepotrebnih dokazov 
 Ker so me predvsem zanimale zmote, do katerih prihaja, sem veliko časa posvetila ugotavljanju najboljšega načina za izogib zmotam. In glavna ugotovitev dela je, da se lahko 
 s pomočjo Bayesovih omrežij izognemo zmotam, saj ne prikažejo polne algebrske oblike verjetnostne formule, omogočajo pa skoraj popolno
 avtomatizacijo potrebnih verjetnostnih izračunov in več prefinjenih možnosti.
-
-
-
 
 \end{document}

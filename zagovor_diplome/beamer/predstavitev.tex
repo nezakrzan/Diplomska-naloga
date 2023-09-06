@@ -44,6 +44,15 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Motivacija - zmote v kazenskem pravu}
+
+\begin{frame}
+   \frametitle{Tožilčeva zmota}
+   \begin{block}{Tožilčeva zmota}
+      zamenjava verjetnost dokaza $E$ glede na hipotezo $H$ z verjetnostjo hipoteze $H$ glede na dokaze $E$ oziroma $P(E \lvert H)$ z $P(H \lvert E)$.
+   \end{block} \vspace{2mm}
+  
+\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -52,7 +61,6 @@
 \begin{frame}
     \frametitle{Statistika v kazenskem pravu}
     \begin{itemize}
-        \item Preverjamo \textbf{teorije} in \textbf{hipoteze}.
         \item Preučujemo razmerja med dvema ali več spremenljivkami.\\ \vspace{2mm}
          \begin{definicija}
             \textit{Odvisna spremenljivka} je pojav, ki ga želi statistik preučiti, razložiti ali napovedati.
@@ -79,32 +87,6 @@
    \textit{
    V proces določanja spremenljivk pogosto posežejo odvetniki, ki se sklicujejo na pravne zakone in načela. \\
    To lahko postane sporno, saj lahko takšni posegi ovirajo statistike pri izračunu verjetnostnega vpliva spremenljivk.}
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Raziskovalni proces}
-\begin{frame}
-    \frametitle{Raziskovalni proces}
-    Proces se izvaja po naslednjih točkah.\\ \vspace{2mm}
-    \begin{enumerate}
-        \item \textbf{Identifikacija problema.\\} 
-        \item \textbf{Zasnova raziskave.\\} 
-        \item \textbf{Analiza podatkov.\\}
-    \end{enumerate}
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Vrednotenje dokazov}
-\begin{frame}
-   \frametitle{Vrednotenje dokazov}
-   \textbf{METODA DOKAZNE VREDNOSTI} - ali med dokazom in zadevno dokazno temo obstaja naključna povezava.\\ \vspace{3mm}
-   \textbf{MODEL VERJETNOSTI HIPOTEZE} - kako verjetno je, da je hipoteza, za katero dokazi zagotavljajo določeno stopnjo podpore, resnična.\\ \vspace{5mm}
-   \begin{beamerboxesrounded}[]{Glavna razlika}
-      Model verjetnosti hipoteze predpostavlja, da obstaja začetna verjetnost za hipotezo 
-      pred obravnavo dokazov.
-   \end{beamerboxesrounded} \vspace{3mm}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -207,7 +189,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-   \frametitle{Predhodna verjetnost in določitev posteriorne verjetnosti}
+   \frametitle{Predhodna verjetnost in določitev aposteriorne verjetnosti}
    \begin{definicija}[Predhodna verjetnost oziroma apriorna verjetnost]
       Predhodna verjetnost, ki je uporabljena v vsaki posodobitvi verjetnosti s pomočjo Bayesove teorije, je začetna verjetnost hipoteze 
       oziroma tožilčeve domneve o obtožencu oziroma storilcu kaznivega dejanja.
@@ -250,102 +232,40 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-   \frametitle{Opredelitev}
-   Bayesov izrek v obliki razmerja verjetij
-   \[
-   \frac{P(H \lvert E)}{P(\bar{H} \lvert E)} = \frac{P(E \lvert H)}{P(E \lvert \bar{H})} \times \frac{P(H)}{P(\bar{H})}. \vspace{2mm}
-   \]
-   \begin{definicija} 
-      Razmerje
-      \[
-          \frac{P(E \lvert H)}{P(E \lvert \bar{H})} \vspace{2mm}
-      \]
-       se imenuje razmerje verjetij. 
-  \end{definicija}
-\end{frame}
-
-\begin{frame}
-   \frametitle{Opredelitev}
-   \begin{itemize}
-      \item Razlika med $P(E \lvert H)$ in $P(H \lvert E)$ je bistvena.
-      \item Pri proučevanju vpliva $E$ na $H$ je treba upoštevati tako verjetnost $E$, ko je $H$ resničen in ko je $H$ neresničen.
-   \end{itemize}
-   \begin{block}{\textbf{Zmota prenesene pogojne verjetnosti}}
-      je da dogodek $E$, ki je malo verjeten, če je $\bar{H}$ resničen, pomeni dokaz v prid $H$. Da bi bilo tako, je treba dodatno
-      zagotoviti, da E ni tako malo verjeten, če je H resničen. Razmerje verjetij je potem večje od 1 in verjetnost je večja od
-      predhodne verjetnosti.
-   \end{block}\vspace{2mm}
-   razmerje verjetij $> 1 \rightarrow$  dokaz povečuje »verjetnost« krivde\\
-   razmerje verjetij $< 1 \rightarrow$  dokaz zmanjšuje »verjetnost« krivde\\
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
    \frametitle{Razmerje verjetij v kazenskem pravu}
    Oblika Bayesovega izreka o razmerju verjetij v forenzičnem kontekstu.\\ \vspace{2mm}
-   $H_p \dots$ obtoženec je resnično kriv - nadomestimo $H$;\\
-   $H_d \dots$ obtoženec je resnično nedolžen - nadomestimo $\bar{H}$;\\
-   $Ev \dots$ obravnavani dokaz - nadomestimo dogodek $E$;\\ \vspace{2mm}
+   $H_p \dots$ obtoženec je resnično kriv;\\
+   $H_d \dots$ obtoženec je resnično nedolžen;\\
+   $Ev \dots$ obravnavani dokaz;\\ \vspace{2mm}
    \begin{block}{Ob upoštevanju informacij $I$}
        \[
            \frac{P(H_p \lvert Ev, I)}{P(H_d \lvert Ev, I)} = \frac{P(Ev \lvert H_p, I)}{P(Ev \lvert H_d, I)} \times \frac{P(H_p \lvert I)}{P(H_d \lvert I)}. \vspace{2mm}
        \]
    \end{block}
-\end{frame}
-
-\begin{frame}
-   \frametitle{Razmerje verjetij v kazenskem pravu}
-   \begin{definicija}
-       Naj bosta  $H_p$ in $H_d$ dve konkurenčni hipotezi ter $I$ informacije o ozadju. Vrednost $V$ dokaza $Ev$ je podana z
-       \[
-           V = \frac{P(Ev \lvert H_p, I)}{P(Ev \lvert H_d, I)},
-       \]
-       razmerje verjetij, ki pretvori predhodne verjetnosti
-       \[
-           \frac{P(H_p \lvert I)}{P(H_d \lvert I)} 
-       \]
-       v posteriorne verjetnosti
-       \[
-           \frac{P(H_p \lvert Ev, I)}{P(H_d \lvert Ev, I)}.
-       \]
-    \end{definicija}     
+   \begin{block}{RAZMERJE VERJETIJ}
+      razmerje verjetij $> 1 \rightarrow$  dokaz povečuje »verjetnost« krivde\\
+      razmerje verjetij $< 1 \rightarrow$  dokaz zmanjšuje »verjetnost« krivde\\
+   \end{block}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Zmote v kazenskem pravu}
+\section{Druge metode}
 
 \begin{frame}
-   \frametitle{Zmote v kazenskem pravu}
-   \begin{enumerate}
-       \item \textbf{Tožilčeva zmota};
-       \item \textbf{Napaka verjetnosti};
-       \item \textbf{Zanemarjanje predhodnih verjetnosti};
-       \item \textbf{Napaka pri številčnem preračunavanju};
-       \item \textbf{Pričakovane vrednosti, ki pomenijo edinstvenost};
-       \item \textbf{Zmota obrambnega odvetnika};
-       \item \textbf{Napaka baze podatkov obrambnega odvetnika};
-       \item \textbf{Zasliševalčeva zmota};
-   \end{enumerate}
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-   \frametitle{Tožilčeva zmota}
-   Če je $E$ dokaz in $H$ trditev,  da je obtoženi nedolžen, upoštevamo pogojne verjetnosti: \\
-   $P(E \lvert H)$ \dots verjetnost resničnosti dokaz $E$, kljub temu da je obtoženi nedolžen; \\
-   $P(H \lvert E)$ \dots verjetnost, da je obtoženi nedolžen kljub dokazu $E$. \\ \vspace{2mm}
-   \begin{block}{Tožilčeva zmota}
-      zamenjava verjetnost dokaza $E$ glede na hipotezo $H$ z verjetnostjo hipoteze $H$ glede na dokaze $E$ oziroma $P(E \lvert H)$ z $P(H \lvert E)$.
+   \frametitle{Druge metode}
+   \begin{block}{Frekvence}
+      \begin{itemize}
+         \item Relativne frekvence vedno navajajo ali predpostavljajo, da obstaja referenčni vzorec, na podlagi katerega se lahko oceni pogostost zadevnega dogodka.
+         \item Relativna frekvenca lahko podpre vmesno sklepanje o moči dokazov.
+      \end{itemize}
    \end{block} \vspace{2mm}
-\end{frame}
-
-\begin{frame}
-   \frametitle{Zmota obrambnega odvetnika}
-   \begin{block}{Zmota obrambnega odvetnika}
-      se zgodi, ko se dokazi obtoženca ujemajo z dokazi kaznivega dejanja štejejo za nepomembne, ker visoka predhodna verjetnost, da obotženec ni storil kaznivega dejanja še vedno povzroči visoko verjetnost, da oseba ustreza dokazom kaznivega dejanja, kljub temu, da ni 
-      vpletena v kaznivo dejanje.
-   \end{block} \vspace{2mm}
+   \begin{block}{Metoda verjetnosti naključnega ujemanja}
+      \begin{itemize}
+         \item Izraža možnost, da bi imel naključni posameznik, ki ni povezan z obdolžencem, ustrezno lastnost npr. DNK profil.
+         \item Predstavljena oziroma razumevana narobe - tožilčeva zmota.
+      \end{itemize}
+   \end{block}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
