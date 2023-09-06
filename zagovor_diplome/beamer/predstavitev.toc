@@ -1,9 +1,9 @@
 \babel@toc {slovene}{}
 \beamer@sectionintoc {1}{Motivacija - zmote v kazenskem pravu}{2}{0}{1}
-\beamer@sectionintoc {2}{Statistika v kazenskem pravu}{3}{0}{2}
-\beamer@sectionintoc {3}{Koncept verjetnosti}{5}{0}{3}
-\beamer@sectionintoc {4}{Bayesova statistika}{7}{0}{4}
-\beamer@sectionintoc {5}{Razmerje verjetij}{14}{0}{5}
-\beamer@sectionintoc {6}{Druge metode}{15}{0}{6}
-\beamer@sectionintoc {7}{Načini za izogib zmotam}{16}{0}{7}
-\beamer@sectionintoc {8}{Zaključek}{17}{0}{8}
+\beamer@sectionintoc {2}{Statistika v kazenskem pravu}{4}{0}{2}
+\beamer@sectionintoc {3}{Koncept verjetnosti}{6}{0}{3}
+\beamer@sectionintoc {4}{Bayesova statistika}{8}{0}{4}
+\beamer@sectionintoc {5}{Razmerje verjetij}{15}{0}{5}
+\beamer@sectionintoc {6}{Druge metode}{16}{0}{6}
+\beamer@sectionintoc {7}{Načini za izogib zmotam}{17}{0}{7}
+\beamer@sectionintoc {8}{Zaključek}{18}{0}{8}
